@@ -29,10 +29,11 @@ function renderCards(){
 }
 function render(){
  $('output').hidden=false;$('export').disabled=false;
+ window.history.replaceState({},'', '/?run='+encodeURIComponent(current.run_id));
  const c=current.results.reduce((a,r)=>(a[r.decision]++,a),{keep:0,reject:0,review:0});
- $('summary').textContent=`Взять ${c.keep} · отклонить ${c.reject} · проверить ${c.review}. Обложек ${current.cover.length}/6. ${current.latency_ms/1000} с. Расход ≈ $${current.estimated_cost_usd}${current.cost_complete?'':' + неизвестная часть'}.`+(current.shortfall?' Хороших фото меньше трёх.':'')+(!current.semantic_model_used?' ВНИМАНИЕ: технический baseline не понимает содержание фото.':'');
+ $('summary').textContent=`Взять ${c.keep} · отклонить ${c.reject} · проверить ${c.review}. Предложено ${current.cover.length}/6. ${current.latency_ms/1000} с. Расход ≈ $${current.estimated_cost_usd}${current.cost_complete?'':' + неизвестная часть'}.`+(current.shortfall?' Хороших фото меньше трёх.':'')+(!current.semantic_model_used?' ВНИМАНИЕ: технический baseline не понимает содержание фото.':'');
  $('json').textContent=JSON.stringify(current,null,2);$('saved').textContent=cover?`Сохранено: ${cover.cover.length} фото · ревизия ${cover.revision} · закреплено ${cover.pinned.length} · исключено ${cover.excluded.length}`:'Результат ещё не сохранён. Ручной отбор доступен после сохранения.';renderCards();
- $('comparison').hidden=false;const tbody=$('history');tbody.replaceChildren();for(const r of history){const tr=el('tr');const counts=['keep','reject','review'].map(d=>r.results.filter(x=>x.decision===d).length).join(' / ');for(const txt of [r.model,counts,r.cover.length,(r.latency_ms/1000)+' с','$'+r.estimated_cost_usd+(r.cost_complete?'':' + ?')])tr.append(el('td',txt));const td=el('td');const b=el('button','Показать');b.onclick=()=>{current=r;cover=null;render();};td.append(b);tr.append(td);tbody.append(tr);}
+ $('comparison').hidden=false;const tbody=$('history');tbody.replaceChildren();for(const r of history){const tr=el('tr');const counts=['keep','reject','review'].map(d=>r.results.filter(x=>x.decision===d).length).join(' / ');for(const txt of [r.model,r.restaurant_id+" · "+(r.input_signature??"").slice(0,8),counts,r.cover.length,(r.latency_ms/1000)+' с','$'+r.estimated_cost_usd+(r.cost_complete?'':' + ?')])tr.append(el('td',txt));const td=el('td');const b=el('button','Показать');b.onclick=()=>{current=r;cover=null;render();};td.append(b);tr.append(td);tbody.append(tr);}
 }
 $('run').onclick=async()=>{try{
  setBusy(true);$('status').textContent='Загрузка и оценка… Обычно до нескольких минут. Дождитесь завершения перед повторным запуском.';
@@ -48,4 +49,7 @@ $('export').onclick=()=>{const link=el('a');link.href=URL.createObjectURL(new Bl
 for(const b of document.querySelectorAll('[data-filter]'))b.onclick=()=>{filter=b.dataset.filter;renderCards();};
 $('preset').onchange=presetChanged;
 $('example').onchange=()=>{const x=examples[$('example').value];if(x){$('restaurant').value=x.restaurant_id;$('urls').value=x.urls.join('\n');}};
-(async()=>{try{presets=(await api('/api/providers')).presets;presets.forEach((p,i)=>{const o=el('option',p.label);o.value=i;$('preset').append(o);});presetChanged();examples=await api('/api/examples');examples.forEach((x,i)=>{const o=el('option',x.name);o.value=i;$('example').append(o);});}catch(e){error(e);}})();
+(async()=>{try{presets=(await api('/api/providers')).presets;presets.forEach((p,i)=>{const o=el('option',p.label);o.value=i;$('preset').append(o);});presetChanged();examples=await api('/api/examples');examples.forEach((x,i)=>{const o=el('option',x.name);o.value=i;$('example').append(o);});
+ const runId=new URLSearchParams(window.location.search).get('run');
+ if(runId){current=await api('/api/runs/'+encodeURIComponent(runId));history.push(current);$('restaurant').value=current.restaurant_id;$('urls').value=current.results.map(r=>r.url).join('\n');const i=presets.findIndex(p=>p.provider===current.provider&&p.model===current.model);if(i>=0){$('preset').value=i;presetChanged();}const state=await api('/api/restaurants/'+encodeURIComponent(current.restaurant_id)+'/cover');cover=state.revision?state:null;render();}
+ }catch(e){error(e);}})();

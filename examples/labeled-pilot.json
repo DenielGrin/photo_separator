@@ -34,9 +34,9 @@
         "url": "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg",
         "source_photo_id": "107_520633587",
         "sha256": "79de7c8d2fc9cdad954e120b24de27d5a35af799f19544c225e40ef776a601cb",
-        "expected": "keep",
-        "grade": 3,
-        "reason": "Барная стойка показывает интерьер, людей в центре нет."
+        "expected": "review",
+        "grade": 0,
+        "reason": "На полноразмерном изображении отчётливо виден бармен за стойкой; люди на фоне требуют проверки. Исправлено после повторного просмотра оригинала, исходная метка сохранена в v1."
       },
       {
         "url": "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg",
@@ -86,7 +86,8 @@
         "grade": 0,
         "reason": "Кофе виден, но на заднем плане посетительница; требуется проверка политики людей."
       }
-    ]
+    ],
+    "label_version": "v2_after_full_resolution_review"
   },
   {
     "restaurant_id": "raiskii-sad-balashikha",
@@ -175,6 +176,7 @@
         "grade": 0,
         "reason": "Селфи двух посетительниц, люди занимают кадр."
       }
-    ]
+    ],
+    "label_version": "v2_after_full_resolution_review"
   }
 ]

@@ -28,7 +28,7 @@
 
 `config.provider`: `ollama`, `openai`, `deepseek`, `gemini`, `anthropic`, `compatible`, `technical`. Endpoint адреса задаются сервером, а не HTTP-клиентом. Ключ необязателен для Ollama/technical, для облака может браться из env. `input_price`/`output_price` — USD / 1M токенов; `null` означает неизвестную цену. В поле model API не проверяет наличие модели в аккаунте; недоступность будет ошибкой провайдера и review.
 
-Ответ содержит `run_id`, `restaurant_id`, `provider`, `model`, `prompt_version`, `policy`, `results[]`, `cover`, `forward_urls`, `rejected_urls`, `review_urls`, `shortfall`, `latency_ms`, `estimated_cost_usd`, `cost_complete`, `billing_note`, `semantic_model_used`. Ключи и сами base64-изображения в ответе не возвращаются. Поле `assessment.confidence` — самооценка модели, не калиброванная вероятность.
+Ответ содержит `run_id`, `input_signature`, `restaurant_id`, `provider`, `model`, `prompt_version`, `policy`, `results[]`, `cover`, `forward_urls`, `rejected_urls`, `review_urls`, `shortfall`, `latency_ms`, `estimated_cost_usd`, `cost_complete`, `billing_note`, `semantic_model_used`. Ключи и сами base64-изображения в ответе не возвращаются. Поле `assessment.confidence` — самооценка модели, не калиброванная вероятность.
 
 - `results[].decision=keep` означает пригодный кандидат. Их может быть больше шести.
 - `cover` и `forward_urls` — выбранный набор максимум из шести.

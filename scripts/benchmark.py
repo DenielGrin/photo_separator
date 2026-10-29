@@ -21,13 +21,16 @@ from photo_separator.schemas import Policy, ProviderConfig, SelectionRequest
 
 def metrics(dataset, runs):
     labels = {(r["restaurant_id"], p["url"]): p for r in dataset for p in r["photos"]}
-    total = good = bad = accepted = true_accept = false_accept = false_reject = deferred = errors = 0
+    total = good = bad = accepted = true_accept = false_accept = false_reject = deferred = errors = (
+        correct
+    ) = 0
     selected_total = selected_good = 0
     ndcgs = []
     for run in runs:
         for row in run["results"]:
             label = labels[(run["restaurant_id"], row["url"])]["expected"]
             total += 1
+            correct += row["decision"] == label
             good += label == "keep"
             bad += label == "reject"
             accepted += row["decision"] == "keep"
@@ -67,6 +70,7 @@ def metrics(dataset, runs):
     measured_ndcg = [x for x in ndcgs if x is not None]
     return {
         "photos": total,
+        "decision_accuracy": correct / total if total else None,
         "good_labels": good,
         "bad_labels": bad,
         "accepted": accepted,
@@ -88,7 +92,8 @@ def metrics(dataset, runs):
 
 
 async def main(args):
-    dataset = json.loads(Path(args.dataset).read_text())
+    dataset_bytes = Path(args.dataset).read_bytes()
+    dataset = json.loads(dataset_bytes)
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     cache = Path(args.cache)
@@ -151,7 +156,7 @@ async def main(args):
             "preset": preset_id,
             "model": config.model,
             "metrics": metrics(dataset, runs),
-            "dataset_sha256": hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest(),
+            "dataset_sha256": hashlib.sha256(dataset_bytes).hexdigest(),
             "label_status": "provisional_agent_annotation_requires_independent_human_review",
             "runs": [r["run_id"] for r in runs],
         }

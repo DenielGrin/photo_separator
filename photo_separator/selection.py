@@ -1,4 +1,6 @@
 import asyncio
+import hashlib
+import json
 import time
 from datetime import UTC, datetime
 from pathlib import Path
@@ -113,6 +115,13 @@ async def select(request: SelectionRequest, loader=download, preview_dir: Path |
             t0 = time.monotonic()
             async with semaphore, WORK_SLOTS:
                 try:
+                    if request.config.provider == "technical":
+                        row.update(
+                            reason_code="technical_baseline",
+                            usage={"input_tokens": 0, "output_tokens": 0},
+                            cost_estimate_usd=0,
+                        )
+                        return
                     output = await assess(request.config, image, client)
                     a = output.assessment
                     decision, score, reason = decide(a, row["metrics"], request.policy)
@@ -137,6 +146,11 @@ async def select(request: SelectionRequest, loader=download, preview_dir: Path |
     calls = [r for r in results if r.get("assessment") or r["reason_code"] == "provider_error"]
     costs = [r["cost_estimate_usd"] for r in calls]
     return {
+        "input_signature": hashlib.sha256(
+            json.dumps(
+                [(r["url"], r.get("metrics", {}).get("digest")) for r in results], ensure_ascii=True
+            ).encode()
+        ).hexdigest(),
         "run_id": uuid4().hex,
         "created_at": datetime.now(UTC).isoformat(),
         "restaurant_id": request.restaurant_id,

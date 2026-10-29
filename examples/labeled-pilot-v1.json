@@ -1,0 +1,180 @@
+[
+  {
+    "restaurant_id": "cremat-11-barcelona",
+    "name": "Cremat 11 · 10 фото",
+    "source_page": "https://restaurantguru.com/Cremat-11-Barcelona",
+    "retrieved_at": "2026-10-29",
+    "label_status": "provisional_agent_annotation",
+    "photos": [
+      {
+        "url": "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg",
+        "source_photo_id": "107_545407706",
+        "sha256": "22b3ff9a023c62274f1fb086e96715c033042bb10a015f08aec884f7745f433b",
+        "expected": "review",
+        "grade": 0,
+        "reason": "Еда крупно, человек на заднем плане; требуется проверка."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg",
+        "source_photo_id": "107_545407708",
+        "sha256": "d23fd2835447c9e48e4585a127c9f0f50b5bc70c178b7822f68ca76e07d4930b",
+        "expected": "keep",
+        "grade": 3,
+        "reason": "Аппетитная подача завтрака, достаточно света."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg",
+        "source_photo_id": "505_517831758",
+        "sha256": "96b4d149a0f57241545bd04f4c63707a141ff4d8a117ba90bc45b224a81343a6",
+        "expected": "keep",
+        "grade": 2,
+        "reason": "Чёткий кофе с латте-артом, подходящий дополнительный кадр."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg",
+        "source_photo_id": "107_520633587",
+        "sha256": "79de7c8d2fc9cdad954e120b24de27d5a35af799f19544c225e40ef776a601cb",
+        "expected": "keep",
+        "grade": 3,
+        "reason": "Барная стойка показывает интерьер, людей в центре нет."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg",
+        "source_photo_id": "404_506504627",
+        "sha256": "df39595966d67d59ddaeb089a91ebffad373fbf601e863189dd285839013f0d0",
+        "expected": "keep",
+        "grade": 2,
+        "reason": "Узнаваемый вход, дневной свет."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg",
+        "source_photo_id": "107_520633581",
+        "sha256": "3fc266b15bad0f9a9bce4e9671e296606adec7820c21fd7393cdeb91bf9f6d0b",
+        "expected": "keep",
+        "grade": 2,
+        "reason": "Коктейль в фокусе, художественное размытие фона; руки не являются главным объектом. Размытый фон сам по себе не дефект."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg",
+        "source_photo_id": "328_514444131",
+        "sha256": "76fd396e7208038dec5acdd3c68054add0e8bb367f5745c55b651fdb7b2a084d",
+        "expected": "reject",
+        "grade": 0,
+        "reason": "Портрет посетительницы — основной объект."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg",
+        "source_photo_id": "328_510047040",
+        "sha256": "88384e773f0c705400ef97a6035a8767c926963ca19329d0a47c460428a1ac08",
+        "expected": "reject",
+        "grade": 0,
+        "reason": "Рекламный текстовый постер, не фото обложки."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg",
+        "source_photo_id": "328_510047039",
+        "sha256": "dce1f5049958c19775b4cec1bc802e869647366456ffaa6ac67e5e836be49e9b",
+        "expected": "reject",
+        "grade": 0,
+        "reason": "Групповой портрет людей у входа."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg",
+        "source_photo_id": "404_506258827",
+        "sha256": "957747fcd61574481b9ccee6d0e01dcbe753047c0dc42dc265430240aaf7fd10",
+        "expected": "review",
+        "grade": 0,
+        "reason": "Кофе виден, но на заднем плане посетительница; требуется проверка политики людей."
+      }
+    ]
+  },
+  {
+    "restaurant_id": "raiskii-sad-balashikha",
+    "name": "Райский сад · 10 фото",
+    "source_page": "https://restaurantguru.com/Raiskii-Sad-Balashikha",
+    "retrieved_at": "2026-10-29",
+    "label_status": "provisional_agent_annotation",
+    "photos": [
+      {
+        "url": "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+        "source_photo_id": "1401_16773680",
+        "sha256": "737e666e56659baf905ae1f214d549e9fb3feae8ac739b573b26767c7ae66a65",
+        "expected": "keep",
+        "grade": 3,
+        "reason": "Шашлык и гарнир, чистая предметная подача."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+        "source_photo_id": "1401_16773681",
+        "sha256": "0db7d192cac35fab8440b639706976177cff537525da60179044b3317860ae9e",
+        "expected": "keep",
+        "grade": 2,
+        "reason": "Крупный план хинкали; дополнительное фото еды."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+        "source_photo_id": "1401_3862348",
+        "sha256": "2782ae15cf30ffbc792e19284cb7eb4f1eac4c836b550e2f11816f743cd634ce",
+        "expected": "keep",
+        "grade": 3,
+        "reason": "Блюдо с мясом и овощами, яркая подача."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg",
+        "source_photo_id": "1401_8608711",
+        "sha256": "f02e83f40395af20ca3b509658cfb80cd8141424d7eb0db06eee8acf62536e22",
+        "expected": "keep",
+        "grade": 3,
+        "reason": "Тёплый интерьер с сервировкой стола."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg",
+        "source_photo_id": "312_509524207",
+        "sha256": "df57653cc15bbbdbe58471965e313f66a991deca8c026f91d500c18e09756fe7",
+        "expected": "review",
+        "grade": 0,
+        "reason": "Летняя терраса, посетители на заднем плане."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg",
+        "source_photo_id": "409_504189664",
+        "sha256": "7cb26929ff7e918302ef2816fc47f69dabbea9d7b3c7f5919c947f91bed40d72",
+        "expected": "reject",
+        "grade": 0,
+        "reason": "Очень тёмный нерезкий предметный кадр, место непонятно."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg",
+        "source_photo_id": "1401_11512229",
+        "sha256": "a1e2ca191b52b93f8e0ececa3f0e3bb37f66a2bd445445860ea5b96e389174f4",
+        "expected": "reject",
+        "grade": 0,
+        "reason": "Большой групповой портрет за столом."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg",
+        "source_photo_id": "1401_8608720",
+        "sha256": "07b4d83337e035542ef4e0fd0d4137c379757aa9edbdf19fdf1692c851c4269e",
+        "expected": "reject",
+        "grade": 0,
+        "reason": "Человек ест перед камерой; селфи, не обложка."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg",
+        "source_photo_id": "1401_926733",
+        "sha256": "7c321c0b74a22e8abb2609f023362a9a705bfa1f5f45b869994e6b79808f40f0",
+        "expected": "reject",
+        "grade": 0,
+        "reason": "Парковка и автомобили, слабая связь с рестораном."
+      },
+      {
+        "url": "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg",
+        "source_photo_id": "409_506406961",
+        "sha256": "bf37ff52be531da06676474dc1f424ac118599acea0cc6a4e01fc3caf22544b5",
+        "expected": "reject",
+        "grade": 0,
+        "reason": "Селфи двух посетительниц, люди занимают кадр."
+      }
+    ]
+  }
+]

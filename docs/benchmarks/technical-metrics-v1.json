@@ -1,0 +1,31 @@
+{
+  "runtime": {},
+  "preset": "technical",
+  "model": "technical-only",
+  "metrics": {
+    "photos": 20,
+    "good_labels": 9,
+    "bad_labels": 8,
+    "accepted": 0,
+    "accept_precision": null,
+    "accept_precision_wilson95_lower": null,
+    "false_accept_count": 0,
+    "good_recall": 0.0,
+    "false_reject_count": 0,
+    "review_rate": 1.0,
+    "cover_precision": null,
+    "ndcg_at_6": 0.0,
+    "error_count": 0,
+    "restaurants_with_at_least_3_covers": 0,
+    "latency_p50_ms": 346,
+    "latency_p95_ms": 346,
+    "estimated_cost_usd": 0,
+    "cost_complete": true
+  },
+  "dataset_sha256": "01eea9c403742eb21dae8e44ed55412696956809635c8e191ac85cbce115207a",
+  "label_status": "provisional_agent_annotation_requires_independent_human_review",
+  "runs": [
+    "10079696b9b7413bb971bdf6b6c29f43",
+    "d3aec35aa8d745d88fddb7c3227b6a43"
+  ]
+}

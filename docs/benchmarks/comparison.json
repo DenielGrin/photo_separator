@@ -1,0 +1,105 @@
+[
+  {
+    "evaluation_mode": "offline_rescore_no_model_calls",
+    "dataset_sha256": "134932bdd7d888cc60b0c4986da208ce7ccf5187ea859b0454073b5a0f7fb099",
+    "label_status": "provisional_agent_annotation_requires_independent_human_review",
+    "model": "technical-only",
+    "runs": [
+      "10079696b9b7413bb971bdf6b6c29f43",
+      "d3aec35aa8d745d88fddb7c3227b6a43"
+    ],
+    "metrics": {
+      "photos": 20,
+      "decision_accuracy": 0.2,
+      "good_labels": 8,
+      "bad_labels": 8,
+      "accepted": 0,
+      "accept_precision": null,
+      "accept_precision_wilson95_lower": null,
+      "false_accept_count": 0,
+      "good_recall": 0.0,
+      "false_reject_count": 0,
+      "review_rate": 1.0,
+      "cover_precision": null,
+      "ndcg_at_6": 0.0,
+      "error_count": 0,
+      "restaurants_with_at_least_3_covers": 0,
+      "latency_p50_ms": 346,
+      "latency_p95_ms": 346,
+      "estimated_cost_usd": 0,
+      "cost_complete": true
+    }
+  },
+  {
+    "evaluation_mode": "offline_rescore_no_model_calls",
+    "dataset_sha256": "134932bdd7d888cc60b0c4986da208ce7ccf5187ea859b0454073b5a0f7fb099",
+    "label_status": "provisional_agent_annotation_requires_independent_human_review",
+    "model": "qwen3-vl:2b-instruct",
+    "runs": [
+      "92a9de8c957941dc93df1469a48211a0",
+      "72be833318ed43b29370b7ec7fd992a5"
+    ],
+    "metrics": {
+      "photos": 20,
+      "decision_accuracy": 0.8,
+      "good_labels": 8,
+      "bad_labels": 8,
+      "accepted": 8,
+      "accept_precision": 0.875,
+      "accept_precision_wilson95_lower": 0.5291051942301385,
+      "false_accept_count": 1,
+      "good_recall": 0.875,
+      "false_reject_count": 1,
+      "review_rate": 0.05,
+      "cover_precision": 0.875,
+      "ndcg_at_6": 0.8640893146757755,
+      "error_count": 0,
+      "restaurants_with_at_least_3_covers": 2,
+      "latency_p50_ms": 74563,
+      "latency_p95_ms": 74563,
+      "estimated_cost_usd": 0.0,
+      "cost_complete": true
+    },
+    "runtime": {
+      "ollama_version": "0.40.13",
+      "model_digest": "afc393e3572c07db0bc84aa460d928a16c75f3fbb9ca9e0dccc4fbd2dafb573e"
+    },
+    "prediction_dataset_sha256": "01eea9c403742eb21dae8e44ed55412696956809635c8e191ac85cbce115207a"
+  },
+  {
+    "evaluation_mode": "offline_rescore_no_model_calls",
+    "dataset_sha256": "134932bdd7d888cc60b0c4986da208ce7ccf5187ea859b0454073b5a0f7fb099",
+    "label_status": "provisional_agent_annotation_requires_independent_human_review",
+    "model": "qwen3-vl:8b-instruct",
+    "runs": [
+      "b694b3b378574e81ac27c392e9e56fa3",
+      "1c8ad70eee5d453b9576b9e1b12e7862"
+    ],
+    "metrics": {
+      "photos": 20,
+      "decision_accuracy": 0.9,
+      "good_labels": 8,
+      "bad_labels": 8,
+      "accepted": 10,
+      "accept_precision": 0.8,
+      "accept_precision_wilson95_lower": 0.49015684672072346,
+      "false_accept_count": 2,
+      "good_recall": 1.0,
+      "false_reject_count": 0,
+      "review_rate": 0.1,
+      "cover_precision": 0.8,
+      "ndcg_at_6": 0.9854751032007208,
+      "error_count": 0,
+      "restaurants_with_at_least_3_covers": 2,
+      "latency_p50_ms": 194198,
+      "latency_p95_ms": 194198,
+      "estimated_cost_usd": 0.0,
+      "cost_complete": true
+    },
+    "runtime": {
+      "ollama_version": "0.40.13",
+      "model_digest": "70e58e37beb15464e19aa903dedb2cba828b89c0fb186f75ff2738c7347b96eb"
+    },
+    "prediction_dataset_sha256": "01eea9c403742eb21dae8e44ed55412696956809635c8e191ac85cbce115207a"
+  }
+]

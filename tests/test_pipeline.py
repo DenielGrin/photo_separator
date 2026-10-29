@@ -31,7 +31,7 @@ def test_duplicate_fetch_failure_and_provider_failure_never_forward(monkeypatch)
             "https://example.com/unreachable",
             "https://example.com/b",
         ],
-        config=ProviderConfig(provider="technical", input_price=0, output_price=0),
+        config=ProviderConfig(provider="ollama", input_price=0, output_price=0),
     )
     result = asyncio.run(selection.select(request, loader=loader))
     assert len(calls) == 2
@@ -51,7 +51,7 @@ def test_preview_uses_sanitized_local_image(monkeypatch, tmp_path):
 
     monkeypatch.setattr(selection, "assess", fake_assess)
     request = SelectionRequest(
-        restaurant_id="r", urls=["https://example.com/a"], config=ProviderConfig(provider="technical")
+        restaurant_id="r", urls=["https://example.com/a"], config=ProviderConfig(provider="ollama")
     )
     result = asyncio.run(selection.select(request, loader=lambda _: png(), preview_dir=tmp_path))
     preview = result["results"][0]["preview_url"]

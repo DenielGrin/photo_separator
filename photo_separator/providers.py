@@ -20,6 +20,8 @@ Rate photographic quality (sharpness, exposure, color, cleanliness of presentati
 and relevance to a restaurant cover, each 0..100. Distinguish intentional food bokeh from global blur,
 and atmospheric dim lighting from an unreadable dark frame. Do not penalize cuisines or modest venues.
 people: none/background/prominent (selfies, portraits, crowds dominating the scene).
+Count photographed people, not cartoon platform mascots or decorative artwork. A hand presenting
+a dish or holding a drink is not by itself a prominent-person photo.
 text_dominant is true for menus, receipts, screenshots, promotional posters or text-heavy collages;
 a small restaurant sign alone is not text-dominant. A small platform watermark or QR attribution
 in the corner is allowed and must not alone cause rejection; large intrusive overlays are defects. severe_defect is true for severe blur, gross
@@ -45,6 +47,30 @@ PRESETS = [
         "provider": "ollama",
         "model": "qwen3.5:9b",
         "label": "Локально · Qwen3.5 9B · кандидат",
+        "input_price": 0,
+        "output_price": 0,
+    },
+    {
+        "id": "qwen38",
+        "provider": "ollama",
+        "model": "qwen3.8:27b",
+        "label": "Локально · Qwen3.8 27B · нужна мощная машина",
+        "input_price": 0,
+        "output_price": 0,
+    },
+    {
+        "id": "gemma4",
+        "provider": "ollama",
+        "model": "gemma4:e4b",
+        "label": "Локально · Gemma 4 E4B · новый кандидат",
+        "input_price": 0,
+        "output_price": 0,
+    },
+    {
+        "id": "gemma4-12",
+        "provider": "ollama",
+        "model": "gemma4:12b",
+        "label": "Локально · Gemma 4 12B · новый кандидат",
         "input_price": 0,
         "output_price": 0,
     },
@@ -119,6 +145,14 @@ PRESETS = [
         "label": "GPT 6.1 Sol · контроль сложных кадров",
         "input_price": 2,
         "output_price": 10,
+    },
+    {
+        "id": "claude-haiku",
+        "provider": "anthropic",
+        "model": "claude-haiku-5-5",
+        "label": "Claude Haiku 5.5 · экономичный кандидат",
+        "input_price": 0.1,
+        "output_price": 0.5,
     },
     {
         "id": "claude",

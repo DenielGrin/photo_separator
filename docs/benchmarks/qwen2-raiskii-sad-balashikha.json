@@ -1,0 +1,376 @@
+{
+  "input_signature": "166bc4c700d5e8800a34c60898eb15330e31585f8417a4e9403ce757513da572",
+  "run_id": "72be833318ed43b29370b7ec7fd992a5",
+  "created_at": "2026-10-29T12:14:08.314397+00:00",
+  "restaurant_id": "raiskii-sad-balashikha",
+  "provider": "ollama",
+  "model": "qwen3-vl:2b-instruct",
+  "prompt_version": "restaurant-cover-v1",
+  "policy": {
+    "min_score": 75,
+    "min_confidence": 0.85,
+    "max_covers": 6,
+    "people_policy": "review_background",
+    "min_short_side": 480,
+    "diversity": true
+  },
+  "results": [
+    {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+      "decision": "keep",
+      "score": 92.0,
+      "assessment": {
+        "category": "food",
+        "quality": 95.0,
+        "appeal": 90.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фотография демонстрирует аппетитный блюдо с кусочками мяса на тарелке, украшенное овощами и специями. На переднем плане виден белый кусок теста, а на заднем — тарелка с блюдом. В левом нижнем углу находится иллюстрация человека, который смотрит на блюдо. Фотография имеет хорошее качество с высокой четкостью, хорошим освещением и ярким цветом. Блюдо выглядит аппетитно и хорошо представлено. Визуально это может быть хорошим выбором для обложки ресторана."
+      },
+      "usage": {
+        "input_tokens": 1411,
+        "output_tokens": 242
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 6149,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "162ee6a5cc04e66a004a5ef7b8d53969086d9b9a0e3e5e95b295fffd82866c52",
+        "width": 1125,
+        "height": 685,
+        "brightness": 175.72,
+        "edge_variance": 2165.42
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+      "decision": "keep",
+      "score": 88.25,
+      "assessment": {
+        "category": "food",
+        "quality": 90.0,
+        "appeal": 85.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На фотографии изображены два блюда с видимыми деталями: паста и блюдо с курицей. На переднем плане крупным планом показаны паста и блюдо с курицей. Фотография имеет хорошее качество с хорошей освещенностью и четким изображением. Цвета и текстуры хорошо переданы. На заднем плане виден ложка и часть блюда. Фотография не содержит текста, архитектурных элементов или других объектов, которые могут быть связаны с рестораном. Фотография не содержит угрозы или неприятных элементов. Фотография не содержит неправильных элементов, таких как пересечение или перекрытие. Фотография не содержит неправильных элементов, таких как пересечение или перекрытие. Фотография не содержит неправильных элементов, таких как пересечение или перекрытие. Фотография не содержит неправильных элементов, таких как пересече"
+      },
+      "usage": {
+        "input_tokens": 1561,
+        "output_tokens": 343
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 13950,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "cdf35e2c2d554731a12bb6bf8aa6f95fe0aa7f5808bb206fb3c69ffb96188496",
+        "width": 960,
+        "height": 1280,
+        "brightness": 134.18,
+        "edge_variance": 982.71
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+      "decision": "keep",
+      "score": 92.0,
+      "assessment": {
+        "category": "food",
+        "quality": 95.0,
+        "appeal": 90.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На фотографии изображена большая тарелка с разнообразным блюдом, включая куски мяса, картофель, овощи и салат. На тарелке видны тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие тонкие."
+      },
+      "usage": {
+        "input_tokens": 1385,
+        "output_tokens": 424
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 22131,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "54fb42861ad6ffeb573956b45cd0df3a30000f5cde419aa3361a4c3b65ed3a93",
+        "width": 640,
+        "height": 640,
+        "brightness": 102.96,
+        "edge_variance": 3370.65
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 3,
+      "url": "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg",
+      "decision": "keep",
+      "score": 88.25,
+      "assessment": {
+        "category": "interior",
+        "quality": 90.0,
+        "appeal": 85.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фотография представляет интерьер ресторана с деревянными стенами и потолком, освещённым подвесными лампочками. На столах установлены тарелки, бокалы и складные скатерти. В левом нижнем углу изображена иллюстрация в стиле мультфильма, изображающая человека в костюме с напитком. Фотография имеет высокую ясность, хорошее освещение и хорошее качество изображения, что делает её подходящей для использования в качестве обложки для ресторана. Нет явных дефектов, таких как сильная размытость или чрезмерное выделение текста."
+      },
+      "usage": {
+        "input_tokens": 1561,
+        "output_tokens": 252
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 29013,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "a1c3ed4d952bd21ff14689f8fa9578de05ea1ce81d4f79ef63d27f7d73549627",
+        "width": 1280,
+        "height": 960,
+        "brightness": 114.2,
+        "edge_variance": 2826.4
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 4,
+      "url": "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg",
+      "decision": "reject",
+      "score": 7.65,
+      "assessment": {
+        "category": "exterior",
+        "quality": 8.0,
+        "appeal": 7.0,
+        "relevance": 8.0,
+        "confidence": 0.95,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фотография представляет собой внешний вид ресторана на открытой террасе с зоной отдыха. На снимке видны столы с красными скатертями, люди, сидящие за столами, и сотрудники. В левой части изображения виден знак с надписью \"Welcome\". Освещение мягкое, приглушенное, что создает уютную атмосферу. Снимок не содержит явных дефектов, но качество не высокое из-за небольшого размытия и нечеткости. Визуально это хороший выбор для обложки ресторана, так как показывает атмосферу и людей, но не является идеальным из-за низкой четкости."
+      },
+      "usage": {
+        "input_tokens": 1441,
+        "output_tokens": 266
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 35521,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "cb2764b611aa8fda2d86321430e5d66d7f4c36cd7e27f272c159947b2367b607",
+        "width": 800,
+        "height": 533,
+        "brightness": 90.87,
+        "edge_variance": 3996.43
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 5,
+      "url": "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg",
+      "decision": "reject",
+      "score": 6.65,
+      "assessment": {
+        "category": "interior",
+        "quality": 7.0,
+        "appeal": 6.0,
+        "relevance": 7.0,
+        "confidence": 0.85,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На фотографии изображена черная овца в деревянном помещении, вероятно, в загоне. Освещение низкое, снимок сделан в условиях тусклого света. На переднем плане виден мультяшный персонаж, который не является реальным человеком. Фотография не содержит текста, меню или рекламы. Основной объект — овца, но изображение не очень четкое из-за тусклого освещения и низкой яркости. Визуально это может быть использовано для обложки ресторана, но качество изображения не высокое. Основной объект — овца, но изображение не очень четкое из-за тусклого освещения и низкой яркости. Визуально это может быть использовано для обложки ресторана, но качество изображения не высокое. Основной объект — овца, но изображение не очень четкое из-за тусклого освещения и низкой яркости. Визуально это может быть использовано"
+      },
+      "usage": {
+        "input_tokens": 1561,
+        "output_tokens": 356
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 43592,
+      "reason_code": "below_quality_threshold",
+      "metrics": {
+        "digest": "f18fa6bd69290472ff580b704b60d33551c7441784f34cd2a04d9ffd7065e4bf",
+        "width": 1680,
+        "height": 1260,
+        "brightness": 92.76,
+        "edge_variance": 798.04
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 6,
+      "url": "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg",
+      "decision": "reject",
+      "score": 83.25,
+      "assessment": {
+        "category": "people",
+        "quality": 85.0,
+        "appeal": 80.0,
+        "relevance": 85.0,
+        "confidence": 0.8,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Группа людей в помещении с деревянными стенами, за столом с едой и бокалами. Фотография имеет хорошее освещение, но не идеально резкое. Основной объект — люди, они занимают большую часть кадра. На столе видны еда и напитки, но не много текста. Фотография не содержит угрозы или неприемлемого контента. Основной объект — люди, они занимают большую часть кадра. На столе видны еда и бокалы, но не много текста. Фотография не содержит угрозы или неприемлемого контента. Основной объект — люди, они занимают большую часть кадра. На столе видны еда и бокалы, но не много текста. Фотография не содержит угрозы или неприемлемого контента. Основной объект — люди, они занимают большую часть кадра. На столе видны еда и бокалы, но не много текста. Фотография не содержит угрозы или неприемлемого контента. Осв"
+      },
+      "usage": {
+        "input_tokens": 1561,
+        "output_tokens": 361
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 51963,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "44bc02eca04e3b6198e47e59f270a3fa2db6bc8e3c8af0a282527a646d0355e0",
+        "width": 1280,
+        "height": 960,
+        "brightness": 124.46,
+        "edge_variance": 3436.59
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 7,
+      "url": "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg",
+      "decision": "reject",
+      "score": 7.4,
+      "assessment": {
+        "category": "people",
+        "quality": 8.0,
+        "appeal": 7.0,
+        "relevance": 7.0,
+        "confidence": 0.95,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На фотографии изображён мужчина, который держит в руке кусок еды. Фон размыт, с эффектом боке от светящихся огней, что указывает на вечернее время. Освещение достаточно яркое, но не слишком яркое, что создает мягкое освещение. Качество изображения высокое, с хорошей детализацией лица и еды. Цвета естественные, но не слишком насыщенные. Фотография не содержит текста, и не имеет явных дефектов, таких как размытие или перегрузка. Основной объект — человек, и он является центральным элементом изображения. Фотография соответствует критериям для использования в качестве обложки ресторана."
+      },
+      "usage": {
+        "input_tokens": 1561,
+        "output_tokens": 277
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 59170,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "47a62767dd43ef30ad40d48d3e964fbec43567714b19be22b362335d5c7374e7",
+        "width": 960,
+        "height": 1280,
+        "brightness": 111.91,
+        "edge_variance": 699.5
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 8,
+      "url": "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg",
+      "decision": "reject",
+      "score": 6.65,
+      "assessment": {
+        "category": "exterior",
+        "quality": 7.0,
+        "appeal": 6.0,
+        "relevance": 7.0,
+        "confidence": 0.85,
+        "people": "none",
+        "text_dominant": true,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фотография сделана на улице, на фоне зеленых деревьев и заборов. На переднем плане видны автомобили, а также знак с надписью \"Ресторан Райский Сад\". На заднем плане — рекламный щит с текстом \"Вкусная еда с доставкой\". В правом нижнем углу изображена мультяшная иллюстрация человека в костюме с жестом \"пальцем вверх\". Фотография имеет хорошую освещенность, но не полностью чистая, с небольшими облачными участками. Основной объект — внешняя территория ресторана, и текст на изображении является текстово-доминирующим. Нет явных дефектов, таких как сильная размытость или перегрузка, но изображение не является идеально чистым. Визуально это может быть хорошим выбором для обложки ресторана."
+      },
+      "usage": {
+        "input_tokens": 1436,
+        "output_tokens": 321
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 66324,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "180b56c7cad5fb91c64a1606c7c622838944462ceaff489c29ef45ca0f89d81f",
+        "width": 1280,
+        "height": 720,
+        "brightness": 154.21,
+        "edge_variance": 2159.16
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    },
+    {
+      "index": 9,
+      "url": "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg",
+      "decision": "reject",
+      "score": 7.0,
+      "assessment": {
+        "category": "people",
+        "quality": 7.0,
+        "appeal": 7.0,
+        "relevance": 7.0,
+        "confidence": 0.85,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На фотографии изображены два человека, сидящие рядом. Один из них — мужчина, другой — женщина, оба в солнцезащитных очках. Фотография сделана в помещении с деревянными стенами. На изображении виден стикер с мультяшным персонажем и открытой дверью с надписью \"OPEN\". Фотография имеет небольшой уровень размытия, но не является сильно размытой. Освещение достаточно яркое, но не слишком яркое, и цвета выглядят естественными. Фотография не содержит явных дефектов, таких как перекрытие или ослепительное освещение. Визуально она выглядит достаточно привлекательной для использования в качестве обложки ресторана."
+      },
+      "usage": {
+        "input_tokens": 1397,
+        "output_tokens": 289
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 72995,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "b25485f600b29cef0e14464b1a26f4b94b25f3fe04ec7ec55be97e98bdbccf54",
+        "width": 720,
+        "height": 540,
+        "brightness": 95.67,
+        "edge_variance": 1057.18
+      },
+      "resolved_model": "qwen3-vl:2b-instruct"
+    }
+  ],
+  "cover": [
+    "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+    "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+    "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+    "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg"
+  ],
+  "forward_urls": [
+    "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+    "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+    "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+    "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg"
+  ],
+  "rejected_urls": [
+    "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg",
+    "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg",
+    "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg",
+    "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg",
+    "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg",
+    "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg"
+  ],
+  "review_urls": [],
+  "shortfall": 0,
+  "latency_ms": 73168,
+  "estimated_cost_usd": 0.0,
+  "cost_complete": true,
+  "billing_note": "Estimate from reported tokens and configured rates; excludes unknown failed-call charges, caching discounts, infrastructure and taxes.",
+  "semantic_model_used": true
+}

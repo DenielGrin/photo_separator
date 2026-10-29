@@ -140,7 +140,7 @@ def prepare(raw: bytes) -> PreparedImage:
     width, height = image.size
     digest = hashlib.sha256(image.tobytes() + f"{width}x{height}".encode()).hexdigest()
     thumb = image.convert("L").resize((9, 8), Image.Resampling.LANCZOS)
-    pixels = list(thumb.getdata())
+    pixels = list(thumb.tobytes())
     dhash = sum(
         (pixels[y * 9 + x] > pixels[y * 9 + x + 1]) << (y * 8 + x) for y in range(8) for x in range(8)
     )
