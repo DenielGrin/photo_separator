@@ -359,6 +359,8 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
                 }
             ],
         }
+        if config.json_mode == "prompt":
+            payload.pop("response_format", None)
         if config.provider == "openrouter":
             # A single explicit model. Never add paid fallback models to a free request.
             payload["provider"] = {"require_parameters": True}

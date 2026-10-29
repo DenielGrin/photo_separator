@@ -1,0 +1,339 @@
+{
+  "input_signature": "a92f511c30fa94230daf96199ccb54c937d3128b1a517eb09f35fb41ead94379",
+  "run_id": "3d936a1e37174e839fb3422569608839",
+  "created_at": "2026-10-29T13:07:18.621989+00:00",
+  "restaurant_id": "cremat-11-barcelona",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "prompt_version": "restaurant-cover-v1",
+  "policy": {
+    "min_score": 75,
+    "min_confidence": 0.85,
+    "max_covers": 6,
+    "people_policy": "review_background",
+    "min_short_side": 480,
+    "diversity": true
+  },
+  "results": [
+    {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg",
+      "decision": "review",
+      "score": 79.9,
+      "assessment": {
+        "category": "food",
+        "quality": 78.0,
+        "appeal": 82.0,
+        "relevance": 80.0,
+        "confidence": 0.92,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план тарелки с тостами, яйцами пашот и запечёнными томатами; резкость основного блюда хорошая, фон смазан, есть крупный мультяшный стикер в углу. Люди на дальнем плане не доминируют."
+      },
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 121
+      },
+      "cost_estimate_usd": 0.0004851,
+      "latency_ms": 2526,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "13dc35675dbcb31096533fe05a485adb09d59c7cf64bd61be1c77ef20c5a01dd",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 123.35,
+        "edge_variance": 2250.34
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg",
+      "decision": "keep",
+      "score": 81.45,
+      "assessment": {
+        "category": "food",
+        "quality": 78.0,
+        "appeal": 85.0,
+        "relevance": 82.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Аппетитные блюда (французский тост с фруктами, сэндвич) и два бокала с жёлтым напитком на деревянном столе у кирпичной стены. Свет тёплый, но кадр снят под углом и немного пересвечен на переднем плане; резкость достаточная, фон размыт естественно. Внизу справа крупный навязчивый мультяшный водяной знак — дефект композиции, но не критичный."
+      },
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 181
+      },
+      "cost_estimate_usd": 0.0005571,
+      "latency_ms": 2747,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "fe663c68728174b42fcf8a6c6e1847dfad3426fe93149cac06f98a52c0482fd7",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 116.53,
+        "edge_variance": 2859.59
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 4391,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "8f80658468099f71774dfc9d12731f04debe9a16d07356d4c18b17b20d2a6d75",
+        "width": 750,
+        "height": 1000,
+        "brightness": 129.7,
+        "edge_variance": 1160.3
+      },
+      "error": "Model returned invalid assessment JSON; manual review required"
+    },
+    {
+      "index": 3,
+      "url": "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg",
+      "decision": "review",
+      "score": 81.9,
+      "assessment": {
+        "category": "interior",
+        "quality": 78.0,
+        "appeal": 82.0,
+        "relevance": 88.0,
+        "confidence": 0.88,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Барная стойка с бутылочной витриной, бармен на фоне, розовые барные стулья и кирпичные стены — атмосферный интерьер. Небольшой логотип в углу не мешает. Отдельные надписи и вывеска не делают кадр текстовым."
+      },
+      "usage": {
+        "input_tokens": 989,
+        "output_tokens": 128
+      },
+      "cost_estimate_usd": 0.0004503,
+      "latency_ms": 4894,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "5b919be5143d4fc9708ccb1c6328dfc04e1de3e02eb62d07fc472e7c934dcbf0",
+        "width": 1200,
+        "height": 801,
+        "brightness": 83.16,
+        "edge_variance": 4445.48
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 4,
+      "url": "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg",
+      "decision": "reject",
+      "score": 72.6,
+      "assessment": {
+        "category": "exterior",
+        "quality": 72.0,
+        "appeal": 68.0,
+        "relevance": 80.0,
+        "confidence": 0.86,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фасад заведения с вывеской Cenatll (brunch, tapas, cocktails, wine) и входом; освещение дневное, резкость приемлемая, но композиция снизу и крупный мультяшный маскот в углу отвлекают. Людей в кадре не видно, текст не доминирует."
+      },
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 132
+      },
+      "cost_estimate_usd": 0.0004983,
+      "latency_ms": 6701,
+      "reason_code": "below_quality_threshold",
+      "metrics": {
+        "digest": "c498b2cc7974c4a36ec15be20d992f360c42e01cfd1182e805791c2378991a7f",
+        "width": 1260,
+        "height": 1680,
+        "brightness": 115.32,
+        "edge_variance": 3798.31
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 5,
+      "url": "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg",
+      "decision": "review",
+      "score": 84.9,
+      "assessment": {
+        "category": "drink",
+        "quality": 82.0,
+        "appeal": 86.0,
+        "relevance": 88.0,
+        "confidence": 0.9,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план коктейля в бокале с долькой яблока на фоне размытого неонового знака и людей с бокалом вина. Резкость на напитке хорошая, атмосферное освещение и боке выглядят намеренно, без глобальной размытости. Внизу слева заметный мультяшный водяной знак, но он не перекрывает главный объект."
+      },
+      "usage": {
+        "input_tokens": 1071,
+        "output_tokens": 153
+      },
+      "cost_estimate_usd": 0.0005049,
+      "latency_ms": 7058,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "d6ec96cf375c630704561c6e32fb681fd0aa61877cecca6a031e2cb4466e42a5",
+        "width": 1121,
+        "height": 1680,
+        "brightness": 113.79,
+        "edge_variance": 1064.49
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 6,
+      "url": "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg",
+      "decision": "reject",
+      "score": 52.1,
+      "assessment": {
+        "category": "people",
+        "quality": 62.0,
+        "appeal": 58.0,
+        "relevance": 28.0,
+        "confidence": 0.85,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план девушки-DJ за пультом, улыбается в камеру; вечернее освещение, есть заметное размытие фона и лёгкая нерезкость по краям. В углу крупная наклейка-персонаж, что мешает как обложка ресторана. Сюжет про развлечение, а не про еду или заведение."
+      },
+      "usage": {
+        "input_tokens": 809,
+        "output_tokens": 141
+      },
+      "cost_estimate_usd": 0.0004119,
+      "latency_ms": 8797,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "3527d0603ef20de801d179bb3eb3808dd407ddfc7ed227ee1725eefd499a04f8",
+        "width": 836,
+        "height": 836,
+        "brightness": 84.36,
+        "edge_variance": 1660.87
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 7,
+      "url": "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 9031,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "9c900f2a468e498994b2024f84ab673cbedf00702de65c96773abd37a2b45c17",
+        "width": 883,
+        "height": 960,
+        "brightness": 212.71,
+        "edge_variance": 3623.37
+      },
+      "error": "Model returned invalid assessment JSON; manual review required"
+    },
+    {
+      "index": 8,
+      "url": "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 11090,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "feaf7dc9a8075599b873c74b53c8d6113c78e60226bd6abcd3f530a5c1289b47",
+        "width": 959,
+        "height": 960,
+        "brightness": 111.82,
+        "edge_variance": 4865.18
+      },
+      "error": "Model returned invalid assessment JSON; manual review required"
+    },
+    {
+      "index": 9,
+      "url": "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg",
+      "decision": "review",
+      "score": 61.45,
+      "assessment": {
+        "category": "drink",
+        "quality": 68.0,
+        "appeal": 55.0,
+        "relevance": 60.0,
+        "confidence": 0.78,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "В центре кадра чашка кофе на блюдце на столе, фон расфокусирован, видны посетители со спины. Резкость средняя, экспозиция нормальная, но композиция ослаблена крупным пустым пространством стола и наклейкой-маскотом в углу."
+      },
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 127
+      },
+      "cost_estimate_usd": 0.0004923,
+      "latency_ms": 11291,
+      "reason_code": "uncertain_assessment",
+      "metrics": {
+        "digest": "6b5e78a8667daf91ddbff498169a53a2e49fd4ffedc178916724a0c52bf94327",
+        "width": 1080,
+        "height": 1440,
+        "brightness": 118.15,
+        "edge_variance": 976.92
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    }
+  ],
+  "cover": [
+    "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg"
+  ],
+  "forward_urls": [
+    "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg"
+  ],
+  "rejected_urls": [
+    "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg",
+    "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg"
+  ],
+  "review_urls": [
+    "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg",
+    "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg",
+    "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg",
+    "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg",
+    "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg",
+    "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg",
+    "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg"
+  ],
+  "shortfall": 2,
+  "latency_ms": 11613,
+  "estimated_cost_usd": 0.0033999,
+  "cost_complete": false,
+  "billing_note": "Estimate from reported tokens and configured rates; excludes unknown failed-call charges, caching discounts, infrastructure and taxes.",
+  "semantic_model_used": true
+}

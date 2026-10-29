@@ -36,6 +36,7 @@ class ProviderConfig(StrictModel):
         default="google/gemma-4-31b-it:free", min_length=1, max_length=150, pattern=r"^[a-zA-Z0-9_./:\-]+$"
     )
     api_key: SecretStr | None = None
+    json_mode: Literal["object", "prompt"] = "object"
     # Endpoint is operator controlled through server environment, never through an untrusted request.
     input_price: float | None = Field(default=None, ge=0)
     output_price: float | None = Field(default=None, ge=0)

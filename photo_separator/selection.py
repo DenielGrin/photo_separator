@@ -56,10 +56,19 @@ def choose_covers(results, policy):
     return [r["url"] for r in selected]
 
 
-async def select(request: SelectionRequest, loader=download, preview_dir: Path | None = None):
+async def select(
+    request: SelectionRequest,
+    loader=download,
+    preview_dir: Path | None = None,
+    *,
+    cached_results=None,
+    before_assess=None,
+    on_assessed=None,
+    concurrency=2,
+):
     credential(request.config)  # configuration failures are detected before downloading any photo
     started = time.monotonic()
-    semaphore = asyncio.Semaphore(2)
+    semaphore = asyncio.Semaphore(concurrency)
     prepared = {}
     results = []
     # Fetch/decode one image at a time to cap memory; model calls are concurrent below.
@@ -112,6 +121,15 @@ async def select(request: SelectionRequest, loader=download, preview_dir: Path |
 
         async def evaluate(index, image):
             row = results[index]
+            cached = (cached_results or {}).get(row["url"])
+            if (
+                cached
+                and cached.get("assessment")
+                and cached.get("metrics", {}).get("digest") == image.digest
+            ):
+                row.update(cached)
+                row["cache_hit"] = True
+                return
             t0 = time.monotonic()
             async with semaphore, WORK_SLOTS:
                 try:
@@ -122,6 +140,8 @@ async def select(request: SelectionRequest, loader=download, preview_dir: Path |
                             cost_estimate_usd=0,
                         )
                         return
+                    if before_assess is not None:
+                        before_assess()
                     output = await assess(request.config, image, client)
                     a = output.assessment
                     decision, score, reason = decide(a, row["metrics"], request.policy)
@@ -141,8 +161,17 @@ async def select(request: SelectionRequest, loader=download, preview_dir: Path |
                     row.update(decision="review", reason_code="provider_error", error=str(exc))
                 finally:
                     row["latency_ms"] = round((time.monotonic() - t0) * 1000)
+                if on_assessed is not None:
+                    on_assessed(row)
 
-        await asyncio.gather(*(evaluate(i, im) for i, im in prepared.items()))
+        tasks = [asyncio.create_task(evaluate(i, im)) for i, im in prepared.items()]
+        try:
+            await asyncio.gather(*tasks)
+        except BaseException:
+            for task in tasks:
+                task.cancel()
+            await asyncio.gather(*tasks, return_exceptions=True)
+            raise
     cover = choose_covers(results, request.policy)
     calls = [r for r in results if r.get("assessment") or r["reason_code"] == "provider_error"]
     costs = [r["cost_estimate_usd"] for r in calls]
@@ -158,6 +187,7 @@ async def select(request: SelectionRequest, loader=download, preview_dir: Path |
         "provider": request.config.provider,
         "model": request.config.model,
         "prompt_version": PROMPT_VERSION,
+        "json_mode": request.config.json_mode,
         "policy": request.policy.model_dump(),
         "results": results,
         "cover": cover,

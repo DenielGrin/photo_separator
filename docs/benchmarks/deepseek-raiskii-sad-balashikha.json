@@ -1,0 +1,370 @@
+{
+  "input_signature": "166bc4c700d5e8800a34c60898eb15330e31585f8417a4e9403ce757513da572",
+  "run_id": "866dbb6d30ff4f5c97bfbc5a308a0c5e",
+  "created_at": "2026-10-29T13:07:30.222114+00:00",
+  "restaurant_id": "raiskii-sad-balashikha",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "prompt_version": "restaurant-cover-v1",
+  "policy": {
+    "min_score": 75,
+    "min_confidence": 0.85,
+    "max_covers": 6,
+    "people_policy": "review_background",
+    "min_short_side": 480,
+    "diversity": true
+  },
+  "results": [
+    {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+      "decision": "keep",
+      "score": 80.3,
+      "assessment": {
+        "category": "food",
+        "quality": 82.0,
+        "appeal": 80.0,
+        "relevance": 78.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Аппетитное блюдо: кусочки мяса на лепёшке с луком и зеленью, хорошая резкость и цвет. В левом нижнем углу заметный мультяшный водяной знак-персонаж, который отвлекает от еды."
+      },
+      "usage": {
+        "input_tokens": 865,
+        "output_tokens": 118
+      },
+      "cost_estimate_usd": 0.0004011,
+      "latency_ms": 2441,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "162ee6a5cc04e66a004a5ef7b8d53969086d9b9a0e3e5e95b295fffd82866c52",
+        "width": 1125,
+        "height": 685,
+        "brightness": 175.72,
+        "edge_variance": 2165.42
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+      "decision": "reject",
+      "score": 53.8,
+      "assessment": {
+        "category": "food",
+        "quality": 55.0,
+        "appeal": 48.0,
+        "relevance": 60.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план вареников/пельменей на белой тарелке; освещение тусклое, фокус мягкий, композиция тесная. В правом нижнем углу крупный навязчивый мультяшный логотип-наклейка, что портит презентацию."
+      },
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 141
+      },
+      "cost_estimate_usd": 0.0005091,
+      "latency_ms": 2443,
+      "reason_code": "below_quality_threshold",
+      "metrics": {
+        "digest": "cdf35e2c2d554731a12bb6bf8aa6f95fe0aa7f5808bb206fb3c69ffb96188496",
+        "width": 960,
+        "height": 1280,
+        "brightness": 134.18,
+        "edge_variance": 982.71
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+      "decision": "reject",
+      "score": 70.3,
+      "assessment": {
+        "category": "food",
+        "quality": 72.0,
+        "appeal": 70.0,
+        "relevance": 68.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план тарелки с мясом, овощами и зеленью; резкость умеренная, освещение теплое, есть небольшой декоративный стикер и игрушечная фигурка в углу, не портящие кадр."
+      },
+      "usage": {
+        "input_tokens": 661,
+        "output_tokens": 109
+      },
+      "cost_estimate_usd": 0.0003291,
+      "latency_ms": 4527,
+      "reason_code": "below_quality_threshold",
+      "metrics": {
+        "digest": "54fb42861ad6ffeb573956b45cd0df3a30000f5cde419aa3361a4c3b65ed3a93",
+        "width": 640,
+        "height": 640,
+        "brightness": 102.96,
+        "edge_variance": 3370.65
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 3,
+      "url": "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg",
+      "decision": "keep",
+      "score": 80.45,
+      "assessment": {
+        "category": "interior",
+        "quality": 78.0,
+        "appeal": 80.0,
+        "relevance": 85.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Тёплый уютный интерьер ресторана с деревянными стенами, красиво сервированные столы с бокалами и салфетками. Освещение атмосферное, но кадр достаточно читаемый. Есть крупный навязчивый мультяшный водяной знак в углу, портящий презентабельность."
+      },
+      "usage": {
+        "input_tokens": 1125,
+        "output_tokens": 152
+      },
+      "cost_estimate_usd": 0.0005199,
+      "latency_ms": 4903,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "a1c3ed4d952bd21ff14689f8fa9578de05ea1ce81d4f79ef63d27f7d73549627",
+        "width": 1280,
+        "height": 960,
+        "brightness": 114.2,
+        "edge_variance": 2826.4
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 4,
+      "url": "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg",
+      "decision": "review",
+      "score": 61.7,
+      "assessment": {
+        "category": "exterior",
+        "quality": 58.0,
+        "appeal": 60.0,
+        "relevance": 70.0,
+        "confidence": 0.82,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Летняя терраса ресторана под большими зонтиками, многочисленные посетители за столиками создают оживлённую атмосферу. Кадр в целом резкий, но освещение тускловатое, теневые зоны слабо детализированы; крупный стикер 'Welcome' в углу — навязчивый оверлей, но не делает изображение текстовым."
+      },
+      "usage": {
+        "input_tokens": 662,
+        "output_tokens": 148
+      },
+      "cost_estimate_usd": 0.0003762,
+      "latency_ms": 6751,
+      "reason_code": "uncertain_assessment",
+      "metrics": {
+        "digest": "cb2764b611aa8fda2d86321430e5d66d7f4c36cd7e27f272c159947b2367b607",
+        "width": 800,
+        "height": 533,
+        "brightness": 90.87,
+        "edge_variance": 3996.43
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 5,
+      "url": "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 7141,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "f18fa6bd69290472ff580b704b60d33551c7441784f34cd2a04d9ffd7065e4bf",
+        "width": 1680,
+        "height": 1260,
+        "brightness": 92.76,
+        "edge_variance": 798.04
+      },
+      "error": "Model returned invalid assessment JSON; manual review required"
+    },
+    {
+      "index": 6,
+      "url": "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg",
+      "decision": "reject",
+      "score": 44.0,
+      "assessment": {
+        "category": "people",
+        "quality": 55.0,
+        "appeal": 45.0,
+        "relevance": 25.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупная групповая фотография людей за банкетным столом в помещении с деревянными стенами. Кадр в целом резкий, но освещение неровное, на столе видны бутылки и остатки еды, есть крупный мультяшный стикер в углу. Для обложки ресторана снимок слабо подходит из-за обилия людей и беспорядка на столе."
+      },
+      "usage": {
+        "input_tokens": 1125,
+        "output_tokens": 150
+      },
+      "cost_estimate_usd": 0.0005175,
+      "latency_ms": 9166,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "44bc02eca04e3b6198e47e59f270a3fa2db6bc8e3c8af0a282527a646d0355e0",
+        "width": 1280,
+        "height": 960,
+        "brightness": 124.46,
+        "edge_variance": 3436.59
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 7,
+      "url": "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg",
+      "decision": "reject",
+      "score": 44.45,
+      "assessment": {
+        "category": "people",
+        "quality": 68.0,
+        "appeal": 35.0,
+        "relevance": 20.0,
+        "confidence": 0.85,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план мужчины, держащего кусок еды, с наложенным мультяшным персонажем внизу кадра; фон с боке-огоньками размыт. Лицо в фокусе, освещение ровное, но композиция любительская и слабо подходит для обложки ресторана."
+      },
+      "usage": {
+        "input_tokens": 1133,
+        "output_tokens": 130
+      },
+      "cost_estimate_usd": 0.0004959,
+      "latency_ms": 9388,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "47a62767dd43ef30ad40d48d3e964fbec43567714b19be22b362335d5c7374e7",
+        "width": 960,
+        "height": 1280,
+        "brightness": 111.91,
+        "edge_variance": 699.5
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 8,
+      "url": "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg",
+      "decision": "review",
+      "score": 47.4,
+      "assessment": {
+        "category": "exterior",
+        "quality": 58.0,
+        "appeal": 42.0,
+        "relevance": 38.0,
+        "confidence": 0.82,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Снаружи видна парковка у забора с вывеской заведения, много машин и зелени; кадр информативный, но композиция и свет непримечательные, а крупный мультяшный маскот-наклейка в углу отвлекает от реальной сцены."
+      },
+      "usage": {
+        "input_tokens": 965,
+        "output_tokens": 122
+      },
+      "cost_estimate_usd": 0.0004359,
+      "latency_ms": 11411,
+      "reason_code": "uncertain_assessment",
+      "metrics": {
+        "digest": "180b56c7cad5fb91c64a1606c7c622838944462ceaff489c29ef45ca0f89d81f",
+        "width": 1280,
+        "height": 720,
+        "brightness": 154.21,
+        "edge_variance": 2159.16
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    },
+    {
+      "index": 9,
+      "url": "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg",
+      "decision": "reject",
+      "score": 31.0,
+      "assessment": {
+        "category": "people",
+        "quality": 45.0,
+        "appeal": 30.0,
+        "relevance": 10.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Селфи двух людей в солнцезащитных очках крупным планом; лица занимают почти весь кадр, освещение неровное, есть размытие и шум. В углу — крупная наклейка-персонаж с надписью OPEN, что отвлекает от сюжета и снижает пригодность для обложки ресторана."
+      },
+      "usage": {
+        "input_tokens": 636,
+        "output_tokens": 136
+      },
+      "cost_estimate_usd": 0.000354,
+      "latency_ms": 11192,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "b25485f600b29cef0e14464b1a26f4b94b25f3fe04ec7ec55be97e98bdbccf54",
+        "width": 720,
+        "height": 540,
+        "brightness": 95.67,
+        "edge_variance": 1057.18
+      },
+      "resolved_model": "deepseek-flash",
+      "serving_provider": null
+    }
+  ],
+  "cover": [
+    "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg",
+    "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg"
+  ],
+  "forward_urls": [
+    "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg",
+    "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg"
+  ],
+  "rejected_urls": [
+    "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+    "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+    "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg",
+    "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg",
+    "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg"
+  ],
+  "review_urls": [
+    "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg",
+    "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg",
+    "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg"
+  ],
+  "shortfall": 1,
+  "latency_ms": 11596,
+  "estimated_cost_usd": 0.0039387,
+  "cost_complete": false,
+  "billing_note": "Estimate from reported tokens and configured rates; excludes unknown failed-call charges, caching discounts, infrastructure and taxes.",
+  "semantic_model_used": true
+}

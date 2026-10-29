@@ -1,0 +1,17 @@
+{
+  "dataset_sha256": "134932bdd7d888cc60b0c4986da208ce7ccf5187ea859b0454073b5a0f7fb099",
+  "order": [
+    "qwen3-vl:2b-instruct",
+    "gpt-6-luna",
+    "qwen3-vl:8b-instruct"
+  ],
+  "excluded": [
+    "deepseek-flash"
+  ],
+  "sort": [
+    "cover_precision desc",
+    "good_recall desc",
+    "decision_accuracy desc",
+    "ndcg_at_6 desc"
+  ]
+}

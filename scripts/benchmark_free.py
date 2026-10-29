@@ -1,0 +1,174 @@
+#!/usr/bin/env python3
+"""Discover every zero-price OpenRouter image model; checkpoint a bounded, resumable pilot."""
+
+import argparse
+import asyncio
+import hashlib
+import json
+import os
+import sys
+from datetime import UTC, datetime
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from photo_separator.catalog import discover_free_vision
+from photo_separator.images import ImageError, download
+from photo_separator.providers import PROMPT, PROMPT_VERSION
+from photo_separator.schemas import Policy, ProviderConfig, SelectionRequest
+from photo_separator.selection import select
+from scripts.benchmark import metrics
+
+
+class PauseRun(RuntimeError):
+    pass
+
+
+def save(path, value):
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2))
+    temporary.replace(path)
+
+
+def signature(dataset_bytes, candidate):
+    return hashlib.sha256(
+        dataset_bytes
+        + json.dumps(
+            {
+                "model": candidate["model"],
+                "json_mode": candidate["json_mode"],
+                "prompt": PROMPT,
+                "policy": Policy().model_dump(),
+            },
+            sort_keys=True,
+        ).encode()
+    ).hexdigest()
+
+
+class Journal:
+    def __init__(self, path, fingerprint, budget):
+        self.path, self.budget, self.calls = path, budget, 0
+        self.state = (
+            json.loads(path.read_text())
+            if path.exists()
+            else {
+                "signature": fingerprint,
+                "attempts": 0,
+                "rows": {},
+            }
+        )
+        if self.state["signature"] != fingerprint:
+            raise ValueError("Dataset, prompt, policy or model changed; use a fresh output directory")
+
+    def before(self):
+        if self.calls >= self.budget:
+            raise PauseRun("invocation_budget_exhausted")
+        self.calls += 1
+        self.state["attempts"] += 1
+        save(self.path, self.state)  # count dispatched calls even if the process is interrupted
+
+    def after(self, row):
+        self.state["rows"][row["url"]] = row
+        save(self.path, self.state)
+        if any(f"HTTP {code}" in row.get("error", "") for code in (401, 402, 403, 429)):
+            raise PauseRun("provider_auth_or_quota_block")
+
+
+async def main(args):
+    root = Path(args.output)
+    root.mkdir(parents=True, exist_ok=True)
+    data_bytes = Path(args.dataset).read_bytes()
+    dataset = json.loads(data_bytes)
+    candidates = await discover_free_vision(require_json=False)
+    plan = {
+        "checked_at": datetime.now(UTC).isoformat(),
+        "catalog_source": "https://openrouter.ai/api/v1/models",
+        "dataset_sha256": hashlib.sha256(data_bytes).hexdigest(),
+        "prompt_version": PROMPT_VERSION,
+        "candidates": candidates,
+        "status": "ready" if os.environ.get("OPENROUTER_API_KEY") else "blocked_missing_openrouter_key",
+        "completed": [],
+        "invocation_max_calls": args.max_calls,
+    }
+    save(root / "plan.json", plan)
+    if args.plan_only or plan["status"] != "ready":
+        print(json.dumps({"candidates": len(candidates), "status": plan["status"], "inference_calls": 0}))
+        return
+    cache = Path(args.cache)
+    cache.mkdir(parents=True, exist_ok=True)
+    hashes = {p["url"]: p.get("sha256") for r in dataset for p in r["photos"]}
+
+    def loader(url):
+        path = cache / (hashlib.sha256(url.encode()).hexdigest() + ".bin")
+        raw = path.read_bytes() if path.exists() else download(url)
+        if hashes[url] and hashlib.sha256(raw).hexdigest() != hashes[url]:
+            raise ImageError("Dataset bytes changed: SHA-256 mismatch")
+        if not path.exists():
+            path.write_bytes(raw)
+        return raw
+
+    remaining = args.max_calls
+    for candidate in candidates:
+        name = hashlib.sha256(candidate["model"].encode()).hexdigest()[:16]
+        folder = root / name
+        folder.mkdir(exist_ok=True)
+        journal = Journal(folder / "checkpoint.json", signature(data_bytes, candidate), remaining)
+        # Only successful rows are reused. Failed calls can be retried on the next explicit invocation.
+        cached = {url: row for url, row in journal.state["rows"].items() if row.get("assessment")}
+        config = ProviderConfig(
+            **{k: candidate[k] for k in ("provider", "model", "input_price", "output_price", "json_mode")}
+        )
+        runs = []
+        try:
+            for restaurant in dataset:
+                request = SelectionRequest(
+                    restaurant_id=restaurant["restaurant_id"],
+                    urls=[p["url"] for p in restaurant["photos"]],
+                    config=config,
+                    policy=Policy(),
+                )
+                run = await select(
+                    request,
+                    loader=loader,
+                    cached_results=cached,
+                    before_assess=journal.before,
+                    on_assessed=journal.after,
+                    concurrency=1,
+                )
+                run["resumed"] = any(r.get("cache_hit") for r in run["results"])
+                runs.append(run)
+                save(folder / (restaurant["restaurant_id"] + ".json"), run)
+            report = {
+                "model": candidate["model"],
+                "json_mode": candidate["json_mode"],
+                "dataset_sha256": plan["dataset_sha256"],
+                "prompt_version": PROMPT_VERSION,
+                "label_status": "provisional_agent_annotation_requires_independent_human_review",
+                "metrics": metrics(dataset, runs),
+                "latency_comparable": not any(r["resumed"] for r in runs),
+            }
+            save(folder / "metrics.json", report)
+            plan["completed"].append(candidate["model"])
+        except PauseRun as exc:
+            plan.update(status=str(exc), paused_model=candidate["model"])
+            save(root / "plan.json", plan)
+            print(
+                json.dumps(
+                    {"status": str(exc), "calls_this_invocation": args.max_calls - remaining + journal.calls}
+                )
+            )
+            return
+        remaining -= journal.calls
+        save(root / "plan.json", plan)
+    plan["status"] = "completed"
+    save(root / "plan.json", plan)
+    print(json.dumps({"status": "completed", "calls_this_invocation": args.max_calls - remaining}))
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--dataset", default="examples/labeled-pilot.json")
+    parser.add_argument("--cache", default="data/image-cache")
+    parser.add_argument("--output", default="results/free-cloud")
+    parser.add_argument("--max-calls", type=int, choices=range(1, 501), default=40)
+    parser.add_argument("--plan-only", action="store_true")
+    asyncio.run(main(parser.parse_args()))

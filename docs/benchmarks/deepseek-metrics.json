@@ -1,0 +1,32 @@
+{
+  "runtime": {},
+  "preset": "deepseek",
+  "model": "deepseek-flash",
+  "metrics": {
+    "photos": 20,
+    "decision_accuracy": 0.55,
+    "good_labels": 8,
+    "bad_labels": 8,
+    "accepted": 3,
+    "accept_precision": 1.0,
+    "accept_precision_wilson95_lower": 0.4384939195509822,
+    "false_accept_count": 0,
+    "good_recall": 0.375,
+    "false_reject_count": 3,
+    "review_rate": 0.5,
+    "cover_precision": 1.0,
+    "ndcg_at_6": 0.6517097104630154,
+    "error_count": 4,
+    "restaurants_with_at_least_3_covers": 0,
+    "latency_p50_ms": 11613,
+    "latency_p95_ms": 11613,
+    "estimated_cost_usd": 0.0073386,
+    "cost_complete": false
+  },
+  "dataset_sha256": "134932bdd7d888cc60b0c4986da208ce7ccf5187ea859b0454073b5a0f7fb099",
+  "label_status": "provisional_agent_annotation_requires_independent_human_review",
+  "runs": [
+    "3d936a1e37174e839fb3422569608839",
+    "866dbb6d30ff4f5c97bfbc5a308a0c5e"
+  ]
+}

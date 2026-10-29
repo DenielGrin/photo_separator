@@ -37,7 +37,7 @@ function render(){
 }
 $('run').onclick=async()=>{try{
  setBusy(true);$('status').textContent='Загрузка и оценка… Обычно до нескольких минут. Дождитесь завершения перед повторным запуском.';
- const p=presets[$('preset').value];const config={provider:p.provider,model:$('model').value.trim(),input_price:price('price-in'),output_price:price('price-out')};if($('key').value)config.api_key=$('key').value;
+ const p=presets[$('preset').value];const config={provider:p.provider,model:$('model').value.trim(),json_mode:p.json_mode??'object',input_price:price('price-in'),output_price:price('price-out')};if($('key').value)config.api_key=$('key').value;
  const urls=$('urls').value.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
  current=await api('/api/select',{restaurant_id:$('restaurant').value.trim(),urls,config,policy:{min_score:Number($('score').value),min_confidence:Number($('confidence').value),people_policy:$('people').value}});
  cover=null;history.push(current);render();$('status').textContent='Оценка завершена. Проверьте причины и спорные фото.';

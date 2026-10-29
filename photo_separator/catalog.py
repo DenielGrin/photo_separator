@@ -7,7 +7,7 @@ import httpx
 CATALOG_URL = "https://openrouter.ai/api/v1/models"
 
 
-def free_vision_models(payload: dict) -> list[dict]:
+def free_vision_models(payload: dict, require_json: bool = True) -> list[dict]:
     results = []
     for model in payload.get("data", []):
         if not isinstance(model, dict):
@@ -18,8 +18,8 @@ def free_vision_models(payload: dict) -> list[dict]:
             continue
         if "image" not in architecture.get("input_modalities", []):
             continue
-        # This workbench requires JSON object output. Skip unsupported endpoints explicitly.
-        if "response_format" not in (model.get("supported_parameters") or []):
+        # Default UI requires JSON mode; the full CLI can validate prompt-only JSON.
+        if require_json and "response_format" not in (model.get("supported_parameters") or []):
             continue
         pricing = model.get("pricing") or {}
         try:
@@ -39,14 +39,17 @@ def free_vision_models(payload: dict) -> list[dict]:
                 "output_price": 0,
                 "context_length": model.get("context_length"),
                 "catalog_verified_free": True,
+                "json_mode": "object"
+                if "response_format" in (model.get("supported_parameters") or [])
+                else "prompt",
             }
         )
     return sorted(results, key=lambda item: item["model"])
 
 
-async def discover_free_vision():
+async def discover_free_vision(require_json: bool = True):
     async with httpx.AsyncClient(timeout=20, trust_env=False, follow_redirects=False) as client:
         response = await client.get(CATALOG_URL)
         response.raise_for_status()
         payload = response.json()
-    return free_vision_models(payload)
+    return free_vision_models(payload, require_json=require_json)

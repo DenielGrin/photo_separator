@@ -1,0 +1,32 @@
+{
+  "runtime": {},
+  "preset": "gpt-luna",
+  "model": "gpt-6-luna",
+  "metrics": {
+    "photos": 20,
+    "decision_accuracy": 0.8,
+    "good_labels": 8,
+    "bad_labels": 8,
+    "accepted": 6,
+    "accept_precision": 0.8333333333333334,
+    "accept_precision_wilson95_lower": 0.4364905634363539,
+    "false_accept_count": 1,
+    "good_recall": 0.625,
+    "false_reject_count": 2,
+    "review_rate": 0.2,
+    "cover_precision": 0.8333333333333334,
+    "ndcg_at_6": 0.7337181816970173,
+    "error_count": 0,
+    "restaurants_with_at_least_3_covers": 1,
+    "latency_p50_ms": 55736,
+    "latency_p95_ms": 55736,
+    "estimated_cost_usd": 0.0050702,
+    "cost_complete": true
+  },
+  "dataset_sha256": "134932bdd7d888cc60b0c4986da208ce7ccf5187ea859b0454073b5a0f7fb099",
+  "label_status": "provisional_agent_annotation_requires_independent_human_review",
+  "runs": [
+    "d48e7c2a491f4c28a1bf191e45f2fac6",
+    "679f060aa951406e8d19bbc58cffd32a"
+  ]
+}
