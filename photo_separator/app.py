@@ -1,5 +1,6 @@
 import asyncio
 import os
+import re
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -20,6 +21,8 @@ ROOT = Path(__file__).resolve().parent.parent
 @asynccontextmanager
 async def lifespan(app):
     app.state.store = Store(os.environ.get("PHOTO_DB", str(ROOT / "data/workbench.sqlite3")))
+    app.state.previews = Path(app.state.store.path).parent / "previews"
+    app.state.previews.mkdir(parents=True, exist_ok=True)
     yield
 
 
@@ -40,7 +43,7 @@ async def local_guard(request: Request, call_next):
     response.headers["Referrer-Policy"] = "no-referrer"
     response.headers["Cache-Control"] = "no-store"
     response.headers["Content-Security-Policy"] = (
-        "default-src 'self'; img-src 'self' https: http: data:; style-src 'self'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'"
+        "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'"
     )
     return response
 
@@ -76,7 +79,7 @@ async def health():
 @app.post("/api/select")
 async def select_photos(body: SelectionRequest, request: Request):
     try:
-        run = await select(body)
+        run = await select(body, preview_dir=request.app.state.previews)
         await asyncio.to_thread(request.app.state.store.save_run, run)
         return run
     except ProviderError as exc:
@@ -116,6 +119,16 @@ async def mutate(request, restaurant, revision, **kwargs):
         raise HTTPException(409, str(exc)) from None
     except ValueError as exc:
         raise HTTPException(400, str(exc)) from None
+
+
+@app.get("/api/previews/{digest}")
+async def preview(digest: str, request: Request):
+    if not re.fullmatch(r"[a-f0-9]{64}", digest):
+        raise HTTPException(404, "Preview not found")
+    path = request.app.state.previews / (digest + ".jpg")
+    if not path.is_file():
+        raise HTTPException(404, "Preview not found")
+    return FileResponse(path, media_type="image/jpeg")
 
 
 @app.get("/api/examples")

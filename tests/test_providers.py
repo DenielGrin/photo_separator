@@ -42,7 +42,13 @@ def test_all_adapters_send_actual_image_and_extract_usage(provider):
                 "usage": {"input_tokens": 100, "output_tokens": 30},
             }
         elif provider == "ollama":
-            body = {"message": {"content": json.dumps(output)}, "prompt_eval_count": 100, "eval_count": 30}
+            body = {
+                "done": True,
+                "done_reason": "stop",
+                "message": {"content": json.dumps(output)},
+                "prompt_eval_count": 100,
+                "eval_count": 30,
+            }
         else:
             body = {
                 "choices": [{"finish_reason": "stop", "message": {"content": json.dumps(output)}}],

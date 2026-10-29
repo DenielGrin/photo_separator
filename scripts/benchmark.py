@@ -6,8 +6,11 @@ import asyncio
 import hashlib
 import json
 import math
+import os
 import sys
 from pathlib import Path
+
+import httpx
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from photo_separator import selection
@@ -113,6 +116,22 @@ async def main(args):
         config = ProviderConfig(
             **{k: preset[k] for k in ("provider", "model", "input_price", "output_price")}
         )
+        runtime = {}
+        if config.provider == "ollama":
+            try:
+                async with httpx.AsyncClient(timeout=10, trust_env=False) as client:
+                    base = os.environ.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434").rstrip("/")
+                    version = (await client.get(base + "/api/version")).json()
+                    tags = (await client.get(base + "/api/tags")).json()
+                runtime = {
+                    "ollama_version": version.get("version"),
+                    "model_digest": next(
+                        (m.get("digest") for m in tags.get("models", []) if m.get("name") == config.model),
+                        None,
+                    ),
+                }
+            except (httpx.HTTPError, ValueError):
+                runtime = {"version_lookup": "unavailable"}
         runs = []
         for restaurant in dataset:
             print(preset_id, restaurant["restaurant_id"], flush=True)
@@ -128,6 +147,7 @@ async def main(args):
                 json.dumps(run, ensure_ascii=False, indent=2)
             )
         report = {
+            "runtime": runtime,
             "preset": preset_id,
             "model": config.model,
             "metrics": metrics(dataset, runs),

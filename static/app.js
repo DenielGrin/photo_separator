@@ -14,7 +14,7 @@ function renderCards(){
  const cards=$('cards');cards.replaceChildren();if(!current)return;
  for(const row of current.results){if(filter!=='all'&&row.decision!==filter)continue;
   const chosen=(cover?.cover??current.cover).includes(row.url);const card=el('article',undefined,'card '+row.decision+(chosen?' selected':''));
-  const img=el('img');img.src=row.url;img.alt='Фото '+(row.index+1);img.loading='lazy';img.referrerPolicy='no-referrer';card.append(img);
+  const img=el('img');if(row.preview_url)img.src=row.preview_url;img.alt='Фото '+(row.index+1);img.loading='lazy';img.referrerPolicy='no-referrer';card.append(img);
   const content=el('div',undefined,'card-content');content.append(el('span',names[row.decision]+(cover?.pinned.includes(row.url)?' · закреплено вручную':chosen?' · обложка':''),'badge'));
   content.append(el('h3',`Фото ${row.index+1} · ${row.assessment?.category??'нет оценки'} · ${row.score??'—'}/100`));
   content.append(el('p',row.assessment?.reason??row.error??row.reason_code));

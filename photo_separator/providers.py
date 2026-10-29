@@ -160,6 +160,8 @@ class ProviderResult:
 
 def parse_assessment(text: str) -> Assessment:
     # Accept an optional code fence, never salvage partial JSON or silently fill missing fields.
+    if not isinstance(text, str):
+        raise ProviderError("Model returned non-text assessment; manual review required")
     cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())
     try:
         return Assessment.model_validate_json(cleaned)
@@ -247,7 +249,7 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
         headers = {"x-api-key": key, "anthropic-version": "2023-06-01", "Content-Type": "application/json"}
         payload = {
             "model": config.model,
-            "max_tokens": 1800,
+            "max_tokens": 4096,
             "messages": [
                 {
                     "role": "user",
@@ -295,10 +297,12 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
             raise ProviderError(f"Provider HTTP {response.status_code}; check model access, quota and key")
         data = response.json()
         if config.provider == "ollama":
+            if data.get("done") is not True or data.get("done_reason", "stop") != "stop":
+                raise ProviderError("Ollama response incomplete; review required")
             content = data["message"]["content"]
             usage = {
-                "input_tokens": data.get("prompt_eval_count", 0),
-                "output_tokens": data.get("eval_count", 0),
+                "input_tokens": data.get("prompt_eval_count"),
+                "output_tokens": data.get("eval_count"),
             }
         elif config.provider == "openai":
             if data.get("status") != "completed":
@@ -309,10 +313,10 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
                 for part in item.get("content", [])
                 if part.get("type") == "output_text"
             )
-            usage = data.get("usage", {})
+            usage = data.get("usage") or {}
         elif config.provider == "anthropic":
             content = "".join(p.get("text", "") for p in data.get("content", []) if p.get("type") == "text")
-            usage = data.get("usage", {})
+            usage = data.get("usage") or {}
             if data.get("stop_reason") != "end_turn":
                 raise ProviderError("Provider response incomplete; review required")
         else:
@@ -320,10 +324,10 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
             if choice.get("finish_reason") != "stop":
                 raise ProviderError("Provider response incomplete; review required")
             content = choice["message"]["content"]
-            raw = data.get("usage", {})
+            raw = data.get("usage") or {}
             usage = {
-                "input_tokens": raw.get("prompt_tokens", 0),
-                "output_tokens": raw.get("completion_tokens", 0),
+                "input_tokens": raw.get("prompt_tokens"),
+                "output_tokens": raw.get("completion_tokens"),
                 "raw": raw,
             }
         # Keep only billing counters; no arbitrary provider metadata is persisted.
@@ -333,7 +337,7 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
             if k in {"input_tokens", "output_tokens"} and isinstance(v, int) and v >= 0
         }
         return ProviderResult(parse_assessment(content), usage, data.get("model", config.model))
-    except (httpx.HTTPError, KeyError, TypeError, json.JSONDecodeError):
+    except (httpx.HTTPError, KeyError, TypeError, AttributeError, json.JSONDecodeError):
         raise ProviderError(
             "Provider unavailable or returned an unsupported response; review required"
         ) from None

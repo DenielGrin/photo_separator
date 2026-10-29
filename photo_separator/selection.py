@@ -1,6 +1,7 @@
 import asyncio
 import time
 from datetime import UTC, datetime
+from pathlib import Path
 from uuid import uuid4
 
 import httpx
@@ -53,7 +54,7 @@ def choose_covers(results, policy):
     return [r["url"] for r in selected]
 
 
-async def select(request: SelectionRequest, loader=download):
+async def select(request: SelectionRequest, loader=download, preview_dir: Path | None = None):
     credential(request.config)  # configuration failures are detected before downloading any photo
     started = time.monotonic()
     semaphore = asyncio.Semaphore(2)
@@ -76,6 +77,9 @@ async def select(request: SelectionRequest, loader=download):
             async with WORK_SLOTS:
                 image = await asyncio.to_thread(lambda u=url: prepare(loader(u)))
             row["metrics"] = image.metrics()
+            if preview_dir is not None:
+                await asyncio.to_thread((preview_dir / (image.digest + ".jpg")).write_bytes, image.jpeg)
+                row["preview_url"] = "/api/previews/" + image.digest
             exact = next((j for j, im in prepared.items() if im.digest == image.digest), None)
             if exact is not None:
                 row.update(decision="reject", reason_code="exact_duplicate", duplicate_of=exact)
