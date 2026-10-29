@@ -34,3 +34,21 @@ def test_key_missing_before_any_download(tmp_path, monkeypatch):
             },
         )
         assert r.status_code == 400 and "missing" in r.json()["detail"]
+
+
+def test_remote_catalog_failure_does_not_break_saved_runs(tmp_path, monkeypatch):
+    import httpx
+
+    from photo_separator import app as app_module
+
+    monkeypatch.setenv("PHOTO_DB", str(tmp_path / "test.db"))
+
+    async def fail():
+        raise httpx.ConnectError("secret upstream diagnostics")
+
+    monkeypatch.setattr(app_module, "discover_free_vision", fail)
+    with TestClient(app) as client:
+        assert client.get("/api/providers").json()["presets"][0]["provider"] == "openrouter"
+        r = client.get("/api/remote-models")
+        assert r.status_code == 503 and "secret upstream diagnostics" not in r.text
+        assert client.get("/api/health").json()["status"] == "ok"

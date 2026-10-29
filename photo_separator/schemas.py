@@ -21,11 +21,19 @@ class Assessment(StrictModel):
 
 
 class ProviderConfig(StrictModel):
-    provider: Literal["ollama", "openai", "deepseek", "gemini", "anthropic", "compatible", "technical"] = (
-        "ollama"
-    )
+    provider: Literal[
+        "ollama",
+        "openai",
+        "deepseek",
+        "gemini",
+        "anthropic",
+        "openrouter",
+        "huggingface",
+        "compatible",
+        "technical",
+    ] = "openrouter"
     model: str = Field(
-        default="qwen3-vl:8b-instruct", min_length=1, max_length=150, pattern=r"^[a-zA-Z0-9_./:\-]+$"
+        default="google/gemma-4-31b-it:free", min_length=1, max_length=150, pattern=r"^[a-zA-Z0-9_./:\-]+$"
     )
     api_key: SecretStr | None = None
     # Endpoint is operator controlled through server environment, never through an untrusted request.

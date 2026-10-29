@@ -1,0 +1,53 @@
+{
+  "source": "https://openrouter.ai/api/v1/models",
+  "checked_at": "2026-10-29T12:53:08.878980+00:00",
+  "inference_tested": false,
+  "filters": [
+    "image input",
+    "response_format",
+    "explicit :free variant",
+    "zero known token/image/request pricing"
+  ],
+  "presets": [
+    {
+      "id": "or-live-dots-studio/dots-3-note-preview:free",
+      "provider": "openrouter",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "label": "Облако · OpenRouter free · Dots Studio: Dots3-Note Preview (free)",
+      "input_price": 0,
+      "output_price": 0,
+      "context_length": 512000,
+      "catalog_verified_free": true
+    },
+    {
+      "id": "or-live-google/gemma-4-26b-a4b-it:free",
+      "provider": "openrouter",
+      "model": "google/gemma-4-26b-a4b-it:free",
+      "label": "Облако · OpenRouter free · Google: Gemma 4 26B A4B  (free)",
+      "input_price": 0,
+      "output_price": 0,
+      "context_length": 262144,
+      "catalog_verified_free": true
+    },
+    {
+      "id": "or-live-google/gemma-4-31b-it:free",
+      "provider": "openrouter",
+      "model": "google/gemma-4-31b-it:free",
+      "label": "Облако · OpenRouter free · Google: Gemma 4 31B (free)",
+      "input_price": 0,
+      "output_price": 0,
+      "context_length": 262144,
+      "catalog_verified_free": true
+    },
+    {
+      "id": "or-live-nvidia/nemotron-3.5-super-vl:free",
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "label": "Облако · OpenRouter free · NVIDIA: Nemotron 3.5 Super VL (free)",
+      "input_price": 0,
+      "output_price": 0,
+      "context_length": 1000000,
+      "catalog_verified_free": true
+    }
+  ]
+}

@@ -53,3 +53,9 @@ $('example').onchange=()=>{const x=examples[$('example').value];if(x){$('restaur
  const runId=new URLSearchParams(window.location.search).get('run');
  if(runId){current=await api('/api/runs/'+encodeURIComponent(runId));history.push(current);$('restaurant').value=current.restaurant_id;$('urls').value=current.results.map(r=>r.url).join('\n');const i=presets.findIndex(p=>p.provider===current.provider&&p.model===current.model);if(i>=0){$('preset').value=i;presetChanged();}const state=await api('/api/restaurants/'+encodeURIComponent(current.restaurant_id)+'/cover');cover=state.revision?state:null;render();}
  }catch(e){error(e);}})();
+
+$('refresh-models').onclick=async()=>{const button=$('refresh-models');button.disabled=true;try{
+ const data=await api('/api/remote-models');let added=0;
+ for(const p of data.presets){if(!presets.some(x=>x.provider===p.provider&&x.model===p.model)){const i=presets.length;presets.push(p);const o=el('option',p.label);o.value=i;$('preset').append(o);added++;}}
+ $('catalog-status').textContent=`Каталог проверен ${data.checked_at}: найдено ${data.presets.length} бесплатных vision-моделей с JSON; добавлено ${added}. Нужны ключ и квота. Доступность и качество не проверены inference-запросом.`;
+ }catch(e){$('catalog-status').textContent=e.message;}finally{button.disabled=false;}};

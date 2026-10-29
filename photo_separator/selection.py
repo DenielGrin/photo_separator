@@ -134,6 +134,7 @@ async def select(request: SelectionRequest, loader=download, preview_dir: Path |
                         reason_code=reason,
                         usage=output.usage,
                         resolved_model=output.resolved_model,
+                        serving_provider=output.serving_provider,
                         cost_estimate_usd=cost_estimate(request.config, output.usage),
                     )
                 except ProviderError as exc:

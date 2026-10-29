@@ -22,7 +22,10 @@ def test_invalid_model_json_fails_closed():
             parse_assessment(value)
 
 
-@pytest.mark.parametrize("provider", ["openai", "deepseek", "gemini", "anthropic", "ollama", "compatible"])
+@pytest.mark.parametrize(
+    "provider",
+    ["openai", "deepseek", "gemini", "anthropic", "ollama", "compatible", "openrouter", "huggingface"],
+)
 def test_all_adapters_send_actual_image_and_extract_usage(provider):
     output = assessment().model_dump()
     seen = {}
@@ -105,3 +108,41 @@ def test_unknown_cost_is_unknown_not_zero():
         )
         == 0.0015
     )
+
+
+@pytest.mark.parametrize(
+    "provider,host,env_key",
+    [
+        ("openrouter", "openrouter.ai", "OPENROUTER_API_KEY"),
+        ("huggingface", "router.huggingface.co", "HF_TOKEN"),
+    ],
+)
+def test_remote_provider_uses_fixed_host_env_key_and_no_paid_fallback(provider, host, env_key, monkeypatch):
+    monkeypatch.setenv(env_key, "test-only-secret")
+
+    def handler(request):
+        assert request.url.host == host
+        assert request.headers["authorization"] == "Bearer test-only-secret"
+        payload = json.loads(request.content)
+        assert "models" not in payload
+        assert "localhost" not in str(request.url)
+        if provider == "openrouter":
+            assert payload["provider"]["require_parameters"] is True
+        return httpx.Response(
+            200,
+            json={
+                "model": "resolved-model",
+                "provider": "hosted-provider",
+                "choices": [
+                    {"finish_reason": "stop", "message": {"content": json.dumps(assessment().model_dump())}}
+                ],
+                "usage": {"prompt_tokens": 100, "completion_tokens": 30},
+            },
+        )
+
+    async def run():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            return await assess(ProviderConfig(provider=provider), prepare(png()), client)
+
+    result = asyncio.run(run())
+    assert result.resolved_model == "resolved-model" and result.serving_provider == "hosted-provider"

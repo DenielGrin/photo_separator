@@ -1,14 +1,24 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-# A temporary runtime from the initial experiment may be preserved under ignored data/ollama.
-# No models are downloaded by this script.
+# Default: CPU-only web/API workbench; model inference is performed by cloud providers.
+# No models are downloaded. Local inference is an explicit optional mode.
+local_models=false
+case "${1:-}" in
+  "") ;;
+  --with-local-models) local_models=true ;;
+  *) echo "Usage: $0 [--with-local-models]" >&2; exit 2 ;;
+esac
 ollama_pid=""
 cleanup() {
   if [ -n "$ollama_pid" ]; then kill "$ollama_pid" 2>/dev/null || true; fi
 }
 trap cleanup EXIT INT TERM
-if [ -x data/ollama/ollama ]; then
+if [ "$local_models" = true ]; then
+  if [ ! -x data/ollama/ollama ]; then
+    echo "Bundled Ollama not found. Configure your own OLLAMA_BASE_URL, or use cloud inference." >&2
+    exit 1
+  fi
   export OLLAMA_HOST=127.0.0.1:11435
   export OLLAMA_MODELS="$PWD/data/ollama/models"
   export OLLAMA_NO_CLOUD=1

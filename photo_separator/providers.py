@@ -35,6 +35,38 @@ category,quality,appeal,relevance,confidence,people,text_dominant,severe_defect,
 
 PRESETS = [
     {
+        "id": "or-gemma4",
+        "provider": "openrouter",
+        "model": "google/gemma-4-31b-it:free",
+        "label": "Облако · Gemma 4 31B · OpenRouter free",
+        "input_price": 0,
+        "output_price": 0,
+    },
+    {
+        "id": "or-gemma4-moe",
+        "provider": "openrouter",
+        "model": "google/gemma-4-26b-a4b-it:free",
+        "label": "Облако · Gemma 4 26B A4B · OpenRouter free",
+        "input_price": 0,
+        "output_price": 0,
+    },
+    {
+        "id": "or-nemotron",
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "label": "Облако · Nemotron 3.5 Super VL · OpenRouter free",
+        "input_price": 0,
+        "output_price": 0,
+    },
+    {
+        "id": "hf-deepseek",
+        "provider": "huggingface",
+        "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017:baseten",
+        "label": "Облако · Hugging Face Providers · стартовые кредиты / paid",
+        "input_price": None,
+        "output_price": None,
+    },
+    {
         "id": "qwen2",
         "provider": "ollama",
         "model": "qwen3-vl:2b-instruct",
@@ -190,6 +222,7 @@ class ProviderResult:
     assessment: Assessment
     usage: dict
     resolved_model: str
+    serving_provider: str | None = None
 
 
 def parse_assessment(text: str) -> Assessment:
@@ -205,6 +238,8 @@ def parse_assessment(text: str) -> Assessment:
 
 def credential(config: ProviderConfig):
     env = {
+        "openrouter": "OPENROUTER_API_KEY",
+        "huggingface": "HF_TOKEN",
         "openai": "OPENAI_API_KEY",
         "gemini": "GEMINI_API_KEY",
         "deepseek": "DEEPSEEK_API_KEY",
@@ -303,6 +338,8 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
         }
     else:
         bases = {
+            "openrouter": "https://openrouter.ai/api/v1",
+            "huggingface": "https://router.huggingface.co/v1",
             "gemini": "https://generativelanguage.googleapis.com/v1beta/openai",
             "deepseek": "https://api.deepseek.com",
             "compatible": os.environ.get("COMPATIBLE_BASE_URL", "http://127.0.0.1:8001/v1"),
@@ -322,6 +359,9 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
                 }
             ],
         }
+        if config.provider == "openrouter":
+            # A single explicit model. Never add paid fallback models to a free request.
+            payload["provider"] = {"require_parameters": True}
         if config.provider == "deepseek":
             payload["thinking"] = {"type": "disabled"}
     try:
@@ -370,7 +410,13 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
             for k, v in usage.items()
             if k in {"input_tokens", "output_tokens"} and isinstance(v, int) and v >= 0
         }
-        return ProviderResult(parse_assessment(content), usage, data.get("model", config.model))
+        serving_provider = data.get("provider")
+        return ProviderResult(
+            parse_assessment(content),
+            usage,
+            data.get("model", config.model),
+            serving_provider[:128] if isinstance(serving_provider, str) else None,
+        )
     except (httpx.HTTPError, KeyError, TypeError, AttributeError, json.JSONDecodeError):
         raise ProviderError(
             "Provider unavailable or returned an unsupported response; review required"

@@ -2,14 +2,17 @@ import asyncio
 import os
 import re
 from contextlib import asynccontextmanager
+from datetime import UTC, datetime
 from pathlib import Path
 
+import httpx
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
+from .catalog import CATALOG_URL, discover_free_vision
 from .providers import PRESETS, ProviderError
 from .schemas import ManualRequest, SaveRequest, SelectionRequest
 from .selection import select
@@ -68,6 +71,22 @@ async def providers():
         "presets": PRESETS,
         "prices_checked_at": "2026-10-29",
         "actual_model_quality_ranking": "not_measured",
+    }
+
+
+@app.get("/api/remote-models")
+async def remote_models():
+    try:
+        presets = await discover_free_vision()
+    except (httpx.HTTPError, ValueError, TypeError, AttributeError):
+        raise HTTPException(
+            503, "Remote catalog unavailable; existing presets and saved runs remain usable"
+        ) from None
+    return {
+        "source": CATALOG_URL,
+        "checked_at": datetime.now(UTC).isoformat(),
+        "presets": presets,
+        "note": "Public catalog metadata only. Inference requires your key, quota and an available endpoint; model quality is not measured.",
     }
 
 
