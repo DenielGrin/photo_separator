@@ -42,11 +42,16 @@ def main(free_dir=None):
             "deepseek-metrics.json",
         )
     ]
-    free_dir = Path(free_dir) if free_dir else ROOT / "results/free-cloud"
-    for path in sorted(free_dir.glob("*/metrics.json")):
-        report = json.loads(path.read_text())
-        if report["model"].endswith(":free"):
-            reports.append(report)
+    directories = (
+        [Path(free_dir)] if free_dir else [ROOT / "docs/benchmarks/free-cloud", ROOT / "results/free-cloud"]
+    )
+    free_reports = {}
+    for directory in directories:
+        for path in sorted(directory.glob("*/metrics.json")):
+            report = json.loads(path.read_text())
+            if report["model"].endswith(":free"):
+                free_reports[report["model"]] = report
+    reports.extend(free_reports.values())
     dataset_sha = hashlib.sha256((ROOT / "examples/labeled-pilot.json").read_bytes()).hexdigest()
     ordered, excluded = ranked(reports, dataset_sha)
     lines = [
@@ -68,11 +73,21 @@ def main(free_dir=None):
         lines.append(
             f"| {i} | `{report['model']}` — {host} | {m['cover_precision']:.1%} | {m['good_recall']:.1%} | {m['decision_accuracy']:.1%} | {m['false_accept_count']} | {m['restaurants_with_at_least_3_covers']}/2 | {cost} |"
         )
-    lines += ["", "**Вне рейтинга из-за неполного/ошибочного прогона:**"]
+    lines += ["", "**Вне рейтинга: ошибки или недостаточная полнота отбора:**"]
     for report in excluded:
         m = report["metrics"]
+        precision = (
+            f"{m['cover_precision']:.0%}"
+            if m["cover_precision"] is not None
+            else "не определена (нет обложек)"
+        )
+        cost = (
+            "$0 (free API)"
+            if report["model"].endswith(":free")
+            else f"≥${m['estimated_cost_usd']:.6f} (неполный)"
+        )
         lines.append(
-            f"- `{report['model']}`: {m['error_count']} ошибок на {m['photos']} фото; приняты {m['accepted']} фото, чистота {m['cover_precision']:.0%}, полнота {m['good_recall']:.1%}; ≥3 фото в {m['restaurants_with_at_least_3_covers']}/2 ресторанах; расход ≥${m['estimated_cost_usd']:.6f} (неполный)."
+            f"- `{report['model']}`: {m['error_count']} ошибок на {m['photos']} фото; приняты {m['accepted']} фото, чистота {precision}, полнота {m['good_recall']:.1%}; ≥3 фото в {m['restaurants_with_at_least_3_covers']}/2 ресторанах; расход {cost}."
         )
     block = "\n".join(lines)
     path = ROOT / "README.md"

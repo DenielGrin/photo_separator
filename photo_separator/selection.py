@@ -65,6 +65,7 @@ async def select(
     before_assess=None,
     on_assessed=None,
     concurrency=2,
+    reuse_failures=False,
 ):
     credential(request.config)  # configuration failures are detected before downloading any photo
     started = time.monotonic()
@@ -124,7 +125,10 @@ async def select(
             cached = (cached_results or {}).get(row["url"])
             if (
                 cached
-                and cached.get("assessment")
+                and (
+                    cached.get("assessment")
+                    or (reuse_failures and cached.get("reason_code") == "provider_error")
+                )
                 and cached.get("metrics", {}).get("digest") == image.digest
             ):
                 row.update(cached)
@@ -142,7 +146,12 @@ async def select(
                         return
                     if before_assess is not None:
                         before_assess()
-                    output = await assess(request.config, image, client)
+                    try:
+                        output = await asyncio.wait_for(assess(request.config, image, client), timeout=150)
+                    except TimeoutError:
+                        raise ProviderError(
+                            "Provider total timeout after 150 seconds; review required"
+                        ) from None
                     a = output.assessment
                     decision, score, reason = decide(a, row["metrics"], request.policy)
                     if decision == "keep" and "possible_duplicate_of" in row:

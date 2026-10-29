@@ -1,0 +1,96 @@
+{
+  "models": [
+    {
+      "model": "dots-studio/dots-3-note-preview:free",
+      "unique_photos_attempted": 20,
+      "valid_assessments": 17,
+      "attempts": 20,
+      "complete_report": true,
+      "errors": [
+        "Provider response incomplete; review required"
+      ],
+      "status": "Полный набор 20 фото; валидны 17/20; ошибки 3"
+    },
+    {
+      "model": "google/gemma-4-26b-a4b-it:free",
+      "unique_photos_attempted": 1,
+      "valid_assessments": 0,
+      "attempts": 2,
+      "complete_report": false,
+      "errors": [
+        "Provider HTTP 429; check model access, quota and key"
+      ],
+      "status": "Provider HTTP 429; check model access, quota and key"
+    },
+    {
+      "model": "google/gemma-4-31b-it:free",
+      "unique_photos_attempted": 1,
+      "valid_assessments": 0,
+      "attempts": 1,
+      "complete_report": false,
+      "errors": [
+        "Provider HTTP 429; check model access, quota and key"
+      ],
+      "status": "Provider HTTP 429; check model access, quota and key"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "unique_photos_attempted": 20,
+      "valid_assessments": 13,
+      "attempts": 21,
+      "complete_report": true,
+      "errors": [
+        "Model returned invalid assessment JSON; manual review required",
+        "Provider unavailable or returned an unsupported response; review required"
+      ],
+      "status": "Полный набор 20 фото; валидны 13/20; ошибки 7"
+    },
+    {
+      "model": "nvidia/nemotron-3.5-content-safety:free",
+      "unique_photos_attempted": 1,
+      "valid_assessments": 0,
+      "attempts": 2,
+      "complete_report": false,
+      "errors": [
+        "Model returned invalid assessment JSON; manual review required"
+      ],
+      "status": "Model returned invalid assessment JSON; manual review required"
+    },
+    {
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "unique_photos_attempted": 13,
+      "valid_assessments": 10,
+      "attempts": 13,
+      "complete_report": false,
+      "errors": [
+        "Provider response incomplete; review required"
+      ],
+      "status": "Частичный тест: валидны 10/13"
+    },
+    {
+      "model": "thinkingmachines/inkling-small:free",
+      "unique_photos_attempted": 1,
+      "valid_assessments": 0,
+      "attempts": 1,
+      "complete_report": false,
+      "errors": [
+        "Provider HTTP 403; check model access, quota and key"
+      ],
+      "status": "Provider HTTP 403; check model access, quota and key"
+    },
+    {
+      "model": "thinkingmachines/inkling:free",
+      "unique_photos_attempted": 1,
+      "valid_assessments": 0,
+      "attempts": 1,
+      "complete_report": false,
+      "errors": [
+        "Provider HTTP 403; check model access, quota and key"
+      ],
+      "status": "Provider HTTP 403; check model access, quota and key"
+    }
+  ],
+  "total_attempts": 61,
+  "full_reports": 2,
+  "label_status": "provisional_agent_annotation_requires_independent_human_review"
+}

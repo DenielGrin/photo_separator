@@ -35,6 +35,23 @@ category,quality,appeal,relevance,confidence,people,text_dominant,severe_defect,
 
 PRESETS = [
     {
+        "id": "or-dots",
+        "provider": "openrouter",
+        "model": "dots-studio/dots-3-note-preview:free",
+        "label": "Облако · Dots 3 Note Preview · OpenRouter free",
+        "input_price": 0,
+        "output_price": 0,
+    },
+    {
+        "id": "or-nemotron-nano",
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "label": "Облако · Nemotron Nano Omni · OpenRouter free",
+        "input_price": 0,
+        "output_price": 0,
+        "json_mode": "prompt",
+    },
+    {
         "id": "or-gemma4",
         "provider": "openrouter",
         "model": "google/gemma-4-31b-it:free",
@@ -398,7 +415,13 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
         else:
             choice = data["choices"][0]
             if choice.get("finish_reason") != "stop":
-                raise ProviderError("Provider response incomplete; review required")
+                reason = choice.get("finish_reason")
+                safe_reason = (
+                    reason
+                    if reason in {"length", "content_filter", "tool_calls", "function_call"}
+                    else "unknown"
+                )
+                raise ProviderError(f"Provider response incomplete ({safe_reason}); review required")
             content = choice["message"]["content"]
             raw = data.get("usage") or {}
             usage = {
@@ -419,7 +442,9 @@ async def assess(config: ProviderConfig, image: PreparedImage, client: httpx.Asy
             data.get("model", config.model),
             serving_provider[:128] if isinstance(serving_provider, str) else None,
         )
-    except (httpx.HTTPError, KeyError, TypeError, AttributeError, json.JSONDecodeError):
+    except httpx.HTTPError as exc:
+        raise ProviderError(f"Provider transport failure ({type(exc).__name__}); review required") from None
+    except (KeyError, TypeError, AttributeError, json.JSONDecodeError):
         raise ProviderError(
             "Provider unavailable or returned an unsupported response; review required"
         ) from None

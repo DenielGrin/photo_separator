@@ -1,0 +1,8 @@
+{
+  "free_model_daily_requests": {
+    "used": 48,
+    "limit": 50,
+    "remaining": 2
+  },
+  "usage_daily_usd": 0
+}

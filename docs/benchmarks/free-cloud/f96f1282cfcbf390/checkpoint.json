@@ -1,0 +1,403 @@
+{
+  "signature": "7599b353ed751841d9de272ec4f70c09ad1307a811213ca2d0290dfa8ccf36d5",
+  "attempts": 13,
+  "rows": {
+    "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg": {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg",
+      "decision": "review",
+      "score": 86.25,
+      "assessment": {
+        "category": "food",
+        "quality": 85.0,
+        "appeal": 85.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На переднем плане четко запечатлены блюда: тосты с авокадо, яйцами пашот и запеченными томатами. Фото хорошо освещено и резкое. На заднем плане размыто виден человек. Маленький графический стикер в углу не делает фото текст-доминирующим."
+      },
+      "usage": {
+        "input_tokens": 1586,
+        "output_tokens": 869
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 11039,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "13dc35675dbcb31096533fe05a485adb09d59c7cf64bd61be1c77ef20c5a01dd",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 123.35,
+        "edge_variance": 2250.34
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg": {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg",
+      "decision": "keep",
+      "score": 89.5,
+      "assessment": {
+        "category": "food",
+        "quality": 90.0,
+        "appeal": 85.0,
+        "relevance": 95.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На фото два блюда (панкейки с фруктами и яйца Бенедикт) и два бокала с желтым напитком на деревянном столе у кирпичной стены. Фокус резкий, цвета яркие, еда подается аккуратно. В углу есть мультяшный стикер, но это не фотография человека."
+      },
+      "usage": {
+        "input_tokens": 1586,
+        "output_tokens": 929
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 14674,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "fe663c68728174b42fcf8a6c6e1847dfad3426fe93149cac06f98a52c0482fd7",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 116.53,
+        "edge_variance": 2859.59
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg": {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg",
+      "decision": "keep",
+      "score": 86.25,
+      "assessment": {
+        "category": "drink",
+        "quality": 85.0,
+        "appeal": 85.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Основной объект — чашка кофе с рисунком молочной пенки в виде сердца на белой тарелке с ложкой. На чашке видна надпись 'Cremat'. В правом нижнем углу расположена мультяшная наклейка. Фотография четкая, хорошо освещенная, подходит для обложки заведения."
+      },
+      "usage": {
+        "input_tokens": 1154,
+        "output_tokens": 1238
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 25944,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "8f80658468099f71774dfc9d12731f04debe9a16d07356d4c18b17b20d2a6d75",
+        "width": 750,
+        "height": 1000,
+        "brightness": 129.7,
+        "edge_variance": 1160.3
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg": {
+      "index": 3,
+      "url": "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 69602,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "5b919be5143d4fc9708ccb1c6328dfc04e1de3e02eb62d07fc472e7c934dcbf0",
+        "width": 1200,
+        "height": 801,
+        "brightness": 83.16,
+        "edge_variance": 4445.48
+      },
+      "error": "Provider response incomplete; review required"
+    },
+    "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg": {
+      "index": 4,
+      "url": "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 88965,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "c498b2cc7974c4a36ec15be20d992f360c42e01cfd1182e805791c2378991a7f",
+        "width": 1260,
+        "height": 1680,
+        "brightness": 115.32,
+        "edge_variance": 3798.31
+      },
+      "error": "Provider response incomplete; review required"
+    },
+    "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg": {
+      "index": 5,
+      "url": "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 108681,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "d6ec96cf375c630704561c6e32fb681fd0aa61877cecca6a031e2cb4466e42a5",
+        "width": 1121,
+        "height": 1680,
+        "brightness": 113.79,
+        "edge_variance": 1064.49
+      },
+      "error": "Provider response incomplete; review required"
+    },
+    "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg": {
+      "index": 6,
+      "url": "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg",
+      "decision": "reject",
+      "score": 67.0,
+      "assessment": {
+        "category": "people",
+        "quality": 75.0,
+        "appeal": 70.0,
+        "relevance": 50.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На фоне заведения за пультом DJ стоит женщина, виден мультяшный стикер."
+      },
+      "usage": {
+        "input_tokens": 1115,
+        "output_tokens": 1386
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 198504,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "3527d0603ef20de801d179bb3eb3808dd407ddfc7ed227ee1725eefd499a04f8",
+        "width": 836,
+        "height": 836,
+        "brightness": 84.36,
+        "edge_variance": 1660.87
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg": {
+      "index": 7,
+      "url": "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg",
+      "decision": "reject",
+      "score": 62.0,
+      "assessment": {
+        "category": "other",
+        "quality": 90.0,
+        "appeal": 60.0,
+        "relevance": 20.0,
+        "confidence": 1.0,
+        "people": "none",
+        "text_dominant": true,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фото представляет собой текстовый промо-пост о розыгрыше («CHRISTMAS GIVEAWAY») на розовом фоне с мультяшным персонажем, без изображения заведения, блюд или реальных людей."
+      },
+      "usage": {
+        "input_tokens": 1226,
+        "output_tokens": 1113
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 209308,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "9c900f2a468e498994b2024f84ab673cbedf00702de65c96773abd37a2b45c17",
+        "width": 883,
+        "height": 960,
+        "brightness": 212.71,
+        "edge_variance": 3623.37
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg": {
+      "index": 8,
+      "url": "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg",
+      "decision": "reject",
+      "score": 72.75,
+      "assessment": {
+        "category": "people",
+        "quality": 85.0,
+        "appeal": 75.0,
+        "relevance": 50.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": true,
+        "unsafe": false,
+        "reason": "На фото три человека prominently стоят в’entrée ресторана «Créme II». Снимок резкий и хорошо освещен, но большой мультяшный стикер с дверью «OPEN» в правом нижнем углу значительно перекрывает кадр, что является существенным недостатком для обложки."
+      },
+      "usage": {
+        "input_tokens": 1286,
+        "output_tokens": 1385
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 14039,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "feaf7dc9a8075599b873c74b53c8d6113c78e60226bd6abcd3f530a5c1289b47",
+        "width": 959,
+        "height": 960,
+        "brightness": 111.82,
+        "edge_variance": 4865.18
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg": {
+      "index": 9,
+      "url": "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg",
+      "decision": "review",
+      "score": 76.25,
+      "assessment": {
+        "category": "drink",
+        "quality": 75.0,
+        "appeal": 75.0,
+        "relevance": 80.0,
+        "confidence": 0.9,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На переднем плане чашка кофе на блюдце с ложкой и пакетиком сахара; на заднем плане размытые посетители кафе, освещение теплое."
+      },
+      "usage": {
+        "input_tokens": 1586,
+        "output_tokens": 1074
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 48206,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "6b5e78a8667daf91ddbff498169a53a2e49fd4ffedc178916724a0c52bf94327",
+        "width": 1080,
+        "height": 1440,
+        "brightness": 118.15,
+        "edge_variance": 976.92
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg": {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+      "decision": "keep",
+      "score": 86.25,
+      "assessment": {
+        "category": "food",
+        "quality": 85.0,
+        "appeal": 85.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На фото видно блюдо: куски жареного мяса на лепёшке с кольцами лука, зеленью и специями. Освещение равномерное, кадров резкость достаточная для оценки еды. В левом нижнем углу находится мультяшный стикер-маскат, который не делает изображение текст-доминирующим. Фото подходит для обложки ресторана."
+      },
+      "usage": {
+        "input_tokens": 1178,
+        "output_tokens": 924
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 14026,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "162ee6a5cc04e66a004a5ef7b8d53969086d9b9a0e3e5e95b295fffd82866c52",
+        "width": 1125,
+        "height": 685,
+        "brightness": 175.72,
+        "edge_variance": 2165.42
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg": {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+      "decision": "keep",
+      "score": 75.5,
+      "assessment": {
+        "category": "food",
+        "quality": 70.0,
+        "appeal": 75.0,
+        "relevance": 85.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Виден крупный план тестовых изделий (хинкали или вареники) на белой тарелке с соусом по краю. В правом нижнем углу расположена cartoon-наклейка шеф-повара, которая частично перекрывает нижнее вареник, но основной объект пищи остается четко различимым. Фокус средней резкости, освещение ровное."
+      },
+      "usage": {
+        "input_tokens": 1586,
+        "output_tokens": 1323
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 17218,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "cdf35e2c2d554731a12bb6bf8aa6f95fe0aa7f5808bb206fb3c69ffb96188496",
+        "width": 960,
+        "height": 1280,
+        "brightness": 134.18,
+        "edge_variance": 982.71
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    },
+    "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg": {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+      "decision": "keep",
+      "score": 87.5,
+      "assessment": {
+        "category": "food",
+        "quality": 85.0,
+        "appeal": 85.0,
+        "relevance": 95.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На снимке большая общая тарелка с различными блюдами: мясо на углях, запеченные брюссельские капусты, баклажаны, перец и центральный салат. В правом нижнем углу расположен мультяшный стикер, а не реальный человек. Качество изображения высокое, подходит для обложки ресторана."
+      },
+      "usage": {
+        "input_tokens": 786,
+        "output_tokens": 867
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 25994,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "54fb42861ad6ffeb573956b45cd0df3a30000f5cde419aa3361a4c3b65ed3a93",
+        "width": 640,
+        "height": 640,
+        "brightness": 102.96,
+        "edge_variance": 3370.65
+      },
+      "resolved_model": "nvidia/nemotron-3.5-super-vl:free",
+      "serving_provider": "Nvidia"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "json_mode": "prompt",
+  "dataset_sha256": "134932bdd7d888cc60b0c4986da208ce7ccf5187ea859b0454073b5a0f7fb099",
+  "prompt_version": "restaurant-cover-v1",
+  "label_status": "provisional_agent_annotation_requires_independent_human_review",
+  "metrics": {
+    "photos": 20,
+    "decision_accuracy": 0.55,
+    "good_labels": 8,
+    "bad_labels": 8,
+    "accepted": 6,
+    "accept_precision": 1.0,
+    "accept_precision_wilson95_lower": 0.6096569663469354,
+    "false_accept_count": 0,
+    "good_recall": 0.75,
+    "false_reject_count": 0,
+    "review_rate": 0.55,
+    "cover_precision": 1.0,
+    "ndcg_at_6": 0.8431609880816415,
+    "error_count": 7,
+    "restaurants_with_at_least_3_covers": 2,
+    "latency_p50_ms": 47163,
+    "latency_p95_ms": 47163,
+    "estimated_cost_usd": 0.0,
+    "cost_complete": false
+  },
+  "latency_comparable": false
+}

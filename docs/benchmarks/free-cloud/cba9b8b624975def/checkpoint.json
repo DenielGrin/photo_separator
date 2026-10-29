@@ -1,0 +1,25 @@
+{
+  "signature": "c5d89af784acc702e138fc1137a9d51d881a521c01f6d3ce125d76ccd8132c3f",
+  "attempts": 1,
+  "rows": {
+    "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg": {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 1275,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "13dc35675dbcb31096533fe05a485adb09d59c7cf64bd61be1c77ef20c5a01dd",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 123.35,
+        "edge_variance": 2250.34
+      },
+      "error": "Provider HTTP 403; check model access, quota and key"
+    }
+  }
+}

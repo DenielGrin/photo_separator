@@ -146,3 +146,16 @@ def test_remote_provider_uses_fixed_host_env_key_and_no_paid_fallback(provider, 
 
     result = asyncio.run(run())
     assert result.resolved_model == "resolved-model" and result.serving_provider == "hosted-provider"
+
+
+def test_transport_diagnostic_keeps_exception_class_without_secret():
+    def handler(request):
+        raise httpx.ReadError("secret-from-remote-payload")
+
+    async def run():
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            await assess(ProviderConfig(provider="openrouter", api_key="test-only"), prepare(png()), client)
+
+    with pytest.raises(ProviderError) as error:
+        asyncio.run(run())
+    assert "ReadError" in str(error.value) and "secret-from-remote" not in str(error.value)

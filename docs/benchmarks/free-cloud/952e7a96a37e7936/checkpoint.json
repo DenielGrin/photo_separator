@@ -1,0 +1,641 @@
+{
+  "signature": "465384d0e142aa3caf64b76f003caf664c28018997fe345b09b714dbbc091117",
+  "attempts": 20,
+  "rows": {
+    "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg": {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg",
+      "decision": "review",
+      "score": 89.7,
+      "assessment": {
+        "category": "food",
+        "quality": 88.0,
+        "appeal": 90.0,
+        "relevance": 92.0,
+        "confidence": 0.95,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Красивый крупный план блюда авокадо-тост с яйцом пашот и запеченными томатами в фокусе, яркая цветовая гамма и чистая, appetizingная подача. На заднем плане размытый силуэт посетителя, создавая атмосферу, но не отвлекая от главного блюда."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1455
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 21697,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "13dc35675dbcb31096533fe05a485adb09d59c7cf64bd61be1c77ef20c5a01dd",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 123.35,
+        "edge_variance": 2250.34
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg": {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg",
+      "decision": "keep",
+      "score": 91.95,
+      "assessment": {
+        "category": "food",
+        "quality": 90.0,
+        "appeal": 92.0,
+        "relevance": 95.0,
+        "confidence": 0.98,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Красивая и апетитная подача бренча: на переднем плане яркие панкейки с ягодами и тропическим соусом, на заднем плане бенедикт и свежие апельсиновые соки. Высокая резкость, насыщенные цвета и appetizing presentation делают фото идеальным для обложки заведения."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1328
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 23323,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "fe663c68728174b42fcf8a6c6e1847dfad3426fe93149cac06f98a52c0482fd7",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 116.53,
+        "edge_variance": 2859.59
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg": {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg",
+      "decision": "keep",
+      "score": 89.55,
+      "assessment": {
+        "category": "drink",
+        "quality": 92.0,
+        "appeal": 90.0,
+        "relevance": 85.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Изображение представляет собой крупный план чашки кофе с аккуратным латт-артом в виде сердца на белом блюдце. Фотография четкая, с хорошей экспозицией и чистой презентацией, что делает её очень подходящей для обложки кофейни. В углу присутствует только cartoon-персонаж, не являющийся реальным человеком."
+      },
+      "usage": {
+        "input_tokens": 1338,
+        "output_tokens": 1168
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 38477,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "8f80658468099f71774dfc9d12731f04debe9a16d07356d4c18b17b20d2a6d75",
+        "width": 750,
+        "height": 1000,
+        "brightness": 129.7,
+        "edge_variance": 1160.3
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg": {
+      "index": 3,
+      "url": "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg",
+      "decision": "review",
+      "score": 91.15,
+      "assessment": {
+        "category": "interior",
+        "quality": 88.0,
+        "appeal": 92.0,
+        "relevance": 95.0,
+        "confidence": 0.95,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Красивый атмосферный interior бара с стильными розовыми стулами и богатой коллекцией бутылок на полках. теплое освещение и четкая проработка деталей делают его отличным кандидатом для обложки, несмотря на крупный мультяшный персонажа внизу справа."
+      },
+      "usage": {
+        "input_tokens": 1613,
+        "output_tokens": 1778
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 66554,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "5b919be5143d4fc9708ccb1c6328dfc04e1de3e02eb62d07fc472e7c934dcbf0",
+        "width": 1200,
+        "height": 801,
+        "brightness": 83.16,
+        "edge_variance": 4445.48
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg": {
+      "index": 4,
+      "url": "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 95805,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "c498b2cc7974c4a36ec15be20d992f360c42e01cfd1182e805791c2378991a7f",
+        "width": 1260,
+        "height": 1680,
+        "brightness": 115.32,
+        "edge_variance": 3798.31
+      },
+      "error": "Provider response incomplete; review required"
+    },
+    "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg": {
+      "index": 5,
+      "url": "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg",
+      "decision": "review",
+      "score": 89.7,
+      "assessment": {
+        "category": "drink",
+        "quality": 88.0,
+        "appeal": 90.0,
+        "relevance": 92.0,
+        "confidence": 0.95,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план коктейля в изящном бокале с зеленым ломтиком на фоне размытого розового неона и теплого интерьера. Отличная подача, яркая цветовая гамма и атмосферное освещение делают изображение очень привлекательным для обложки барного меню."
+      },
+      "usage": {
+        "input_tokens": 1642,
+        "output_tokens": 1537
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 122697,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "d6ec96cf375c630704561c6e32fb681fd0aa61877cecca6a031e2cb4466e42a5",
+        "width": 1121,
+        "height": 1680,
+        "brightness": 113.79,
+        "edge_variance": 1064.49
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg": {
+      "index": 6,
+      "url": "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg",
+      "decision": "reject",
+      "score": 73.7,
+      "assessment": {
+        "category": "people",
+        "quality": 78.0,
+        "appeal": 75.0,
+        "relevance": 65.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Главный объект — женщина-диджей, улыбающаяся и работающая с пультом. На заднем плане видны размытые прохожие. Снимок сделан в вечернем освещении, цвета насыщенные, но есть лёгкая засветка и движение руки. Наличие мультипликационного персонажа в углу — стандартная атрибуция платформы, не является тяжелым дефектом."
+      },
+      "usage": {
+        "input_tokens": 1266,
+        "output_tokens": 1562
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 159036,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "3527d0603ef20de801d179bb3eb3808dd407ddfc7ed227ee1725eefd499a04f8",
+        "width": 836,
+        "height": 836,
+        "brightness": 84.36,
+        "edge_variance": 1660.87
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg": {
+      "index": 7,
+      "url": "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg",
+      "decision": "reject",
+      "score": 73.75,
+      "assessment": {
+        "category": "other",
+        "quality": 90.0,
+        "appeal": 65.0,
+        "relevance": 60.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": true,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Графический афиша с преобладающим текстом оChristmas розыгрыше, украшенная новогодними иллюстрациями и мультяшным персонажем. Реальных людей на изображении нет, только декоративные элементы."
+      },
+      "usage": {
+        "input_tokens": 1454,
+        "output_tokens": 1649
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 185064,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "9c900f2a468e498994b2024f84ab673cbedf00702de65c96773abd37a2b45c17",
+        "width": 883,
+        "height": 960,
+        "brightness": 212.71,
+        "edge_variance": 3623.37
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg": {
+      "index": 8,
+      "url": "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg",
+      "decision": "reject",
+      "score": 84.45,
+      "assessment": {
+        "category": "people",
+        "quality": 88.0,
+        "appeal": 80.0,
+        "relevance": 85.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фотография представляет собой групповой портрет трёх мужчин, позирующих у входа в ресторан Cremat 11, что делает главной темой людей. Изображение четкое, с хорошей цветопередачей и живой атмосферой, идеально подходящее для знакомства с командой. Наличие мультяшного стикера в углу незначительно нарушает чистоту кадра, но не портит общее впечатление."
+      },
+      "usage": {
+        "input_tokens": 1522,
+        "output_tokens": 1463
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 209411,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "feaf7dc9a8075599b873c74b53c8d6113c78e60226bd6abcd3f530a5c1289b47",
+        "width": 959,
+        "height": 960,
+        "brightness": 111.82,
+        "edge_variance": 4865.18
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg": {
+      "index": 9,
+      "url": "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg",
+      "decision": "review",
+      "score": 80.05,
+      "assessment": {
+        "category": "drink",
+        "quality": 85.0,
+        "appeal": 78.0,
+        "relevance": 75.0,
+        "confidence": 0.9,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Главный объект — чашка кофе на столе в интерьере кофени, фон с посетителями мягко размыт. Фотография четкая, с теплым освещением, но в углу есть крупный мультяшный стикер с надписью Welcome."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1484
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 232247,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "6b5e78a8667daf91ddbff498169a53a2e49fd4ffedc178916724a0c52bf94327",
+        "width": 1080,
+        "height": 1440,
+        "brightness": 118.15,
+        "edge_variance": 976.92
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg": {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+      "decision": "keep",
+      "score": 90.1,
+      "assessment": {
+        "category": "food",
+        "quality": 92.0,
+        "appeal": 88.0,
+        "relevance": 90.0,
+        "confidence": 0.98,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На изображении представлен жаркий шашлык, поданный на тонком лаваше с нарезанным луком и специями на белой тарелке. Фотография четкая, хорошо освещена, цвета насыщенные, подача аккуратная и appetitная, что делает её релевантной для обложки меню. Реальных людей на фото нет, в углу присутствует только небольшой мультипликационный логотип."
+      },
+      "usage": {
+        "input_tokens": 1326,
+        "output_tokens": 1273
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 19853,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "162ee6a5cc04e66a004a5ef7b8d53969086d9b9a0e3e5e95b295fffd82866c52",
+        "width": 1125,
+        "height": 685,
+        "brightness": 175.72,
+        "edge_variance": 2165.42
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg": {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+      "decision": "keep",
+      "score": 75.2,
+      "assessment": {
+        "category": "food",
+        "quality": 78.0,
+        "appeal": 65.0,
+        "relevance": 85.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план пельменей (хинкали) на тарелке, четкая детализация текстуры теста. Нет реальных людей, присутствует только небольшой мультяшный логотип в углу. Изображение чистое, без тяжелых дефектов, подходит для представления блюда на обложке."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1710
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 48317,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "cdf35e2c2d554731a12bb6bf8aa6f95fe0aa7f5808bb206fb3c69ffb96188496",
+        "width": 960,
+        "height": 1280,
+        "brightness": 134.18,
+        "edge_variance": 982.71
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg": {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+      "decision": "keep",
+      "score": 86.1,
+      "assessment": {
+        "category": "food",
+        "quality": 82.0,
+        "appeal": 88.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план богатого блюда из мяса гриля, запеченных и свежих овощей, украшенного зернами граната и декоративными цветами. Подача яркая и appetizing, без признаков порчи или грязной посуды, что делает фото подходящим для обложки гриль-ресторана. Реальных людей на фото отсутствует, в углу виден только мультиплейный мультяшный персонаж."
+      },
+      "usage": {
+        "input_tokens": 895,
+        "output_tokens": 1360
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 68691,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "54fb42861ad6ffeb573956b45cd0df3a30000f5cde419aa3361a4c3b65ed3a93",
+        "width": 640,
+        "height": 640,
+        "brightness": 102.96,
+        "edge_variance": 3370.65
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg": {
+      "index": 3,
+      "url": "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg",
+      "decision": "keep",
+      "score": 86.25,
+      "assessment": {
+        "category": "interior",
+        "quality": 85.0,
+        "appeal": 85.0,
+        "relevance": 90.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Качественный снимокinterьера restaurant с деревянными бревенчатыми стенами, сервированными столами, бокалами и сложенными салфетками в теплом свете ламп. На переднем плане четко видна столешница с приборами, нет реальных людей, только графический логотип в углу."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1506
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 93749,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "a1c3ed4d952bd21ff14689f8fa9578de05ea1ce81d4f79ef63d27f7d73549627",
+        "width": 1280,
+        "height": 960,
+        "brightness": 114.2,
+        "edge_variance": 2826.4
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg": {
+      "index": 4,
+      "url": "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 134461,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "cb2764b611aa8fda2d86321430e5d66d7f4c36cd7e27f272c159947b2367b607",
+        "width": 800,
+        "height": 533,
+        "brightness": 90.87,
+        "edge_variance": 3996.43
+      },
+      "error": "Provider response incomplete; review required"
+    },
+    "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg": {
+      "index": 5,
+      "url": "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg",
+      "decision": "review",
+      "score": 23.5,
+      "assessment": {
+        "category": "other",
+        "quality": 35.0,
+        "appeal": 20.0,
+        "relevance": 10.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Изображение демонстрирует черную овцу в деревянном стойле при туском освещении. Фотография имеет низкое качество, слабую экспозицию и высокий уровень шума в темных областях. Присутствует мультяшный персонаж в углу, но реальных людей нет. Релевантность для обложки ресторана минимальна, так как съемка выполнена в загоне для животных."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1675
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 162328,
+      "reason_code": "uncertain_assessment",
+      "metrics": {
+        "digest": "f18fa6bd69290472ff580b704b60d33551c7441784f34cd2a04d9ffd7065e4bf",
+        "width": 1680,
+        "height": 1260,
+        "brightness": 92.76,
+        "edge_variance": 798.04
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg": {
+      "index": 6,
+      "url": "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 191757,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "44bc02eca04e3b6198e47e59f270a3fa2db6bc8e3c8af0a282527a646d0355e0",
+        "width": 1280,
+        "height": 960,
+        "brightness": 124.46,
+        "edge_variance": 3436.59
+      },
+      "error": "Provider response incomplete; review required"
+    },
+    "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg": {
+      "index": 7,
+      "url": "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg",
+      "decision": "reject",
+      "score": 64.75,
+      "assessment": {
+        "category": "people",
+        "quality": 80.0,
+        "appeal": 65.0,
+        "relevance": 40.0,
+        "confidence": 0.95,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план мужчины, жующего кусок пищи, на фоне яркого боке из гирлянд. Лицо человека занимает основную часть кадра, делая главной темой людей, а не блюдом. Фото четкое и яркое, но носит скорее личный характер, чем профессиональный вид для обложки."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1538
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 218018,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "47a62767dd43ef30ad40d48d3e964fbec43567714b19be22b362335d5c7374e7",
+        "width": 960,
+        "height": 1280,
+        "brightness": 111.91,
+        "edge_variance": 699.5
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg": {
+      "index": 8,
+      "url": "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg",
+      "decision": "reject",
+      "score": 51.0,
+      "assessment": {
+        "category": "exterior",
+        "quality": 55.0,
+        "appeal": 40.0,
+        "relevance": 60.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "На изображении представлен вид на улице с парковкой и входом в ресторан «Райский сад» под густой зеленью деревьев. Качество фото среднее, небо пересвечено, но текст вывески и детали окружения читаемы. Присутствует крупный мультяшный персонаж в углу, являющийся стандартной маркировкой платформы, реальных людей на фото нет."
+      },
+      "usage": {
+        "input_tokens": 1562,
+        "output_tokens": 1508
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 245156,
+      "reason_code": "below_quality_threshold",
+      "metrics": {
+        "digest": "180b56c7cad5fb91c64a1606c7c622838944462ceaff489c29ef45ca0f89d81f",
+        "width": 1280,
+        "height": 720,
+        "brightness": 154.21,
+        "edge_variance": 2159.16
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg": {
+      "index": 9,
+      "url": "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg",
+      "decision": "reject",
+      "score": 30.25,
+      "assessment": {
+        "category": "people",
+        "quality": 40.0,
+        "appeal": 30.0,
+        "relevance": 15.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план селфи двух людей в солнечных очках, доминирующих в кадре. Низкое разрешение, заметная засветка и размытость, отсутствуют явные элементы интерьера или блюд, присутствует только деревянный потолок и небольшой логотип с маскотом в углу. Низкая релевантность для обложки restaurant listing."
+      },
+      "usage": {
+        "input_tokens": 860,
+        "output_tokens": 1411
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 265215,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "b25485f600b29cef0e14464b1a26f4b94b25f3fe04ec7ec55be97e98bdbccf54",
+        "width": 720,
+        "height": 540,
+        "brightness": 95.67,
+        "edge_variance": 1057.18
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    }
+  }
+}

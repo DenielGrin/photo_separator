@@ -6,7 +6,9 @@
     "qwen3-vl:8b-instruct"
   ],
   "excluded": [
-    "deepseek-flash"
+    "deepseek-flash",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "dots-studio/dots-3-note-preview:free"
   ],
   "sort": [
     "cover_precision desc",

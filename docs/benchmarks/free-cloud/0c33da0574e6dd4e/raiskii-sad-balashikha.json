@@ -1,0 +1,304 @@
+{
+  "input_signature": "166bc4c700d5e8800a34c60898eb15330e31585f8417a4e9403ce757513da572",
+  "run_id": "0a2084668200416481d7be6a954419d5",
+  "created_at": "2026-10-29T13:42:29.336353+00:00",
+  "restaurant_id": "raiskii-sad-balashikha",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "prompt_version": "restaurant-cover-v1",
+  "json_mode": "prompt",
+  "policy": {
+    "min_score": 75,
+    "min_confidence": 0.85,
+    "max_covers": 6,
+    "people_policy": "review_background",
+    "min_short_side": 480,
+    "diversity": true
+  },
+  "results": [
+    {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+      "decision": "keep",
+      "score": 88.75,
+      "assessment": {
+        "category": "food",
+        "quality": 90.0,
+        "appeal": 90.0,
+        "relevance": 85.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Ясно видно аппетитное блюдо, без текста и людей, качество и презентация высоки."
+      },
+      "usage": {
+        "input_tokens": 1179,
+        "output_tokens": 1132
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 22858,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "162ee6a5cc04e66a004a5ef7b8d53969086d9b9a0e3e5e95b295fffd82866c52",
+        "width": 1125,
+        "height": 685,
+        "brightness": 175.72,
+        "edge_variance": 2165.42
+      },
+      "resolved_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "serving_provider": "Nvidia",
+      "cache_hit": true
+    },
+    {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg",
+      "decision": "keep",
+      "score": 82.1,
+      "assessment": {
+        "category": "food",
+        "quality": 82.0,
+        "appeal": 78.0,
+        "relevance": 88.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фотография делает акцент на блюдо, хорошо освещено, без явных дефектов, но не содержит людей или текста, что подходит для ресторанного меню."
+      },
+      "usage": {
+        "input_tokens": 1587,
+        "output_tokens": 629
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 37669,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "cdf35e2c2d554731a12bb6bf8aa6f95fe0aa7f5808bb206fb3c69ffb96188496",
+        "width": 960,
+        "height": 1280,
+        "brightness": 134.18,
+        "edge_variance": 982.71
+      },
+      "resolved_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "serving_provider": "Nvidia",
+      "cache_hit": true
+    },
+    {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+      "decision": "keep",
+      "score": 86.75,
+      "assessment": {
+        "category": "food",
+        "quality": 85.0,
+        "appeal": 90.0,
+        "relevance": 85.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фото ясно показывает разнообразное блюдо с мясом, салатом и овощами, без текста и людей, качественно съемка, подходит для ресторанного меню."
+      },
+      "usage": {
+        "input_tokens": 787,
+        "output_tokens": 420
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 46634,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "54fb42861ad6ffeb573956b45cd0df3a30000f5cde419aa3361a4c3b65ed3a93",
+        "width": 640,
+        "height": 640,
+        "brightness": 102.96,
+        "edge_variance": 3370.65
+      },
+      "resolved_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "serving_provider": "Nvidia",
+      "cache_hit": true
+    },
+    {
+      "index": 3,
+      "url": "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 47710,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "a1c3ed4d952bd21ff14689f8fa9578de05ea1ce81d4f79ef63d27f7d73549627",
+        "width": 1280,
+        "height": 960,
+        "brightness": 114.2,
+        "edge_variance": 2826.4
+      },
+      "error": "Provider unavailable or returned an unsupported response; review required",
+      "cache_hit": true
+    },
+    {
+      "index": 4,
+      "url": "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg",
+      "decision": "reject",
+      "score": 80.25,
+      "assessment": {
+        "category": "people",
+        "quality": 85.0,
+        "appeal": 75.0,
+        "relevance": 80.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Яркая сцена с открытой площадкой, множество гостей, хорошее освещение и качество"
+      },
+      "usage": {
+        "input_tokens": 812,
+        "output_tokens": 521
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 61626,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "cb2764b611aa8fda2d86321430e5d66d7f4c36cd7e27f272c159947b2367b607",
+        "width": 800,
+        "height": 533,
+        "brightness": 90.87,
+        "edge_variance": 3996.43
+      },
+      "resolved_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "serving_provider": "Nvidia",
+      "cache_hit": true
+    },
+    {
+      "index": 5,
+      "url": "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 62419,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "f18fa6bd69290472ff580b704b60d33551c7441784f34cd2a04d9ffd7065e4bf",
+        "width": 1680,
+        "height": 1260,
+        "brightness": 92.76,
+        "edge_variance": 798.04
+      },
+      "error": "Provider unavailable or returned an unsupported response; review required",
+      "cache_hit": true
+    },
+    {
+      "index": 6,
+      "url": "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 39693,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "44bc02eca04e3b6198e47e59f270a3fa2db6bc8e3c8af0a282527a646d0355e0",
+        "width": 1280,
+        "height": 960,
+        "brightness": 124.46,
+        "edge_variance": 3436.59
+      },
+      "error": "Model returned invalid assessment JSON; manual review required"
+    },
+    {
+      "index": 7,
+      "url": "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 40781,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "47a62767dd43ef30ad40d48d3e964fbec43567714b19be22b362335d5c7374e7",
+        "width": 960,
+        "height": 1280,
+        "brightness": 111.91,
+        "edge_variance": 699.5
+      },
+      "error": "Provider unavailable or returned an unsupported response; review required"
+    },
+    {
+      "index": 8,
+      "url": "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 43977,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "180b56c7cad5fb91c64a1606c7c622838944462ceaff489c29ef45ca0f89d81f",
+        "width": 1280,
+        "height": 720,
+        "brightness": 154.21,
+        "edge_variance": 2159.16
+      },
+      "error": "Provider unavailable or returned an unsupported response; review required"
+    },
+    {
+      "index": 9,
+      "url": "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 46992,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "b25485f600b29cef0e14464b1a26f4b94b25f3fe04ec7ec55be97e98bdbccf54",
+        "width": 720,
+        "height": 540,
+        "brightness": 95.67,
+        "edge_variance": 1057.18
+      },
+      "error": "Provider unavailable or returned an unsupported response; review required"
+    }
+  ],
+  "cover": [
+    "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+    "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+    "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg"
+  ],
+  "forward_urls": [
+    "https://img05.restaurantguru.com/rfd9-food-Rayskiy-sad-2026-05.jpg",
+    "https://img05.restaurantguru.com/r480-Rayskiy-Sad-photo-2023-01.jpg",
+    "https://img05.restaurantguru.com/r1eb-Rayskiy-sad-dumplings-2026-05.jpg"
+  ],
+  "rejected_urls": [
+    "https://img05.restaurantguru.com/r14e-image-Rayskiy-sad-2021-08-14098.jpg"
+  ],
+  "review_urls": [
+    "https://img05.restaurantguru.com/r07e-Rayskiy-sad-beverage-2024-09.jpg",
+    "https://img05.restaurantguru.com/r495-Rayskiy-Sad-photo-2022-09.jpg",
+    "https://img05.restaurantguru.com/rb58-design-Rayskiy-sad-2025-08-1.jpg",
+    "https://img05.restaurantguru.com/r68f-dishes-Rayskiy-sad-2024-09.jpg",
+    "https://img05.restaurantguru.com/r457-image-Rayskiy-Sad-2022-09-2.jpg",
+    "https://img05.restaurantguru.com/r282-Rayskiy-Sad-image-2022-09-1.jpg"
+  ],
+  "shortfall": 0,
+  "latency_ms": 47163,
+  "estimated_cost_usd": 0.0,
+  "cost_complete": false,
+  "billing_note": "Estimate from reported tokens and configured rates; excludes unknown failed-call charges, caching discounts, infrastructure and taxes.",
+  "semantic_model_used": true,
+  "resumed": true
+}

@@ -1,0 +1,373 @@
+{
+  "input_signature": "a92f511c30fa94230daf96199ccb54c937d3128b1a517eb09f35fb41ead94379",
+  "run_id": "420f2d7b43f64a8fb827a3072356bc43",
+  "created_at": "2026-10-29T13:28:26.039683+00:00",
+  "restaurant_id": "cremat-11-barcelona",
+  "provider": "openrouter",
+  "model": "dots-studio/dots-3-note-preview:free",
+  "prompt_version": "restaurant-cover-v1",
+  "json_mode": "object",
+  "policy": {
+    "min_score": 75,
+    "min_confidence": 0.85,
+    "max_covers": 6,
+    "people_policy": "review_background",
+    "min_short_side": 480,
+    "diversity": true
+  },
+  "results": [
+    {
+      "index": 0,
+      "url": "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg",
+      "decision": "review",
+      "score": 89.7,
+      "assessment": {
+        "category": "food",
+        "quality": 88.0,
+        "appeal": 90.0,
+        "relevance": 92.0,
+        "confidence": 0.95,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Красивый крупный план блюда авокадо-тост с яйцом пашот и запеченными томатами в фокусе, яркая цветовая гамма и чистая, appetizingная подача. На заднем плане размытый силуэт посетителя, создавая атмосферу, но не отвлекая от главного блюда."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1455
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 21697,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "13dc35675dbcb31096533fe05a485adb09d59c7cf64bd61be1c77ef20c5a01dd",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 123.35,
+        "edge_variance": 2250.34
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud",
+      "cache_hit": true
+    },
+    {
+      "index": 1,
+      "url": "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg",
+      "decision": "keep",
+      "score": 91.95,
+      "assessment": {
+        "category": "food",
+        "quality": 90.0,
+        "appeal": 92.0,
+        "relevance": 95.0,
+        "confidence": 0.98,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Красивая и апетитная подача бренча: на переднем плане яркие панкейки с ягодами и тропическим соусом, на заднем плане бенедикт и свежие апельсиновые соки. Высокая резкость, насыщенные цвета и appetizing presentation делают фото идеальным для обложки заведения."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1328
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 23323,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "fe663c68728174b42fcf8a6c6e1847dfad3426fe93149cac06f98a52c0482fd7",
+        "width": 1200,
+        "height": 1600,
+        "brightness": 116.53,
+        "edge_variance": 2859.59
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    {
+      "index": 2,
+      "url": "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg",
+      "decision": "keep",
+      "score": 89.55,
+      "assessment": {
+        "category": "drink",
+        "quality": 92.0,
+        "appeal": 90.0,
+        "relevance": 85.0,
+        "confidence": 0.95,
+        "people": "none",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Изображение представляет собой крупный план чашки кофе с аккуратным латт-артом в виде сердца на белом блюдце. Фотография четкая, с хорошей экспозицией и чистой презентацией, что делает её очень подходящей для обложки кофейни. В углу присутствует только cartoon-персонаж, не являющийся реальным человеком."
+      },
+      "usage": {
+        "input_tokens": 1338,
+        "output_tokens": 1168
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 38477,
+      "reason_code": "cover_candidate",
+      "metrics": {
+        "digest": "8f80658468099f71774dfc9d12731f04debe9a16d07356d4c18b17b20d2a6d75",
+        "width": 750,
+        "height": 1000,
+        "brightness": 129.7,
+        "edge_variance": 1160.3
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    {
+      "index": 3,
+      "url": "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg",
+      "decision": "review",
+      "score": 91.15,
+      "assessment": {
+        "category": "interior",
+        "quality": 88.0,
+        "appeal": 92.0,
+        "relevance": 95.0,
+        "confidence": 0.95,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Красивый атмосферный interior бара с стильными розовыми стулами и богатой коллекцией бутылок на полках. теплое освещение и четкая проработка деталей делают его отличным кандидатом для обложки, несмотря на крупный мультяшный персонажа внизу справа."
+      },
+      "usage": {
+        "input_tokens": 1613,
+        "output_tokens": 1778
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 66554,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "5b919be5143d4fc9708ccb1c6328dfc04e1de3e02eb62d07fc472e7c934dcbf0",
+        "width": 1200,
+        "height": 801,
+        "brightness": 83.16,
+        "edge_variance": 4445.48
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    {
+      "index": 4,
+      "url": "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg",
+      "decision": "review",
+      "score": null,
+      "assessment": null,
+      "usage": {},
+      "cost_estimate_usd": null,
+      "latency_ms": 95805,
+      "reason_code": "provider_error",
+      "metrics": {
+        "digest": "c498b2cc7974c4a36ec15be20d992f360c42e01cfd1182e805791c2378991a7f",
+        "width": 1260,
+        "height": 1680,
+        "brightness": 115.32,
+        "edge_variance": 3798.31
+      },
+      "error": "Provider response incomplete; review required"
+    },
+    {
+      "index": 5,
+      "url": "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg",
+      "decision": "review",
+      "score": 89.7,
+      "assessment": {
+        "category": "drink",
+        "quality": 88.0,
+        "appeal": 90.0,
+        "relevance": 92.0,
+        "confidence": 0.95,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Крупный план коктейля в изящном бокале с зеленым ломтиком на фоне размытого розового неона и теплого интерьера. Отличная подача, яркая цветовая гамма и атмосферное освещение делают изображение очень привлекательным для обложки барного меню."
+      },
+      "usage": {
+        "input_tokens": 1642,
+        "output_tokens": 1537
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 122697,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "d6ec96cf375c630704561c6e32fb681fd0aa61877cecca6a031e2cb4466e42a5",
+        "width": 1121,
+        "height": 1680,
+        "brightness": 113.79,
+        "edge_variance": 1064.49
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    {
+      "index": 6,
+      "url": "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg",
+      "decision": "reject",
+      "score": 73.7,
+      "assessment": {
+        "category": "people",
+        "quality": 78.0,
+        "appeal": 75.0,
+        "relevance": 65.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Главный объект — женщина-диджей, улыбающаяся и работающая с пультом. На заднем плане видны размытые прохожие. Снимок сделан в вечернем освещении, цвета насыщенные, но есть лёгкая засветка и движение руки. Наличие мультипликационного персонажа в углу — стандартная атрибуция платформы, не является тяжелым дефектом."
+      },
+      "usage": {
+        "input_tokens": 1266,
+        "output_tokens": 1562
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 159036,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "3527d0603ef20de801d179bb3eb3808dd407ddfc7ed227ee1725eefd499a04f8",
+        "width": 836,
+        "height": 836,
+        "brightness": 84.36,
+        "edge_variance": 1660.87
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    {
+      "index": 7,
+      "url": "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg",
+      "decision": "reject",
+      "score": 73.75,
+      "assessment": {
+        "category": "other",
+        "quality": 90.0,
+        "appeal": 65.0,
+        "relevance": 60.0,
+        "confidence": 0.9,
+        "people": "none",
+        "text_dominant": true,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Графический афиша с преобладающим текстом оChristmas розыгрыше, украшенная новогодними иллюстрациями и мультяшным персонажем. Реальных людей на изображении нет, только декоративные элементы."
+      },
+      "usage": {
+        "input_tokens": 1454,
+        "output_tokens": 1649
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 185064,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "9c900f2a468e498994b2024f84ab673cbedf00702de65c96773abd37a2b45c17",
+        "width": 883,
+        "height": 960,
+        "brightness": 212.71,
+        "edge_variance": 3623.37
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    {
+      "index": 8,
+      "url": "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg",
+      "decision": "reject",
+      "score": 84.45,
+      "assessment": {
+        "category": "people",
+        "quality": 88.0,
+        "appeal": 80.0,
+        "relevance": 85.0,
+        "confidence": 0.9,
+        "people": "prominent",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Фотография представляет собой групповой портрет трёх мужчин, позирующих у входа в ресторан Cremat 11, что делает главной темой людей. Изображение четкое, с хорошей цветопередачей и живой атмосферой, идеально подходящее для знакомства с командой. Наличие мультяшного стикера в углу незначительно нарушает чистоту кадра, но не портит общее впечатление."
+      },
+      "usage": {
+        "input_tokens": 1522,
+        "output_tokens": 1463
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 209411,
+      "reason_code": "unsuitable_subject",
+      "metrics": {
+        "digest": "feaf7dc9a8075599b873c74b53c8d6113c78e60226bd6abcd3f530a5c1289b47",
+        "width": 959,
+        "height": 960,
+        "brightness": 111.82,
+        "edge_variance": 4865.18
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    },
+    {
+      "index": 9,
+      "url": "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg",
+      "decision": "review",
+      "score": 80.05,
+      "assessment": {
+        "category": "drink",
+        "quality": 85.0,
+        "appeal": 78.0,
+        "relevance": 75.0,
+        "confidence": 0.9,
+        "people": "background",
+        "text_dominant": false,
+        "severe_defect": false,
+        "unsafe": false,
+        "reason": "Главный объект — чашка кофе на столе в интерьере кофени, фон с посетителями мягко размыт. Фотография четкая, с теплым освещением, но в углу есть крупный мультяшный стикер с надписью Welcome."
+      },
+      "usage": {
+        "input_tokens": 1637,
+        "output_tokens": 1484
+      },
+      "cost_estimate_usd": 0.0,
+      "latency_ms": 232247,
+      "reason_code": "background_people",
+      "metrics": {
+        "digest": "6b5e78a8667daf91ddbff498169a53a2e49fd4ffedc178916724a0c52bf94327",
+        "width": 1080,
+        "height": 1440,
+        "brightness": 118.15,
+        "edge_variance": 976.92
+      },
+      "resolved_model": "dots-studio/dots-3-note-preview:free",
+      "serving_provider": "AtlasCloud"
+    }
+  ],
+  "cover": [
+    "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg",
+    "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg"
+  ],
+  "forward_urls": [
+    "https://img05.restaurantguru.com/r47c-meals-Cremat-11-2024-08.jpg",
+    "https://img05.restaurantguru.com/re2a-meals-Cremat-11-2024-11-8.jpg"
+  ],
+  "rejected_urls": [
+    "https://img05.restaurantguru.com/r5da-image-Cremat-11-2023-01-2.jpg",
+    "https://img05.restaurantguru.com/r9fa-Cremat-11-image-2023-01-1.jpg",
+    "https://img05.restaurantguru.com/r65d-Cremat-11-picture-2023-01-1.jpg"
+  ],
+  "review_urls": [
+    "https://img05.restaurantguru.com/r10c-food-Cremat-11-2024-08.jpg",
+    "https://img05.restaurantguru.com/r534-photo-Cremat-11-2022-10-1.jpg",
+    "https://img05.restaurantguru.com/rf6b-Cremat-11-picture-2022-10-2.jpg",
+    "https://img05.restaurantguru.com/r0f1-Cremat-11-image-2022-10-1.jpg",
+    "https://img05.restaurantguru.com/r468-Cremat-11-picture-2022-09-1.jpg"
+  ],
+  "shortfall": 1,
+  "latency_ms": 234664,
+  "estimated_cost_usd": 0.0,
+  "cost_complete": false,
+  "billing_note": "Estimate from reported tokens and configured rates; excludes unknown failed-call charges, caching discounts, infrastructure and taxes.",
+  "semantic_model_used": true,
+  "resumed": true
+}

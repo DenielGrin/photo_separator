@@ -119,7 +119,8 @@ async def main(args):
         if not preset:
             raise SystemExit("Unknown preset: " + preset_id)
         config = ProviderConfig(
-            **{k: preset[k] for k in ("provider", "model", "input_price", "output_price")}
+            **{k: preset[k] for k in ("provider", "model", "input_price", "output_price")},
+            json_mode=preset.get("json_mode", "object"),
         )
         runtime = {}
         if config.provider == "ollama":
