@@ -4,6 +4,7 @@
 import csv
 import html
 import json
+import statistics
 from pathlib import Path
 
 from photo_separator.campaign import write_json
@@ -83,6 +84,7 @@ def render(root):
                 "cover_count": sum(len(r["result"]["cover"]) for r in completed),
                 "usage_estimated_upper_usd": costs,
                 "calls": len(mc),
+                "median_call_seconds": round(statistics.median(c["seconds"] for c in mc), 1) if mc else None,
                 "quality_rank": None,
             }
         )
@@ -225,12 +227,13 @@ def render(root):
         for m in models
     )
     document += (
-        '</select><label><input type="checkbox" id="ready" checked> Только с галереей</label><a href="comparison.csv">CSV</a><a href="summary.json">Метрики</a><a href="analysis.json">ИИ-аудит</a><a href="manifest.json">Все источники</a><span class="hint">?/× — отметки ИИ-проверки</span></div></header><main><table><thead><tr><th>Ресторан</th><th>До · сейчас</th>'
+        '</select><label><input type="checkbox" id="ready" checked> Только с галереей</label><a href="#conclusions">Итог по моделям ↓</a><a href="comparison.csv">CSV</a><a href="summary.json">Метрики</a><a href="analysis.json">ИИ-аудит</a><a href="manifest.json">Все источники</a><span class="hint">?/× — отметки ИИ-проверки</span></div></header><main><table><thead><tr><th>Ресторан</th><th>До · сейчас</th>'
         + heads
         + "</tr></thead><tbody>"
         + "".join(rows)
         + "</tbody></table></main>"
     )
+    document += conclusions_table(summary, names)
     document += """<script>const filter=document.querySelector('#filter'),model=document.querySelector('#model'),ready=document.querySelector('#ready');function update(){document.body.classList.toggle('single',!['all','paid'].includes(model.value));document.body.classList.toggle('paired',model.value==='paid');document.body.classList.toggle('all-models',model.value==='all');document.querySelectorAll('[data-model]').forEach(e=>e.hidden=model.value==='paid'?!['gpt-6-luna','deepseek-flash'].includes(e.dataset.model):(model.value!=='all'&&e.dataset.model!==model.value));document.querySelectorAll('.restaurant').forEach(r=>r.hidden=!r.querySelector('.identity').textContent.toLowerCase().includes(filter.value.toLowerCase())||(ready.checked&&r.querySelector('.identity small').textContent.includes('0/0')))}filter.oninput=update;model.onchange=update;ready.onchange=update;update();</script></html>"""
     (root / "comparison.html").write_text(document)
     if csvrows:
@@ -245,6 +248,92 @@ def render(root):
                 for r in csvrows
             )
     return summary
+
+
+def conclusions_table(summary, names):
+    """Whole-study results remain visible when the restaurant table is filtered."""
+    esc = lambda value: html.escape(str(value), quote=True)  # noqa: E731
+    audit = summary.get("ai_audit", {})
+    judged = {r["model"]: r for r in audit.get("models", [])}
+    votes = audit.get("ai_preference_votes", {})
+    rows = []
+    for index, row in enumerate(summary["models"]):
+        model = row["model"]
+        judge = judged.get(model)
+        quality = (
+            f"{judge['keep']}/{judge['photos']} ({100 * judge['ai_keep_fraction']:.1f}%)"
+            if judge and judge.get("ai_keep_fraction") is not None
+            else "не измерено"
+        )
+        if model == "gpt-6-luna":
+            conclusion = "Основной кандидат; проверять спорные кадры"
+        elif model == "deepseek-flash":
+            conclusion = f"Быстрее; ошибок контракта: {row['failed_restaurants']}"
+        elif row["completed_restaurants"]:
+            conclusion = "Бесплатный пилот; малая выборка и ограничения квоты"
+        else:
+            conclusion = "Нет валидных результатов; качество не ранжируется"
+        rank = str(index + 1) if row["completed_restaurants"] else "—"
+        median = f"{row['median_call_seconds']:.1f}" if row.get("median_call_seconds") is not None else "—"
+        values = [
+            rank,
+            names[model],
+            f"{row['completed_restaurants']}/{row['calls']}",
+            row["not_run_restaurants"],
+            row["at_least_three"],
+            median,
+            f"${row['usage_estimated_upper_usd']:.6f}",
+            quality,
+            votes.get(model, "—"),
+            conclusion,
+        ]
+        rows.append("<tr>" + "".join("<td>" + esc(v) + "</td>" for v in values) + "</tr>")
+    recommendation = (
+        "GPT-6 Luna — основной облачный селектор; выбранные кадры проверять перед публикацией."
+        if summary.get("recommended_model")
+        else "Для этой выборки окончательная рекомендация пока не сформирована."
+    )
+    by_model = {row["model"]: row for row in summary["models"]}
+
+    def completed(model):
+        row = by_model.get(model, {})
+        return str(row.get("completed_restaurants", 0)) + "/" + str(row.get("calls", 0))
+
+    brief = (
+        "GPT завершил "
+        + completed("gpt-6-luna")
+        + ", DeepSeek — "
+        + completed("deepseek-flash")
+        + ". Бесплатный Nemotron Super VL: "
+        + completed("nvidia/nemotron-3.5-super-vl:free")
+        + "; доступный объём меньше."
+    )
+    audit_note = f"ИИ-аудит: {audit.get('completed_paired_restaurants', 0)} общих успешных отборов; предпочтений GPT — {votes.get('gpt-6-luna', 0)}, DeepSeek — {votes.get('deepseek-flash', 0)}, ничьих — {votes.get('tie', 0)}, без подходящего нового набора — {votes.get('none', 0)}. Это оценка ИИ, не независимая человеческая точность. Доли keep относятся к принятым кадрам парной выборки, а не ко всем входам."
+    heads = [
+        "Порядок",
+        "Модель",
+        "Валидно / запросов",
+        "Не запускалось",
+        "Ресторанов с ≥3 обложками",
+        "Медиана, с",
+        "Расход прогона, USD",
+        "Keep по ИИ-аудиту",
+        "Предпочтений ИИ-судьи",
+        "Вывод",
+    ]
+    return (
+        '<style>#conclusions{margin:24px 20px 40px;padding:24px;background:#fff;border:1px solid #d5dae1;border-radius:12px;scroll-margin-top:12px}#conclusions h2{margin:0 0 10px}#conclusions .matrix{overflow:auto}#conclusions table{min-width:1100px;table-layout:auto;margin-top:18px}#conclusions th{width:auto}#conclusions td{padding:12px}#conclusions .verdict{font-size:18px;font-weight:600}#conclusions code{overflow-wrap:anywhere}</style><section id="conclusions"><h2>Итоговый вывод и сравнение моделей</h2><p class="verdict">'
+        + esc(recommendation)
+        + "</p><p>"
+        + esc(brief)
+        + '</p><div class="matrix"><table><thead><tr>'
+        + "".join("<th>" + esc(h) + "</th>" for h in heads)
+        + "</tr></thead><tbody>"
+        + "".join(rows)
+        + '</tbody></table></div><p class="hint">'
+        + esc(audit_note)
+        + '</p><p class="hint">Стоимость — оценка по usage и верхним тарифам, без инфраструктуры и редактора. Бесплатные модели имеют меньший объём; незапущенные рестораны не считаются ошибками. Недоступные endpoints не ранжируются по визуальному качеству. Исходники фото открываются по ссылкам.</p></section>'
+    )
 
 
 if __name__ == "__main__":

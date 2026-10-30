@@ -292,6 +292,8 @@ uv run python -m scripts.real_cover_report results/rostov-cover-panel-50-2026-10
 
 Цена GPT по фактическому usage: **≈${gpt["usage_estimated_upper_usd"] / 50:.5f} за ресторан с пулом до 20 фото**, ориентир **≈${gpt["usage_estimated_upper_usd"] * 20:.2f} за 1000 таких ресторанов**. Для CPU-инфраструктуры ориентир CPX22+IPv4+backup **≈€23.89/мес до НДС**; модерация и верификация отдельно. Новые этапы исследования вместе ≈${total:.2f} по верхним тарифам, при лимите $5. Ключи использовались в памяти процессов и в файлы/Git не сохранялись.
 
+[Скачать автономный HTML с фотографиями и итоговой таблицей](reports/rostov-before-after.html). Файл открывается без сервера и API-ключа. Воспроизведение: `uv run python -m scripts.export_comparison --root results/rostov-cover-panel-50-2026-10-30 --output reports/rostov-before-after.html`.
+
 ### Сравнение от наиболее пригодной для стенда
 
 | Порядок | Модель | Валидные рестораны / запросы | ≥3 обложки | Медиана | Расход прогона | Keep по ИИ-аудиту |
