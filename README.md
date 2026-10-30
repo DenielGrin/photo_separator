@@ -1,6 +1,98 @@
 # Photo Separator — серверный отбор фотографий для ресторанных обложек
 
-> **Новое исследование, 30.10.2026:** сравнение реальных обложек 50–100 ресторанов Ростова-на-Дону вынесено в [ROSTOV_STUDY.ru.md](docs/ROSTOV_STUDY.ru.md). Пока получены 38 текущих обложек и одна галерея; сбор остальных ждёт ручной проверки доступа на сайте. Полное сравнение 50 ресторанов не завершено, победитель для Ростова не определён. Ниже сохранены результаты предыдущего пилота на двух ресторанах.
+<!-- rostov-v4:start -->
+## Завершённый тест Ростова · 30.10.2026
+
+**50 ресторанов · 150 кадров «До» · 996 фото галерей · 10 проверенных endpoints (8 бесплатных + GPT/DeepSeek).** [Открыть настоящую таблицу до/после](http://127.0.0.1:8879/comparison.html). На узком экране две колонки фотографий остаются рядом; есть переключение модели, парное сравнение GPT/DeepSeek, вся галерея и прямые ссылки на изображения.
+
+**Мой вывод: основной кандидат — GPT-6 Luna.** Валидные результаты 50/50, против 45/50 у DeepSeek. Слепой GPT-6 Sol предпочёл GPT в 30 из 45 общих ресторанов, DeepSeek в 12; ещё одна ничья и два «нет предпочтительного нового набора». Это оценка ИИ, не человеческая точность. У GPT судья оставил 20 кадров на review и отклонил два: автоматическая публикация без контроля пока не обоснована.
+
+Цена GPT по фактическому usage: **≈$0.00327 за ресторан с пулом до 20 фото**, ориентир **≈$3.27 за 1000 таких ресторанов**. Для CPU-инфраструктуры ориентир CPX22+IPv4+backup **≈€23.89/мес до НДС**; модерация и верификация отдельно. Новые этапы исследования вместе ≈$1.69 по верхним тарифам, при лимите $5. Ключи использовались в памяти процессов и в файлы/Git не сохранялись.
+
+### Сравнение от наиболее пригодной для стенда
+
+| Порядок | Модель | Валидные рестораны / запросы | ≥3 обложки | Медиана | Расход прогона | Keep по ИИ-аудиту |
+|---|---|---|---|---|---|---|
+| 1 | `gpt-6-luna` | 50/50 | 49 | 17.8 с | $0.163651 | 202/224 (90.2%) |
+| 2 | `deepseek-flash` | 45/50 | 36 | 7.4 с | $0.267938 | 150/172 (87.2%) |
+| 3 | `nvidia/nemotron-3.5-super-vl:free` | 4/5 | 4 | 50.0 с | $0.000000 | не оценено |
+| 4 | `dots-studio/dots-3-note-preview:free` | 1/5 | 1 | 103.1 с | $0.000000 | не оценено |
+| — | `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | 0/5 | 0 | 5.3 с | $0.000000 | не оценено |
+| — | `google/gemma-4-26b-a4b-it:free` | 0/1 | 0 | 2.3 с | $0.000000 | не оценено |
+| — | `google/gemma-4-31b-it:free` | 0/1 | 0 | 4.4 с | $0.000000 | не оценено |
+| — | `nvidia/nemotron-3.5-content-safety:free` | 0/1 | 0 | 2.7 с | $0.000000 | не оценено |
+| — | `thinkingmachines/inkling-small:free` | 0/1 | 0 | 2.4 с | $0.000000 | не оценено |
+| — | `thinkingmachines/inkling:free` | 0/1 | 0 | 6.3 с | $0.000000 | не оценено |
+
+Бесплатные модели имеют меньший объём из-за квот и доступа; 45/49 незапущенных ресторанов у них не считаются неудачами. После первых четырёх нет оснований ранжировать визуальное качество: endpoint не дал пригодного ответа. Самый рабочий бесплатный вариант этого прогона — **Nemotron Super VL**, но 4/5 недостаточно для production-гарантий.
+
+### Источники и подробности
+
+Исходный поиск: [Restaurant Guru / Rostov](https://search.restaurantguru.com/rostov?location=ci1758&unikey=beda55ea526fcb41). Фактическая выборка собрана из [страницы 1](https://restaurantguru.com/Rostov-on-Don), [2](https://restaurantguru.com/Rostov-on-Don/2), [3](https://restaurantguru.com/Rostov-on-Don/3). «До» — отдельные кадры реальной веб-карусели, реконструированные по DOM/CSS, а не весь составной JPEG. Нативные мобильные обложки отдельно не проверялись. Тестируется фиксированный пул до 20 фото на ресторан; в двух галереях наблюдаемы только префиксы метаданных. Полный скан всех галерей 50 ресторанов не заявляется.
+
+| Место | Ресторан / ссылка | ID | Метаданных фото | Входов теста |
+|---|---|---|---|---|
+| 1 | [Voobrajenie](https://restaurantguru.com/Voobrazhenie-Rostov-on-Don) | `129431563` | 20 | 20 |
+| 2 | [Cena Kachestva](https://restaurantguru.com/Tsekh-Etogo-Goroda-Rostov-on-Don) | `91344139` | 111 | 20 |
+| 3 | [Thai Keen](https://restaurantguru.com/Thai-Keen-Rostov-on-Don) | `129823852` | 29 | 20 |
+| 4 | [Starik Khinkalych](https://restaurantguru.com/Starik-Khinkalych-Rostov-on-Don) | `104270066` | 50 | 20 |
+| 5 | [Cena Kachestva](https://restaurantguru.com/Tseh-Etogo-Goroda-Rostov-on-Don) | `109486374` | 43 | 20 |
+| 6 | [Guru](https://restaurantguru.com/Guru-Rostov-on-Don) | `112529328` | 45 | 20 |
+| 7 | [Макаронка](https://restaurantguru.com/Makaronka-Rostov-on-Don) | `129796290` | 28 | 20 |
+| 8 | [Xinkali-Zapevali](https://restaurantguru.com/Xinkali-Zapevali-Rostov-on-Don) | `123712756` | 38 | 20 |
+| 9 | [Алое Вдохновение](https://restaurantguru.com/Aloye-Vdokhnoveniye-Rostov-on-Don) | `114189450` | 29 | 20 |
+| 10 | [Gruzinskie kanikuly](https://restaurantguru.com/Gruzinskiye-Kanikuly-Rostov-on-Don) | `91333541` | 22 | 20 |
+| 12 | [Хинкали-Запевали](https://restaurantguru.com/Khinkali-Zapevali-Rostov-on-Don-2) | `126623444` | 38 | 20 |
+| 13 | [Frank by Basta](https://restaurantguru.com/FRANK-by-BASTA-Rostov-on-Don) | `86802504` | 564 (префикс) | 20 |
+| 14 | [Kazak](https://restaurantguru.com/Kazak-Rostov-on-Don) | `112517943` | 45 | 20 |
+| 15 | [Onegin Dacha](https://restaurantguru.com/OneginDacha-Rostov-on-Don) | `39566888` | 599 | 20 |
+| 16 | [Pad Thai](https://restaurantguru.com/Pad-Thai-Rostov-on-Don) | `86800983` | 569 | 20 |
+| 17 | [Дом Культуры](https://restaurantguru.com/Dom-Kultury-Rostov-on-Don) | `124603930` | 26 | 20 |
+| 19 | [Pro. Hinkali by Novikov](https://restaurantguru.com/Pro-Hinkali-by-Novikov-Rostov-on-Don) | `130852658` | 25 | 20 |
+| 21 | [Raki & Gady](https://restaurantguru.com/Raki-i-Gady-Rostov-on-Don) | `72200914` | 589 | 20 |
+| 22 | [Yaga](https://restaurantguru.com/Yaga-Rostov-on-Don) | `125640719` | 27 | 20 |
+| 23 | [Vaha Lavka](https://restaurantguru.com/Vaha-Lavka-Rostov-on-Don-2) | `109486188` | 45 | 20 |
+| 24 | [Sapore Italiano](https://restaurantguru.com/Sapore-Italiano-Rostov-on-Don-3) | `57753395` | 590 | 20 |
+| 25 | [Starik Khinkalych](https://restaurantguru.com/Starik-Khinkalych-Rostov-on-Don-2) | `104291258` | 44 | 20 |
+| 26 | [Sushi-Market](https://restaurantguru.com/Sushi-Market-Rostov-on-Don-3) | `88492414` | 46 | 20 |
+| 27 | [Kazachiy Kuren](https://restaurantguru.com/Kazachiy-Kuren-Rostov-on-Don) | `39549082` | 572 | 20 |
+| 28 | [Nakatilnya](https://restaurantguru.com/Nakatilnya-kultura-pitiya-Rostov-on-Don) | `109489618` | 34 | 20 |
+| 29 | [Syrovarnya](https://restaurantguru.com/Restoran-Syrovarnya-Rostov-on-Don) | `109473606` | 183 | 20 |
+| 30 | [Di Pasta park](https://restaurantguru.com/Di-Pasta-park-Rostov-on-Don) | `128250510` | 30 | 20 |
+| 31 | [Yalla](https://restaurantguru.com/Yalla-Rostov-on-Don) | `39522766` | 594 | 20 |
+| 32 | [Tom Yum Originals](https://restaurantguru.com/Tyo-Rostov-on-Don) | `109486322` | 49 | 20 |
+| 33 | [Zumu](https://restaurantguru.com/Zumu-Rostov-on-Don) | `130959795` | 28 | 20 |
+| 34 | [Lali Khinkali](https://restaurantguru.com/Lali-Khinkali-Rostov-on-Don) | `123717699` | 45 | 20 |
+| 35 | [Larisa Zharit](https://restaurantguru.com/Larisa-Zharit-Rostov-on-Don) | `86806443` | 575 (префикс) | 20 |
+| 36 | [Pro. Хинкали by Novikov](https://restaurantguru.com/Pro-Khinkali-by-Novikov-Rostov-on-Don) | `128256004` | 32 | 20 |
+| 37 | [Puri Puri](https://restaurantguru.com/PuriPuri-Rostov-on-Don) | `125644202` | 48 | 20 |
+| 39 | [Klevo by Novikov](https://restaurantguru.com/Klevo-Rostov-on-Don) | `129425928` | 21 | 20 |
+| 41 | [French](https://restaurantguru.com/French-Rostov-on-Don) | `123719605` | 48 | 20 |
+| 42 | [Chicago](https://restaurantguru.com/Rostov-on-Don-3) | `129957878` | 16 | 16 |
+| 43 | [Puri Puri](https://restaurantguru.com/Puri-Puri-Rostov-on-Don-2) | `111258490` | 47 | 20 |
+| 44 | [Kukafe](https://restaurantguru.com/Kuka-Rostov-on-Don) | `123725149` | 25 | 20 |
+| 46 | [Puri Puri](https://restaurantguru.com/PURI-PURI-Publichka-Rostov-on-Don) | `81563608` | 321 | 20 |
+| 47 | [Schneider Weisse Brauhaus](https://restaurantguru.com/Schneider-Weisse-Brauhaus-Rostov-on-Don) | `39522761` | 602 | 20 |
+| 48 | [Raki & Gadi](https://restaurantguru.com/Raki-i-Gady-Rostov-on-Don-2) | `123246254` | 43 | 20 |
+| 49 | [Erti](https://restaurantguru.com/Erti-Rostov-on-Don) | `68486851` | 601 | 20 |
+| 50 | [Kuksu Ramen](https://restaurantguru.com/Kuksu-Ramen-Rostov-on-Don) | `86803486` | 509 | 20 |
+| 51 | [Midiynoe Mesto](https://restaurantguru.com/Midiynoe-Mesto-Rostov-on-Don) | `109475230` | 48 | 20 |
+| 52 | [Gorynich](https://restaurantguru.com/Gorynich-Rostov-on-Don) | `129154755` | 29 | 20 |
+| 54 | [Glupiy Frantsuz](https://restaurantguru.com/Glupy-Frantsuz-Rostov-on-Don) | `68995806` | 482 | 20 |
+| 55 | [Питькофе Космос](https://restaurantguru.com/PitKofe-Kosmos-Rostov-on-Don) | `131696436` | 31 | 20 |
+| 56 | [Puri Puri](https://restaurantguru.com/Puri-Rostov-on-Don) | `109438596` | 46 | 20 |
+| 57 | [Puri Puri](https://restaurantguru.com/Puri-Puri-by-lali-Rostov-on-Don) | `72207930` | 73 | 20 |
+
+- [Полный отчёт: методика, ошибки, цены запросов/инфраструктуры, ограничения и воспроизведение](docs/ROSTOV_RESULTS.ru.md).
+- [Все 996 URL фотографий и 150 кадров «До» с координатами](docs/rostov/cover-panel-50-2026-10-30/PHOTO_URLS.ru.md).
+- [Сводка и слепой аудит](docs/rostov/cover-panel-50-2026-10-30/summary.json), [полный журнал запросов с usage](docs/rostov/cover-panel-50-2026-10-30/calls.json).
+- [Предложения после ИИ-проверки: keep/review/reject](docs/rostov/cover-panel-50-2026-10-30/checked_proposals.json).
+- [Сервис: сохранённый разбор 10 фото Накатильни, без API-ключа](http://127.0.0.1:8765/?run=18db9e5c2634e207876187c453e095b0).
+- [Десять URL для демонстрации](docs/rostov/cover-panel-50-2026-10-30/demo-urls.txt) — один ресторан, еда/напитки, меню и портреты.
+- [Комментарий для задачи](docs/TASK_COMMENT.ru.md).
+
+Ниже сохранены исторические результаты пилота 29.10 на двух ресторанах. Они имеют другой протокол и не подменяют новые 50 ресторанов.
+<!-- rostov-v4:end -->
 
 **Предпочтительный режим: модели работают на сторонних облачных серверах. Скачивать веса, устанавливать Ollama или иметь GPU на своём компьютере не требуется.** На устройстве запускается только небольшой Python-стенд: он принимает URL, загружает и нормализует фотографии, отправляет их выбранному inference-провайдеру и показывает результат.
 
@@ -84,7 +176,7 @@ uv run --env-file .env python scripts/benchmark_free.py --max-calls 40
 
 ## Содержание
 
-[Итоговая рекомендация по модели](#мой-вывод-какую-модель-использовать).
+[Актуальная рекомендация по модели](docs/ROSTOV_RESULTS.ru.md#итоговое-решение).
 
 [Источники: оба ресторана и все 20 фотографий выборки](#источники-и-все-фотографии-тестовой-выборки).
 
@@ -793,6 +885,9 @@ uv run python -m http.server 8876 --bind 127.0.0.1 --directory results/presentat
 
 
 ## Мой вывод: какую модель использовать
+
+> Исторический вывод пилота 29.10.2026. Актуальное решение по 50 ресторанам: [GPT-6 Luna](docs/ROSTOV_RESULTS.ru.md#итоговое-решение).
+
 
 **Для следующего этапа нашего облачного стенда я выбираю `dots-studio/dots-3-note-preview:free` через OpenRouter, с обязательной ручной проверкой перед публикацией.** Это выбор кандидата по полученным результатам и требованию не размещать модель на устройстве, а не подтверждение готовности к автономному production.
 

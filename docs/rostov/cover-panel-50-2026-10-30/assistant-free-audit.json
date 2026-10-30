@@ -1,0 +1,27 @@
+{
+  "reviewer_type": "assistant_visual_inspection",
+  "human_gold": false,
+  "material": "All 29 accepted covers from five completed free-model restaurant outputs, shown in labeled contact sheet",
+  "quantitative_accuracy_claim": null,
+  "findings": [
+    {
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "photo_id": "R91344139-P001",
+      "verdict": "review",
+      "reason": "Photographed torso and arms directly behind the food; people=none is questionable. Manual review needed."
+    },
+    {
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "photo_id": "R129957878-P013",
+      "verdict": "review",
+      "reason": "Diner torso/arms occupy part of the food frame; requires editor review under the people policy."
+    },
+    {
+      "model": "dots-studio/dots-3-note-preview:free",
+      "photo_id": "R129431563-P005",
+      "verdict": "review",
+      "reason": "Very dark table/food frame, weak readability at cover size."
+    }
+  ],
+  "note": "Provisional visual observations by the implementing assistant; not blinded independent labels. Best free endpoint by protocol availability is not a production safety recommendation."
+}

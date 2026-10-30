@@ -1,0 +1,168 @@
+{
+  "target": 50,
+  "captured_cards": 50,
+  "galleries_ready": 50,
+  "gallery_photos_loaded": 996,
+  "common_completed": 0,
+  "winner": null,
+  "models": [
+    {
+      "model": "gpt-6-luna",
+      "completed_restaurants": 50,
+      "failed_restaurants": 0,
+      "not_run_restaurants": 0,
+      "at_least_three": 49,
+      "cover_count": 254,
+      "usage_estimated_upper_usd": 0.16365110000000002,
+      "calls": 50,
+      "quality_rank": null
+    },
+    {
+      "model": "deepseek-flash",
+      "completed_restaurants": 45,
+      "failed_restaurants": 5,
+      "not_run_restaurants": 0,
+      "at_least_three": 36,
+      "cover_count": 172,
+      "usage_estimated_upper_usd": 0.2679381,
+      "calls": 50,
+      "quality_rank": null
+    },
+    {
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "completed_restaurants": 4,
+      "failed_restaurants": 1,
+      "not_run_restaurants": 45,
+      "at_least_three": 4,
+      "cover_count": 23,
+      "usage_estimated_upper_usd": 0,
+      "calls": 5,
+      "quality_rank": null
+    },
+    {
+      "model": "dots-studio/dots-3-note-preview:free",
+      "completed_restaurants": 1,
+      "failed_restaurants": 4,
+      "not_run_restaurants": 45,
+      "at_least_three": 1,
+      "cover_count": 6,
+      "usage_estimated_upper_usd": 0,
+      "calls": 5,
+      "quality_rank": null
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "completed_restaurants": 0,
+      "failed_restaurants": 5,
+      "not_run_restaurants": 45,
+      "at_least_three": 0,
+      "cover_count": 0,
+      "usage_estimated_upper_usd": 0,
+      "calls": 5,
+      "quality_rank": null
+    },
+    {
+      "model": "google/gemma-4-26b-a4b-it:free",
+      "completed_restaurants": 0,
+      "failed_restaurants": 1,
+      "not_run_restaurants": 49,
+      "at_least_three": 0,
+      "cover_count": 0,
+      "usage_estimated_upper_usd": 0,
+      "calls": 1,
+      "quality_rank": null
+    },
+    {
+      "model": "google/gemma-4-31b-it:free",
+      "completed_restaurants": 0,
+      "failed_restaurants": 1,
+      "not_run_restaurants": 49,
+      "at_least_three": 0,
+      "cover_count": 0,
+      "usage_estimated_upper_usd": 0,
+      "calls": 1,
+      "quality_rank": null
+    },
+    {
+      "model": "nvidia/nemotron-3.5-content-safety:free",
+      "completed_restaurants": 0,
+      "failed_restaurants": 1,
+      "not_run_restaurants": 49,
+      "at_least_three": 0,
+      "cover_count": 0,
+      "usage_estimated_upper_usd": 0,
+      "calls": 1,
+      "quality_rank": null
+    },
+    {
+      "model": "thinkingmachines/inkling-small:free",
+      "completed_restaurants": 0,
+      "failed_restaurants": 1,
+      "not_run_restaurants": 49,
+      "at_least_three": 0,
+      "cover_count": 0,
+      "usage_estimated_upper_usd": 0,
+      "calls": 1,
+      "quality_rank": null
+    },
+    {
+      "model": "thinkingmachines/inkling:free",
+      "completed_restaurants": 0,
+      "failed_restaurants": 1,
+      "not_run_restaurants": 49,
+      "at_least_three": 0,
+      "cover_count": 0,
+      "usage_estimated_upper_usd": 0,
+      "calls": 1,
+      "quality_rank": null
+    }
+  ],
+  "native_app_baseline": "not verified",
+  "quality_note": "No independent human labels. AI judge findings are a provisional proxy, not production accuracy or a safety guarantee.",
+  "common_paid_completed": 45,
+  "ai_audit": {
+    "reviewer_model": "gpt-6-sol",
+    "completed_paired_restaurants": 45,
+    "failed_judge_calls": 0,
+    "selector_names_hidden_from_judge": true,
+    "human_gold": false,
+    "ai_preference_votes": {
+      "gpt-6-luna": 30,
+      "deepseek-flash": 12,
+      "none": 2,
+      "tie": 1
+    },
+    "models": [
+      {
+        "model": "deepseek-flash",
+        "review": 20,
+        "keep": 150,
+        "restaurants": 45,
+        "improvement_worse": 6,
+        "photos": 172,
+        "improvement_better": 38,
+        "reject": 2,
+        "improvement_same": 1,
+        "mean_set_score": 77.13,
+        "ai_keep_fraction": 0.872093023255814
+      },
+      {
+        "model": "gpt-6-luna",
+        "keep": 202,
+        "restaurants": 45,
+        "improvement_better": 42,
+        "photos": 224,
+        "review": 20,
+        "improvement_same": 2,
+        "reject": 2,
+        "improvement_worse": 1,
+        "mean_set_score": 80.8,
+        "ai_keep_fraction": 0.9017857142857143
+      }
+    ],
+    "judge_usage_cost_usd": 0.43925,
+    "limitations": "AI judge is not independent human ground truth. Same-provider family bias, subjective aesthetic judgments, incomplete metadata in two source galleries, square crop assumptions and sampled candidates limit generalization. This is not production precision or a guarantee of safe automatic publication."
+  },
+  "recommended_model": "gpt-6-luna",
+  "recommendation_scope": "Research pilot with verification/moderation; AI-judge preference is not human-validated production accuracy."
+}

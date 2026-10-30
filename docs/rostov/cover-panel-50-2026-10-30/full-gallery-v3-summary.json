@@ -1,0 +1,17 @@
+{
+  "restaurants_with_gallery": 18,
+  "prepared_photos": 1927,
+  "models": [
+    {
+      "model": "gpt-6-luna",
+      "completed": 16,
+      "failed": 2
+    },
+    {
+      "model": "deepseek-flash",
+      "completed": 14,
+      "failed": 4
+    }
+  ],
+  "note": "Separate exploratory full-gallery protocol; never merged into the 50-restaurant sampled quality denominator."
+}

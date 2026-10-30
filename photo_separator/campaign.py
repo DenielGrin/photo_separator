@@ -90,14 +90,14 @@ def source_rows(source):
     return rows
 
 
-def prepare_campaign(source, root, limit=50):
+def prepare_campaign(source, root, limit=50, failed_downloads=None):
     root = Path(root)
     assets, cache = root / "assets", root / "cache"
     assets.mkdir(parents=True, exist_ok=True)
     cache.mkdir(exist_ok=True)
     started = time.monotonic()
     cpu_started = time.process_time()
-    fetch_cache = {}
+    fetch_cache = dict(failed_downloads or {})
     downloads = 0
 
     def image(url):
@@ -136,7 +136,15 @@ def prepare_campaign(source, root, limit=50):
         for surface, evidence in restaurant.get("baselines", {}).items():
             url = evidence.get("declared_url")
             if valid_image_url(url) and not url.endswith("log.gif"):
-                existing = next((p for p in baselines if p["url"] == url), None)
+                existing = next(
+                    (
+                        p
+                        for p in baselines
+                        if p["url"] == url
+                        and next(iter(p["evidence"].values())).get("crop") == evidence.get("crop")
+                    ),
+                    None,
+                )
                 if existing:
                     existing["surfaces"].append(surface)
                     existing["evidence"][surface] = evidence

@@ -1,0 +1,2251 @@
+{
+  "note": "Research artifact; AI-reviewed suggestions, not human-approved production covers. Unchecked candidates are sent to review, never automatically promoted.",
+  "proposals": [
+    {
+      "restaurant_id": "109489618",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rfcf-dishes-Nakatilnya.jpg",
+        "https://img05.restaurantguru.com/re73-Nakatilnya-chocolate-mousse.jpg",
+        "https://img05.restaurantguru.com/rf4b-Nakatilnya-dishes-2025-06.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rf4b-Nakatilnya-dishes-2025-06.jpg",
+        "https://img05.restaurantguru.com/re73-Nakatilnya-chocolate-mousse.jpg",
+        "https://img05.restaurantguru.com/rfcf-dishes-Nakatilnya.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129823852",
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/re25-meals-Thai-Keen.jpg",
+        "https://img05.restaurantguru.ru/r125-Thai-Keen-sushi.jpg",
+        "https://img05.restaurantguru.ru/r852-sashimi-Thai-Keen.jpg",
+        "https://img05.restaurantguru.ru/r8f6-Thai-Keen-sushi-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/r3ea-Thai-Keen-dishes.jpg",
+        "https://img05.restaurantguru.ru/re43-meals-Thai-Keen-2026-03.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/re25-meals-Thai-Keen.jpg",
+        "https://img05.restaurantguru.ru/r125-Thai-Keen-sushi.jpg",
+        "https://img05.restaurantguru.ru/r852-sashimi-Thai-Keen.jpg",
+        "https://img05.restaurantguru.ru/r8f6-Thai-Keen-sushi-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/r3ea-Thai-Keen-dishes.jpg",
+        "https://img05.restaurantguru.ru/re43-meals-Thai-Keen-2026-03.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129431563",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+        "https://img05.restaurantguru.ru/rf81-Voobrazhenie-dishes.jpg",
+        "https://img05.restaurantguru.ru/rfc5-Voobrazhenie-meals.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/rf81-Voobrazhenie-dishes.jpg",
+        "https://img05.restaurantguru.ru/rfc5-Voobrazhenie-meals.jpg",
+        "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "86803486",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r30b-ramen-Kuksu-Ramen-2025-10-10.jpg",
+        "https://img05.restaurantguru.com/r207-meals-Kuksu-Ramen-2022-10-2.jpg",
+        "https://img05.restaurantguru.com/r25a-burger-Kuksu-Ramen.jpg",
+        "https://img05.restaurantguru.com/r116-Kuksu-Ramen-meals-2025-10-19.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r30b-ramen-Kuksu-Ramen-2025-10-10.jpg",
+        "https://img05.restaurantguru.com/r116-Kuksu-Ramen-meals-2025-10-19.jpg",
+        "https://img05.restaurantguru.com/r25a-burger-Kuksu-Ramen.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r207-meals-Kuksu-Ramen-2022-10-2.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "111258490",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r54c-food-Puri-Puri-2025-08-10.jpg",
+        "https://img05.restaurantguru.com/r4ae-interior-Puri-Puri-2024-01.jpg",
+        "https://img05.restaurantguru.com/rf4c-dishes-Puri-Puri-2025-08-7.jpg",
+        "https://img05.restaurantguru.com/rf45-Puri-Puri-food-2024-01.jpg",
+        "https://img05.restaurantguru.com/r545-dumplings-Puri-Puri-2025-08.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r54c-food-Puri-Puri-2025-08-10.jpg",
+        "https://img05.restaurantguru.com/rf45-Puri-Puri-food-2024-01.jpg",
+        "https://img05.restaurantguru.com/r545-dumplings-Puri-Puri-2025-08.jpg",
+        "https://img05.restaurantguru.com/rf4c-dishes-Puri-Puri-2025-08-7.jpg",
+        "https://img05.restaurantguru.com/r4ae-interior-Puri-Puri-2024-01.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129425928",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r906-Klevo-by-Novikov-pizza.jpg",
+        "https://img05.restaurantguru.ru/r6a2-Klevo-by-Novikov-dishes.jpg",
+        "https://img05.restaurantguru.ru/rabb-Klevo-by-Novikov-oysters.jpg",
+        "https://img05.restaurantguru.ru/rb0c-Klevo-by-Novikov-design.jpg",
+        "https://img05.restaurantguru.ru/reb5-Klevo-by-Novikov-food-2026-03.jpg",
+        "https://img05.restaurantguru.ru/rebe-Klevo-by-Novikov-chocolate-cake.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/rb0c-Klevo-by-Novikov-design.jpg",
+        "https://img05.restaurantguru.ru/r6a2-Klevo-by-Novikov-dishes.jpg",
+        "https://img05.restaurantguru.ru/rebe-Klevo-by-Novikov-chocolate-cake.jpg",
+        "https://img05.restaurantguru.ru/r906-Klevo-by-Novikov-pizza.jpg",
+        "https://img05.restaurantguru.ru/reb5-Klevo-by-Novikov-food-2026-03.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/rabb-Klevo-by-Novikov-oysters.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "125640719",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r606-Yaga-baby-back-ribs.jpg",
+        "https://img05.restaurantguru.ru/r4df-Yaga-steak.jpg",
+        "https://img05.restaurantguru.ru/r9f7-Yaga-meals-2026-05.jpg",
+        "https://img05.restaurantguru.ru/rb43-Yaga-mussels-2026-05.jpg",
+        "https://img05.restaurantguru.ru/r634-Yaga-dishes-2026-05.jpg",
+        "https://img05.restaurantguru.ru/rdca-Yaga-meals-2025-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r634-Yaga-dishes-2026-05.jpg",
+        "https://img05.restaurantguru.ru/rb43-Yaga-mussels-2026-05.jpg",
+        "https://img05.restaurantguru.ru/r4df-Yaga-steak.jpg",
+        "https://img05.restaurantguru.ru/r9f7-Yaga-meals-2026-05.jpg",
+        "https://img05.restaurantguru.ru/rdca-Yaga-meals-2025-05.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/r606-Yaga-baby-back-ribs.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "91344139",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r08a-Tseh-Etogo-Goroda-meat-2023-01-6.jpg",
+        "https://img05.restaurantguru.com/r530-meat-Tseh-Etogo-Goroda.jpg",
+        "https://img05.restaurantguru.com/rc48-Tseh-Etogo-Goroda-dishes-2022-10.jpg",
+        "https://img05.restaurantguru.com/rdfb-food-Tseh-Etogo-Goroda-2022-10-1.jpg",
+        "https://img05.restaurantguru.com/r6b5-meals-Tseh-Etogo-Goroda-2022-10-1.jpg",
+        "https://img05.restaurantguru.com/r8ec-design-Tseh-Etogo-Goroda.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r530-meat-Tseh-Etogo-Goroda.jpg",
+        "https://img05.restaurantguru.com/r08a-Tseh-Etogo-Goroda-meat-2023-01-6.jpg",
+        "https://img05.restaurantguru.com/rc48-Tseh-Etogo-Goroda-dishes-2022-10.jpg",
+        "https://img05.restaurantguru.com/rdfb-food-Tseh-Etogo-Goroda-2022-10-1.jpg",
+        "https://img05.restaurantguru.com/r6b5-meals-Tseh-Etogo-Goroda-2022-10-1.jpg",
+        "https://img05.restaurantguru.com/r8ec-design-Tseh-Etogo-Goroda.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "125644202",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r2f4-Puri-Puri-paella.jpg",
+        "https://img05.restaurantguru.com/r203-Puri-Puri-design-2025-05-5.jpg",
+        "https://img05.restaurantguru.com/r24a-food-Puri-Puri-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/r78b-Puri-Puri-food-2025-05-3.jpg",
+        "https://img05.restaurantguru.com/rfee-design-Puri-Puri-2025-05-4.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r2f4-Puri-Puri-paella.jpg",
+        "https://img05.restaurantguru.com/r203-Puri-Puri-design-2025-05-5.jpg",
+        "https://img05.restaurantguru.com/rfee-design-Puri-Puri-2025-05-4.jpg",
+        "https://img05.restaurantguru.com/r78b-Puri-Puri-food-2025-05-3.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r24a-food-Puri-Puri-2025-05-2.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "112529328",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r75a-Guru-food-2024-08.jpg",
+        "https://img05.restaurantguru.com/raad-meals-Guru-2025-07.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/raad-meals-Guru-2025-07.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [
+        "https://img05.restaurantguru.com/r75a-Guru-food-2024-08.jpg"
+      ],
+      "shortfall": 2,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "126623444",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/raf9-Khinkali-Zapevali-design-2025-08-1.jpg",
+        "https://img05.restaurantguru.com/r0a4-Khinkali-Zapevali-facade.jpg",
+        "https://img05.restaurantguru.com/r6f6-Khinkali-Zapevali-design-2025-09-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r0a4-Khinkali-Zapevali-facade.jpg",
+        "https://img05.restaurantguru.com/raf9-Khinkali-Zapevali-design-2025-08-1.jpg",
+        "https://img05.restaurantguru.com/r6f6-Khinkali-Zapevali-design-2025-09-2.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "123246254",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rb31-food-Raki-i-Gady-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/r3d3-Raki-i-Gady-sashimi.jpg",
+        "https://img05.restaurantguru.com/re1d-Raki-i-Gady-mussels.jpg",
+        "https://img05.restaurantguru.com/rdf2-Raki-i-Gady-meals-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/r4bc-food-Raki-i-Gady-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/r232-grilled-salmon-Raki-i-Gady.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r4bc-food-Raki-i-Gady-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/r232-grilled-salmon-Raki-i-Gady.jpg",
+        "https://img05.restaurantguru.com/re1d-Raki-i-Gady-mussels.jpg",
+        "https://img05.restaurantguru.com/rdf2-Raki-i-Gady-meals-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/rb31-food-Raki-i-Gady-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/r3d3-Raki-i-Gady-sashimi.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "131696436",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r7f9-Pitkofe-Kosmos-interior-2026-08-1.jpg",
+        "https://img05.restaurantguru.com/r298-Pitkofe-Kosmos-design-2026-08.jpg",
+        "https://img05.restaurantguru.com/ra64-Pitkofe-Kosmos-food.jpg",
+        "https://img05.restaurantguru.com/r4ae-food-Pitkofe-Kosmos-2026-08.jpg",
+        "https://img05.restaurantguru.com/rf22-dishes-Pitkofe-Kosmos-2026-08.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r4ae-food-Pitkofe-Kosmos-2026-08.jpg",
+        "https://img05.restaurantguru.com/rf22-dishes-Pitkofe-Kosmos-2026-08.jpg",
+        "https://img05.restaurantguru.com/ra64-Pitkofe-Kosmos-food.jpg",
+        "https://img05.restaurantguru.com/r7f9-Pitkofe-Kosmos-interior-2026-08-1.jpg",
+        "https://img05.restaurantguru.com/r298-Pitkofe-Kosmos-design-2026-08.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "39566888",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r70f-seafood-Onegin-Dacha-2022-09.jpg",
+        "https://img05.restaurantguru.com/rdf1-Onegin-Dacha-design-2024-08-19.jpg",
+        "https://img05.restaurantguru.com/rd4b-Onegin-Dacha-interior-2024-09-4.jpg",
+        "https://img05.restaurantguru.com/re34-Onegin-Dacha-design-2024-08-5.jpg",
+        "https://img05.restaurantguru.com/r9ab-dishes-Onegin-Dacha-2022-09-8.jpg",
+        "https://img05.restaurantguru.com/r9bf-dessert-Onegin-Dacha-2022-09-4.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rdf1-Onegin-Dacha-design-2024-08-19.jpg",
+        "https://img05.restaurantguru.com/r9ab-dishes-Onegin-Dacha-2022-09-8.jpg",
+        "https://img05.restaurantguru.com/rd4b-Onegin-Dacha-interior-2024-09-4.jpg",
+        "https://img05.restaurantguru.com/re34-Onegin-Dacha-design-2024-08-5.jpg",
+        "https://img05.restaurantguru.com/r9bf-dessert-Onegin-Dacha-2022-09-4.jpg",
+        "https://img05.restaurantguru.com/r70f-seafood-Onegin-Dacha-2022-09.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "104270066",
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r504-meals-Starik-Khinkalych-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/r07b-Starik-Khinkalych-food-2023-04-1.jpg",
+        "https://img05.restaurantguru.com/r248-dishes-Starik-Khinkalych-2022-11.jpg",
+        "https://img05.restaurantguru.com/r941-Starik-Khinkalych-interior-2023-04.jpg",
+        "https://img05.restaurantguru.com/r232-Starik-Khinkalych-photo-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/rfa7-Starik-Khinkalych-picture-2023-04-2.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r504-meals-Starik-Khinkalych-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/r07b-Starik-Khinkalych-food-2023-04-1.jpg",
+        "https://img05.restaurantguru.com/r248-dishes-Starik-Khinkalych-2022-11.jpg",
+        "https://img05.restaurantguru.com/r941-Starik-Khinkalych-interior-2023-04.jpg",
+        "https://img05.restaurantguru.com/r232-Starik-Khinkalych-photo-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/rfa7-Starik-Khinkalych-picture-2023-04-2.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "104291258",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r999-Starik-Khinkalych-interior-2023-12-6.jpg",
+        "https://img05.restaurantguru.com/rc85-food-Starik-Khinkalych-2023-11-7.jpg",
+        "https://img05.restaurantguru.com/r232-design-Starik-Khinkalych-2025-08-12.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r999-Starik-Khinkalych-interior-2023-12-6.jpg",
+        "https://img05.restaurantguru.com/rc85-food-Starik-Khinkalych-2023-11-7.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [
+        "https://img05.restaurantguru.com/r232-design-Starik-Khinkalych-2025-08-12.jpg"
+      ],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "39522766",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rf55-Yalla-grilled-salmon.jpg",
+        "https://img05.restaurantguru.com/r14e-dishes-Yalla-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/r649-food-Yalla-2025-08.jpg",
+        "https://img05.restaurantguru.com/rd05-Yalla-food-2026-05-4.jpg",
+        "https://img05.restaurantguru.com/r298-food-Yalla-2024-09-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rd05-Yalla-food-2026-05-4.jpg",
+        "https://img05.restaurantguru.com/r14e-dishes-Yalla-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/r649-food-Yalla-2025-08.jpg",
+        "https://img05.restaurantguru.com/rf55-Yalla-grilled-salmon.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r298-food-Yalla-2024-09-2.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "123712756",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rbd8-Xinkali-Zapevali-interior-2025-05.jpg",
+        "https://img05.restaurantguru.com/r331-interior-Xinkali-Zapevali.jpg",
+        "https://img05.restaurantguru.com/r2c8-beverage-Xinkali-Zapevali-2025-05.jpg",
+        "https://img05.restaurantguru.com/r6f1-Xinkali-Zapevali-design-2025-05.jpg",
+        "https://img05.restaurantguru.com/r0d8-Xinkali-Zapevali-design.jpg",
+        "https://img05.restaurantguru.com/r235-Xinkali-Zapevali-dishes-2025-05.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rbd8-Xinkali-Zapevali-interior-2025-05.jpg",
+        "https://img05.restaurantguru.com/r331-interior-Xinkali-Zapevali.jpg",
+        "https://img05.restaurantguru.com/r2c8-beverage-Xinkali-Zapevali-2025-05.jpg",
+        "https://img05.restaurantguru.com/r6f1-Xinkali-Zapevali-design-2025-05.jpg",
+        "https://img05.restaurantguru.com/r0d8-Xinkali-Zapevali-design.jpg",
+        "https://img05.restaurantguru.com/r235-Xinkali-Zapevali-dishes-2025-05.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "68486851",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rd25-beer-Erti.jpg",
+        "https://img05.restaurantguru.com/rae0-interior-Erti-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/rf40-Erti-dishes-2025-08-15.jpg",
+        "https://img05.restaurantguru.com/rfbd-Erti-meals-2022-09-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rd25-beer-Erti.jpg",
+        "https://img05.restaurantguru.com/rae0-interior-Erti-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/rf40-Erti-dishes-2025-08-15.jpg",
+        "https://img05.restaurantguru.com/rfbd-Erti-meals-2022-09-2.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "39522761",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rfcd-Schneider-Weisse-food.jpg",
+        "https://img05.restaurantguru.com/r7bb-interior-Schneider-2023-01.jpg",
+        "https://img05.restaurantguru.com/r6bf-Schneider-Weisse-seafood-2022-09-8.jpg",
+        "https://img05.restaurantguru.com/rb2c-meals-Schneider-Weisse-2022-09-5.jpg",
+        "https://img05.restaurantguru.com/rebf-seafood-Schneider-Weisse-2022-09-3.jpg",
+        "https://img05.restaurantguru.com/r5c0-interior-Schneider-2024-09-9.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rb2c-meals-Schneider-Weisse-2022-09-5.jpg",
+        "https://img05.restaurantguru.com/r5c0-interior-Schneider-2024-09-9.jpg",
+        "https://img05.restaurantguru.com/rfcd-Schneider-Weisse-food.jpg",
+        "https://img05.restaurantguru.com/r7bb-interior-Schneider-2023-01.jpg",
+        "https://img05.restaurantguru.com/r6bf-Schneider-Weisse-seafood-2022-09-8.jpg",
+        "https://img05.restaurantguru.com/rebf-seafood-Schneider-Weisse-2022-09-3.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "86800983",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r45d-sushi-Pad-Thai-2026-09-1.jpg",
+        "https://img05.restaurantguru.com/rd30-food-Pad-Thai-2022-10-31.jpg",
+        "https://img05.restaurantguru.com/r389-dishes-Pad-Thai-2024-12-15.jpg",
+        "https://img05.restaurantguru.com/rbab-sushi-Pad-Thai-2025-10-1.jpg",
+        "https://img05.restaurantguru.com/r391-seafood-Pad-Thai-2022-10-3.jpg",
+        "https://img05.restaurantguru.com/r189-Pad-Thai-beer-2022-10-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r45d-sushi-Pad-Thai-2026-09-1.jpg",
+        "https://img05.restaurantguru.com/r389-dishes-Pad-Thai-2024-12-15.jpg",
+        "https://img05.restaurantguru.com/rd30-food-Pad-Thai-2022-10-31.jpg",
+        "https://img05.restaurantguru.com/r391-seafood-Pad-Thai-2022-10-3.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rbab-sushi-Pad-Thai-2025-10-1.jpg",
+        "https://img05.restaurantguru.com/r189-Pad-Thai-beer-2022-10-2.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "114189450",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rb3f-Aloe-Vdokhnovenie-meals.jpg",
+        "https://img05.restaurantguru.com/rcef-Aloe-Vdokhnovenie-design-2024-08-1.jpg",
+        "https://img05.restaurantguru.com/r60c-Aloe-Vdokhnovenie-design.jpg",
+        "https://img05.restaurantguru.com/r9ca-beverage-Aloe-Vdokhnovenie-2024-08.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r60c-Aloe-Vdokhnovenie-design.jpg",
+        "https://img05.restaurantguru.com/rcef-Aloe-Vdokhnovenie-design-2024-08-1.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r9ca-beverage-Aloe-Vdokhnovenie-2024-08.jpg",
+        "https://img05.restaurantguru.com/rb3f-Aloe-Vdokhnovenie-meals.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "124603930",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r886-Dom-Kultury-pizza-2025-05.jpg",
+        "https://img05.restaurantguru.ru/r690-design-Dom-Kultury-2026-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r886-Dom-Kultury-pizza-2025-05.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/r690-design-Dom-Kultury-2026-05.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 2,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109486374",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/ra62-dishes-Tseh-Etogo-Goroda-2024-05-1.jpg",
+        "https://img05.restaurantguru.ru/r875-Tseh-Etogo-Goroda-dishes-2024-05.jpg",
+        "https://img05.restaurantguru.ru/ree4-Tseh-Etogo-Goroda-ceviche.jpg",
+        "https://img05.restaurantguru.ru/rdfa-Tseh-Etogo-Goroda-burger-2024-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/rdfa-Tseh-Etogo-Goroda-burger-2024-05.jpg",
+        "https://img05.restaurantguru.ru/ree4-Tseh-Etogo-Goroda-ceviche.jpg",
+        "https://img05.restaurantguru.ru/ra62-dishes-Tseh-Etogo-Goroda-2024-05-1.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/r875-Tseh-Etogo-Goroda-dishes-2024-05.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109438596",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r2cb-dumplings-Puri-Puri-2025-06.jpg",
+        "https://img05.restaurantguru.com/r2e7-Puri-Puri-food-2025-06.jpg",
+        "https://img05.restaurantguru.com/r0f0-Puri-Puri-dumplings-2025-06-1.jpg",
+        "https://img05.restaurantguru.com/rb02-Puri-Puri-food-2025-06-1.jpg",
+        "https://img05.restaurantguru.com/rf4f-meals-Puri-Puri-2025-06.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rf4f-meals-Puri-Puri-2025-06.jpg",
+        "https://img05.restaurantguru.com/r2e7-Puri-Puri-food-2025-06.jpg",
+        "https://img05.restaurantguru.com/r2cb-dumplings-Puri-Puri-2025-06.jpg",
+        "https://img05.restaurantguru.com/r0f0-Puri-Puri-dumplings-2025-06-1.jpg",
+        "https://img05.restaurantguru.com/rb02-Puri-Puri-food-2025-06-1.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "130959795",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rc2c-meals-Zumu.jpg",
+        "https://img05.restaurantguru.com/ra54-Zumu-design-2026-05.jpg",
+        "https://img05.restaurantguru.com/rd28-Zumu-dishes-2026-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/ra54-Zumu-design-2026-05.jpg",
+        "https://img05.restaurantguru.com/rc2c-meals-Zumu.jpg",
+        "https://img05.restaurantguru.com/rd28-Zumu-dishes-2026-05.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "128250510",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r81a-food-Di-Pasta-park.jpg",
+        "https://img05.restaurantguru.com/r96d-Di-Pasta-park-interior-2026-03.jpg",
+        "https://img05.restaurantguru.com/r6ca-Di-Pasta-park-meals.jpg",
+        "https://img05.restaurantguru.com/rf73-Di-Pasta-park-food-2026-03-1.jpg",
+        "https://img05.restaurantguru.com/r424-Di-Pasta-park-design.jpg",
+        "https://img05.restaurantguru.com/r48a-Di-Pasta-park-design-2026-03.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r424-Di-Pasta-park-design.jpg",
+        "https://img05.restaurantguru.com/r6ca-Di-Pasta-park-meals.jpg",
+        "https://img05.restaurantguru.com/r81a-food-Di-Pasta-park.jpg",
+        "https://img05.restaurantguru.com/rf73-Di-Pasta-park-food-2026-03-1.jpg",
+        "https://img05.restaurantguru.com/r48a-Di-Pasta-park-design-2026-03.jpg",
+        "https://img05.restaurantguru.com/r96d-Di-Pasta-park-interior-2026-03.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "91333541",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r41e-Gruzinskiye-Kanikuly-pizza-2022-11.jpg",
+        "https://img05.restaurantguru.ru/r0bd-Gruzinskiye-Kanikuly-burger-2022-11.jpg",
+        "https://img05.restaurantguru.ru/r870-Gruzinskiye-Kanikuly-meat-2022-11.jpg",
+        "https://img05.restaurantguru.ru/ra56-Gruzinskiye-Kanikuly-dishes-2022-11.jpg",
+        "https://img05.restaurantguru.ru/r41b-food-Gruzinskiye-Kanikuly-2022-11.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r870-Gruzinskiye-Kanikuly-meat-2022-11.jpg",
+        "https://img05.restaurantguru.ru/ra56-Gruzinskiye-Kanikuly-dishes-2022-11.jpg",
+        "https://img05.restaurantguru.ru/r41e-Gruzinskiye-Kanikuly-pizza-2022-11.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/r41b-food-Gruzinskiye-Kanikuly-2022-11.jpg",
+        "https://img05.restaurantguru.ru/r0bd-Gruzinskiye-Kanikuly-burger-2022-11.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "57753395",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r520-Sapore-Italiano-meals-2025-09-4.jpg",
+        "https://img05.restaurantguru.com/rbbb-Sapore-Italiano-dessert-2022-10-10.jpg",
+        "https://img05.restaurantguru.com/rbbe-ravioli-Sapore-Italiano-2025-09.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r520-Sapore-Italiano-meals-2025-09-4.jpg",
+        "https://img05.restaurantguru.com/rbbb-Sapore-Italiano-dessert-2022-10-10.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rbbe-ravioli-Sapore-Italiano-2025-09.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "104291258",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r999-Starik-Khinkalych-interior-2023-12-6.jpg",
+        "https://img05.restaurantguru.com/rc85-food-Starik-Khinkalych-2023-11-7.jpg",
+        "https://img05.restaurantguru.com/r3cf-food-Starik-Khinkalych-2025-08-20.jpg",
+        "https://img05.restaurantguru.com/r232-design-Starik-Khinkalych-2025-08-12.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r999-Starik-Khinkalych-interior-2023-12-6.jpg",
+        "https://img05.restaurantguru.com/r3cf-food-Starik-Khinkalych-2025-08-20.jpg",
+        "https://img05.restaurantguru.com/rc85-food-Starik-Khinkalych-2023-11-7.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [
+        "https://img05.restaurantguru.com/r232-design-Starik-Khinkalych-2025-08-12.jpg"
+      ],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129431563",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+        "https://img05.restaurantguru.ru/r3e2-meals-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/rf3f-food-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/rff3-Voobrazhenie-beverage.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/rf3f-food-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+        "https://img05.restaurantguru.ru/rff3-Voobrazhenie-beverage.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/r3e2-meals-Voobrazhenie.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "104270066",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r07b-Starik-Khinkalych-food-2023-04-1.jpg",
+        "https://img05.restaurantguru.com/rcb2-meat-Starik-Khinkalych-2022-11.jpg",
+        "https://img05.restaurantguru.com/r0f1-food-Starik-Khinkalych-2023-04-1.jpg",
+        "https://img05.restaurantguru.com/r248-dishes-Starik-Khinkalych-2022-11.jpg",
+        "https://img05.restaurantguru.com/r504-meals-Starik-Khinkalych-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/r232-Starik-Khinkalych-photo-2022-11-1.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r504-meals-Starik-Khinkalych-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/r07b-Starik-Khinkalych-food-2023-04-1.jpg",
+        "https://img05.restaurantguru.com/r0f1-food-Starik-Khinkalych-2023-04-1.jpg",
+        "https://img05.restaurantguru.com/rcb2-meat-Starik-Khinkalych-2022-11.jpg",
+        "https://img05.restaurantguru.com/r232-Starik-Khinkalych-photo-2022-11-1.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r248-dishes-Starik-Khinkalych-2022-11.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129823852",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r125-Thai-Keen-sushi.jpg",
+        "https://img05.restaurantguru.ru/r8f6-Thai-Keen-sushi-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/ra60-Thai-Keen-sashimi.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r125-Thai-Keen-sushi.jpg",
+        "https://img05.restaurantguru.ru/ra60-Thai-Keen-sashimi.jpg",
+        "https://img05.restaurantguru.ru/r8f6-Thai-Keen-sushi-2026-03-2.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "86803486",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/raab-Kuksu-Ramen-facade-2025-10.jpg",
+        "https://img05.restaurantguru.com/recc-Kuksu-Ramen-interior-2025-10-7.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/recc-Kuksu-Ramen-interior-2025-10-7.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/raab-Kuksu-Ramen-facade-2025-10.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 2,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "39522766",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rf55-Yalla-grilled-salmon.jpg",
+        "https://img05.restaurantguru.com/r7b5-design-Yalla-2025-08-1.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r7b5-design-Yalla-2025-08-1.jpg",
+        "https://img05.restaurantguru.com/rf55-Yalla-grilled-salmon.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109473606",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r770-Restoran-Syrovarnya-meat.jpg",
+        "https://img05.restaurantguru.com/r533-design-Restoran-Syrovarnya-2022-09-3.jpg",
+        "https://img05.restaurantguru.com/r3bb-cake-Restoran-Syrovarnya.jpg",
+        "https://img05.restaurantguru.com/r1c9-dessert-Restoran-Syrovarnya-2022-09-2.jpg",
+        "https://img05.restaurantguru.com/rbba-pizza-Restoran-Syrovarnya-2022-09.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rbba-pizza-Restoran-Syrovarnya-2022-09.jpg",
+        "https://img05.restaurantguru.com/r770-Restoran-Syrovarnya-meat.jpg",
+        "https://img05.restaurantguru.com/r1c9-dessert-Restoran-Syrovarnya-2022-09-2.jpg",
+        "https://img05.restaurantguru.com/r3bb-cake-Restoran-Syrovarnya.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r533-design-Restoran-Syrovarnya-2022-09-3.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "81563608",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r822-Puri-Puri-food-2025-08-4.jpg",
+        "https://img05.restaurantguru.com/r91a-design-Puri-Puri-2026-05-2.jpg",
+        "https://img05.restaurantguru.com/re0b-food-PuriPuri-2024-11-2.jpg",
+        "https://img05.restaurantguru.com/rfcd-Puri-Puri-food-2026-09.jpg",
+        "https://img05.restaurantguru.com/r3e7-design-Puri-Puri-2025-08.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rfcd-Puri-Puri-food-2026-09.jpg",
+        "https://img05.restaurantguru.com/r91a-design-Puri-Puri-2026-05-2.jpg",
+        "https://img05.restaurantguru.com/r822-Puri-Puri-food-2025-08-4.jpg",
+        "https://img05.restaurantguru.com/r3e7-design-Puri-Puri-2025-08.jpg",
+        "https://img05.restaurantguru.com/re0b-food-PuriPuri-2024-11-2.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109486188",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r13a-dumplings-Vaha-Lavka.jpg",
+        "https://img05.restaurantguru.com/r3e2-Vaha-Lavka-interior-2023-12.jpg",
+        "https://img05.restaurantguru.com/r67b-dishes-Vaha-Lavka-2025-06-1.jpg",
+        "https://img05.restaurantguru.com/r6bd-interior-Vaha-Lavka-2025-06-3.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r6bd-interior-Vaha-Lavka-2025-06-3.jpg",
+        "https://img05.restaurantguru.com/r67b-dishes-Vaha-Lavka-2025-06-1.jpg",
+        "https://img05.restaurantguru.com/r13a-dumplings-Vaha-Lavka.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r3e2-Vaha-Lavka-interior-2023-12.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109486374",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/rdfa-Tseh-Etogo-Goroda-burger-2024-05.jpg",
+        "https://img05.restaurantguru.ru/ra62-dishes-Tseh-Etogo-Goroda-2024-05-1.jpg",
+        "https://img05.restaurantguru.ru/ree4-Tseh-Etogo-Goroda-ceviche.jpg",
+        "https://img05.restaurantguru.ru/r2cc-Tseh-Etogo-Goroda-mussels.jpg",
+        "https://img05.restaurantguru.ru/r076-Tseh-Etogo-Goroda-exterior-2024-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r2cc-Tseh-Etogo-Goroda-mussels.jpg",
+        "https://img05.restaurantguru.ru/rdfa-Tseh-Etogo-Goroda-burger-2024-05.jpg",
+        "https://img05.restaurantguru.ru/r076-Tseh-Etogo-Goroda-exterior-2024-05.jpg",
+        "https://img05.restaurantguru.ru/ree4-Tseh-Etogo-Goroda-ceviche.jpg",
+        "https://img05.restaurantguru.ru/ra62-dishes-Tseh-Etogo-Goroda-2024-05-1.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109489618",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/re73-Nakatilnya-chocolate-mousse.jpg",
+        "https://img05.restaurantguru.com/rfcf-dishes-Nakatilnya.jpg",
+        "https://img05.restaurantguru.com/rf4b-Nakatilnya-dishes-2025-06.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rf4b-Nakatilnya-dishes-2025-06.jpg",
+        "https://img05.restaurantguru.com/re73-Nakatilnya-chocolate-mousse.jpg",
+        "https://img05.restaurantguru.com/rfcf-dishes-Nakatilnya.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "57753395",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r6a2-Sapore-Italiano-dishes-2025-09-18.jpg",
+        "https://img05.restaurantguru.com/r520-Sapore-Italiano-meals-2025-09-4.jpg",
+        "https://img05.restaurantguru.com/rcf4-Sapore-Italiano-dishes-2022-09-4.jpg",
+        "https://img05.restaurantguru.com/r579-Sapore-Italiano-pizza-2024-08-3.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rcf4-Sapore-Italiano-dishes-2022-09-4.jpg",
+        "https://img05.restaurantguru.com/r6a2-Sapore-Italiano-dishes-2025-09-18.jpg",
+        "https://img05.restaurantguru.com/r520-Sapore-Italiano-meals-2025-09-4.jpg",
+        "https://img05.restaurantguru.com/r579-Sapore-Italiano-pizza-2024-08-3.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "72207930",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r144-pizza-Puri-Puri-2022-10-1.jpg",
+        "https://img05.restaurantguru.com/r589-interior-Puri-Puri-2022-10-4.jpg",
+        "https://img05.restaurantguru.com/r5b6-Puri-Puri-Sobornyy-food-2022-11.jpg",
+        "https://img05.restaurantguru.com/r0b6-Puri-Puri-dishes-2022-10-4.jpg",
+        "https://img05.restaurantguru.com/r0b0-interior-Puri-Puri-Sobornyy.jpg",
+        "https://img05.restaurantguru.com/r380-meals-Puri-Puri-Sobornyy.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r0b0-interior-Puri-Puri-Sobornyy.jpg",
+        "https://img05.restaurantguru.com/r589-interior-Puri-Puri-2022-10-4.jpg",
+        "https://img05.restaurantguru.com/r380-meals-Puri-Puri-Sobornyy.jpg",
+        "https://img05.restaurantguru.com/r144-pizza-Puri-Puri-2022-10-1.jpg",
+        "https://img05.restaurantguru.com/r5b6-Puri-Puri-Sobornyy-food-2022-11.jpg",
+        "https://img05.restaurantguru.com/r0b6-Puri-Puri-dishes-2022-10-4.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "88492414",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r2bf-Sushi-Market-meals-2023-01-12.jpg",
+        "https://img05.restaurantguru.com/r528-Sushi-Market-dishes-2021-09-208.jpg",
+        "https://img05.restaurantguru.com/r481-Sushi-Market-food-2021-09-209.jpg",
+        "https://img05.restaurantguru.com/r8c3-Sushi-Market-image-2021-09-246044.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r2bf-Sushi-Market-meals-2023-01-12.jpg",
+        "https://img05.restaurantguru.com/r528-Sushi-Market-dishes-2021-09-208.jpg",
+        "https://img05.restaurantguru.com/r481-Sushi-Market-food-2021-09-209.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r8c3-Sushi-Market-image-2021-09-246044.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "125640719",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r014-interior-Yaga-2025-05.jpg",
+        "https://img05.restaurantguru.ru/r137-design-Yaga-2026-05.jpg",
+        "https://img05.restaurantguru.ru/r4df-Yaga-steak.jpg",
+        "https://img05.restaurantguru.ru/r2ac-Yaga-escargots.jpg",
+        "https://img05.restaurantguru.ru/r9f7-Yaga-meals-2026-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r2ac-Yaga-escargots.jpg",
+        "https://img05.restaurantguru.ru/r014-interior-Yaga-2025-05.jpg",
+        "https://img05.restaurantguru.ru/r4df-Yaga-steak.jpg",
+        "https://img05.restaurantguru.ru/r9f7-Yaga-meals-2026-05.jpg",
+        "https://img05.restaurantguru.ru/r137-design-Yaga-2026-05.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "72207930",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r589-interior-Puri-Puri-2022-10-4.jpg",
+        "https://img05.restaurantguru.com/r144-pizza-Puri-Puri-2022-10-1.jpg",
+        "https://img05.restaurantguru.com/r6c9-image-Puri-Puri-2022-10.jpg",
+        "https://img05.restaurantguru.com/r0b6-Puri-Puri-dishes-2022-10-4.jpg",
+        "https://img05.restaurantguru.com/r0b0-interior-Puri-Puri-Sobornyy.jpg",
+        "https://img05.restaurantguru.com/r5b6-Puri-Puri-Sobornyy-food-2022-11.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r0b0-interior-Puri-Puri-Sobornyy.jpg",
+        "https://img05.restaurantguru.com/r589-interior-Puri-Puri-2022-10-4.jpg",
+        "https://img05.restaurantguru.com/r6c9-image-Puri-Puri-2022-10.jpg",
+        "https://img05.restaurantguru.com/r144-pizza-Puri-Puri-2022-10-1.jpg",
+        "https://img05.restaurantguru.com/r5b6-Puri-Puri-Sobornyy-food-2022-11.jpg",
+        "https://img05.restaurantguru.com/r0b6-Puri-Puri-dishes-2022-10-4.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "68486851",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rf40-Erti-dishes-2025-08-15.jpg",
+        "https://img05.restaurantguru.com/r729-dishes-Erti-2025-08-10.jpg",
+        "https://img05.restaurantguru.com/rd25-beer-Erti.jpg",
+        "https://img05.restaurantguru.com/rfbd-Erti-meals-2022-09-2.jpg",
+        "https://img05.restaurantguru.com/rae0-interior-Erti-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/rf95-Erti-dishes-2022-09-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rd25-beer-Erti.jpg",
+        "https://img05.restaurantguru.com/rae0-interior-Erti-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/rf95-Erti-dishes-2022-09-2.jpg",
+        "https://img05.restaurantguru.com/rf40-Erti-dishes-2025-08-15.jpg",
+        "https://img05.restaurantguru.com/r729-dishes-Erti-2025-08-10.jpg",
+        "https://img05.restaurantguru.com/rfbd-Erti-meals-2022-09-2.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "123246254",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rf40-Raki-i-Gady-design.jpg",
+        "https://img05.restaurantguru.com/r4bc-food-Raki-i-Gady-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/rb31-food-Raki-i-Gady-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/re1d-Raki-i-Gady-mussels.jpg",
+        "https://img05.restaurantguru.com/rf8f-Raki-i-Gady-facade.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r4bc-food-Raki-i-Gady-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/re1d-Raki-i-Gady-mussels.jpg",
+        "https://img05.restaurantguru.com/rb31-food-Raki-i-Gady-2025-05-2.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rf40-Raki-i-Gady-design.jpg",
+        "https://img05.restaurantguru.com/rf8f-Raki-i-Gady-facade.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129425928",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/rb0c-Klevo-by-Novikov-design.jpg",
+        "https://img05.restaurantguru.ru/r906-Klevo-by-Novikov-pizza.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/rb0c-Klevo-by-Novikov-design.jpg",
+        "https://img05.restaurantguru.ru/r906-Klevo-by-Novikov-pizza.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129796290",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r2cc-interior-Makaronka.jpg",
+        "https://img05.restaurantguru.com/r9c3-interior-Makaronka-2026-04-1.jpg",
+        "https://img05.restaurantguru.com/r7d2-design-Makaronka-2026-04.jpg",
+        "https://img05.restaurantguru.com/r81e-Makaronka-oysters.jpg",
+        "https://img05.restaurantguru.com/rf03-Makaronka-interior-2026-04.jpg",
+        "https://img05.restaurantguru.com/rd69-Makaronka-meals.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r2cc-interior-Makaronka.jpg",
+        "https://img05.restaurantguru.com/r7d2-design-Makaronka-2026-04.jpg",
+        "https://img05.restaurantguru.com/r81e-Makaronka-oysters.jpg",
+        "https://img05.restaurantguru.com/r9c3-interior-Makaronka-2026-04-1.jpg",
+        "https://img05.restaurantguru.com/rd69-Makaronka-meals.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rf03-Makaronka-interior-2026-04.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "130852658",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r0ef-Pro-Hinkali-by-Novikov-steak.jpg",
+        "https://img05.restaurantguru.ru/rde2-food-Pro-Hinkali-by-Novikov.jpg",
+        "https://img05.restaurantguru.ru/rc83-Pro-Hinkali-by-Novikov-food.jpg",
+        "https://img05.restaurantguru.ru/r82c-interior-Pro-Hinkali-by-Novikov.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r0ef-Pro-Hinkali-by-Novikov-steak.jpg",
+        "https://img05.restaurantguru.ru/r82c-interior-Pro-Hinkali-by-Novikov.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/rde2-food-Pro-Hinkali-by-Novikov.jpg",
+        "https://img05.restaurantguru.ru/rc83-Pro-Hinkali-by-Novikov-food.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "91333541",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r870-Gruzinskiye-Kanikuly-meat-2022-11.jpg",
+        "https://img05.restaurantguru.ru/r0bd-Gruzinskiye-Kanikuly-burger-2022-11.jpg",
+        "https://img05.restaurantguru.ru/ra56-Gruzinskiye-Kanikuly-dishes-2022-11.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r870-Gruzinskiye-Kanikuly-meat-2022-11.jpg",
+        "https://img05.restaurantguru.ru/ra56-Gruzinskiye-Kanikuly-dishes-2022-11.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/r0bd-Gruzinskiye-Kanikuly-burger-2022-11.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "91344139",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r85b-dessert-Tseh-Etogo-Goroda-2023-01.jpg",
+        "https://img05.restaurantguru.com/r8ec-design-Tseh-Etogo-Goroda.jpg",
+        "https://img05.restaurantguru.com/r08a-Tseh-Etogo-Goroda-meat-2023-01-6.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r08a-Tseh-Etogo-Goroda-meat-2023-01-6.jpg",
+        "https://img05.restaurantguru.com/r85b-dessert-Tseh-Etogo-Goroda-2023-01.jpg",
+        "https://img05.restaurantguru.com/r8ec-design-Tseh-Etogo-Goroda.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109473606",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r770-Restoran-Syrovarnya-meat.jpg",
+        "https://img05.restaurantguru.com/rbba-pizza-Restoran-Syrovarnya-2022-09.jpg",
+        "https://img05.restaurantguru.com/r1c9-dessert-Restoran-Syrovarnya-2022-09-2.jpg",
+        "https://img05.restaurantguru.com/r533-design-Restoran-Syrovarnya-2022-09-3.jpg",
+        "https://img05.restaurantguru.com/r2f8-dishes-Restoran-Syrovarnya-2022-09-7.jpg",
+        "https://img05.restaurantguru.com/r3bb-cake-Restoran-Syrovarnya.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rbba-pizza-Restoran-Syrovarnya-2022-09.jpg",
+        "https://img05.restaurantguru.com/r770-Restoran-Syrovarnya-meat.jpg",
+        "https://img05.restaurantguru.com/r1c9-dessert-Restoran-Syrovarnya-2022-09-2.jpg",
+        "https://img05.restaurantguru.com/r2f8-dishes-Restoran-Syrovarnya-2022-09-7.jpg",
+        "https://img05.restaurantguru.com/r3bb-cake-Restoran-Syrovarnya.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r533-design-Restoran-Syrovarnya-2022-09-3.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "111258490",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r4ae-interior-Puri-Puri-2024-01.jpg",
+        "https://img05.restaurantguru.com/r54c-food-Puri-Puri-2025-08-10.jpg",
+        "https://img05.restaurantguru.com/r3b7-Puri-Puri-cheese-plate-2025-08.jpg",
+        "https://img05.restaurantguru.com/r179-Puri-Puri-interior-2025-08-10.jpg",
+        "https://img05.restaurantguru.com/rf45-Puri-Puri-food-2024-01.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r54c-food-Puri-Puri-2025-08-10.jpg",
+        "https://img05.restaurantguru.com/r179-Puri-Puri-interior-2025-08-10.jpg",
+        "https://img05.restaurantguru.com/rf45-Puri-Puri-food-2024-01.jpg",
+        "https://img05.restaurantguru.com/r3b7-Puri-Puri-cheese-plate-2025-08.jpg",
+        "https://img05.restaurantguru.com/r4ae-interior-Puri-Puri-2024-01.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109475230",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rc21-Midiynoe-Mesto-mussels-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/re1b-design-Midiynoe-Mesto-2023-12-10.jpg",
+        "https://img05.restaurantguru.com/r4ee-mussels-Midiynoe-Mesto-2025-05.jpg",
+        "https://img05.restaurantguru.com/rd0f-Midiynoe-Mesto-food-2025-06-6.jpg",
+        "https://img05.restaurantguru.com/r3d8-Midiynoe-Mesto-beverage-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/r850-food-Midiynoe-Mesto-2025-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rd0f-Midiynoe-Mesto-food-2025-06-6.jpg",
+        "https://img05.restaurantguru.com/re1b-design-Midiynoe-Mesto-2023-12-10.jpg",
+        "https://img05.restaurantguru.com/r4ee-mussels-Midiynoe-Mesto-2025-05.jpg",
+        "https://img05.restaurantguru.com/rc21-Midiynoe-Mesto-mussels-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/r850-food-Midiynoe-Mesto-2025-05.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r3d8-Midiynoe-Mesto-beverage-2025-05-1.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "39549082",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r562-food-Kazachiy-Kuren-2026-05-2.jpg",
+        "https://img05.restaurantguru.com/r9af-Kazachiy-Kuren-design-2026-05-5.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r562-food-Kazachiy-Kuren-2026-05-2.jpg",
+        "https://img05.restaurantguru.com/r9af-Kazachiy-Kuren-design-2026-05-5.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "125644202",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r2f4-Puri-Puri-paella.jpg",
+        "https://img05.restaurantguru.com/r0ca-food-Puri-Puri-2025-05-3.jpg",
+        "https://img05.restaurantguru.com/r0e2-interior-Puri-Puri-2025-05-8.jpg",
+        "https://img05.restaurantguru.com/rfee-design-Puri-Puri-2025-05-4.jpg",
+        "https://img05.restaurantguru.com/rc51-meals-Puri-Puri-2025-05-4.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r2f4-Puri-Puri-paella.jpg",
+        "https://img05.restaurantguru.com/r0ca-food-Puri-Puri-2025-05-3.jpg",
+        "https://img05.restaurantguru.com/r0e2-interior-Puri-Puri-2025-05-8.jpg",
+        "https://img05.restaurantguru.com/rfee-design-Puri-Puri-2025-05-4.jpg",
+        "https://img05.restaurantguru.com/rc51-meals-Puri-Puri-2025-05-4.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "112529328",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r75a-Guru-food-2024-08.jpg",
+        "https://img05.restaurantguru.com/r4cd-Guru-sushi-2024-08.jpg",
+        "https://img05.restaurantguru.com/r5a8-design-Guru-2024-08-1.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r5a8-design-Guru-2024-08-1.jpg",
+        "https://img05.restaurantguru.com/r4cd-Guru-sushi-2024-08.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [
+        "https://img05.restaurantguru.com/r75a-Guru-food-2024-08.jpg"
+      ],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "123719605",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r1c8-food-French-2025-08.jpg",
+        "https://img05.restaurantguru.com/r960-design-French-2025-08-2.jpg",
+        "https://img05.restaurantguru.com/r013-French-interior-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/ree9-dishes-French-2025-08.jpg",
+        "https://img05.restaurantguru.com/r069-French-meals-2025-08-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r960-design-French-2025-08-2.jpg",
+        "https://img05.restaurantguru.com/r069-French-meals-2025-08-2.jpg",
+        "https://img05.restaurantguru.com/r1c8-food-French-2025-08.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r013-French-interior-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/ree9-dishes-French-2025-08.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "123719605",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r960-design-French-2025-08-2.jpg",
+        "https://img05.restaurantguru.com/r013-French-interior-2025-08-3.jpg",
+        "https://img05.restaurantguru.com/r1c8-food-French-2025-08.jpg",
+        "https://img05.restaurantguru.com/r678-interior-French-2025-08-5.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r960-design-French-2025-08-2.jpg",
+        "https://img05.restaurantguru.com/r678-interior-French-2025-08-5.jpg",
+        "https://img05.restaurantguru.com/r1c8-food-French-2025-08.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r013-French-interior-2025-08-3.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129154755",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r57d-Gorynich-design-2026-04.jpg",
+        "https://img05.restaurantguru.com/r8d6-design-Gorynich-2026-04.jpg",
+        "https://img05.restaurantguru.com/r30e-interior-Gorynich-2026-04-1.jpg",
+        "https://img05.restaurantguru.com/r97c-Gorynich-interior-2026-04-3.jpg",
+        "https://img05.restaurantguru.com/r585-Gorynich-meals.jpg",
+        "https://img05.restaurantguru.com/ra1b-Gorynich-dishes.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r585-Gorynich-meals.jpg",
+        "https://img05.restaurantguru.com/ra1b-Gorynich-dishes.jpg",
+        "https://img05.restaurantguru.com/r57d-Gorynich-design-2026-04.jpg",
+        "https://img05.restaurantguru.com/r8d6-design-Gorynich-2026-04.jpg",
+        "https://img05.restaurantguru.com/r30e-interior-Gorynich-2026-04-1.jpg",
+        "https://img05.restaurantguru.com/r97c-Gorynich-interior-2026-04-3.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "88492414",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r528-Sushi-Market-dishes-2021-09-208.jpg",
+        "https://img05.restaurantguru.com/r481-Sushi-Market-food-2021-09-209.jpg",
+        "https://img05.restaurantguru.com/r2bf-Sushi-Market-meals-2023-01-12.jpg",
+        "https://img05.restaurantguru.com/r873-meat-Sushi-Market-2023-01-20.jpg",
+        "https://img05.restaurantguru.com/r6c8-Sushi-Market-food-2023-01-12.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r2bf-Sushi-Market-meals-2023-01-12.jpg",
+        "https://img05.restaurantguru.com/r528-Sushi-Market-dishes-2021-09-208.jpg",
+        "https://img05.restaurantguru.com/r873-meat-Sushi-Market-2023-01-20.jpg",
+        "https://img05.restaurantguru.com/r481-Sushi-Market-food-2021-09-209.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r6c8-Sushi-Market-food-2023-01-12.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "39549082",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r04d-Kazachiy-Kuren-peking-duck-2024-09.jpg",
+        "https://img05.restaurantguru.com/rfd0-Kazachiy-Kuren-food-2022-09-10.jpg",
+        "https://img05.restaurantguru.com/r9af-Kazachiy-Kuren-design-2026-05-5.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r9af-Kazachiy-Kuren-design-2026-05-5.jpg",
+        "https://img05.restaurantguru.com/rfd0-Kazachiy-Kuren-food-2022-09-10.jpg",
+        "https://img05.restaurantguru.com/r04d-Kazachiy-Kuren-peking-duck-2024-09.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129957878",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/re25-Chicago-interior-2026-03-1.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/re25-Chicago-interior-2026-03-1.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 2,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109475230",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/re1b-design-Midiynoe-Mesto-2023-12-10.jpg",
+        "https://img05.restaurantguru.com/r4ee-mussels-Midiynoe-Mesto-2025-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/re1b-design-Midiynoe-Mesto-2023-12-10.jpg",
+        "https://img05.restaurantguru.com/r4ee-mussels-Midiynoe-Mesto-2025-05.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "112517943",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r8ca-Kazak-dishes-2024-04.jpg",
+        "https://img05.restaurantguru.com/r0d8-food-Kazak.jpg",
+        "https://img05.restaurantguru.com/r0d4-Kazak-design-2024-04-3.jpg",
+        "https://img05.restaurantguru.com/r01a-interior-Kazak-2024-04-4.jpg",
+        "https://img05.restaurantguru.com/r05e-dishes-Kazak-2024-04-1.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r0d8-food-Kazak.jpg",
+        "https://img05.restaurantguru.com/r8ca-Kazak-dishes-2024-04.jpg",
+        "https://img05.restaurantguru.com/r0d4-Kazak-design-2024-04-3.jpg",
+        "https://img05.restaurantguru.com/r01a-interior-Kazak-2024-04-4.jpg",
+        "https://img05.restaurantguru.com/r05e-dishes-Kazak-2024-04-1.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "123725149",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r9e3-interior-Kuka-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/r598-Kuka-food-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/rdf6-Kuka-interior-2025-05.jpg",
+        "https://img05.restaurantguru.com/r3cd-Kuka-dishes-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/r4f4-design-Kuka-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/r7f3-Kuka-interior-2025-05-2.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r9e3-interior-Kuka-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/r598-Kuka-food-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/rdf6-Kuka-interior-2025-05.jpg",
+        "https://img05.restaurantguru.com/r3cd-Kuka-dishes-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/r4f4-design-Kuka-2025-05-1.jpg",
+        "https://img05.restaurantguru.com/r7f3-Kuka-interior-2025-05-2.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "86806443",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/rc69-Larisa-Zharit-interior-2024-08-1.jpg",
+        "https://img05.restaurantguru.ru/r579-food-Larisa-Zharit-2024-11-2.jpg",
+        "https://img05.restaurantguru.ru/r1be-Larisa-Zharit-interior-2025-08-16.jpg",
+        "https://img05.restaurantguru.ru/r6d9-Larisa-Zharit-dessert-2023-01.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r1be-Larisa-Zharit-interior-2025-08-16.jpg",
+        "https://img05.restaurantguru.ru/r579-food-Larisa-Zharit-2024-11-2.jpg",
+        "https://img05.restaurantguru.ru/rc69-Larisa-Zharit-interior-2024-08-1.jpg",
+        "https://img05.restaurantguru.ru/r6d9-Larisa-Zharit-dessert-2023-01.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "131696436",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r7f9-Pitkofe-Kosmos-interior-2026-08-1.jpg",
+        "https://img05.restaurantguru.com/ra64-Pitkofe-Kosmos-food.jpg",
+        "https://img05.restaurantguru.com/rf22-dishes-Pitkofe-Kosmos-2026-08.jpg",
+        "https://img05.restaurantguru.com/r48d-interior-Pitkofe-Kosmos-2026-08-1.jpg",
+        "https://img05.restaurantguru.com/r4ae-food-Pitkofe-Kosmos-2026-08.jpg",
+        "https://img05.restaurantguru.com/r494-Pitkofe-Kosmos-risotto.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r4ae-food-Pitkofe-Kosmos-2026-08.jpg",
+        "https://img05.restaurantguru.com/rf22-dishes-Pitkofe-Kosmos-2026-08.jpg",
+        "https://img05.restaurantguru.com/ra64-Pitkofe-Kosmos-food.jpg",
+        "https://img05.restaurantguru.com/r494-Pitkofe-Kosmos-risotto.jpg",
+        "https://img05.restaurantguru.com/r7f9-Pitkofe-Kosmos-interior-2026-08-1.jpg",
+        "https://img05.restaurantguru.com/r48d-interior-Pitkofe-Kosmos-2026-08-1.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "114189450",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rcef-Aloe-Vdokhnovenie-design-2024-08-1.jpg",
+        "https://img05.restaurantguru.com/r3d8-Aloe-Vdokhnovenie-interior-2024-08-1.jpg",
+        "https://img05.restaurantguru.com/rb3f-Aloe-Vdokhnovenie-meals.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r3d8-Aloe-Vdokhnovenie-interior-2024-08-1.jpg",
+        "https://img05.restaurantguru.com/rcef-Aloe-Vdokhnovenie-design-2024-08-1.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rb3f-Aloe-Vdokhnovenie-meals.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "128250510",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r81a-food-Di-Pasta-park.jpg",
+        "https://img05.restaurantguru.com/r132-Di-Pasta-park-food.jpg",
+        "https://img05.restaurantguru.com/r625-Di-Pasta-park-risotto.jpg",
+        "https://img05.restaurantguru.com/rf73-Di-Pasta-park-food-2026-03-1.jpg",
+        "https://img05.restaurantguru.com/r6ca-Di-Pasta-park-meals.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r6ca-Di-Pasta-park-meals.jpg",
+        "https://img05.restaurantguru.com/r81a-food-Di-Pasta-park.jpg",
+        "https://img05.restaurantguru.com/r625-Di-Pasta-park-risotto.jpg",
+        "https://img05.restaurantguru.com/r132-Di-Pasta-park-food.jpg",
+        "https://img05.restaurantguru.com/rf73-Di-Pasta-park-food-2026-03-1.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129823852",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r591-food-Thai-Keen-2026-03.jpg",
+        "https://img05.restaurantguru.ru/r852-sashimi-Thai-Keen.jpg",
+        "https://img05.restaurantguru.ru/r8f6-Thai-Keen-sushi-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/r125-Thai-Keen-sushi.jpg",
+        "https://img05.restaurantguru.ru/r549-Thai-Keen-pad-thai.jpg",
+        "https://img05.restaurantguru.ru/re25-meals-Thai-Keen.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r125-Thai-Keen-sushi.jpg",
+        "https://img05.restaurantguru.ru/re25-meals-Thai-Keen.jpg",
+        "https://img05.restaurantguru.ru/r549-Thai-Keen-pad-thai.jpg",
+        "https://img05.restaurantguru.ru/r8f6-Thai-Keen-sushi-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/r591-food-Thai-Keen-2026-03.jpg",
+        "https://img05.restaurantguru.ru/r852-sashimi-Thai-Keen.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "86806443",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r0a8-Larisa-Zharit-interior-2026-05-1.jpg",
+        "https://img05.restaurantguru.ru/r1be-Larisa-Zharit-interior-2025-08-16.jpg",
+        "https://img05.restaurantguru.ru/rc69-Larisa-Zharit-interior-2024-08-1.jpg",
+        "https://img05.restaurantguru.ru/r772-beef-tartare-Larisa-Zharit.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r0a8-Larisa-Zharit-interior-2026-05-1.jpg",
+        "https://img05.restaurantguru.ru/r1be-Larisa-Zharit-interior-2025-08-16.jpg",
+        "https://img05.restaurantguru.ru/r772-beef-tartare-Larisa-Zharit.jpg",
+        "https://img05.restaurantguru.ru/rc69-Larisa-Zharit-interior-2024-08-1.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "91344139",
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r8ec-design-Tseh-Etogo-Goroda.jpg",
+        "https://img05.restaurantguru.com/r530-meat-Tseh-Etogo-Goroda.jpg",
+        "https://img05.restaurantguru.com/r496-Tseh-Etogo-Goroda-beer.jpg",
+        "https://img05.restaurantguru.com/rfb6-Tseh-Etogo-Goroda-image-2022-10.jpg",
+        "https://img05.restaurantguru.com/r08a-Tseh-Etogo-Goroda-meat-2023-01-6.jpg",
+        "https://img05.restaurantguru.com/r606-dishes-Tseh-Etogo-Goroda-2023-01-1.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r8ec-design-Tseh-Etogo-Goroda.jpg",
+        "https://img05.restaurantguru.com/r530-meat-Tseh-Etogo-Goroda.jpg",
+        "https://img05.restaurantguru.com/r496-Tseh-Etogo-Goroda-beer.jpg",
+        "https://img05.restaurantguru.com/rfb6-Tseh-Etogo-Goroda-image-2022-10.jpg",
+        "https://img05.restaurantguru.com/r08a-Tseh-Etogo-Goroda-meat-2023-01-6.jpg",
+        "https://img05.restaurantguru.com/r606-dishes-Tseh-Etogo-Goroda-2023-01-1.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "81563608",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r075-bruschetta-Puri-Puri.jpg",
+        "https://img05.restaurantguru.com/r91a-design-Puri-Puri-2026-05-2.jpg",
+        "https://img05.restaurantguru.com/rb6e-dessert-Puri-Puri-Publichka.jpg",
+        "https://img05.restaurantguru.com/r822-Puri-Puri-food-2025-08-4.jpg",
+        "https://img05.restaurantguru.com/rb53-interior-Puri-Puri-2025-08-2.jpg",
+        "https://img05.restaurantguru.com/ra3e-Puri-Puri-dumplings-2026-09.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/ra3e-Puri-Puri-dumplings-2026-09.jpg",
+        "https://img05.restaurantguru.com/r91a-design-Puri-Puri-2026-05-2.jpg",
+        "https://img05.restaurantguru.com/r822-Puri-Puri-food-2025-08-4.jpg",
+        "https://img05.restaurantguru.com/r075-bruschetta-Puri-Puri.jpg",
+        "https://img05.restaurantguru.com/rb53-interior-Puri-Puri-2025-08-2.jpg",
+        "https://img05.restaurantguru.com/rb6e-dessert-Puri-Puri-Publichka.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "86800983",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r45d-sushi-Pad-Thai-2026-09-1.jpg",
+        "https://img05.restaurantguru.com/rbab-sushi-Pad-Thai-2025-10-1.jpg",
+        "https://img05.restaurantguru.com/rd30-food-Pad-Thai-2022-10-31.jpg",
+        "https://img05.restaurantguru.com/r389-dishes-Pad-Thai-2024-12-15.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r45d-sushi-Pad-Thai-2026-09-1.jpg",
+        "https://img05.restaurantguru.com/r389-dishes-Pad-Thai-2024-12-15.jpg",
+        "https://img05.restaurantguru.com/rd30-food-Pad-Thai-2022-10-31.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rbab-sushi-Pad-Thai-2025-10-1.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129957878",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/re25-Chicago-interior-2026-03-1.jpg",
+        "https://img05.restaurantguru.ru/racf-Chicago-meals-2026-03-1.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/re25-Chicago-interior-2026-03-1.jpg",
+        "https://img05.restaurantguru.ru/racf-Chicago-meals-2026-03-1.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 1,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109486188",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r13a-dumplings-Vaha-Lavka.jpg",
+        "https://img05.restaurantguru.com/r717-Vaha-Lavka-meals-2025-06-2.jpg",
+        "https://img05.restaurantguru.com/r398-interior-Vaha-Lavka-2025-06-1.jpg",
+        "https://img05.restaurantguru.com/r6bd-interior-Vaha-Lavka-2025-06-3.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r398-interior-Vaha-Lavka-2025-06-1.jpg",
+        "https://img05.restaurantguru.com/r6bd-interior-Vaha-Lavka-2025-06-3.jpg",
+        "https://img05.restaurantguru.com/r717-Vaha-Lavka-meals-2025-06-2.jpg",
+        "https://img05.restaurantguru.com/r13a-dumplings-Vaha-Lavka.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "130959795",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rb45-food-Zumu.jpg",
+        "https://img05.restaurantguru.com/rc2c-meals-Zumu.jpg",
+        "https://img05.restaurantguru.com/rcc9-dishes-Zumu.jpg",
+        "https://img05.restaurantguru.com/r2e2-Zumu-escargots.jpg",
+        "https://img05.restaurantguru.com/r319-meals-Zumu-2026-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rb45-food-Zumu.jpg",
+        "https://img05.restaurantguru.com/rc2c-meals-Zumu.jpg",
+        "https://img05.restaurantguru.com/rcc9-dishes-Zumu.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r2e2-Zumu-escargots.jpg",
+        "https://img05.restaurantguru.com/r319-meals-Zumu-2026-05.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "72200914",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/ra0c-Raki-and-Gady-food-2023-01-4.jpg",
+        "https://img05.restaurantguru.com/r6b6-seafood-Raki-and-Gady-2023-01-12.jpg",
+        "https://img05.restaurantguru.com/r8a4-mussels-Raki-and-Gady-2024-08.jpg",
+        "https://img05.restaurantguru.com/r12c-seafood-Raki-and-Gady.jpg",
+        "https://img05.restaurantguru.com/rbc8-food-Raki-and-Gady-2024-08-7.jpg",
+        "https://img05.restaurantguru.com/raab-beer-Rakovarnya-Raki-i-Gady-2022-09-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rbc8-food-Raki-and-Gady-2024-08-7.jpg",
+        "https://img05.restaurantguru.com/ra0c-Raki-and-Gady-food-2023-01-4.jpg",
+        "https://img05.restaurantguru.com/r8a4-mussels-Raki-and-Gady-2024-08.jpg",
+        "https://img05.restaurantguru.com/r12c-seafood-Raki-and-Gady.jpg",
+        "https://img05.restaurantguru.com/r6b6-seafood-Raki-and-Gady-2023-01-12.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/raab-beer-Rakovarnya-Raki-i-Gady-2022-09-2.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "126623444",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r6f6-Khinkali-Zapevali-design-2025-09-2.jpg",
+        "https://img05.restaurantguru.com/r566-Khinkali-Zapevali-dishes.jpg",
+        "https://img05.restaurantguru.com/r79d-dumplings-Khinkali-Zapevali.jpg",
+        "https://img05.restaurantguru.com/raf9-Khinkali-Zapevali-design-2025-08-1.jpg",
+        "https://img05.restaurantguru.com/rb5a-Khinkali-Zapevali-dishes-2025-09.jpg",
+        "https://img05.restaurantguru.com/ra98-Khinkali-Zapevali-design-2025-08.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/ra98-Khinkali-Zapevali-design-2025-08.jpg",
+        "https://img05.restaurantguru.com/raf9-Khinkali-Zapevali-design-2025-08-1.jpg",
+        "https://img05.restaurantguru.com/r566-Khinkali-Zapevali-dishes.jpg",
+        "https://img05.restaurantguru.com/rb5a-Khinkali-Zapevali-dishes-2025-09.jpg",
+        "https://img05.restaurantguru.com/r79d-dumplings-Khinkali-Zapevali.jpg",
+        "https://img05.restaurantguru.com/r6f6-Khinkali-Zapevali-design-2025-09-2.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "128256004",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/re99-Pro-Khinkali-by-Novikov-interior-2026-03-4.jpg",
+        "https://img05.restaurantguru.ru/r6ec-Pro-Khinkali-by-Novikov-dishes-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/rfec-dishes-Pro-Khinkali-by-Novikov-2026-03-1.jpg",
+        "https://img05.restaurantguru.ru/r07c-food-Pro-Khinkali-by-Novikov-2026-03-3.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r07c-food-Pro-Khinkali-by-Novikov-2026-03-3.jpg",
+        "https://img05.restaurantguru.ru/r6ec-Pro-Khinkali-by-Novikov-dishes-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/rfec-dishes-Pro-Khinkali-by-Novikov-2026-03-1.jpg",
+        "https://img05.restaurantguru.ru/re99-Pro-Khinkali-by-Novikov-interior-2026-03-4.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "68995806",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rdc9-meals-Glupiy-Frantsuz-2024-08-6.jpg",
+        "https://img05.restaurantguru.com/r33d-meals-Glupiy-Frantsuz-2024-08.jpg",
+        "https://img05.restaurantguru.com/r9ed-Glupyy-Francuz-food-2021-08.jpg",
+        "https://img05.restaurantguru.com/re36-bruschetta-Glupiy-Frantsuz.jpg",
+        "https://img05.restaurantguru.com/rb3f-Glupiy-Frantsuz-seafood.jpg",
+        "https://img05.restaurantguru.com/rb73-Glupiy-Frantsuz-food-2022-09-5.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rdc9-meals-Glupiy-Frantsuz-2024-08-6.jpg",
+        "https://img05.restaurantguru.com/r33d-meals-Glupiy-Frantsuz-2024-08.jpg",
+        "https://img05.restaurantguru.com/r9ed-Glupyy-Francuz-food-2021-08.jpg",
+        "https://img05.restaurantguru.com/re36-bruschetta-Glupiy-Frantsuz.jpg",
+        "https://img05.restaurantguru.com/rb3f-Glupiy-Frantsuz-seafood.jpg",
+        "https://img05.restaurantguru.com/rb73-Glupiy-Frantsuz-food-2022-09-5.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "124603930",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r886-Dom-Kultury-pizza-2025-05.jpg",
+        "https://img05.restaurantguru.ru/r515-Dom-Kultury-meals-2025-05.jpg",
+        "https://img05.restaurantguru.ru/re1d-Dom-Kultury-food-2026-05.jpg",
+        "https://img05.restaurantguru.ru/r0a3-beet-salad-Dom-Kultury.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r886-Dom-Kultury-pizza-2025-05.jpg",
+        "https://img05.restaurantguru.ru/r0a3-beet-salad-Dom-Kultury.jpg",
+        "https://img05.restaurantguru.ru/r515-Dom-Kultury-meals-2025-05.jpg",
+        "https://img05.restaurantguru.ru/re1d-Dom-Kultury-food-2026-05.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "39522761",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r5c0-interior-Schneider-2024-09-9.jpg",
+        "https://img05.restaurantguru.com/r7bb-interior-Schneider-2023-01.jpg",
+        "https://img05.restaurantguru.com/rfcd-Schneider-Weisse-food.jpg",
+        "https://img05.restaurantguru.com/rb2c-meals-Schneider-Weisse-2022-09-5.jpg",
+        "https://img05.restaurantguru.com/r788-food-Schneider-2024-08-4.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rb2c-meals-Schneider-Weisse-2022-09-5.jpg",
+        "https://img05.restaurantguru.com/r5c0-interior-Schneider-2024-09-9.jpg",
+        "https://img05.restaurantguru.com/r788-food-Schneider-2024-08-4.jpg",
+        "https://img05.restaurantguru.com/rfcd-Schneider-Weisse-food.jpg",
+        "https://img05.restaurantguru.com/r7bb-interior-Schneider-2023-01.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "123717699",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r828-Lali-Khinkali-dumplings-2025-05.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r828-Lali-Khinkali-dumplings-2025-05.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 2,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109486322",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r56d-sushi-Tom-Yum-Originals.jpg",
+        "https://img05.restaurantguru.com/rff6-Tyo-dishes-2023-11.jpg",
+        "https://img05.restaurantguru.com/r262-meals-Tom-Yum-Originals.jpg",
+        "https://img05.restaurantguru.com/r980-Tom-Yum-Originals-baby-back-ribs.jpg",
+        "https://img05.restaurantguru.com/rb71-food-Tom-Yum-Originals-2023-11.jpg",
+        "https://img05.restaurantguru.com/rf7c-Tom-Yum-Originals-meals-2025-06-2.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r56d-sushi-Tom-Yum-Originals.jpg",
+        "https://img05.restaurantguru.com/rff6-Tyo-dishes-2023-11.jpg",
+        "https://img05.restaurantguru.com/r262-meals-Tom-Yum-Originals.jpg",
+        "https://img05.restaurantguru.com/r980-Tom-Yum-Originals-baby-back-ribs.jpg",
+        "https://img05.restaurantguru.com/rb71-food-Tom-Yum-Originals-2023-11.jpg",
+        "https://img05.restaurantguru.com/rf7c-Tom-Yum-Originals-meals-2025-06-2.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "112517943",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r2f9-Kazak-meals-2024-04-1.jpg",
+        "https://img05.restaurantguru.com/r8ca-Kazak-dishes-2024-04.jpg",
+        "https://img05.restaurantguru.com/r0d4-Kazak-design-2024-04-3.jpg",
+        "https://img05.restaurantguru.com/r0d8-food-Kazak.jpg",
+        "https://img05.restaurantguru.com/r01a-interior-Kazak-2024-04-4.jpg",
+        "https://img05.restaurantguru.com/rfaa-Kazak-chocolate-cake.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r0d8-food-Kazak.jpg",
+        "https://img05.restaurantguru.com/r8ca-Kazak-dishes-2024-04.jpg",
+        "https://img05.restaurantguru.com/r2f9-Kazak-meals-2024-04-1.jpg",
+        "https://img05.restaurantguru.com/rfaa-Kazak-chocolate-cake.jpg",
+        "https://img05.restaurantguru.com/r0d4-Kazak-design-2024-04-3.jpg",
+        "https://img05.restaurantguru.com/r01a-interior-Kazak-2024-04-4.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129431563",
+      "model": "dots-studio/dots-3-note-preview:free",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r05b-Voobrazhenie-design-2026-04.jpg",
+        "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+        "https://img05.restaurantguru.ru/rd53-dishes-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/rf81-Voobrazhenie-dishes.jpg",
+        "https://img05.restaurantguru.ru/r3e2-meals-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/r41e-Voobrazhenie-food.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/r05b-Voobrazhenie-design-2026-04.jpg",
+        "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+        "https://img05.restaurantguru.ru/rd53-dishes-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/rf81-Voobrazhenie-dishes.jpg",
+        "https://img05.restaurantguru.ru/r3e2-meals-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/r41e-Voobrazhenie-food.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129957878",
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/rd27-Chicago-sushi-2026-03.jpg",
+        "https://img05.restaurantguru.ru/r0b1-Chicago-interior-2026-03.jpg",
+        "https://img05.restaurantguru.ru/r730-Chicago-beverage-2026-03.jpg",
+        "https://img05.restaurantguru.ru/re25-Chicago-interior-2026-03-1.jpg",
+        "https://img05.restaurantguru.ru/racf-Chicago-meals-2026-03-1.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/rd27-Chicago-sushi-2026-03.jpg",
+        "https://img05.restaurantguru.ru/r0b1-Chicago-interior-2026-03.jpg",
+        "https://img05.restaurantguru.ru/r730-Chicago-beverage-2026-03.jpg",
+        "https://img05.restaurantguru.ru/re25-Chicago-interior-2026-03-1.jpg",
+        "https://img05.restaurantguru.ru/racf-Chicago-meals-2026-03-1.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "128256004",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r6ec-Pro-Khinkali-by-Novikov-dishes-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/r2bf-Pro-Khinkali-by-Novikov-pizza.jpg",
+        "https://img05.restaurantguru.ru/r8eb-Pro-Khinkali-by-Novikov-food-2026-03-3.jpg",
+        "https://img05.restaurantguru.ru/r5d6-Pro-Khinkali-by-Novikov-mussels.jpg",
+        "https://img05.restaurantguru.ru/rfec-dishes-Pro-Khinkali-by-Novikov-2026-03-1.jpg",
+        "https://img05.restaurantguru.ru/rbc3-meals-Pro-Khinkali-by-Novikov-2026-03-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r6ec-Pro-Khinkali-by-Novikov-dishes-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/rbc3-meals-Pro-Khinkali-by-Novikov-2026-03-2.jpg",
+        "https://img05.restaurantguru.ru/rfec-dishes-Pro-Khinkali-by-Novikov-2026-03-1.jpg",
+        "https://img05.restaurantguru.ru/r2bf-Pro-Khinkali-by-Novikov-pizza.jpg",
+        "https://img05.restaurantguru.ru/r5d6-Pro-Khinkali-by-Novikov-mussels.jpg",
+        "https://img05.restaurantguru.ru/r8eb-Pro-Khinkali-by-Novikov-food-2026-03-3.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "123717699",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r828-Lali-Khinkali-dumplings-2025-05.jpg",
+        "https://img05.restaurantguru.com/re25-Lali-Khinkali-dishes.jpg",
+        "https://img05.restaurantguru.com/rd70-interior-Lali-Khinkali.jpg",
+        "https://img05.restaurantguru.com/r37b-Lali-Khinkali-design.jpg",
+        "https://img05.restaurantguru.com/rf1c-Lali-Khinkali-food-2025-05-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r37b-Lali-Khinkali-design.jpg",
+        "https://img05.restaurantguru.com/rd70-interior-Lali-Khinkali.jpg",
+        "https://img05.restaurantguru.com/rf1c-Lali-Khinkali-food-2025-05-2.jpg",
+        "https://img05.restaurantguru.com/re25-Lali-Khinkali-dishes.jpg",
+        "https://img05.restaurantguru.com/r828-Lali-Khinkali-dumplings-2025-05.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129796290",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r7d2-design-Makaronka-2026-04.jpg",
+        "https://img05.restaurantguru.com/r9c3-interior-Makaronka-2026-04-1.jpg",
+        "https://img05.restaurantguru.com/rc30-Makaronka-food-2026-04.jpg",
+        "https://img05.restaurantguru.com/r380-Makaronka-dishes.jpg",
+        "https://img05.restaurantguru.com/rd69-Makaronka-meals.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r7d2-design-Makaronka-2026-04.jpg",
+        "https://img05.restaurantguru.com/rc30-Makaronka-food-2026-04.jpg",
+        "https://img05.restaurantguru.com/r380-Makaronka-dishes.jpg",
+        "https://img05.restaurantguru.com/r9c3-interior-Makaronka-2026-04-1.jpg",
+        "https://img05.restaurantguru.com/rd69-Makaronka-meals.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "72200914",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rbc8-food-Raki-and-Gady-2024-08-7.jpg",
+        "https://img05.restaurantguru.com/rad6-dishes-Raki-and-Gady-2024-08-9.jpg",
+        "https://img05.restaurantguru.com/r12c-seafood-Raki-and-Gady.jpg",
+        "https://img05.restaurantguru.com/ra0c-Raki-and-Gady-food-2023-01-4.jpg",
+        "https://img05.restaurantguru.com/r6b6-seafood-Raki-and-Gady-2023-01-12.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rbc8-food-Raki-and-Gady-2024-08-7.jpg",
+        "https://img05.restaurantguru.com/ra0c-Raki-and-Gady-food-2023-01-4.jpg",
+        "https://img05.restaurantguru.com/r12c-seafood-Raki-and-Gady.jpg",
+        "https://img05.restaurantguru.com/r6b6-seafood-Raki-and-Gady-2023-01-12.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/rad6-dishes-Raki-and-Gady-2024-08-9.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "129154755",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/ra56-Gorynich-design.jpg",
+        "https://img05.restaurantguru.com/r97c-Gorynich-interior-2026-04-3.jpg",
+        "https://img05.restaurantguru.com/r310-Gorynich-chocolate-cake.jpg",
+        "https://img05.restaurantguru.com/r57d-Gorynich-design-2026-04.jpg",
+        "https://img05.restaurantguru.com/r4a3-Gorynich-design-2026-04-2.jpg",
+        "https://img05.restaurantguru.com/r4cc-meals-Gorynich.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/ra56-Gorynich-design.jpg",
+        "https://img05.restaurantguru.com/r57d-Gorynich-design-2026-04.jpg",
+        "https://img05.restaurantguru.com/r4a3-Gorynich-design-2026-04-2.jpg",
+        "https://img05.restaurantguru.com/r97c-Gorynich-interior-2026-04-3.jpg"
+      ],
+      "review_urls": [
+        "https://img05.restaurantguru.com/r4cc-meals-Gorynich.jpg",
+        "https://img05.restaurantguru.com/r310-Gorynich-chocolate-cake.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "109438596",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r2e7-Puri-Puri-food-2025-06.jpg",
+        "https://img05.restaurantguru.com/rf4f-meals-Puri-Puri-2025-06.jpg",
+        "https://img05.restaurantguru.com/r2cb-dumplings-Puri-Puri-2025-06.jpg",
+        "https://img05.restaurantguru.com/r220-design-Puri-Puri-2023-12-4.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r220-design-Puri-Puri-2023-12-4.jpg",
+        "https://img05.restaurantguru.com/rf4f-meals-Puri-Puri-2025-06.jpg",
+        "https://img05.restaurantguru.com/r2e7-Puri-Puri-food-2025-06.jpg",
+        "https://img05.restaurantguru.com/r2cb-dumplings-Puri-Puri-2025-06.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "130852658",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/r0ef-Pro-Hinkali-by-Novikov-steak.jpg",
+        "https://img05.restaurantguru.ru/r8f2-interior-Pro-Hinkali-by-Novikov-2026-05.jpg",
+        "https://img05.restaurantguru.ru/rbdc-Pro-Hinkali-by-Novikov-design.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.ru/r8f2-interior-Pro-Hinkali-by-Novikov-2026-05.jpg",
+        "https://img05.restaurantguru.ru/r0ef-Pro-Hinkali-by-Novikov-steak.jpg",
+        "https://img05.restaurantguru.ru/rbdc-Pro-Hinkali-by-Novikov-design.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "39566888",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/rdf1-Onegin-Dacha-design-2024-08-19.jpg",
+        "https://img05.restaurantguru.com/re34-Onegin-Dacha-design-2024-08-5.jpg",
+        "https://img05.restaurantguru.com/rd4b-Onegin-Dacha-interior-2024-09-4.jpg",
+        "https://img05.restaurantguru.com/r9ab-dishes-Onegin-Dacha-2022-09-8.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/rdf1-Onegin-Dacha-design-2024-08-19.jpg",
+        "https://img05.restaurantguru.com/r9ab-dishes-Onegin-Dacha-2022-09-8.jpg",
+        "https://img05.restaurantguru.com/rd4b-Onegin-Dacha-interior-2024-09-4.jpg",
+        "https://img05.restaurantguru.com/re34-Onegin-Dacha-design-2024-08-5.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "86802504",
+      "model": "gpt-6-luna",
+      "candidate_urls": [
+        "https://img05.restaurantguru.ru/rc41-FRANK-by-BASTA-meals-2022-09-11.jpg",
+        "https://img05.restaurantguru.ru/r0c0-FRANK-by-BASTA-dishes-2022-09-11.jpg",
+        "https://img05.restaurantguru.ru/rbfc-Frank-by-Basta-interior-2024-02.jpg",
+        "https://img05.restaurantguru.ru/rf40-prime-rib-Frank-by-Basta.jpg",
+        "https://img05.restaurantguru.ru/rf1b-burger-Frank-by-Basta-2024-11.jpg",
+        "https://img05.restaurantguru.ru/r6b2-dishes-Frank-by-Basta-2024-08-3.jpg"
+      ],
+      "verification_status": "not_checked",
+      "verified_cover": [],
+      "review_urls": [
+        "https://img05.restaurantguru.ru/rc41-FRANK-by-BASTA-meals-2022-09-11.jpg",
+        "https://img05.restaurantguru.ru/r0c0-FRANK-by-BASTA-dishes-2022-09-11.jpg",
+        "https://img05.restaurantguru.ru/rbfc-Frank-by-Basta-interior-2024-02.jpg",
+        "https://img05.restaurantguru.ru/rf40-prime-rib-Frank-by-Basta.jpg",
+        "https://img05.restaurantguru.ru/rf1b-burger-Frank-by-Basta-2024-11.jpg",
+        "https://img05.restaurantguru.ru/r6b2-dishes-Frank-by-Basta-2024-08-3.jpg"
+      ],
+      "rejected_urls": [],
+      "shortfall": 3,
+      "human_verified": false
+    },
+    {
+      "restaurant_id": "104270066",
+      "model": "deepseek-flash",
+      "candidate_urls": [
+        "https://img05.restaurantguru.com/r07b-Starik-Khinkalych-food-2023-04-1.jpg",
+        "https://img05.restaurantguru.com/r504-meals-Starik-Khinkalych-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/r232-Starik-Khinkalych-photo-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/r181-dishes-Starik-Khinkalych-2023-04.jpg",
+        "https://img05.restaurantguru.com/r707-Starik-Khinkalych-picture-2022-11.jpg",
+        "https://img05.restaurantguru.com/rfa7-Starik-Khinkalych-picture-2023-04-2.jpg"
+      ],
+      "verification_status": "ai_checked",
+      "verified_cover": [
+        "https://img05.restaurantguru.com/r504-meals-Starik-Khinkalych-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/r07b-Starik-Khinkalych-food-2023-04-1.jpg",
+        "https://img05.restaurantguru.com/r181-dishes-Starik-Khinkalych-2023-04.jpg",
+        "https://img05.restaurantguru.com/r232-Starik-Khinkalych-photo-2022-11-1.jpg",
+        "https://img05.restaurantguru.com/r707-Starik-Khinkalych-picture-2022-11.jpg",
+        "https://img05.restaurantguru.com/rfa7-Starik-Khinkalych-picture-2023-04-2.jpg"
+      ],
+      "review_urls": [],
+      "rejected_urls": [],
+      "shortfall": 0,
+      "human_verified": false
+    }
+  ]
+}

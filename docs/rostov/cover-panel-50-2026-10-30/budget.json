@@ -1,0 +1,5 @@
+{
+  "limit_usd": 5,
+  "accounted_upper_usd": 1.2497326000000002,
+  "note": "Usage-based upper estimate, not provider invoice. Failed unknown calls retain reservation."
+}

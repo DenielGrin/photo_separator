@@ -1,0 +1,4266 @@
+{
+  "reviewer_model": "gpt-6-sol",
+  "completed_paired_restaurants": 45,
+  "failed_judge_calls": 0,
+  "selector_names_hidden_from_judge": true,
+  "human_gold": false,
+  "ai_preference_votes": {
+    "gpt-6-luna": 30,
+    "deepseek-flash": 12,
+    "none": 2,
+    "tie": 1
+  },
+  "models": [
+    {
+      "model": "deepseek-flash",
+      "review": 20,
+      "keep": 150,
+      "restaurants": 45,
+      "improvement_worse": 6,
+      "photos": 172,
+      "improvement_better": 38,
+      "reject": 2,
+      "improvement_same": 1,
+      "mean_set_score": 77.13,
+      "ai_keep_fraction": 0.872093023255814
+    },
+    {
+      "model": "gpt-6-luna",
+      "keep": 202,
+      "restaurants": 45,
+      "improvement_better": 42,
+      "photos": 224,
+      "review": 20,
+      "improvement_same": 2,
+      "reject": 2,
+      "improvement_worse": 1,
+      "mean_set_score": 80.8,
+      "ai_keep_fraction": 0.9017857142857143
+    }
+  ],
+  "judge_usage_cost_usd": 0.43925,
+  "restaurants": {
+    "57753395": {
+      "preferred": "gpt-6-luna",
+      "reason": "CURRENT has three clear, varied food photos. A's square previews make some dishes small, and one image needs review for a background arm. B offers sharper, varied dishes that remain readable as covers.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R57753395-P007",
+            "R57753395-P010",
+            "R57753395-P015"
+          ],
+          "score_before": 78.0,
+          "score_after": 72.0,
+          "improvement": "worse",
+          "verdicts": {
+            "R57753395-P007": {
+              "photo_id": "R57753395-P007",
+              "verdict": "review",
+              "reason": "Pasta is clear, but a real person's arm appears at the edge of the original view."
+            },
+            "R57753395-P010": {
+              "photo_id": "R57753395-P010",
+              "verdict": "keep",
+              "reason": "Clear dessert plate, though it looks small in the square preview."
+            },
+            "R57753395-P015": {
+              "photo_id": "R57753395-P015",
+              "verdict": "keep",
+              "reason": "Well-lit plated dessert remains prominent in the square preview."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R57753395-P002",
+            "R57753395-P008",
+            "R57753395-P010",
+            "R57753395-P012"
+          ],
+          "score_before": 78.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R57753395-P002": {
+              "photo_id": "R57753395-P002",
+              "verdict": "keep",
+              "reason": "Sharp, colorful seafood salad fills the frame."
+            },
+            "R57753395-P008": {
+              "photo_id": "R57753395-P008",
+              "verdict": "keep",
+              "reason": "Colorful, detailed salad remains recognizable in the square preview."
+            },
+            "R57753395-P010": {
+              "photo_id": "R57753395-P010",
+              "verdict": "keep",
+              "reason": "Clear dessert plate, though it looks small in the square preview."
+            },
+            "R57753395-P012": {
+              "photo_id": "R57753395-P012",
+              "verdict": "keep",
+              "reason": "Pizza is clear in both views; the visible hand is not a portrait."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R57753395-B01": {
+          "photo_id": "R57753395-B01",
+          "verdict": "keep",
+          "reason": "Sharp, appetizing pizza and plated slice; readable at thumbnail size."
+        },
+        "R57753395-B02": {
+          "photo_id": "R57753395-B02",
+          "verdict": "keep",
+          "reason": "Clear overhead pasta dish, though the fork crosses the food."
+        },
+        "R57753395-B03": {
+          "photo_id": "R57753395-B03",
+          "verdict": "keep",
+          "reason": "Bright breakfast spread with recognizable food and coffee."
+        }
+      }
+    },
+    "129154755": {
+      "preferred": "gpt-6-luna",
+      "reason": "A adds clear, appetizing food photos and varied interior views. B also adds variety, but its food covers are less readable and some interiors repeat the current views.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R129154755-P001",
+            "R129154755-P002",
+            "R129154755-P009",
+            "R129154755-P012",
+            "R129154755-P014",
+            "R129154755-P019"
+          ],
+          "score_before": 65.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129154755-P001": {
+              "photo_id": "R129154755-P001",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing dessert close-up that reads well in the square preview."
+            },
+            "R129154755-P002": {
+              "photo_id": "R129154755-P002",
+              "verdict": "keep",
+              "reason": "Colorful plated food remains clear in the square preview."
+            },
+            "R129154755-P009": {
+              "photo_id": "R129154755-P009",
+              "verdict": "keep",
+              "reason": "Clear interior view, though the foreground barrier dominates the square crop."
+            },
+            "R129154755-P012": {
+              "photo_id": "R129154755-P012",
+              "verdict": "keep",
+              "reason": "Well-composed dining-room view with clear tables and decor."
+            },
+            "R129154755-P014": {
+              "photo_id": "R129154755-P014",
+              "verdict": "keep",
+              "reason": "Sharp, spacious interior view that reads well at thumbnail size."
+            },
+            "R129154755-P019": {
+              "photo_id": "R129154755-P019",
+              "verdict": "keep",
+              "reason": "Clear seating area with distinctive wall artwork."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R129154755-P003",
+            "R129154755-P005",
+            "R129154755-P007",
+            "R129154755-P009",
+            "R129154755-P016",
+            "R129154755-P019"
+          ],
+          "score_before": 65.0,
+          "score_after": 73.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129154755-P003": {
+              "photo_id": "R129154755-P003",
+              "verdict": "review",
+              "reason": "Dessert is visible, but harsh lighting and surrounding clutter weaken the square cover."
+            },
+            "R129154755-P005": {
+              "photo_id": "R129154755-P005",
+              "verdict": "review",
+              "reason": "Food is relevant, but looks dark and small amid table clutter in the square crop."
+            },
+            "R129154755-P007": {
+              "photo_id": "R129154755-P007",
+              "verdict": "keep",
+              "reason": "Sharp interior detail; the prominent figure is wall artwork, not a person."
+            },
+            "R129154755-P009": {
+              "photo_id": "R129154755-P009",
+              "verdict": "keep",
+              "reason": "Clear interior view, though the foreground barrier dominates the square crop."
+            },
+            "R129154755-P016": {
+              "photo_id": "R129154755-P016",
+              "verdict": "keep",
+              "reason": "Clear, relevant dining-room view, though similar to the current carousel."
+            },
+            "R129154755-P019": {
+              "photo_id": "R129154755-P019",
+              "verdict": "keep",
+              "reason": "Clear seating area with distinctive wall artwork."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R129154755-B01": {
+          "photo_id": "R129154755-B01",
+          "verdict": "keep",
+          "reason": "Clear, bright view of the dining room."
+        },
+        "R129154755-B02": {
+          "photo_id": "R129154755-B02",
+          "verdict": "keep",
+          "reason": "Relevant dining-room view, though somewhat dark."
+        },
+        "R129154755-B03": {
+          "photo_id": "R129154755-B03",
+          "verdict": "keep",
+          "reason": "Readable interior view, but dim and similar to B02."
+        }
+      }
+    },
+    "124603930": {
+      "preferred": "gpt-6-luna",
+      "reason": "A repeats a current food image and adds an interior with a possible person. B retains the strong food images and adds clear, varied drink and burger shots.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R124603930-P006",
+            "R124603930-P007"
+          ],
+          "score_before": 76.0,
+          "score_after": 68.0,
+          "improvement": "worse",
+          "verdicts": {
+            "R124603930-P006": {
+              "photo_id": "R124603930-P006",
+              "verdict": "review",
+              "reason": "Interior is visible, but a possible background person needs review."
+            },
+            "R124603930-P007": {
+              "photo_id": "R124603930-P007",
+              "verdict": "keep",
+              "reason": "Clear pizzas and plated food; small cartoon mascot is acceptable."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R124603930-P007",
+            "R124603930-P008",
+            "R124603930-P010",
+            "R124603930-P018"
+          ],
+          "score_before": 76.0,
+          "score_after": 87.0,
+          "improvement": "better",
+          "verdicts": {
+            "R124603930-P007": {
+              "photo_id": "R124603930-P007",
+              "verdict": "keep",
+              "reason": "Clear pizzas and plated food; small cartoon mascot is acceptable."
+            },
+            "R124603930-P008": {
+              "photo_id": "R124603930-P008",
+              "verdict": "keep",
+              "reason": "Colorful, well-framed salad; small cartoon mascot is acceptable."
+            },
+            "R124603930-P010": {
+              "photo_id": "R124603930-P010",
+              "verdict": "keep",
+              "reason": "Vivid drink is clear and prominent; hand alone is acceptable."
+            },
+            "R124603930-P018": {
+              "photo_id": "R124603930-P018",
+              "verdict": "keep",
+              "reason": "Clear burgers and fries with an effective close crop."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R124603930-B01": {
+          "photo_id": "R124603930-B01",
+          "verdict": "keep",
+          "reason": "Clear, colorful pizzas and plated food; slightly crowded crop."
+        },
+        "R124603930-B02": {
+          "photo_id": "R124603930-B02",
+          "verdict": "keep",
+          "reason": "Sharp, colorful salad with readable food detail."
+        },
+        "R124603930-B03": {
+          "photo_id": "R124603930-B03",
+          "verdict": "review",
+          "reason": "Atmospheric interior detail, but dark and less relevant to food."
+        }
+      }
+    },
+    "125640719": {
+      "preferred": "deepseek-flash",
+      "reason": "A adds a sharp shrimp dish, dessert and interior variety while retaining the strong entrée photo. B has useful variety, but one image needs review and some crops are less immediately readable than the current cover.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R125640719-P001",
+            "R125640719-P006",
+            "R125640719-P008",
+            "R125640719-P013",
+            "R125640719-P017"
+          ],
+          "score_before": 76.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R125640719-P001": {
+              "photo_id": "R125640719-P001",
+              "verdict": "keep",
+              "reason": "Sharp shrimp dish with a clear food-focused crop."
+            },
+            "R125640719-P006": {
+              "photo_id": "R125640719-P006",
+              "verdict": "keep",
+              "reason": "Clear interior view adds variety; no visible people."
+            },
+            "R125640719-P008": {
+              "photo_id": "R125640719-P008",
+              "verdict": "keep",
+              "reason": "Clear plated entrée; mascot partly covers the plate but remains small."
+            },
+            "R125640719-P013": {
+              "photo_id": "R125640719-P013",
+              "verdict": "keep",
+              "reason": "Bright, sharp dessert with a strong square crop."
+            },
+            "R125640719-P017": {
+              "photo_id": "R125640719-P017",
+              "verdict": "keep",
+              "reason": "Food and dining room provide context, though the dish is small in the square crop."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R125640719-P002",
+            "R125640719-P007",
+            "R125640719-P008",
+            "R125640719-P013",
+            "R125640719-P019",
+            "R125640719-P020"
+          ],
+          "score_before": 76.0,
+          "score_after": 72.0,
+          "improvement": "same",
+          "verdicts": {
+            "R125640719-P002": {
+              "photo_id": "R125640719-P002",
+              "verdict": "keep",
+              "reason": "Sharp food close-up, though the white topping obscures much of the dish."
+            },
+            "R125640719-P007": {
+              "photo_id": "R125640719-P007",
+              "verdict": "keep",
+              "reason": "Sharp, colorful dish with a readable square crop."
+            },
+            "R125640719-P008": {
+              "photo_id": "R125640719-P008",
+              "verdict": "keep",
+              "reason": "Clear plated entrée; mascot partly covers the plate but remains small."
+            },
+            "R125640719-P013": {
+              "photo_id": "R125640719-P013",
+              "verdict": "keep",
+              "reason": "Bright, sharp dessert with a strong square crop."
+            },
+            "R125640719-P019": {
+              "photo_id": "R125640719-P019",
+              "verdict": "review",
+              "reason": "Appetizing meat close-up, but the dark background may contain a person."
+            },
+            "R125640719-P020": {
+              "photo_id": "R125640719-P020",
+              "verdict": "keep",
+              "reason": "Clear plated dish with table setting; food remains readable in the square crop."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R125640719-B01": {
+          "photo_id": "R125640719-B01",
+          "verdict": "keep",
+          "reason": "Sharp, colorful close-up of a plated dish."
+        },
+        "R125640719-B02": {
+          "photo_id": "R125640719-B02",
+          "verdict": "keep",
+          "reason": "Well-framed plated entrée, readable at thumbnail size."
+        },
+        "R125640719-B03": {
+          "photo_id": "R125640719-B03",
+          "verdict": "keep",
+          "reason": "Dessert is clear, though the dark plate reduces contrast."
+        }
+      }
+    },
+    "131696436": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer clearer food and interior coverage than CURRENT. A has slightly more useful variety, although its two lighting-focused interiors overlap.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R131696436-P002",
+            "R131696436-P004",
+            "R131696436-P007",
+            "R131696436-P008",
+            "R131696436-P013",
+            "R131696436-P018"
+          ],
+          "score_before": 59.0,
+          "score_after": 86.0,
+          "improvement": "better",
+          "verdicts": {
+            "R131696436-P002": {
+              "photo_id": "R131696436-P002",
+              "verdict": "keep",
+              "reason": "Sharp, colorful close-up of a salad."
+            },
+            "R131696436-P004": {
+              "photo_id": "R131696436-P004",
+              "verdict": "keep",
+              "reason": "Well-lit, appetizing plated dish with a clear focal point."
+            },
+            "R131696436-P007": {
+              "photo_id": "R131696436-P007",
+              "verdict": "keep",
+              "reason": "Distinctive interior artwork and lighting read well in the square preview."
+            },
+            "R131696436-P008": {
+              "photo_id": "R131696436-P008",
+              "verdict": "keep",
+              "reason": "Clear food photo, though the dish occupies a modest part of the frame."
+            },
+            "R131696436-P013": {
+              "photo_id": "R131696436-P013",
+              "verdict": "keep",
+              "reason": "Bright, composed view showing the dining space."
+            },
+            "R131696436-P018": {
+              "photo_id": "R131696436-P018",
+              "verdict": "keep",
+              "reason": "Colorful, clear interior view with prominent hanging lights."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R131696436-P002",
+            "R131696436-P004",
+            "R131696436-P007",
+            "R131696436-P013",
+            "R131696436-P014"
+          ],
+          "score_before": 59.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R131696436-P002": {
+              "photo_id": "R131696436-P002",
+              "verdict": "keep",
+              "reason": "Sharp, colorful close-up of a salad."
+            },
+            "R131696436-P004": {
+              "photo_id": "R131696436-P004",
+              "verdict": "keep",
+              "reason": "Well-lit, appetizing plated dish with a clear focal point."
+            },
+            "R131696436-P007": {
+              "photo_id": "R131696436-P007",
+              "verdict": "keep",
+              "reason": "Distinctive interior artwork and lighting read well in the square preview."
+            },
+            "R131696436-P013": {
+              "photo_id": "R131696436-P013",
+              "verdict": "keep",
+              "reason": "Bright, composed view showing the dining space."
+            },
+            "R131696436-P014": {
+              "photo_id": "R131696436-P014",
+              "verdict": "keep",
+              "reason": "Clear seating area with distinctive lights visible at thumbnail size."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R131696436-B01": {
+          "photo_id": "R131696436-B01",
+          "verdict": "keep",
+          "reason": "Colorful, readable interior with distinctive hanging lights."
+        },
+        "R131696436-B02": {
+          "photo_id": "R131696436-B02",
+          "verdict": "keep",
+          "reason": "Clear exterior, though the dark facade is less engaging at thumbnail size."
+        },
+        "R131696436-B03": {
+          "photo_id": "R131696436-B03",
+          "verdict": "review",
+          "reason": "Interior includes a visible person in the background."
+        }
+      }
+    },
+    "123719605": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements offer clearer restaurant and food coverage than CURRENT, which includes a prominent person. A has stronger composition and fewer distracting food shots than B.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R123719605-P004",
+            "R123719605-P005",
+            "R123719605-P017",
+            "R123719605-P018"
+          ],
+          "score_before": 46.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R123719605-P004": {
+              "photo_id": "R123719605-P004",
+              "verdict": "keep",
+              "reason": "Sharp, well-composed dining-room and bar view."
+            },
+            "R123719605-P005": {
+              "photo_id": "R123719605-P005",
+              "verdict": "review",
+              "reason": "Clear interior view, but a possible background person appears at right."
+            },
+            "R123719605-P017": {
+              "photo_id": "R123719605-P017",
+              "verdict": "keep",
+              "reason": "Atmospheric bar view, though dark at thumbnail size."
+            },
+            "R123719605-P018": {
+              "photo_id": "R123719605-P018",
+              "verdict": "keep",
+              "reason": "Bright, appetizing pastry and coffee with a clear square crop."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R123719605-P004",
+            "R123719605-P005",
+            "R123719605-P011",
+            "R123719605-P015",
+            "R123719605-P018"
+          ],
+          "score_before": 46.0,
+          "score_after": 75.0,
+          "improvement": "better",
+          "verdicts": {
+            "R123719605-P004": {
+              "photo_id": "R123719605-P004",
+              "verdict": "keep",
+              "reason": "Sharp, well-composed dining-room and bar view."
+            },
+            "R123719605-P005": {
+              "photo_id": "R123719605-P005",
+              "verdict": "review",
+              "reason": "Clear interior view, but a possible background person appears at right."
+            },
+            "R123719605-P011": {
+              "photo_id": "R123719605-P011",
+              "verdict": "keep",
+              "reason": "Relevant desserts and drinks, though the composition is busy."
+            },
+            "R123719605-P015": {
+              "photo_id": "R123719605-P015",
+              "verdict": "review",
+              "reason": "Relevant food close-up, but a possible person appears at the upper-right edge."
+            },
+            "R123719605-P018": {
+              "photo_id": "R123719605-P018",
+              "verdict": "keep",
+              "reason": "Bright, appetizing pastry and coffee with a clear square crop."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R123719605-B01": {
+          "photo_id": "R123719605-B01",
+          "verdict": "keep",
+          "reason": "Relevant bar interior, though dim and visually cluttered."
+        },
+        "R123719605-B02": {
+          "photo_id": "R123719605-B02",
+          "verdict": "reject",
+          "reason": "A photographed person prominently fills much of the frame."
+        },
+        "R123719605-B03": {
+          "photo_id": "R123719605-B03",
+          "verdict": "keep",
+          "reason": "Readable outdoor seating view, but the restaurant is not the clear focus."
+        }
+      }
+    },
+    "39522761": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements avoid CURRENT’s prominent-person photo and add clear food and exterior views. A has the stronger range of appetizing dishes; its extra dimmer platter does not outweigh that advantage.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R39522761-P004",
+            "R39522761-P006",
+            "R39522761-P010",
+            "R39522761-P011",
+            "R39522761-P012",
+            "R39522761-P013"
+          ],
+          "score_before": 48.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R39522761-P004": {
+              "photo_id": "R39522761-P004",
+              "verdict": "keep",
+              "reason": "Readable, warmly lit dining-area view; the cartoon mascot is acceptable."
+            },
+            "R39522761-P006": {
+              "photo_id": "R39522761-P006",
+              "verdict": "keep",
+              "reason": "Sharp exterior that adds useful variety, though the sign is partly cropped in the square preview."
+            },
+            "R39522761-P010": {
+              "photo_id": "R39522761-P010",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing food close-up with a clear subject."
+            },
+            "R39522761-P011": {
+              "photo_id": "R39522761-P011",
+              "verdict": "keep",
+              "reason": "Clear, distinctive interior view that remains legible in the square preview."
+            },
+            "R39522761-P012": {
+              "photo_id": "R39522761-P012",
+              "verdict": "keep",
+              "reason": "Varied, recognizable dishes; the visible hand is not a portrait."
+            },
+            "R39522761-P013": {
+              "photo_id": "R39522761-P013",
+              "verdict": "keep",
+              "reason": "Relevant seafood platter, though the lighting is somewhat dim."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R39522761-P004",
+            "R39522761-P006",
+            "R39522761-P008",
+            "R39522761-P010",
+            "R39522761-P011"
+          ],
+          "score_before": 48.0,
+          "score_after": 78.0,
+          "improvement": "better",
+          "verdicts": {
+            "R39522761-P004": {
+              "photo_id": "R39522761-P004",
+              "verdict": "keep",
+              "reason": "Readable, warmly lit dining-area view; the cartoon mascot is acceptable."
+            },
+            "R39522761-P006": {
+              "photo_id": "R39522761-P006",
+              "verdict": "keep",
+              "reason": "Sharp exterior that adds useful variety, though the sign is partly cropped in the square preview."
+            },
+            "R39522761-P008": {
+              "photo_id": "R39522761-P008",
+              "verdict": "keep",
+              "reason": "Sharp seafood close-up, though a single lobster offers less visual variety."
+            },
+            "R39522761-P010": {
+              "photo_id": "R39522761-P010",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing food close-up with a clear subject."
+            },
+            "R39522761-P011": {
+              "photo_id": "R39522761-P011",
+              "verdict": "keep",
+              "reason": "Clear, distinctive interior view that remains legible in the square preview."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R39522761-B01": {
+          "photo_id": "R39522761-B01",
+          "verdict": "keep",
+          "reason": "Sharp, warmly lit interior, though the foreground dominates."
+        },
+        "R39522761-B02": {
+          "photo_id": "R39522761-B02",
+          "verdict": "keep",
+          "reason": "Clear interior view, but the composition is busy at thumbnail size."
+        },
+        "R39522761-B03": {
+          "photo_id": "R39522761-B03",
+          "verdict": "reject",
+          "reason": "A prominent photographed person dominates the food image."
+        }
+      }
+    },
+    "86806443": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements add clearer food covers. B has a more varied food-and-interior mix, while A uses two similar interior views.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R86806443-P001",
+            "R86806443-P004",
+            "R86806443-P007",
+            "R86806443-P016"
+          ],
+          "score_before": 65.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R86806443-P001": {
+              "photo_id": "R86806443-P001",
+              "verdict": "keep",
+              "reason": "Clear, well-composed interior that remains readable in the square crop."
+            },
+            "R86806443-P004": {
+              "photo_id": "R86806443-P004",
+              "verdict": "keep",
+              "reason": "Sharp, prominent plated steak with an effective square crop."
+            },
+            "R86806443-P007": {
+              "photo_id": "R86806443-P007",
+              "verdict": "keep",
+              "reason": "Food and cocktail are clear; background hands are unobtrusive."
+            },
+            "R86806443-P016": {
+              "photo_id": "R86806443-P016",
+              "verdict": "keep",
+              "reason": "Warm, clear interior view with a strong focal light."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R86806443-P004",
+            "R86806443-P015",
+            "R86806443-P016",
+            "R86806443-P018"
+          ],
+          "score_before": 65.0,
+          "score_after": 86.0,
+          "improvement": "better",
+          "verdicts": {
+            "R86806443-P004": {
+              "photo_id": "R86806443-P004",
+              "verdict": "keep",
+              "reason": "Sharp, prominent plated steak with an effective square crop."
+            },
+            "R86806443-P015": {
+              "photo_id": "R86806443-P015",
+              "verdict": "keep",
+              "reason": "Colorful dish is prominent and readable at thumbnail size."
+            },
+            "R86806443-P016": {
+              "photo_id": "R86806443-P016",
+              "verdict": "keep",
+              "reason": "Warm, clear interior view with a strong focal light."
+            },
+            "R86806443-P018": {
+              "photo_id": "R86806443-P018",
+              "verdict": "keep",
+              "reason": "Close dessert view is clear, though the serving looks partly eaten."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R86806443-B01": {
+          "photo_id": "R86806443-B01",
+          "verdict": "keep",
+          "reason": "Readable dining-room view, though the foreground plate is empty."
+        },
+        "R86806443-B02": {
+          "photo_id": "R86806443-B02",
+          "verdict": "keep",
+          "reason": "Clear interior view with a dish visible in the foreground."
+        },
+        "R86806443-B03": {
+          "photo_id": "R86806443-B03",
+          "verdict": "keep",
+          "reason": "Sharp, warm dining-room view; figures are part of wall artwork."
+        }
+      }
+    },
+    "129823852": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements avoid the current carousel’s dark soup cover. B offers more consistently clear food photos and broader dish variety, although several sushi shots are similar.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R129823852-P001",
+            "R129823852-P007",
+            "R129823852-P009"
+          ],
+          "score_before": 73.0,
+          "score_after": 80.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129823852-P001": {
+              "photo_id": "R129823852-P001",
+              "verdict": "keep",
+              "reason": "Clear sushi presentation with a readable square crop."
+            },
+            "R129823852-P007": {
+              "photo_id": "R129823852-P007",
+              "verdict": "keep",
+              "reason": "Sharp sushi close-up; the visible hand is not a person portrait."
+            },
+            "R129823852-P009": {
+              "photo_id": "R129823852-P009",
+              "verdict": "keep",
+              "reason": "Shows food, drinks and setting, though the thumbnail is busy."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R129823852-P001",
+            "R129823852-P005",
+            "R129823852-P008",
+            "R129823852-P009",
+            "R129823852-P017",
+            "R129823852-P019"
+          ],
+          "score_before": 73.0,
+          "score_after": 87.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129823852-P001": {
+              "photo_id": "R129823852-P001",
+              "verdict": "keep",
+              "reason": "Clear sushi presentation with a readable square crop."
+            },
+            "R129823852-P005": {
+              "photo_id": "R129823852-P005",
+              "verdict": "keep",
+              "reason": "Vivid, sharply focused sushi detail."
+            },
+            "R129823852-P008": {
+              "photo_id": "R129823852-P008",
+              "verdict": "keep",
+              "reason": "Appetizing noodles remain clear in the square crop."
+            },
+            "R129823852-P009": {
+              "photo_id": "R129823852-P009",
+              "verdict": "keep",
+              "reason": "Shows food, drinks and setting, though the thumbnail is busy."
+            },
+            "R129823852-P017": {
+              "photo_id": "R129823852-P017",
+              "verdict": "keep",
+              "reason": "Well-lit dish with a clear focal point."
+            },
+            "R129823852-P019": {
+              "photo_id": "R129823852-P019",
+              "verdict": "keep",
+              "reason": "Sharp sushi presentation with strong thumbnail impact."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R129823852-B01": {
+          "photo_id": "R129823852-B01",
+          "verdict": "review",
+          "reason": "Relevant soup, but the food is small in a dark frame."
+        },
+        "R129823852-B02": {
+          "photo_id": "R129823852-B02",
+          "verdict": "keep",
+          "reason": "Sharp, appetizing sushi close-up."
+        },
+        "R129823852-B03": {
+          "photo_id": "R129823852-B03",
+          "verdict": "keep",
+          "reason": "Colorful noodle dish fills the frame."
+        }
+      }
+    },
+    "128250510": {
+      "preferred": "gpt-6-luna",
+      "reason": "A offers sharper, more prominent food across its covers. B also improves on CURRENT, but includes more interiors and a dish that remains small in the frame.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R128250510-P004",
+            "R128250510-P005",
+            "R128250510-P009",
+            "R128250510-P011",
+            "R128250510-P014"
+          ],
+          "score_before": 58.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R128250510-P004": {
+              "photo_id": "R128250510-P004",
+              "verdict": "keep",
+              "reason": "Several sharp dishes provide variety, but the overhead frame is busy."
+            },
+            "R128250510-P005": {
+              "photo_id": "R128250510-P005",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing pizza remains prominent in the square preview."
+            },
+            "R128250510-P009": {
+              "photo_id": "R128250510-P009",
+              "verdict": "keep",
+              "reason": "Clear food close-up with a simple, readable composition."
+            },
+            "R128250510-P011": {
+              "photo_id": "R128250510-P011",
+              "verdict": "keep",
+              "reason": "Varied food and table setting, though the square crop is crowded."
+            },
+            "R128250510-P014": {
+              "photo_id": "R128250510-P014",
+              "verdict": "keep",
+              "reason": "Detailed food close-up with a strong focal point."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R128250510-P002",
+            "R128250510-P004",
+            "R128250510-P005",
+            "R128250510-P014",
+            "R128250510-P015",
+            "R128250510-P020"
+          ],
+          "score_before": 58.0,
+          "score_after": 76.0,
+          "improvement": "better",
+          "verdicts": {
+            "R128250510-P002": {
+              "photo_id": "R128250510-P002",
+              "verdict": "keep",
+              "reason": "Clear window-side scene with a visible dish, though the dish remains small."
+            },
+            "R128250510-P004": {
+              "photo_id": "R128250510-P004",
+              "verdict": "keep",
+              "reason": "Several sharp dishes provide variety, but the overhead frame is busy."
+            },
+            "R128250510-P005": {
+              "photo_id": "R128250510-P005",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing pizza remains prominent in the square preview."
+            },
+            "R128250510-P014": {
+              "photo_id": "R128250510-P014",
+              "verdict": "keep",
+              "reason": "Detailed food close-up with a strong focal point."
+            },
+            "R128250510-P015": {
+              "photo_id": "R128250510-P015",
+              "verdict": "keep",
+              "reason": "Readable, well-lit interior without visible people."
+            },
+            "R128250510-P020": {
+              "photo_id": "R128250510-P020",
+              "verdict": "keep",
+              "reason": "Atmospheric interior, though dark areas lose detail at thumbnail size."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R128250510-B01": {
+          "photo_id": "R128250510-B01",
+          "verdict": "review",
+          "reason": "Food is visible, but surrounding printed pages clutter the frame."
+        },
+        "R128250510-B02": {
+          "photo_id": "R128250510-B02",
+          "verdict": "keep",
+          "reason": "Pleasant window-side setting, though the dish is small at thumbnail size."
+        },
+        "R128250510-B03": {
+          "photo_id": "R128250510-B03",
+          "verdict": "review",
+          "reason": "Warm interior scene, but real background people are visible."
+        }
+      }
+    },
+    "68486851": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements replace the person- and menu-led current carousel with clear food and drink photos. B is slightly stronger because its smaller selection omits two less effective covers.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R68486851-P001",
+            "R68486851-P005",
+            "R68486851-P008",
+            "R68486851-P009",
+            "R68486851-P010",
+            "R68486851-P016"
+          ],
+          "score_before": 22.0,
+          "score_after": 78.0,
+          "improvement": "better",
+          "verdicts": {
+            "R68486851-P001": {
+              "photo_id": "R68486851-P001",
+              "verdict": "keep",
+              "reason": "Bright, sharp seafood and drinks read well in the square preview."
+            },
+            "R68486851-P005": {
+              "photo_id": "R68486851-P005",
+              "verdict": "keep",
+              "reason": "Relevant food platter, though the lighting is flat and the frame is busy."
+            },
+            "R68486851-P008": {
+              "photo_id": "R68486851-P008",
+              "verdict": "keep",
+              "reason": "Desserts are visible, but the dark plates and small portions weaken thumbnail impact."
+            },
+            "R68486851-P009": {
+              "photo_id": "R68486851-P009",
+              "verdict": "keep",
+              "reason": "Clear, appetizing grilled-food close-up with a strong square crop."
+            },
+            "R68486851-P010": {
+              "photo_id": "R68486851-P010",
+              "verdict": "keep",
+              "reason": "Sharp, well-lit dish fills the square preview."
+            },
+            "R68486851-P016": {
+              "photo_id": "R68486851-P016",
+              "verdict": "keep",
+              "reason": "Clear dessert photo, though dark sauce occupies much of the cover."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R68486851-P001",
+            "R68486851-P005",
+            "R68486851-P009",
+            "R68486851-P016"
+          ],
+          "score_before": 22.0,
+          "score_after": 81.0,
+          "improvement": "better",
+          "verdicts": {
+            "R68486851-P001": {
+              "photo_id": "R68486851-P001",
+              "verdict": "keep",
+              "reason": "Bright, sharp seafood and drinks read well in the square preview."
+            },
+            "R68486851-P005": {
+              "photo_id": "R68486851-P005",
+              "verdict": "keep",
+              "reason": "Relevant food platter, though the lighting is flat and the frame is busy."
+            },
+            "R68486851-P009": {
+              "photo_id": "R68486851-P009",
+              "verdict": "keep",
+              "reason": "Clear, appetizing grilled-food close-up with a strong square crop."
+            },
+            "R68486851-P016": {
+              "photo_id": "R68486851-P016",
+              "verdict": "keep",
+              "reason": "Clear dessert photo, though dark sauce occupies much of the cover."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R68486851-B01": {
+          "photo_id": "R68486851-B01",
+          "verdict": "reject",
+          "reason": "Prominent photographed person dominates the cover."
+        },
+        "R68486851-B02": {
+          "photo_id": "R68486851-B02",
+          "verdict": "review",
+          "reason": "Sharp drink-table scene, but real background people are visible."
+        },
+        "R68486851-B03": {
+          "photo_id": "R68486851-B03",
+          "verdict": "reject",
+          "reason": "Menu cover rather than food or dining scene."
+        }
+      }
+    },
+    "130959795": {
+      "preferred": "gpt-6-luna",
+      "reason": "A adds three strong, clear food covers despite two sparse skewer shots. B has one strong food photo, but its storefront and tea image make the set less food-focused than CURRENT.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R130959795-P009",
+            "R130959795-P010",
+            "R130959795-P011",
+            "R130959795-P018",
+            "R130959795-P019"
+          ],
+          "score_before": 72.0,
+          "score_after": 81.0,
+          "improvement": "better",
+          "verdicts": {
+            "R130959795-P009": {
+              "photo_id": "R130959795-P009",
+              "verdict": "keep",
+              "reason": "Sharp, well-lit dish with a clear focal point."
+            },
+            "R130959795-P010": {
+              "photo_id": "R130959795-P010",
+              "verdict": "keep",
+              "reason": "Sharp assortment of skewers that remains legible in the square crop."
+            },
+            "R130959795-P011": {
+              "photo_id": "R130959795-P011",
+              "verdict": "keep",
+              "reason": "Appetizing bowl in focus with useful background context."
+            },
+            "R130959795-P018": {
+              "photo_id": "R130959795-P018",
+              "verdict": "review",
+              "reason": "Food is visible, but the small portion and mostly empty plate weaken the thumbnail."
+            },
+            "R130959795-P019": {
+              "photo_id": "R130959795-P019",
+              "verdict": "review",
+              "reason": "Small skewer is overshadowed by empty plate and blurred background."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R130959795-P003",
+            "R130959795-P010",
+            "R130959795-P012"
+          ],
+          "score_before": 72.0,
+          "score_after": 68.0,
+          "improvement": "worse",
+          "verdicts": {
+            "R130959795-P003": {
+              "photo_id": "R130959795-P003",
+              "verdict": "keep",
+              "reason": "Clear, relevant storefront view with a readable entrance."
+            },
+            "R130959795-P010": {
+              "photo_id": "R130959795-P010",
+              "verdict": "keep",
+              "reason": "Sharp assortment of skewers that remains legible in the square crop."
+            },
+            "R130959795-P012": {
+              "photo_id": "R130959795-P012",
+              "verdict": "keep",
+              "reason": "Clear tea-service photo, though less immediately food-focused."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R130959795-B01": {
+          "photo_id": "R130959795-B01",
+          "verdict": "keep",
+          "reason": "Relevant table spread; a hand is visible, but no person is shown."
+        },
+        "R130959795-B02": {
+          "photo_id": "R130959795-B02",
+          "verdict": "keep",
+          "reason": "Clear overhead food photo with dishes readable at thumbnail size."
+        },
+        "R130959795-B03": {
+          "photo_id": "R130959795-B03",
+          "verdict": "keep",
+          "reason": "Relevant interior view, though the dark wall dominates."
+        }
+      }
+    },
+    "130852658": {
+      "preferred": "deepseek-flash",
+      "reason": "A pairs a strong food cover with two usable interior views and avoids the current set's prominent diners. B adds variety, but two images need review for visible people.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R130852658-P003",
+            "R130852658-P011",
+            "R130852658-P015"
+          ],
+          "score_before": 48.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R130852658-P003": {
+              "photo_id": "R130852658-P003",
+              "verdict": "keep",
+              "reason": "Composed interior view; somewhat dark but readable."
+            },
+            "R130852658-P011": {
+              "photo_id": "R130852658-P011",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing dish that reads well in the square crop."
+            },
+            "R130852658-P015": {
+              "photo_id": "R130852658-P015",
+              "verdict": "keep",
+              "reason": "Clear, neatly composed seating-area photo."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R130852658-P010",
+            "R130852658-P011",
+            "R130852658-P014",
+            "R130852658-P016"
+          ],
+          "score_before": 48.0,
+          "score_after": 72.0,
+          "improvement": "better",
+          "verdicts": {
+            "R130852658-P010": {
+              "photo_id": "R130852658-P010",
+              "verdict": "review",
+              "reason": "Food is visible, but a person's torso appears behind the plate."
+            },
+            "R130852658-P011": {
+              "photo_id": "R130852658-P011",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing dish that reads well in the square crop."
+            },
+            "R130852658-P014": {
+              "photo_id": "R130852658-P014",
+              "verdict": "review",
+              "reason": "Colorful dessert display, with part of a person at the left edge."
+            },
+            "R130852658-P016": {
+              "photo_id": "R130852658-P016",
+              "verdict": "keep",
+              "reason": "Bright, readable view of the dining area."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R130852658-B01": {
+          "photo_id": "R130852658-B01",
+          "verdict": "review",
+          "reason": "Readable interior, but people are visible near the counter."
+        },
+        "R130852658-B02": {
+          "photo_id": "R130852658-B02",
+          "verdict": "keep",
+          "reason": "Clear, well-lit view of the dining area."
+        },
+        "R130852658-B03": {
+          "photo_id": "R130852658-B03",
+          "verdict": "reject",
+          "reason": "Dim interior photo with prominent diners."
+        }
+      }
+    },
+    "112529328": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer clearer cover options than CURRENT. B has two strong, distinct photos, while A has one; both include the menu-sign photo that should be excluded.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R112529328-P013",
+            "R112529328-P020"
+          ],
+          "score_before": 38.0,
+          "score_after": 53.0,
+          "improvement": "better",
+          "verdicts": {
+            "R112529328-P013": {
+              "photo_id": "R112529328-P013",
+              "verdict": "keep",
+              "reason": "Clear, appetizing food and tea; both remain recognizable in the square crop."
+            },
+            "R112529328-P020": {
+              "photo_id": "R112529328-P020",
+              "verdict": "reject",
+              "reason": "A large QR-code menu sign competes with the food, including in the square crop."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R112529328-P012",
+            "R112529328-P019",
+            "R112529328-P020"
+          ],
+          "score_before": 38.0,
+          "score_after": 68.0,
+          "improvement": "better",
+          "verdicts": {
+            "R112529328-P012": {
+              "photo_id": "R112529328-P012",
+              "verdict": "keep",
+              "reason": "Sharp, readable interior view with a clean square crop."
+            },
+            "R112529328-P019": {
+              "photo_id": "R112529328-P019",
+              "verdict": "keep",
+              "reason": "Sharp, colorful food close-up that reads well in the square crop."
+            },
+            "R112529328-P020": {
+              "photo_id": "R112529328-P020",
+              "verdict": "reject",
+              "reason": "A large QR-code menu sign competes with the food, including in the square crop."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R112529328-B01": {
+          "photo_id": "R112529328-B01",
+          "verdict": "review",
+          "reason": "Dim table scene with real people visible in the background."
+        },
+        "R112529328-B02": {
+          "photo_id": "R112529328-B02",
+          "verdict": "reject",
+          "reason": "A person dominates the frame; the drink is secondary."
+        },
+        "R112529328-B03": {
+          "photo_id": "R112529328-B03",
+          "verdict": "review",
+          "reason": "Food is visible, but the dark red lighting makes it hard to read."
+        }
+      }
+    },
+    "91333541": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer clearer, more varied food covers than CURRENT. A gains a strong pizza photo, while two images shared by A and B warrant background-person review.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R91333541-P004",
+            "R91333541-P007",
+            "R91333541-P014",
+            "R91333541-P016",
+            "R91333541-P017"
+          ],
+          "score_before": 63.0,
+          "score_after": 81.0,
+          "improvement": "better",
+          "verdicts": {
+            "R91333541-P004": {
+              "photo_id": "R91333541-P004",
+              "verdict": "keep",
+              "reason": "Colorful, well-framed dish that reads clearly in the square preview."
+            },
+            "R91333541-P007": {
+              "photo_id": "R91333541-P007",
+              "verdict": "review",
+              "reason": "Appealing salad, with a possible background person at the upper left."
+            },
+            "R91333541-P014": {
+              "photo_id": "R91333541-P014",
+              "verdict": "review",
+              "reason": "Dessert is clear, but a possible background person is visible behind the tableware."
+            },
+            "R91333541-P016": {
+              "photo_id": "R91333541-P016",
+              "verdict": "keep",
+              "reason": "Sharp, simple food composition with a clear square crop."
+            },
+            "R91333541-P017": {
+              "photo_id": "R91333541-P017",
+              "verdict": "keep",
+              "reason": "Appetizing pizza fills the frame and remains readable in the preview."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R91333541-P004",
+            "R91333541-P014",
+            "R91333541-P016"
+          ],
+          "score_before": 63.0,
+          "score_after": 78.0,
+          "improvement": "better",
+          "verdicts": {
+            "R91333541-P004": {
+              "photo_id": "R91333541-P004",
+              "verdict": "keep",
+              "reason": "Colorful, well-framed dish that reads clearly in the square preview."
+            },
+            "R91333541-P014": {
+              "photo_id": "R91333541-P014",
+              "verdict": "review",
+              "reason": "Dessert is clear, but a possible background person is visible behind the tableware."
+            },
+            "R91333541-P016": {
+              "photo_id": "R91333541-P016",
+              "verdict": "keep",
+              "reason": "Sharp, simple food composition with a clear square crop."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R91333541-B01": {
+          "photo_id": "R91333541-B01",
+          "verdict": "keep",
+          "reason": "Sharp, appetizing pastry, though tightly cropped."
+        },
+        "R91333541-B02": {
+          "photo_id": "R91333541-B02",
+          "verdict": "keep",
+          "reason": "Clear food close-up, but the composition is crowded."
+        },
+        "R91333541-B03": {
+          "photo_id": "R91333541-B03",
+          "verdict": "keep",
+          "reason": "Food is visible; the hand is acceptable, but the keyboard distracts."
+        }
+      }
+    },
+    "125644202": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements offer stronger food covers than CURRENT. A narrowly wins on variety, with food, indoor seating and patio views; its diner-visible photo warrants review.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R125644202-P001",
+            "R125644202-P003",
+            "R125644202-P005",
+            "R125644202-P011",
+            "R125644202-P015"
+          ],
+          "score_before": 67.0,
+          "score_after": 84.0,
+          "improvement": "better",
+          "verdicts": {
+            "R125644202-P001": {
+              "photo_id": "R125644202-P001",
+              "verdict": "review",
+              "reason": "Colorful food, but a photographed diner is visible along the top edge."
+            },
+            "R125644202-P003": {
+              "photo_id": "R125644202-P003",
+              "verdict": "keep",
+              "reason": "Sharp, colorful dish remains clear in the square preview."
+            },
+            "R125644202-P005": {
+              "photo_id": "R125644202-P005",
+              "verdict": "keep",
+              "reason": "Clear interior view adds variety and reads well at thumbnail size."
+            },
+            "R125644202-P011": {
+              "photo_id": "R125644202-P011",
+              "verdict": "keep",
+              "reason": "Bright, well-composed patio view with clear seating."
+            },
+            "R125644202-P015": {
+              "photo_id": "R125644202-P015",
+              "verdict": "keep",
+              "reason": "Dumplings are clearly visible, though the lighting is warm."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R125644202-P003",
+            "R125644202-P004",
+            "R125644202-P009",
+            "R125644202-P011",
+            "R125644202-P014"
+          ],
+          "score_before": 67.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R125644202-P003": {
+              "photo_id": "R125644202-P003",
+              "verdict": "keep",
+              "reason": "Sharp, colorful dish remains clear in the square preview."
+            },
+            "R125644202-P004": {
+              "photo_id": "R125644202-P004",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing food with a strong central subject."
+            },
+            "R125644202-P009": {
+              "photo_id": "R125644202-P009",
+              "verdict": "keep",
+              "reason": "Clear patio view, though similar in subject to P011."
+            },
+            "R125644202-P011": {
+              "photo_id": "R125644202-P011",
+              "verdict": "keep",
+              "reason": "Bright, well-composed patio view with clear seating."
+            },
+            "R125644202-P014": {
+              "photo_id": "R125644202-P014",
+              "verdict": "keep",
+              "reason": "Distinctive food fills the frame and remains legible in the preview."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R125644202-B01": {
+          "photo_id": "R125644202-B01",
+          "verdict": "keep",
+          "reason": "Sharp patio detail, but the vase dominates at thumbnail size."
+        },
+        "R125644202-B02": {
+          "photo_id": "R125644202-B02",
+          "verdict": "keep",
+          "reason": "Relevant food, though the crowded frame makes the dish hard to read."
+        },
+        "R125644202-B03": {
+          "photo_id": "R125644202-B03",
+          "verdict": "keep",
+          "reason": "Clear outdoor seating with recognizable red umbrellas."
+        }
+      }
+    },
+    "81563608": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements offer more varied, clearer food coverage than the dim, repetitive current carousel. A is slightly more consistent in lighting and thumbnail readability.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R81563608-P001",
+            "R81563608-P004",
+            "R81563608-P008",
+            "R81563608-P011",
+            "R81563608-P014"
+          ],
+          "score_before": 65.0,
+          "score_after": 84.0,
+          "improvement": "better",
+          "verdicts": {
+            "R81563608-P001": {
+              "photo_id": "R81563608-P001",
+              "verdict": "keep",
+              "reason": "Sharp, colorful salad with a clear square crop."
+            },
+            "R81563608-P004": {
+              "photo_id": "R81563608-P004",
+              "verdict": "keep",
+              "reason": "Well-lit food and drink remain readable in the square crop."
+            },
+            "R81563608-P008": {
+              "photo_id": "R81563608-P008",
+              "verdict": "keep",
+              "reason": "Varied dishes are visible, though each is small at thumbnail size."
+            },
+            "R81563608-P011": {
+              "photo_id": "R81563608-P011",
+              "verdict": "keep",
+              "reason": "Sharp, colorful dish; the square crop is somewhat tight."
+            },
+            "R81563608-P014": {
+              "photo_id": "R81563608-P014",
+              "verdict": "keep",
+              "reason": "Clear, appetizing close-up with a simple composition."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R81563608-P003",
+            "R81563608-P004",
+            "R81563608-P008",
+            "R81563608-P009",
+            "R81563608-P012",
+            "R81563608-P017"
+          ],
+          "score_before": 65.0,
+          "score_after": 80.0,
+          "improvement": "better",
+          "verdicts": {
+            "R81563608-P003": {
+              "photo_id": "R81563608-P003",
+              "verdict": "keep",
+              "reason": "Dumplings are clear, though the lighting is subdued."
+            },
+            "R81563608-P004": {
+              "photo_id": "R81563608-P004",
+              "verdict": "keep",
+              "reason": "Well-lit food and drink remain readable in the square crop."
+            },
+            "R81563608-P008": {
+              "photo_id": "R81563608-P008",
+              "verdict": "keep",
+              "reason": "Varied dishes are visible, though each is small at thumbnail size."
+            },
+            "R81563608-P009": {
+              "photo_id": "R81563608-P009",
+              "verdict": "keep",
+              "reason": "Bright, varied spread with strong food detail."
+            },
+            "R81563608-P012": {
+              "photo_id": "R81563608-P012",
+              "verdict": "keep",
+              "reason": "Clear plated dumplings, with some distracting background."
+            },
+            "R81563608-P017": {
+              "photo_id": "R81563608-P017",
+              "verdict": "keep",
+              "reason": "Dumplings are recognizable, though the image is comparatively dim."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R81563608-B01": {
+          "photo_id": "R81563608-B01",
+          "verdict": "keep",
+          "reason": "Appetizing food, though the scene is dim."
+        },
+        "R81563608-B02": {
+          "photo_id": "R81563608-B02",
+          "verdict": "keep",
+          "reason": "Clear food presentation, but nearly duplicates B01."
+        },
+        "R81563608-B03": {
+          "photo_id": "R81563608-B03",
+          "verdict": "keep",
+          "reason": "Colorful food fills the frame; slightly dim."
+        }
+      }
+    },
+    "91344139": {
+      "preferred": "none",
+      "reason": "CURRENT has three clear food covers without large mascot overlays. A adds variety but includes a less useful exterior; B offers more food variety, yet its frequent overlays and exterior do not clearly improve the cover carousel.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R91344139-P004",
+            "R91344139-P009",
+            "R91344139-P016"
+          ],
+          "score_before": 79.0,
+          "score_after": 67.0,
+          "improvement": "worse",
+          "verdicts": {
+            "R91344139-P004": {
+              "photo_id": "R91344139-P004",
+              "verdict": "keep",
+              "reason": "Sharp steak photo; the cartoon mascot partly covers the food in the square preview."
+            },
+            "R91344139-P009": {
+              "photo_id": "R91344139-P009",
+              "verdict": "keep",
+              "reason": "Clear dessert photo with a simple composition, though the dish looks small in frame."
+            },
+            "R91344139-P016": {
+              "photo_id": "R91344139-P016",
+              "verdict": "keep",
+              "reason": "Clear exterior view, but less compelling as a cover than the food photos."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R91344139-P003",
+            "R91344139-P004",
+            "R91344139-P007",
+            "R91344139-P011",
+            "R91344139-P015",
+            "R91344139-P016"
+          ],
+          "score_before": 79.0,
+          "score_after": 77.0,
+          "improvement": "same",
+          "verdicts": {
+            "R91344139-P003": {
+              "photo_id": "R91344139-P003",
+              "verdict": "keep",
+              "reason": "Sharp, prominent plated steak; the mascot occupies a corner."
+            },
+            "R91344139-P004": {
+              "photo_id": "R91344139-P004",
+              "verdict": "keep",
+              "reason": "Sharp steak photo; the cartoon mascot partly covers the food in the square preview."
+            },
+            "R91344139-P007": {
+              "photo_id": "R91344139-P007",
+              "verdict": "keep",
+              "reason": "Readable plated dish, though much of the square preview is tabletop and seating."
+            },
+            "R91344139-P011": {
+              "photo_id": "R91344139-P011",
+              "verdict": "keep",
+              "reason": "Clear plated meal with varied food; the mascot slightly crowds the square preview."
+            },
+            "R91344139-P015": {
+              "photo_id": "R91344139-P015",
+              "verdict": "keep",
+              "reason": "Bright, colorful dishes remain recognizable in the square preview."
+            },
+            "R91344139-P016": {
+              "photo_id": "R91344139-P016",
+              "verdict": "keep",
+              "reason": "Clear exterior view, but less compelling as a cover than the food photos."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R91344139-B01": {
+          "photo_id": "R91344139-B01",
+          "verdict": "keep",
+          "reason": "Sharp, appetizing steak and vegetables; the square crop is busy but readable."
+        },
+        "R91344139-B02": {
+          "photo_id": "R91344139-B02",
+          "verdict": "keep",
+          "reason": "Clear food photo, though the sideways composition is awkward."
+        },
+        "R91344139-B03": {
+          "photo_id": "R91344139-B03",
+          "verdict": "keep",
+          "reason": "Colorful, well-framed salad that reads clearly at thumbnail size."
+        }
+      }
+    },
+    "123246254": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer clearer food covers than the dim current interior. B has more consistently strong, varied food images; A includes two weaker interior views.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R123246254-P001",
+            "R123246254-P003",
+            "R123246254-P005",
+            "R123246254-P013",
+            "R123246254-P016"
+          ],
+          "score_before": 62.0,
+          "score_after": 80.0,
+          "improvement": "better",
+          "verdicts": {
+            "R123246254-P001": {
+              "photo_id": "R123246254-P001",
+              "verdict": "review",
+              "reason": "Atmospheric interior, but dark and difficult to read as a square cover."
+            },
+            "R123246254-P003": {
+              "photo_id": "R123246254-P003",
+              "verdict": "keep",
+              "reason": "Sharp, colorful bowl against a clean background."
+            },
+            "R123246254-P005": {
+              "photo_id": "R123246254-P005",
+              "verdict": "keep",
+              "reason": "Vivid seafood with strong contrast and a clear focal point."
+            },
+            "R123246254-P013": {
+              "photo_id": "R123246254-P013",
+              "verdict": "review",
+              "reason": "Distinctive decor, but the ceiling-focused square crop has little immediate restaurant appeal."
+            },
+            "R123246254-P016": {
+              "photo_id": "R123246254-P016",
+              "verdict": "keep",
+              "reason": "Well-lit sandwich with a clear, appetizing square crop."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R123246254-P003",
+            "R123246254-P004",
+            "R123246254-P005",
+            "R123246254-P014",
+            "R123246254-P016",
+            "R123246254-P018"
+          ],
+          "score_before": 62.0,
+          "score_after": 88.0,
+          "improvement": "better",
+          "verdicts": {
+            "R123246254-P003": {
+              "photo_id": "R123246254-P003",
+              "verdict": "keep",
+              "reason": "Sharp, colorful bowl against a clean background."
+            },
+            "R123246254-P004": {
+              "photo_id": "R123246254-P004",
+              "verdict": "keep",
+              "reason": "Bright, varied food arrangement that remains legible in the square crop."
+            },
+            "R123246254-P005": {
+              "photo_id": "R123246254-P005",
+              "verdict": "keep",
+              "reason": "Vivid seafood with strong contrast and a clear focal point."
+            },
+            "R123246254-P014": {
+              "photo_id": "R123246254-P014",
+              "verdict": "keep",
+              "reason": "Sharp foreground dish and appealing depth, though the portion appears small."
+            },
+            "R123246254-P016": {
+              "photo_id": "R123246254-P016",
+              "verdict": "keep",
+              "reason": "Well-lit sandwich with a clear, appetizing square crop."
+            },
+            "R123246254-P018": {
+              "photo_id": "R123246254-P018",
+              "verdict": "keep",
+              "reason": "Detailed seafood close-up with vivid color and texture."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R123246254-B01": {
+          "photo_id": "R123246254-B01",
+          "verdict": "review",
+          "reason": "Dim interior; the table and food are small at thumbnail size."
+        },
+        "R123246254-B02": {
+          "photo_id": "R123246254-B02",
+          "verdict": "keep",
+          "reason": "Sharp, appetizing seafood close-up; only hands are visible."
+        },
+        "R123246254-B03": {
+          "photo_id": "R123246254-B03",
+          "verdict": "keep",
+          "reason": "Clear seafood dishes, though the framing is somewhat cluttered."
+        }
+      }
+    },
+    "109486374": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer clearer, more appetizing cover options than the mostly interior-focused current set. A has slightly more variety; B's drink photo has a possible background person.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R109486374-P010",
+            "R109486374-P011",
+            "R109486374-P014",
+            "R109486374-P017",
+            "R109486374-P018"
+          ],
+          "score_before": 57.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109486374-P010": {
+              "photo_id": "R109486374-P010",
+              "verdict": "keep",
+              "reason": "Clear food-and-drink close-up; the mussels remain recognizable in the square crop."
+            },
+            "R109486374-P011": {
+              "photo_id": "R109486374-P011",
+              "verdict": "keep",
+              "reason": "Appetizing, sharp burger and potatoes with a readable square crop."
+            },
+            "R109486374-P014": {
+              "photo_id": "R109486374-P014",
+              "verdict": "keep",
+              "reason": "Clear exterior view, though the storefront details are small at thumbnail size."
+            },
+            "R109486374-P017": {
+              "photo_id": "R109486374-P017",
+              "verdict": "keep",
+              "reason": "Sharp plated-food close-up with a readable square crop."
+            },
+            "R109486374-P018": {
+              "photo_id": "R109486374-P018",
+              "verdict": "keep",
+              "reason": "Clear steak-and-potatoes photo, though the crop is crowded."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R109486374-P009",
+            "R109486374-P011",
+            "R109486374-P017",
+            "R109486374-P018"
+          ],
+          "score_before": 57.0,
+          "score_after": 80.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109486374-P009": {
+              "photo_id": "R109486374-P009",
+              "verdict": "review",
+              "reason": "Colorful, sharp drink; a partial real person may be visible at the left edge."
+            },
+            "R109486374-P011": {
+              "photo_id": "R109486374-P011",
+              "verdict": "keep",
+              "reason": "Appetizing, sharp burger and potatoes with a readable square crop."
+            },
+            "R109486374-P017": {
+              "photo_id": "R109486374-P017",
+              "verdict": "keep",
+              "reason": "Sharp plated-food close-up with a readable square crop."
+            },
+            "R109486374-P018": {
+              "photo_id": "R109486374-P018",
+              "verdict": "keep",
+              "reason": "Clear steak-and-potatoes photo, though the crop is crowded."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R109486374-B01": {
+          "photo_id": "R109486374-B01",
+          "verdict": "keep",
+          "reason": "Sharp interior detail, though the dark room and busy floor are less clear at thumbnail size."
+        },
+        "R109486374-B02": {
+          "photo_id": "R109486374-B02",
+          "verdict": "review",
+          "reason": "Bright, relevant dining-room view; a possible background person is visible."
+        },
+        "R109486374-B03": {
+          "photo_id": "R109486374-B03",
+          "verdict": "keep",
+          "reason": "Relevant seating view, but the strong window light leaves much of the room dark."
+        }
+      }
+    },
+    "72207930": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer sharper, more varied covers than CURRENT. A's additional clear food photo is more compelling at thumbnail size than B's storefront view.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R72207930-P005",
+            "R72207930-P007",
+            "R72207930-P011",
+            "R72207930-P012",
+            "R72207930-P014",
+            "R72207930-P016"
+          ],
+          "score_before": 68.0,
+          "score_after": 87.0,
+          "improvement": "better",
+          "verdicts": {
+            "R72207930-P005": {
+              "photo_id": "R72207930-P005",
+              "verdict": "keep",
+              "reason": "Sharp, prominent pastry with a warm interior behind it."
+            },
+            "R72207930-P007": {
+              "photo_id": "R72207930-P007",
+              "verdict": "keep",
+              "reason": "Sharp, well-composed interior with no visible people."
+            },
+            "R72207930-P011": {
+              "photo_id": "R72207930-P011",
+              "verdict": "keep",
+              "reason": "Clear, appetizing stew; the dish remains recognizable in the square crop."
+            },
+            "R72207930-P012": {
+              "photo_id": "R72207930-P012",
+              "verdict": "keep",
+              "reason": "Sharp, well-lit baked dish that fills the cover preview."
+            },
+            "R72207930-P014": {
+              "photo_id": "R72207930-P014",
+              "verdict": "keep",
+              "reason": "Clear egg-filled bread with strong framing in the square crop."
+            },
+            "R72207930-P016": {
+              "photo_id": "R72207930-P016",
+              "verdict": "keep",
+              "reason": "Well-lit soup presentation, readable at thumbnail size."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R72207930-P005",
+            "R72207930-P007",
+            "R72207930-P008",
+            "R72207930-P012",
+            "R72207930-P014",
+            "R72207930-P016"
+          ],
+          "score_before": 68.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R72207930-P005": {
+              "photo_id": "R72207930-P005",
+              "verdict": "keep",
+              "reason": "Sharp, prominent pastry with a warm interior behind it."
+            },
+            "R72207930-P007": {
+              "photo_id": "R72207930-P007",
+              "verdict": "keep",
+              "reason": "Sharp, well-composed interior with no visible people."
+            },
+            "R72207930-P008": {
+              "photo_id": "R72207930-P008",
+              "verdict": "keep",
+              "reason": "Clear storefront view, though its details are small in the cover preview."
+            },
+            "R72207930-P012": {
+              "photo_id": "R72207930-P012",
+              "verdict": "keep",
+              "reason": "Sharp, well-lit baked dish that fills the cover preview."
+            },
+            "R72207930-P014": {
+              "photo_id": "R72207930-P014",
+              "verdict": "keep",
+              "reason": "Clear egg-filled bread with strong framing in the square crop."
+            },
+            "R72207930-P016": {
+              "photo_id": "R72207930-P016",
+              "verdict": "keep",
+              "reason": "Well-lit soup presentation, readable at thumbnail size."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R72207930-B01": {
+          "photo_id": "R72207930-B01",
+          "verdict": "keep",
+          "reason": "Clear, appetizing egg-filled bread, though tightly framed."
+        },
+        "R72207930-B02": {
+          "photo_id": "R72207930-B02",
+          "verdict": "keep",
+          "reason": "Relevant interior view, but dim and less distinct at thumbnail size."
+        },
+        "R72207930-B03": {
+          "photo_id": "R72207930-B03",
+          "verdict": "keep",
+          "reason": "Relevant meal, though the foreground dish is cropped and visually busy."
+        }
+      }
+    },
+    "123717699": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer clearer food covers than the interior-focused current set. B is strongest because it adds useful food and setting variety, despite some small subjects and mascot overlays.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R123717699-P017"
+          ],
+          "score_before": 62.0,
+          "score_after": 77.0,
+          "improvement": "better",
+          "verdicts": {
+            "R123717699-P017": {
+              "photo_id": "R123717699-P017",
+              "verdict": "keep",
+              "reason": "Clear overhead food photo; the decorative mascot is small in the cover preview."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R123717699-P003",
+            "R123717699-P004",
+            "R123717699-P009",
+            "R123717699-P011",
+            "R123717699-P017"
+          ],
+          "score_before": 62.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R123717699-P003": {
+              "photo_id": "R123717699-P003",
+              "verdict": "keep",
+              "reason": "Varied food and drinks are visible, though each dish is small at thumbnail size."
+            },
+            "R123717699-P004": {
+              "photo_id": "R123717699-P004",
+              "verdict": "keep",
+              "reason": "Colorful dish is sharp and easy to recognize at thumbnail size."
+            },
+            "R123717699-P009": {
+              "photo_id": "R123717699-P009",
+              "verdict": "keep",
+              "reason": "Well-lit table scene combines food with restaurant atmosphere."
+            },
+            "R123717699-P011": {
+              "photo_id": "R123717699-P011",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing close-up with a clear subject."
+            },
+            "R123717699-P017": {
+              "photo_id": "R123717699-P017",
+              "verdict": "keep",
+              "reason": "Clear overhead food photo; the decorative mascot is small in the cover preview."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R123717699-B01": {
+          "photo_id": "R123717699-B01",
+          "verdict": "review",
+          "reason": "Atmospheric interior, but real staff are visible behind the counter."
+        },
+        "R123717699-B02": {
+          "photo_id": "R123717699-B02",
+          "verdict": "review",
+          "reason": "Warm dining-room view with a possible background person at left."
+        },
+        "R123717699-B03": {
+          "photo_id": "R123717699-B03",
+          "verdict": "keep",
+          "reason": "Sharp, distinctive interior detail with no prominent people."
+        }
+      }
+    },
+    "39549082": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements offer clearer food covers without visible people. A has the stronger balance of appetizing presentation and variety; B's creamy dish is less visually clear.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R39549082-P001",
+            "R39549082-P004"
+          ],
+          "score_before": 62.0,
+          "score_after": 79.0,
+          "improvement": "better",
+          "verdicts": {
+            "R39549082-P001": {
+              "photo_id": "R39549082-P001",
+              "verdict": "keep",
+              "reason": "Sharp, varied food arrangement remains readable in the square crop."
+            },
+            "R39549082-P004": {
+              "photo_id": "R39549082-P004",
+              "verdict": "keep",
+              "reason": "Plated fish is clear and centered in the square crop."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R39549082-P004",
+            "R39549082-P007",
+            "R39549082-P011"
+          ],
+          "score_before": 62.0,
+          "score_after": 76.0,
+          "improvement": "better",
+          "verdicts": {
+            "R39549082-P004": {
+              "photo_id": "R39549082-P004",
+              "verdict": "keep",
+              "reason": "Plated fish is clear and centered in the square crop."
+            },
+            "R39549082-P007": {
+              "photo_id": "R39549082-P007",
+              "verdict": "keep",
+              "reason": "Dish is sharp and recognizable, though the plating looks somewhat messy."
+            },
+            "R39549082-P011": {
+              "photo_id": "R39549082-P011",
+              "verdict": "keep",
+              "reason": "Colorful seafood fills the frame and reads well at thumbnail size."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R39549082-B01": {
+          "photo_id": "R39549082-B01",
+          "verdict": "review",
+          "reason": "Food is visible, but real people appear in the restaurant background."
+        },
+        "R39549082-B02": {
+          "photo_id": "R39549082-B02",
+          "verdict": "keep",
+          "reason": "Clear, close view of a plated dish."
+        },
+        "R39549082-B03": {
+          "photo_id": "R39549082-B03",
+          "verdict": "review",
+          "reason": "Soup is clear, but a person appears at the left edge."
+        }
+      }
+    },
+    "88492414": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer sharper, more varied food views than CURRENT. A has the stronger overall assortment; B's sign-heavy image is less readable at thumbnail size.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R88492414-P004",
+            "R88492414-P006",
+            "R88492414-P008",
+            "R88492414-P012",
+            "R88492414-P016"
+          ],
+          "score_before": 63.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R88492414-P004": {
+              "photo_id": "R88492414-P004",
+              "verdict": "keep",
+              "reason": "Sharp, appealing sushi assortment with a clear square crop."
+            },
+            "R88492414-P006": {
+              "photo_id": "R88492414-P006",
+              "verdict": "review",
+              "reason": "Sushi is clear, but packaging and a visible phone menu clutter the frame."
+            },
+            "R88492414-P008": {
+              "photo_id": "R88492414-P008",
+              "verdict": "keep",
+              "reason": "Well-lit assortment with a balanced, readable square crop."
+            },
+            "R88492414-P012": {
+              "photo_id": "R88492414-P012",
+              "verdict": "keep",
+              "reason": "Colorful sushi assortment remains legible despite packaging and props."
+            },
+            "R88492414-P016": {
+              "photo_id": "R88492414-P016",
+              "verdict": "keep",
+              "reason": "Clear sushi presentation, though foliage and the mascot occupy substantial space."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R88492414-P004",
+            "R88492414-P008",
+            "R88492414-P016",
+            "R88492414-P018"
+          ],
+          "score_before": 63.0,
+          "score_after": 78.0,
+          "improvement": "better",
+          "verdicts": {
+            "R88492414-P004": {
+              "photo_id": "R88492414-P004",
+              "verdict": "keep",
+              "reason": "Sharp, appealing sushi assortment with a clear square crop."
+            },
+            "R88492414-P008": {
+              "photo_id": "R88492414-P008",
+              "verdict": "keep",
+              "reason": "Well-lit assortment with a balanced, readable square crop."
+            },
+            "R88492414-P016": {
+              "photo_id": "R88492414-P016",
+              "verdict": "keep",
+              "reason": "Clear sushi presentation, though foliage and the mascot occupy substantial space."
+            },
+            "R88492414-P018": {
+              "photo_id": "R88492414-P018",
+              "verdict": "review",
+              "reason": "Food is visible, but the prominent sign and scattered items make the thumbnail busy."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R88492414-B01": {
+          "photo_id": "R88492414-B01",
+          "verdict": "keep",
+          "reason": "Clear, close-up sushi; repetitive but readable at thumbnail size."
+        },
+        "R88492414-B02": {
+          "photo_id": "R88492414-B02",
+          "verdict": "review",
+          "reason": "Hands holding drinks are acceptable, but the busy scene gives the food little prominence."
+        },
+        "R88492414-B03": {
+          "photo_id": "R88492414-B03",
+          "verdict": "keep",
+          "reason": "Sushi is clearly visible, though the sparse tray is less appetizing."
+        }
+      }
+    },
+    "109438596": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements offer clearer food covers. B pairs strong dishes with an outdoor setting, giving it better variety than A's repeated dumpling shots; CURRENT includes a photo needing review for a background person.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R109438596-P008",
+            "R109438596-P013",
+            "R109438596-P014",
+            "R109438596-P016",
+            "R109438596-P017"
+          ],
+          "score_before": 68.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109438596-P008": {
+              "photo_id": "R109438596-P008",
+              "verdict": "keep",
+              "reason": "Clear overhead view of a plated dish; cartoon mascot is unobtrusive."
+            },
+            "R109438596-P013": {
+              "photo_id": "R109438596-P013",
+              "verdict": "keep",
+              "reason": "Bright, appetizing dish remains readable in the square preview."
+            },
+            "R109438596-P014": {
+              "photo_id": "R109438596-P014",
+              "verdict": "keep",
+              "reason": "Dumplings are sharply framed against a dark background."
+            },
+            "R109438596-P016": {
+              "photo_id": "R109438596-P016",
+              "verdict": "keep",
+              "reason": "Clear close-up of dumplings, though similar to another proposed photo."
+            },
+            "R109438596-P017": {
+              "photo_id": "R109438596-P017",
+              "verdict": "keep",
+              "reason": "Varied food spread is appealing, though busy at thumbnail size."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R109438596-P003",
+            "R109438596-P008",
+            "R109438596-P013",
+            "R109438596-P014"
+          ],
+          "score_before": 68.0,
+          "score_after": 85.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109438596-P003": {
+              "photo_id": "R109438596-P003",
+              "verdict": "keep",
+              "reason": "Readable outdoor seating scene adds variety; no prominent people."
+            },
+            "R109438596-P008": {
+              "photo_id": "R109438596-P008",
+              "verdict": "keep",
+              "reason": "Clear overhead view of a plated dish; cartoon mascot is unobtrusive."
+            },
+            "R109438596-P013": {
+              "photo_id": "R109438596-P013",
+              "verdict": "keep",
+              "reason": "Bright, appetizing dish remains readable in the square preview."
+            },
+            "R109438596-P014": {
+              "photo_id": "R109438596-P014",
+              "verdict": "keep",
+              "reason": "Dumplings are sharply framed against a dark background."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R109438596-B01": {
+          "photo_id": "R109438596-B01",
+          "verdict": "keep",
+          "reason": "Warm, readable drink-and-table setting, though slightly soft."
+        },
+        "R109438596-B02": {
+          "photo_id": "R109438596-B02",
+          "verdict": "keep",
+          "reason": "Colorful salad is clear and prominent."
+        },
+        "R109438596-B03": {
+          "photo_id": "R109438596-B03",
+          "verdict": "review",
+          "reason": "Background person is visible behind the wine glasses."
+        }
+      }
+    },
+    "109486188": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer stronger food coverage than CURRENT. B has a clearer mix of food and interior photos without A's visible person at the frame edge.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R109486188-P001",
+            "R109486188-P006",
+            "R109486188-P011",
+            "R109486188-P016"
+          ],
+          "score_before": 68.0,
+          "score_after": 76.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109486188-P001": {
+              "photo_id": "R109486188-P001",
+              "verdict": "review",
+              "reason": "Varied food spread, but part of a real person is visible at the left edge."
+            },
+            "R109486188-P006": {
+              "photo_id": "R109486188-P006",
+              "verdict": "keep",
+              "reason": "Food and interior are both visible; the dish is a little small in the cover preview."
+            },
+            "R109486188-P011": {
+              "photo_id": "R109486188-P011",
+              "verdict": "keep",
+              "reason": "Clear overhead dish that remains readable in the cover preview."
+            },
+            "R109486188-P016": {
+              "photo_id": "R109486188-P016",
+              "verdict": "keep",
+              "reason": "Sharp dumplings with a clear foreground subject."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R109486188-P004",
+            "R109486188-P006",
+            "R109486188-P012",
+            "R109486188-P016"
+          ],
+          "score_before": 68.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109486188-P004": {
+              "photo_id": "R109486188-P004",
+              "verdict": "keep",
+              "reason": "Colorful, relevant interior, despite bright lights."
+            },
+            "R109486188-P006": {
+              "photo_id": "R109486188-P006",
+              "verdict": "keep",
+              "reason": "Food and interior are both visible; the dish is a little small in the cover preview."
+            },
+            "R109486188-P012": {
+              "photo_id": "R109486188-P012",
+              "verdict": "keep",
+              "reason": "Clear, appetizing food close-up."
+            },
+            "R109486188-P016": {
+              "photo_id": "R109486188-P016",
+              "verdict": "keep",
+              "reason": "Sharp dumplings with a clear foreground subject."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R109486188-B01": {
+          "photo_id": "R109486188-B01",
+          "verdict": "keep",
+          "reason": "Atmospheric interior, though somewhat dark at thumbnail size."
+        },
+        "R109486188-B02": {
+          "photo_id": "R109486188-B02",
+          "verdict": "keep",
+          "reason": "Clear, close view of a dumpling."
+        },
+        "R109486188-B03": {
+          "photo_id": "R109486188-B03",
+          "verdict": "keep",
+          "reason": "Readable dining-room view, though dim."
+        }
+      }
+    },
+    "39522766": {
+      "preferred": "deepseek-flash",
+      "reason": "A offers two clear, complementary food covers. B has several appealing dishes but is busier and less consistent; both improve on the current carousel's prominent portrait and dim interiors.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R39522766-P001",
+            "R39522766-P014"
+          ],
+          "score_before": 38.0,
+          "score_after": 84.0,
+          "improvement": "better",
+          "verdicts": {
+            "R39522766-P001": {
+              "photo_id": "R39522766-P001",
+              "verdict": "keep",
+              "reason": "Sharp, colorful plated food with a clear square crop."
+            },
+            "R39522766-P014": {
+              "photo_id": "R39522766-P014",
+              "verdict": "keep",
+              "reason": "Bright, clean food photograph; the dish remains visible in the square preview."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R39522766-P003",
+            "R39522766-P008",
+            "R39522766-P009",
+            "R39522766-P011",
+            "R39522766-P014"
+          ],
+          "score_before": 38.0,
+          "score_after": 76.0,
+          "improvement": "better",
+          "verdicts": {
+            "R39522766-P003": {
+              "photo_id": "R39522766-P003",
+              "verdict": "keep",
+              "reason": "Close, appetizing baked dish fills the square preview."
+            },
+            "R39522766-P008": {
+              "photo_id": "R39522766-P008",
+              "verdict": "keep",
+              "reason": "Distinct seafood dishes are visible, though the square crop is busy."
+            },
+            "R39522766-P009": {
+              "photo_id": "R39522766-P009",
+              "verdict": "keep",
+              "reason": "Sharp close-up with vivid food detail and a clear focal point."
+            },
+            "R39522766-P011": {
+              "photo_id": "R39522766-P011",
+              "verdict": "review",
+              "reason": "Food is recognizable, but the image has a strong orange cast and a background person may be visible."
+            },
+            "R39522766-P014": {
+              "photo_id": "R39522766-P014",
+              "verdict": "keep",
+              "reason": "Bright, clean food photograph; the dish remains visible in the square preview."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R39522766-B01": {
+          "photo_id": "R39522766-B01",
+          "verdict": "review",
+          "reason": "Atmospheric interior, but dim at thumbnail size and background people are visible."
+        },
+        "R39522766-B02": {
+          "photo_id": "R39522766-B02",
+          "verdict": "reject",
+          "reason": "A photographed person is the prominent subject."
+        },
+        "R39522766-B03": {
+          "photo_id": "R39522766-B03",
+          "verdict": "review",
+          "reason": "Readable dining-room view, with small background people visible."
+        }
+      }
+    },
+    "104270066": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements add strong food images and setting variety. A has the stronger overall food selection, while its busy table shot is a minor weakness.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R104270066-P003",
+            "R104270066-P004",
+            "R104270066-P007",
+            "R104270066-P008",
+            "R104270066-P011",
+            "R104270066-P013"
+          ],
+          "score_before": 73.0,
+          "score_after": 84.0,
+          "improvement": "better",
+          "verdicts": {
+            "R104270066-P003": {
+              "photo_id": "R104270066-P003",
+              "verdict": "keep",
+              "reason": "Colorful, sharply detailed food remains clear in the square crop."
+            },
+            "R104270066-P004": {
+              "photo_id": "R104270066-P004",
+              "verdict": "keep",
+              "reason": "Bright, appetizing breads with a strong square crop."
+            },
+            "R104270066-P007": {
+              "photo_id": "R104270066-P007",
+              "verdict": "keep",
+              "reason": "Sharp food close-up with a clean square preview."
+            },
+            "R104270066-P008": {
+              "photo_id": "R104270066-P008",
+              "verdict": "review",
+              "reason": "Relevant food variety, but the busy, dim table is harder to read small."
+            },
+            "R104270066-P011": {
+              "photo_id": "R104270066-P011",
+              "verdict": "keep",
+              "reason": "Distinct dessert shot; the cartoon mascot is acceptable."
+            },
+            "R104270066-P013": {
+              "photo_id": "R104270066-P013",
+              "verdict": "keep",
+              "reason": "Clear interior view adds variety without prominent people."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R104270066-P003",
+            "R104270066-P004",
+            "R104270066-P005",
+            "R104270066-P013",
+            "R104270066-P014",
+            "R104270066-P015"
+          ],
+          "score_before": 73.0,
+          "score_after": 80.0,
+          "improvement": "better",
+          "verdicts": {
+            "R104270066-P003": {
+              "photo_id": "R104270066-P003",
+              "verdict": "keep",
+              "reason": "Colorful, sharply detailed food remains clear in the square crop."
+            },
+            "R104270066-P004": {
+              "photo_id": "R104270066-P004",
+              "verdict": "keep",
+              "reason": "Bright, appetizing breads with a strong square crop."
+            },
+            "R104270066-P005": {
+              "photo_id": "R104270066-P005",
+              "verdict": "keep",
+              "reason": "Colorful salad is sharp and prominent in the square crop."
+            },
+            "R104270066-P013": {
+              "photo_id": "R104270066-P013",
+              "verdict": "keep",
+              "reason": "Clear interior view adds variety without prominent people."
+            },
+            "R104270066-P014": {
+              "photo_id": "R104270066-P014",
+              "verdict": "keep",
+              "reason": "Clear exterior establishes the location, though it is less appetizing as a cover."
+            },
+            "R104270066-P015": {
+              "photo_id": "R104270066-P015",
+              "verdict": "keep",
+              "reason": "Readable interior view adds setting variety; table materials are incidental."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R104270066-B01": {
+          "photo_id": "R104270066-B01",
+          "verdict": "keep",
+          "reason": "Relevant bread and clay teaware, though the food is slightly dim."
+        },
+        "R104270066-B02": {
+          "photo_id": "R104270066-B02",
+          "verdict": "keep",
+          "reason": "Sharp, appetizing dish with a clear thumbnail composition."
+        },
+        "R104270066-B03": {
+          "photo_id": "R104270066-B03",
+          "verdict": "keep",
+          "reason": "Clear baked dish, though the plate occupies much of the frame."
+        }
+      }
+    },
+    "111258490": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements add appealing food and a stronger interior view. B has the better variety at thumbnail size, while A repeats a dumpling subject.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R111258490-P003",
+            "R111258490-P008",
+            "R111258490-P010",
+            "R111258490-P011",
+            "R111258490-P017"
+          ],
+          "score_before": 69.0,
+          "score_after": 84.0,
+          "improvement": "better",
+          "verdicts": {
+            "R111258490-P003": {
+              "photo_id": "R111258490-P003",
+              "verdict": "keep",
+              "reason": "Clear, colorful plated dish; small cartoon overlay is acceptable."
+            },
+            "R111258490-P008": {
+              "photo_id": "R111258490-P008",
+              "verdict": "keep",
+              "reason": "Distinctive baked dish remains clear in the square preview."
+            },
+            "R111258490-P010": {
+              "photo_id": "R111258490-P010",
+              "verdict": "keep",
+              "reason": "Sharp dumpling close-up, but less distinct from the other dumpling photo."
+            },
+            "R111258490-P011": {
+              "photo_id": "R111258490-P011",
+              "verdict": "keep",
+              "reason": "Appealing pastry and coffee with intentional background blur."
+            },
+            "R111258490-P017": {
+              "photo_id": "R111258490-P017",
+              "verdict": "keep",
+              "reason": "Readable, atmospheric interior without visible people."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R111258490-P003",
+            "R111258490-P004",
+            "R111258490-P008",
+            "R111258490-P009",
+            "R111258490-P017"
+          ],
+          "score_before": 69.0,
+          "score_after": 87.0,
+          "improvement": "better",
+          "verdicts": {
+            "R111258490-P003": {
+              "photo_id": "R111258490-P003",
+              "verdict": "keep",
+              "reason": "Clear, colorful plated dish; small cartoon overlay is acceptable."
+            },
+            "R111258490-P004": {
+              "photo_id": "R111258490-P004",
+              "verdict": "keep",
+              "reason": "Colorful plated meal is clear; partial menu at the edge is not prominent."
+            },
+            "R111258490-P008": {
+              "photo_id": "R111258490-P008",
+              "verdict": "keep",
+              "reason": "Distinctive baked dish remains clear in the square preview."
+            },
+            "R111258490-P009": {
+              "photo_id": "R111258490-P009",
+              "verdict": "keep",
+              "reason": "Clear overhead cheese platter with varied color and texture."
+            },
+            "R111258490-P017": {
+              "photo_id": "R111258490-P017",
+              "verdict": "keep",
+              "reason": "Readable, atmospheric interior without visible people."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R111258490-B01": {
+          "photo_id": "R111258490-B01",
+          "verdict": "keep",
+          "reason": "Appetizing plated dish, though the lighting is a little dark."
+        },
+        "R111258490-B02": {
+          "photo_id": "R111258490-B02",
+          "verdict": "keep",
+          "reason": "Clear overhead food photo with a readable composition."
+        },
+        "R111258490-B03": {
+          "photo_id": "R111258490-B03",
+          "verdict": "keep",
+          "reason": "Clear interior view, though the empty table is a weak cover subject."
+        }
+      }
+    },
+    "129431563": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements offer clearer subjects than the mostly dark current interiors. B has more food variety, though one image needs review for a possible background person.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R129431563-P012",
+            "R129431563-P014",
+            "R129431563-P017"
+          ],
+          "score_before": 48.0,
+          "score_after": 69.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129431563-P012": {
+              "photo_id": "R129431563-P012",
+              "verdict": "keep",
+              "reason": "Colorful decor is visible, though the composition is busy."
+            },
+            "R129431563-P014": {
+              "photo_id": "R129431563-P014",
+              "verdict": "keep",
+              "reason": "Glowing drink is distinct against the dark background."
+            },
+            "R129431563-P017": {
+              "photo_id": "R129431563-P017",
+              "verdict": "keep",
+              "reason": "Cocktail is prominent and readable despite strong red lighting."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R129431563-P006",
+            "R129431563-P007",
+            "R129431563-P017",
+            "R129431563-P019"
+          ],
+          "score_before": 48.0,
+          "score_after": 74.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129431563-P006": {
+              "photo_id": "R129431563-P006",
+              "verdict": "keep",
+              "reason": "Plated food fills the frame and remains recognizable in the square crop."
+            },
+            "R129431563-P007": {
+              "photo_id": "R129431563-P007",
+              "verdict": "review",
+              "reason": "Food and table setting are visible, but a possible person appears at the right edge."
+            },
+            "R129431563-P017": {
+              "photo_id": "R129431563-P017",
+              "verdict": "keep",
+              "reason": "Cocktail is prominent and readable despite strong red lighting."
+            },
+            "R129431563-P019": {
+              "photo_id": "R129431563-P019",
+              "verdict": "keep",
+              "reason": "Dish and drinks provide relevant variety, though the food is somewhat dark."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R129431563-B01": {
+          "photo_id": "R129431563-B01",
+          "verdict": "reject",
+          "reason": "Very dark interior with little detail readable at thumbnail size."
+        },
+        "R129431563-B02": {
+          "photo_id": "R129431563-B02",
+          "verdict": "review",
+          "reason": "Relevant interior, but the scene is dim and its focal point is unclear."
+        },
+        "R129431563-B03": {
+          "photo_id": "R129431563-B03",
+          "verdict": "keep",
+          "reason": "Decorative bar and bright flames give this dark scene a clear focal point."
+        }
+      }
+    },
+    "114189450": {
+      "preferred": "gpt-6-luna",
+      "reason": "B balances food, drinks and an interior. A has clearer drinks but repeats that subject and includes a photo with a background person; the current set also has a background-person interior.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R114189450-P003",
+            "R114189450-P008",
+            "R114189450-P011",
+            "R114189450-P016"
+          ],
+          "score_before": 65.0,
+          "score_after": 67.0,
+          "improvement": "same",
+          "verdicts": {
+            "R114189450-P003": {
+              "photo_id": "R114189450-P003",
+              "verdict": "keep",
+              "reason": "Drinks are clear, though warm lighting reduces detail."
+            },
+            "R114189450-P008": {
+              "photo_id": "R114189450-P008",
+              "verdict": "keep",
+              "reason": "Clear, prominent plated food that reads well in the square preview."
+            },
+            "R114189450-P011": {
+              "photo_id": "R114189450-P011",
+              "verdict": "review",
+              "reason": "Drink is clear, but a real person is visible in the background."
+            },
+            "R114189450-P016": {
+              "photo_id": "R114189450-P016",
+              "verdict": "review",
+              "reason": "Striking drink display, but a real person is visible in the background."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R114189450-P007",
+            "R114189450-P008",
+            "R114189450-P016"
+          ],
+          "score_before": 65.0,
+          "score_after": 73.0,
+          "improvement": "better",
+          "verdicts": {
+            "R114189450-P007": {
+              "photo_id": "R114189450-P007",
+              "verdict": "keep",
+              "reason": "Atmospheric interior with recognizable seating, though dark."
+            },
+            "R114189450-P008": {
+              "photo_id": "R114189450-P008",
+              "verdict": "keep",
+              "reason": "Clear, prominent plated food that reads well in the square preview."
+            },
+            "R114189450-P016": {
+              "photo_id": "R114189450-P016",
+              "verdict": "review",
+              "reason": "Striking drink display, but a real person is visible in the background."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R114189450-B01": {
+          "photo_id": "R114189450-B01",
+          "verdict": "keep",
+          "reason": "Atmospheric interior, though dark at thumbnail size."
+        },
+        "R114189450-B02": {
+          "photo_id": "R114189450-B02",
+          "verdict": "keep",
+          "reason": "Distinctive plated food is clear and prominent."
+        },
+        "R114189450-B03": {
+          "photo_id": "R114189450-B03",
+          "verdict": "review",
+          "reason": "Dim interior with real background people."
+        }
+      }
+    },
+    "109475230": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer clearer food covers than CURRENT. A adds useful dish variety beyond B, though its drink photo needs review.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R109475230-P002",
+            "R109475230-P005",
+            "R109475230-P010",
+            "R109475230-P011",
+            "R109475230-P013",
+            "R109475230-P019"
+          ],
+          "score_before": 58.0,
+          "score_after": 79.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109475230-P002": {
+              "photo_id": "R109475230-P002",
+              "verdict": "keep",
+              "reason": "Sharp, well-lit spread of food with a readable square crop."
+            },
+            "R109475230-P005": {
+              "photo_id": "R109475230-P005",
+              "verdict": "keep",
+              "reason": "Appetizing pasta remains clear in the square preview."
+            },
+            "R109475230-P010": {
+              "photo_id": "R109475230-P010",
+              "verdict": "keep",
+              "reason": "Close-up of mussels and bread is sharp and relevant."
+            },
+            "R109475230-P011": {
+              "photo_id": "R109475230-P011",
+              "verdict": "keep",
+              "reason": "Colorful mussel dish reads well in the square preview; only a hand is visible."
+            },
+            "R109475230-P013": {
+              "photo_id": "R109475230-P013",
+              "verdict": "keep",
+              "reason": "Seafood and fries are clear; the visible hand does not dominate."
+            },
+            "R109475230-P019": {
+              "photo_id": "R109475230-P019",
+              "verdict": "review",
+              "reason": "Vivid drink, but a real background person is visible."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R109475230-P005",
+            "R109475230-P010"
+          ],
+          "score_before": 58.0,
+          "score_after": 74.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109475230-P005": {
+              "photo_id": "R109475230-P005",
+              "verdict": "keep",
+              "reason": "Appetizing pasta remains clear in the square preview."
+            },
+            "R109475230-P010": {
+              "photo_id": "R109475230-P010",
+              "verdict": "keep",
+              "reason": "Close-up of mussels and bread is sharp and relevant."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R109475230-B01": {
+          "photo_id": "R109475230-B01",
+          "verdict": "keep",
+          "reason": "Clear drinks in a recognizable restaurant setting."
+        },
+        "R109475230-B02": {
+          "photo_id": "R109475230-B02",
+          "verdict": "reject",
+          "reason": "A photographed person is prominent at the left edge."
+        },
+        "R109475230-B03": {
+          "photo_id": "R109475230-B03",
+          "verdict": "review",
+          "reason": "Appealing drink, but a real background person is visible."
+        }
+      }
+    },
+    "86800983": {
+      "preferred": "deepseek-flash",
+      "reason": "Both replacements avoid CURRENT's prominent person and offer more varied food images. A is more consistently food-focused; B adds a tightly cropped dish and a drink-dominated image.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R86800983-P003",
+            "R86800983-P007",
+            "R86800983-P014",
+            "R86800983-P017"
+          ],
+          "score_before": 54.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R86800983-P003": {
+              "photo_id": "R86800983-P003",
+              "verdict": "keep",
+              "reason": "Sharp sushi close-up that reads well in the square preview."
+            },
+            "R86800983-P007": {
+              "photo_id": "R86800983-P007",
+              "verdict": "review",
+              "reason": "Food is visible, but the square preview is dark with substantial empty space."
+            },
+            "R86800983-P014": {
+              "photo_id": "R86800983-P014",
+              "verdict": "keep",
+              "reason": "Colorful, well-lit dish remains clear in the square preview."
+            },
+            "R86800983-P017": {
+              "photo_id": "R86800983-P017",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing noodles fill the square preview."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R86800983-P003",
+            "R86800983-P007",
+            "R86800983-P014",
+            "R86800983-P017",
+            "R86800983-P018",
+            "R86800983-P019"
+          ],
+          "score_before": 54.0,
+          "score_after": 78.0,
+          "improvement": "better",
+          "verdicts": {
+            "R86800983-P003": {
+              "photo_id": "R86800983-P003",
+              "verdict": "keep",
+              "reason": "Sharp sushi close-up that reads well in the square preview."
+            },
+            "R86800983-P007": {
+              "photo_id": "R86800983-P007",
+              "verdict": "review",
+              "reason": "Food is visible, but the square preview is dark with substantial empty space."
+            },
+            "R86800983-P014": {
+              "photo_id": "R86800983-P014",
+              "verdict": "keep",
+              "reason": "Colorful, well-lit dish remains clear in the square preview."
+            },
+            "R86800983-P017": {
+              "photo_id": "R86800983-P017",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing noodles fill the square preview."
+            },
+            "R86800983-P018": {
+              "photo_id": "R86800983-P018",
+              "verdict": "keep",
+              "reason": "Distinctive shrimp dish is clear, though tightly cropped in the preview."
+            },
+            "R86800983-P019": {
+              "photo_id": "R86800983-P019",
+              "verdict": "review",
+              "reason": "Food is visible, but the beer bottle and glass compete for attention."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R86800983-B01": {
+          "photo_id": "R86800983-B01",
+          "verdict": "keep",
+          "reason": "Clear food, though the overhead composition is loose."
+        },
+        "R86800983-B02": {
+          "photo_id": "R86800983-B02",
+          "verdict": "keep",
+          "reason": "Readable plated meal, but similar to B01."
+        },
+        "R86800983-B03": {
+          "photo_id": "R86800983-B03",
+          "verdict": "reject",
+          "reason": "A photographed person is prominent behind the food."
+        }
+      }
+    },
+    "126623444": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements offer stronger food covers and avoid CURRENT's background people. A adds a clear interior and more food variety; B is strong but its window-view photo makes the dish less prominent.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R126623444-P003",
+            "R126623444-P005",
+            "R126623444-P011",
+            "R126623444-P012",
+            "R126623444-P013",
+            "R126623444-P017"
+          ],
+          "score_before": 54.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R126623444-P003": {
+              "photo_id": "R126623444-P003",
+              "verdict": "keep",
+              "reason": "Clear, spacious interior; the main seating is distant."
+            },
+            "R126623444-P005": {
+              "photo_id": "R126623444-P005",
+              "verdict": "keep",
+              "reason": "Sharp, well-composed seating area with no visible people."
+            },
+            "R126623444-P011": {
+              "photo_id": "R126623444-P011",
+              "verdict": "keep",
+              "reason": "Dessert is sharp and prominent; the hand alone is acceptable."
+            },
+            "R126623444-P012": {
+              "photo_id": "R126623444-P012",
+              "verdict": "keep",
+              "reason": "Colorful food reads well in the square preview; the hand alone is acceptable."
+            },
+            "R126623444-P013": {
+              "photo_id": "R126623444-P013",
+              "verdict": "keep",
+              "reason": "Dumplings are clearly visible, though the lighting is somewhat flat."
+            },
+            "R126623444-P017": {
+              "photo_id": "R126623444-P017",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing plated dish that reads well at thumbnail size."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R126623444-P002",
+            "R126623444-P005",
+            "R126623444-P017"
+          ],
+          "score_before": 54.0,
+          "score_after": 77.0,
+          "improvement": "better",
+          "verdicts": {
+            "R126623444-P002": {
+              "photo_id": "R126623444-P002",
+              "verdict": "keep",
+              "reason": "Relevant pasta dish, though the window view takes substantial space."
+            },
+            "R126623444-P005": {
+              "photo_id": "R126623444-P005",
+              "verdict": "keep",
+              "reason": "Sharp, well-composed seating area with no visible people."
+            },
+            "R126623444-P017": {
+              "photo_id": "R126623444-P017",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing plated dish that reads well at thumbnail size."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R126623444-B01": {
+          "photo_id": "R126623444-B01",
+          "verdict": "keep",
+          "reason": "Appetizing dish, though tightly cropped."
+        },
+        "R126623444-B02": {
+          "photo_id": "R126623444-B02",
+          "verdict": "review",
+          "reason": "Real people are visible in the background; the aisle is not a strong cover subject."
+        },
+        "R126623444-B03": {
+          "photo_id": "R126623444-B03",
+          "verdict": "keep",
+          "reason": "Clear drink photo, but less compelling at thumbnail size."
+        }
+      }
+    },
+    "39566888": {
+      "preferred": "gpt-6-luna",
+      "reason": "CURRENT has pleasant interiors but no food. A adds clear dishes and an interior; B adds two distinct, appetizing food photos without relying on quantity alone.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R39566888-P001",
+            "R39566888-P003",
+            "R39566888-P005",
+            "R39566888-P009"
+          ],
+          "score_before": 68.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R39566888-P001": {
+              "photo_id": "R39566888-P001",
+              "verdict": "keep",
+              "reason": "Relevant interior view, but visually busy at thumbnail size."
+            },
+            "R39566888-P003": {
+              "photo_id": "R39566888-P003",
+              "verdict": "keep",
+              "reason": "Clear, appetizing plated dish with a strong central subject."
+            },
+            "R39566888-P005": {
+              "photo_id": "R39566888-P005",
+              "verdict": "keep",
+              "reason": "Varied food presentation is appealing, though some details are small."
+            },
+            "R39566888-P009": {
+              "photo_id": "R39566888-P009",
+              "verdict": "keep",
+              "reason": "Bright, readable dining-room view with no prominent people."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R39566888-P001",
+            "R39566888-P003",
+            "R39566888-P005",
+            "R39566888-P009",
+            "R39566888-P012",
+            "R39566888-P015"
+          ],
+          "score_before": 68.0,
+          "score_after": 89.0,
+          "improvement": "better",
+          "verdicts": {
+            "R39566888-P001": {
+              "photo_id": "R39566888-P001",
+              "verdict": "keep",
+              "reason": "Relevant interior view, but visually busy at thumbnail size."
+            },
+            "R39566888-P003": {
+              "photo_id": "R39566888-P003",
+              "verdict": "keep",
+              "reason": "Clear, appetizing plated dish with a strong central subject."
+            },
+            "R39566888-P005": {
+              "photo_id": "R39566888-P005",
+              "verdict": "keep",
+              "reason": "Varied food presentation is appealing, though some details are small."
+            },
+            "R39566888-P009": {
+              "photo_id": "R39566888-P009",
+              "verdict": "keep",
+              "reason": "Bright, readable dining-room view with no prominent people."
+            },
+            "R39566888-P012": {
+              "photo_id": "R39566888-P012",
+              "verdict": "keep",
+              "reason": "Sharp, colorful dessert close-up that reads well in the square crop."
+            },
+            "R39566888-P015": {
+              "photo_id": "R39566888-P015",
+              "verdict": "keep",
+              "reason": "Clear oyster platters add a distinct food subject."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R39566888-B01": {
+          "photo_id": "R39566888-B01",
+          "verdict": "keep",
+          "reason": "Warm interior scene with distinctive lighting, though somewhat dark."
+        },
+        "R39566888-B02": {
+          "photo_id": "R39566888-B02",
+          "verdict": "keep",
+          "reason": "Clear, inviting table setting that reads well at thumbnail size."
+        },
+        "R39566888-B03": {
+          "photo_id": "R39566888-B03",
+          "verdict": "keep",
+          "reason": "Sharp table setting, though the empty plates offer limited food appeal."
+        }
+      }
+    },
+    "112517943": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements remove the prominent portrait and offer clearer covers. B has a slightly stronger variety of readable food photos, despite including one more image.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R112517943-P006",
+            "R112517943-P008",
+            "R112517943-P014",
+            "R112517943-P016",
+            "R112517943-P020"
+          ],
+          "score_before": 40.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R112517943-P006": {
+              "photo_id": "R112517943-P006",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing soup with a readable square crop."
+            },
+            "R112517943-P008": {
+              "photo_id": "R112517943-P008",
+              "verdict": "keep",
+              "reason": "Clear food spread with soup prominent in the square crop."
+            },
+            "R112517943-P014": {
+              "photo_id": "R112517943-P014",
+              "verdict": "keep",
+              "reason": "Well-lit interior with a clear dining-area composition."
+            },
+            "R112517943-P016": {
+              "photo_id": "R112517943-P016",
+              "verdict": "keep",
+              "reason": "Relevant dining-room view, though somewhat dark."
+            },
+            "R112517943-P020": {
+              "photo_id": "R112517943-P020",
+              "verdict": "keep",
+              "reason": "Sharp overhead food photo; the pastries remain clear in the square crop."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R112517943-P006",
+            "R112517943-P008",
+            "R112517943-P010",
+            "R112517943-P012",
+            "R112517943-P014",
+            "R112517943-P016"
+          ],
+          "score_before": 40.0,
+          "score_after": 85.0,
+          "improvement": "better",
+          "verdicts": {
+            "R112517943-P006": {
+              "photo_id": "R112517943-P006",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing soup with a readable square crop."
+            },
+            "R112517943-P008": {
+              "photo_id": "R112517943-P008",
+              "verdict": "keep",
+              "reason": "Clear food spread with soup prominent in the square crop."
+            },
+            "R112517943-P010": {
+              "photo_id": "R112517943-P010",
+              "verdict": "keep",
+              "reason": "Sharp plated dish with a clear focal point."
+            },
+            "R112517943-P012": {
+              "photo_id": "R112517943-P012",
+              "verdict": "keep",
+              "reason": "Distinctive dessert remains readable in the square crop."
+            },
+            "R112517943-P014": {
+              "photo_id": "R112517943-P014",
+              "verdict": "keep",
+              "reason": "Well-lit interior with a clear dining-area composition."
+            },
+            "R112517943-P016": {
+              "photo_id": "R112517943-P016",
+              "verdict": "keep",
+              "reason": "Relevant dining-room view, though somewhat dark."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R112517943-B01": {
+          "photo_id": "R112517943-B01",
+          "verdict": "keep",
+          "reason": "Food is relevant, though the collage is hard to read at thumbnail size."
+        },
+        "R112517943-B02": {
+          "photo_id": "R112517943-B02",
+          "verdict": "review",
+          "reason": "Clear interior and tea setting, but people are visible in the background."
+        },
+        "R112517943-B03": {
+          "photo_id": "R112517943-B03",
+          "verdict": "reject",
+          "reason": "Collage includes a prominent photographed person."
+        }
+      }
+    },
+    "128256004": {
+      "preferred": "gpt-6-luna",
+      "reason": "CURRENT has two strong food covers but a dim third image. Both replacements improve consistency; A has the clearest, most varied food-focused selection.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R128256004-P004",
+            "R128256004-P005",
+            "R128256004-P009",
+            "R128256004-P011",
+            "R128256004-P013",
+            "R128256004-P018"
+          ],
+          "score_before": 72.0,
+          "score_after": 91.0,
+          "improvement": "better",
+          "verdicts": {
+            "R128256004-P004": {
+              "photo_id": "R128256004-P004",
+              "verdict": "keep",
+              "reason": "Well-lit baked dish has a strong, readable composition."
+            },
+            "R128256004-P005": {
+              "photo_id": "R128256004-P005",
+              "verdict": "keep",
+              "reason": "Sharp, colorful food fills the frame."
+            },
+            "R128256004-P009": {
+              "photo_id": "R128256004-P009",
+              "verdict": "keep",
+              "reason": "Varied platter is sharp, though its details are busy at thumbnail size."
+            },
+            "R128256004-P011": {
+              "photo_id": "R128256004-P011",
+              "verdict": "keep",
+              "reason": "Bright, centered baked dish remains clear in the square crop."
+            },
+            "R128256004-P013": {
+              "photo_id": "R128256004-P013",
+              "verdict": "keep",
+              "reason": "Colorful, sharp salad with a clear presentation."
+            },
+            "R128256004-P018": {
+              "photo_id": "R128256004-P018",
+              "verdict": "keep",
+              "reason": "Sharp plated dish with good contrast and composition."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R128256004-P001",
+            "R128256004-P004",
+            "R128256004-P009",
+            "R128256004-P017"
+          ],
+          "score_before": 72.0,
+          "score_after": 82.0,
+          "improvement": "better",
+          "verdicts": {
+            "R128256004-P001": {
+              "photo_id": "R128256004-P001",
+              "verdict": "keep",
+              "reason": "Food is clearly framed, though the sauce makes the thumbnail less distinct."
+            },
+            "R128256004-P004": {
+              "photo_id": "R128256004-P004",
+              "verdict": "keep",
+              "reason": "Well-lit baked dish has a strong, readable composition."
+            },
+            "R128256004-P009": {
+              "photo_id": "R128256004-P009",
+              "verdict": "keep",
+              "reason": "Varied platter is sharp, though its details are busy at thumbnail size."
+            },
+            "R128256004-P017": {
+              "photo_id": "R128256004-P017",
+              "verdict": "keep",
+              "reason": "Readable dining-room view adds variety, despite subdued lighting."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R128256004-B01": {
+          "photo_id": "R128256004-B01",
+          "verdict": "keep",
+          "reason": "Sharp, appetizing baked dish with a clear focal point."
+        },
+        "R128256004-B02": {
+          "photo_id": "R128256004-B02",
+          "verdict": "keep",
+          "reason": "Colorful salad is sharp and readable at thumbnail size."
+        },
+        "R128256004-B03": {
+          "photo_id": "R128256004-B03",
+          "verdict": "review",
+          "reason": "Dining-room scene is dim, and the foreground drinks lack a clear focal point."
+        }
+      }
+    },
+    "129425928": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements replace the menu-led current carousel with clear food imagery. A adds useful dish variety, though its seafood photo needs review; B is strong but limited to one dish and a dining room view.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R129425928-P002",
+            "R129425928-P006",
+            "R129425928-P010",
+            "R129425928-P011",
+            "R129425928-P017",
+            "R129425928-P018"
+          ],
+          "score_before": 53.0,
+          "score_after": 81.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129425928-P002": {
+              "photo_id": "R129425928-P002",
+              "verdict": "keep",
+              "reason": "Clear dining room view; cartoon mascot is acceptable."
+            },
+            "R129425928-P006": {
+              "photo_id": "R129425928-P006",
+              "verdict": "keep",
+              "reason": "Sharp, colorful plated food."
+            },
+            "R129425928-P010": {
+              "photo_id": "R129425928-P010",
+              "verdict": "review",
+              "reason": "Appealing seafood platter, but a real background diner is visible."
+            },
+            "R129425928-P011": {
+              "photo_id": "R129425928-P011",
+              "verdict": "keep",
+              "reason": "Clear dessert close-up with recognizable details."
+            },
+            "R129425928-P017": {
+              "photo_id": "R129425928-P017",
+              "verdict": "keep",
+              "reason": "Sharp pizza close-up that reads well in the square crop."
+            },
+            "R129425928-P018": {
+              "photo_id": "R129425928-P018",
+              "verdict": "keep",
+              "reason": "Clear plated dish, though the framing leaves some empty space."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R129425928-P002",
+            "R129425928-P017"
+          ],
+          "score_before": 53.0,
+          "score_after": 76.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129425928-P002": {
+              "photo_id": "R129425928-P002",
+              "verdict": "keep",
+              "reason": "Clear dining room view; cartoon mascot is acceptable."
+            },
+            "R129425928-P017": {
+              "photo_id": "R129425928-P017",
+              "verdict": "keep",
+              "reason": "Sharp pizza close-up that reads well in the square crop."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R129425928-B01": {
+          "photo_id": "R129425928-B01",
+          "verdict": "reject",
+          "reason": "Menu dominates the frame; food is cropped."
+        },
+        "R129425928-B02": {
+          "photo_id": "R129425928-B02",
+          "verdict": "keep",
+          "reason": "Clear, well-lit dining room view."
+        },
+        "R129425928-B03": {
+          "photo_id": "R129425928-B03",
+          "verdict": "keep",
+          "reason": "Readable bar interior with no prominent people."
+        }
+      }
+    },
+    "129796290": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements replace the text-led cover with more food imagery. B has a stronger food-focused mix without A's interior shot that may contain a person.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R129796290-P002",
+            "R129796290-P005",
+            "R129796290-P010",
+            "R129796290-P013",
+            "R129796290-P014",
+            "R129796290-P019"
+          ],
+          "score_before": 68.0,
+          "score_after": 79.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129796290-P002": {
+              "photo_id": "R129796290-P002",
+              "verdict": "keep",
+              "reason": "Clear, well-composed interior; mascot is decorative."
+            },
+            "R129796290-P005": {
+              "photo_id": "R129796290-P005",
+              "verdict": "keep",
+              "reason": "Appetizing food remains clear in the square crop."
+            },
+            "R129796290-P010": {
+              "photo_id": "R129796290-P010",
+              "verdict": "keep",
+              "reason": "Clear overhead view of two pasta bowls."
+            },
+            "R129796290-P013": {
+              "photo_id": "R129796290-P013",
+              "verdict": "keep",
+              "reason": "Readable interior composition despite distant menu signage."
+            },
+            "R129796290-P014": {
+              "photo_id": "R129796290-P014",
+              "verdict": "review",
+              "reason": "A possible real person near the entrance is prominent in the interior view."
+            },
+            "R129796290-P019": {
+              "photo_id": "R129796290-P019",
+              "verdict": "keep",
+              "reason": "Two pasta bowls are sharp and prominent."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R129796290-P005",
+            "R129796290-P009",
+            "R129796290-P012",
+            "R129796290-P013",
+            "R129796290-P019"
+          ],
+          "score_before": 68.0,
+          "score_after": 84.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129796290-P005": {
+              "photo_id": "R129796290-P005",
+              "verdict": "keep",
+              "reason": "Appetizing food remains clear in the square crop."
+            },
+            "R129796290-P009": {
+              "photo_id": "R129796290-P009",
+              "verdict": "keep",
+              "reason": "Close, clear view of a prepared dish."
+            },
+            "R129796290-P012": {
+              "photo_id": "R129796290-P012",
+              "verdict": "keep",
+              "reason": "Clear food-and-drink photo, though the crop leaves substantial tabletop."
+            },
+            "R129796290-P013": {
+              "photo_id": "R129796290-P013",
+              "verdict": "keep",
+              "reason": "Readable interior composition despite distant menu signage."
+            },
+            "R129796290-P019": {
+              "photo_id": "R129796290-P019",
+              "verdict": "keep",
+              "reason": "Two pasta bowls are sharp and prominent."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R129796290-B01": {
+          "photo_id": "R129796290-B01",
+          "verdict": "reject",
+          "reason": "Neon wall text is not a useful cover photograph."
+        },
+        "R129796290-B02": {
+          "photo_id": "R129796290-B02",
+          "verdict": "keep",
+          "reason": "Clear, appetizing bowls fill the frame."
+        },
+        "R129796290-B03": {
+          "photo_id": "R129796290-B03",
+          "verdict": "keep",
+          "reason": "Sharp, inviting view of the dining area."
+        }
+      }
+    },
+    "129957878": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements avoid the prominent people in CURRENT. P014 is the strongest cover; A adds a similar but less readable pillar-obstructed photo.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R129957878-P014",
+            "R129957878-P015"
+          ],
+          "score_before": 42.0,
+          "score_after": 74.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129957878-P014": {
+              "photo_id": "R129957878-P014",
+              "verdict": "keep",
+              "reason": "Bowling balls and lanes make the activity clear in both views; the cartoon mascot is acceptable."
+            },
+            "R129957878-P015": {
+              "photo_id": "R129957878-P015",
+              "verdict": "keep",
+              "reason": "Bowling lanes are visible, but a large dark pillar weakens the composition, especially in the square preview."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R129957878-P014"
+          ],
+          "score_before": 42.0,
+          "score_after": 78.0,
+          "improvement": "better",
+          "verdicts": {
+            "R129957878-P014": {
+              "photo_id": "R129957878-P014",
+              "verdict": "keep",
+              "reason": "Bowling balls and lanes make the activity clear in both views; the cartoon mascot is acceptable."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R129957878-B01": {
+          "photo_id": "R129957878-B01",
+          "verdict": "keep",
+          "reason": "Clear, unobstructed view of the bowling lanes, though the lanes are small at thumbnail size."
+        },
+        "R129957878-B02": {
+          "photo_id": "R129957878-B02",
+          "verdict": "review",
+          "reason": "Real people appear in the background, and the dark blue lighting reduces clarity."
+        },
+        "R129957878-B03": {
+          "photo_id": "R129957878-B03",
+          "verdict": "reject",
+          "reason": "Prominent posed people dominate the cover."
+        }
+      }
+    },
+    "72200914": {
+      "preferred": "none",
+      "reason": "CURRENT has three sharp, varied, unobstructed food covers. Both replacements add useful dishes but repeat similar seafood views and have more distracting cartoon overlays; A has a stronger additional mussel view, while B has a weaker soup composition.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R72200914-P002",
+            "R72200914-P005",
+            "R72200914-P009",
+            "R72200914-P012",
+            "R72200914-P013",
+            "R72200914-P020"
+          ],
+          "score_before": 88.0,
+          "score_after": 72.0,
+          "improvement": "worse",
+          "verdicts": {
+            "R72200914-P002": {
+              "photo_id": "R72200914-P002",
+              "verdict": "keep",
+              "reason": "Clear seafood close-up; cartoon covers part of the lower corner."
+            },
+            "R72200914-P005": {
+              "photo_id": "R72200914-P005",
+              "verdict": "keep",
+              "reason": "Sharp overhead dish, though the cartoon obscures part of the plate."
+            },
+            "R72200914-P009": {
+              "photo_id": "R72200914-P009",
+              "verdict": "keep",
+              "reason": "Distinct, sharp mussel close-up with a small cartoon."
+            },
+            "R72200914-P012": {
+              "photo_id": "R72200914-P012",
+              "verdict": "keep",
+              "reason": "Colorful seafood, though the dark sauce and cartoon weaken the cover."
+            },
+            "R72200914-P013": {
+              "photo_id": "R72200914-P013",
+              "verdict": "keep",
+              "reason": "Clear seafood close-up with a cartoon over one corner."
+            },
+            "R72200914-P020": {
+              "photo_id": "R72200914-P020",
+              "verdict": "review",
+              "reason": "Warm, dim lighting and a foreground drink compete with the food."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R72200914-P002",
+            "R72200914-P003",
+            "R72200914-P005",
+            "R72200914-P012",
+            "R72200914-P013"
+          ],
+          "score_before": 88.0,
+          "score_after": 70.0,
+          "improvement": "worse",
+          "verdicts": {
+            "R72200914-P002": {
+              "photo_id": "R72200914-P002",
+              "verdict": "keep",
+              "reason": "Clear seafood close-up; cartoon covers part of the lower corner."
+            },
+            "R72200914-P003": {
+              "photo_id": "R72200914-P003",
+              "verdict": "review",
+              "reason": "Soup is clear, but the cropped crayfish and empty board weaken composition."
+            },
+            "R72200914-P005": {
+              "photo_id": "R72200914-P005",
+              "verdict": "keep",
+              "reason": "Sharp overhead dish, though the cartoon obscures part of the plate."
+            },
+            "R72200914-P012": {
+              "photo_id": "R72200914-P012",
+              "verdict": "keep",
+              "reason": "Colorful seafood, though the dark sauce and cartoon weaken the cover."
+            },
+            "R72200914-P013": {
+              "photo_id": "R72200914-P013",
+              "verdict": "keep",
+              "reason": "Clear seafood close-up with a cartoon over one corner."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R72200914-B01": {
+          "photo_id": "R72200914-B01",
+          "verdict": "keep",
+          "reason": "Sharp, well-lit bowl with a clean composition."
+        },
+        "R72200914-B02": {
+          "photo_id": "R72200914-B02",
+          "verdict": "keep",
+          "reason": "Vivid overhead dish remains clear at thumbnail size."
+        },
+        "R72200914-B03": {
+          "photo_id": "R72200914-B03",
+          "verdict": "keep",
+          "reason": "Appetizing seafood scene with balanced framing."
+        }
+      }
+    },
+    "109489618": {
+      "preferred": "tie",
+      "reason": "A and B contain the same three clear, relevant photos; both are stronger than the current set, which includes a prominent person and a menu.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R109489618-P011",
+            "R109489618-P015",
+            "R109489618-P016"
+          ],
+          "score_before": 32.0,
+          "score_after": 84.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109489618-P011": {
+              "photo_id": "R109489618-P011",
+              "verdict": "keep",
+              "reason": "Sharp, colorful cocktail remains clear in the square preview."
+            },
+            "R109489618-P015": {
+              "photo_id": "R109489618-P015",
+              "verdict": "keep",
+              "reason": "Three drinks are clearly composed against a dark background."
+            },
+            "R109489618-P016": {
+              "photo_id": "R109489618-P016",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing food close-up with a clear focal point."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R109489618-P011",
+            "R109489618-P015",
+            "R109489618-P016"
+          ],
+          "score_before": 32.0,
+          "score_after": 84.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109489618-P011": {
+              "photo_id": "R109489618-P011",
+              "verdict": "keep",
+              "reason": "Sharp, colorful cocktail remains clear in the square preview."
+            },
+            "R109489618-P015": {
+              "photo_id": "R109489618-P015",
+              "verdict": "keep",
+              "reason": "Three drinks are clearly composed against a dark background."
+            },
+            "R109489618-P016": {
+              "photo_id": "R109489618-P016",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing food close-up with a clear focal point."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R109489618-B01": {
+          "photo_id": "R109489618-B01",
+          "verdict": "keep",
+          "reason": "Colorful drinks are recognizable, though the red lighting reduces clarity."
+        },
+        "R109489618-B02": {
+          "photo_id": "R109489618-B02",
+          "verdict": "reject",
+          "reason": "A photographed person is prominent beside the food and drinks."
+        },
+        "R109489618-B03": {
+          "photo_id": "R109489618-B03",
+          "verdict": "reject",
+          "reason": "The menu dominates the frame."
+        }
+      }
+    },
+    "109473606": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements add clear food variety and an interior view. B has one additional distinct, readable entrée, though the possible background person in the interior needs review.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R109473606-P004",
+            "R109473606-P008",
+            "R109473606-P009",
+            "R109473606-P012",
+            "R109473606-P014"
+          ],
+          "score_before": 75.0,
+          "score_after": 83.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109473606-P004": {
+              "photo_id": "R109473606-P004",
+              "verdict": "keep",
+              "reason": "Sharp dish photo; small cartoon mascot does not obscure the food."
+            },
+            "R109473606-P008": {
+              "photo_id": "R109473606-P008",
+              "verdict": "keep",
+              "reason": "Bright, close-up entrée remains clear in the square preview."
+            },
+            "R109473606-P009": {
+              "photo_id": "R109473606-P009",
+              "verdict": "keep",
+              "reason": "Well-composed plated dish with a clear square crop."
+            },
+            "R109473606-P012": {
+              "photo_id": "R109473606-P012",
+              "verdict": "review",
+              "reason": "Readable interior, but a possible real person appears in the background."
+            },
+            "R109473606-P014": {
+              "photo_id": "R109473606-P014",
+              "verdict": "keep",
+              "reason": "Sharp dessert photo with a clear square crop."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R109473606-P004",
+            "R109473606-P008",
+            "R109473606-P009",
+            "R109473606-P010",
+            "R109473606-P012",
+            "R109473606-P014"
+          ],
+          "score_before": 75.0,
+          "score_after": 85.0,
+          "improvement": "better",
+          "verdicts": {
+            "R109473606-P004": {
+              "photo_id": "R109473606-P004",
+              "verdict": "keep",
+              "reason": "Sharp dish photo; small cartoon mascot does not obscure the food."
+            },
+            "R109473606-P008": {
+              "photo_id": "R109473606-P008",
+              "verdict": "keep",
+              "reason": "Bright, close-up entrée remains clear in the square preview."
+            },
+            "R109473606-P009": {
+              "photo_id": "R109473606-P009",
+              "verdict": "keep",
+              "reason": "Well-composed plated dish with a clear square crop."
+            },
+            "R109473606-P010": {
+              "photo_id": "R109473606-P010",
+              "verdict": "keep",
+              "reason": "Clear overhead entrée; the cartoon mascot stays outside the food."
+            },
+            "R109473606-P012": {
+              "photo_id": "R109473606-P012",
+              "verdict": "review",
+              "reason": "Readable interior, but a possible real person appears in the background."
+            },
+            "R109473606-P014": {
+              "photo_id": "R109473606-P014",
+              "verdict": "keep",
+              "reason": "Sharp dessert photo with a clear square crop."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R109473606-B01": {
+          "photo_id": "R109473606-B01",
+          "verdict": "keep",
+          "reason": "Clear, colorful plated dish."
+        },
+        "R109473606-B02": {
+          "photo_id": "R109473606-B02",
+          "verdict": "review",
+          "reason": "Appetizing pizza, but part of a real person is visible behind it."
+        },
+        "R109473606-B03": {
+          "photo_id": "R109473606-B03",
+          "verdict": "keep",
+          "reason": "Readable overhead view of the dish."
+        }
+      }
+    },
+    "104291258": {
+      "preferred": "gpt-6-luna",
+      "reason": "Both replacements add clear food close-ups, though P004 has a prominent menu. B is strongest because its additional soup photo adds useful variety.",
+      "models": {
+        "deepseek-flash": {
+          "photo_ids": [
+            "R104291258-P004",
+            "R104291258-P005",
+            "R104291258-P011"
+          ],
+          "score_before": 53.0,
+          "score_after": 67.0,
+          "improvement": "better",
+          "verdicts": {
+            "R104291258-P004": {
+              "photo_id": "R104291258-P004",
+              "verdict": "reject",
+              "reason": "A prominent printed menu fills much of the frame beneath the food."
+            },
+            "R104291258-P005": {
+              "photo_id": "R104291258-P005",
+              "verdict": "keep",
+              "reason": "Sharp, bright food arrangement that reads well in the square preview."
+            },
+            "R104291258-P011": {
+              "photo_id": "R104291258-P011",
+              "verdict": "keep",
+              "reason": "Clear, appetizing close-up with a simple composition."
+            }
+          }
+        },
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R104291258-P004",
+            "R104291258-P005",
+            "R104291258-P010",
+            "R104291258-P011"
+          ],
+          "score_before": 53.0,
+          "score_after": 77.0,
+          "improvement": "better",
+          "verdicts": {
+            "R104291258-P004": {
+              "photo_id": "R104291258-P004",
+              "verdict": "reject",
+              "reason": "A prominent printed menu fills much of the frame beneath the food."
+            },
+            "R104291258-P005": {
+              "photo_id": "R104291258-P005",
+              "verdict": "keep",
+              "reason": "Sharp, bright food arrangement that reads well in the square preview."
+            },
+            "R104291258-P010": {
+              "photo_id": "R104291258-P010",
+              "verdict": "keep",
+              "reason": "Clear bowl close-up; the background print is secondary."
+            },
+            "R104291258-P011": {
+              "photo_id": "R104291258-P011",
+              "verdict": "keep",
+              "reason": "Clear, appetizing close-up with a simple composition."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R104291258-B01": {
+          "photo_id": "R104291258-B01",
+          "verdict": "reject",
+          "reason": "Tabletop menus dominate; little food is visible."
+        },
+        "R104291258-B02": {
+          "photo_id": "R104291258-B02",
+          "verdict": "keep",
+          "reason": "Sharp, well-lit overhead view of several dishes."
+        },
+        "R104291258-B03": {
+          "photo_id": "R104291258-B03",
+          "verdict": "review",
+          "reason": "Relevant dishes, but the image is dark and crowded."
+        }
+      }
+    },
+    "86803486": {
+      "preferred": "gpt-6-luna",
+      "reason": "A offers clearer, more varied food covers, though one needs review. B shows the setting but no food and is less effective than the current food-focused carousel.",
+      "models": {
+        "gpt-6-luna": {
+          "photo_ids": [
+            "R86803486-P005",
+            "R86803486-P012",
+            "R86803486-P013",
+            "R86803486-P018"
+          ],
+          "score_before": 72.0,
+          "score_after": 79.0,
+          "improvement": "better",
+          "verdicts": {
+            "R86803486-P005": {
+              "photo_id": "R86803486-P005",
+              "verdict": "keep",
+              "reason": "Detailed overhead ramen photo; bowl remains clear in the square preview."
+            },
+            "R86803486-P012": {
+              "photo_id": "R86803486-P012",
+              "verdict": "keep",
+              "reason": "Distinctive desserts are sharp and visible in the square preview."
+            },
+            "R86803486-P013": {
+              "photo_id": "R86803486-P013",
+              "verdict": "review",
+              "reason": "Appealing ramen bowl, but a photographed person's torso is visible behind it."
+            },
+            "R86803486-P018": {
+              "photo_id": "R86803486-P018",
+              "verdict": "keep",
+              "reason": "Sharp, appetizing ramen bowl with a strong square crop."
+            }
+          }
+        },
+        "deepseek-flash": {
+          "photo_ids": [
+            "R86803486-P001",
+            "R86803486-P003"
+          ],
+          "score_before": 72.0,
+          "score_after": 55.0,
+          "improvement": "worse",
+          "verdicts": {
+            "R86803486-P001": {
+              "photo_id": "R86803486-P001",
+              "verdict": "review",
+              "reason": "Atmospheric interior, but possible distant background people are visible."
+            },
+            "R86803486-P003": {
+              "photo_id": "R86803486-P003",
+              "verdict": "keep",
+              "reason": "Clear seating-area photo with colorful wall artwork; no visible people."
+            }
+          }
+        }
+      },
+      "current_verdicts": {
+        "R86803486-B01": {
+          "photo_id": "R86803486-B01",
+          "verdict": "keep",
+          "reason": "Sharp noodle close-up, though the pink lighting makes it less appetizing."
+        },
+        "R86803486-B02": {
+          "photo_id": "R86803486-B02",
+          "verdict": "keep",
+          "reason": "Clear ramen detail, but tightly cropped."
+        },
+        "R86803486-B03": {
+          "photo_id": "R86803486-B03",
+          "verdict": "keep",
+          "reason": "Colorful, well-framed ramen bowl reads clearly at thumbnail size."
+        }
+      }
+    }
+  },
+  "limitations": "AI judge is not independent human ground truth. Same-provider family bias, subjective aesthetic judgments, incomplete metadata in two source galleries, square crop assumptions and sampled candidates limit generalization. This is not production precision or a guarantee of safe automatic publication."
+}
