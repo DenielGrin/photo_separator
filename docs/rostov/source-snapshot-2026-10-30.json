@@ -1,0 +1,1050 @@
+{
+  "schema_version": "rostov-source-v1",
+  "city": "Rostov-on-Don",
+  "capture_date": "2026-10-30",
+  "requested_search_url": "https://search.restaurantguru.com/rostov?location=ci1758",
+  "resolved_source_url": "https://restaurantguru.com/Rostov-on-Don",
+  "source_status": "human_verification_required",
+  "restaurants": [
+    {
+      "restaurant_id": "72200914",
+      "name": "Raki & Gady",
+      "listing_rank": 21,
+      "url": "https://restaurantguru.com/Raki-i-Gady-Rostov-on-Don",
+      "card_text": "21. Raki & Gady\n4.9\n7436 votes\n₽\n₽\n₽₽ Closed until 12PM\nSeafood, Russian",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/cf30-Raki-and-Gady-food-4.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://img02.restaurantguru.com/cf30-Raki-and-Gady-food-4.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "573"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/cf30-Raki-and-Gady-food-4.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://img02.restaurantguru.com/cf30-Raki-and-Gady-food-4.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "573"
+        }
+      }
+    },
+    {
+      "restaurant_id": "125640719",
+      "name": "Yaga",
+      "listing_rank": 22,
+      "url": "https://restaurantguru.com/Yaga-Rostov-on-Don",
+      "card_text": "22. Yaga\n4.9\n907 votes\n₽\n₽\n₽₽ Closed until 12PM\nRussian, Contemporary",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c817-Restaurant-Yaga-steak.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://img02.restaurantguru.com/c817-Restaurant-Yaga-steak.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "483"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c817-Restaurant-Yaga-steak.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://img02.restaurantguru.com/c817-Restaurant-Yaga-steak.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "483"
+        }
+      }
+    },
+    {
+      "restaurant_id": "109486188",
+      "name": "Vaha Lavka",
+      "listing_rank": 23,
+      "url": "https://restaurantguru.com/Vaha-Lavka-Rostov-on-Don-2",
+      "card_text": "23. Vaha Lavka\n4.9\n1433 votes\n₽\n₽\n₽₽ Open until 1AM\nArmenian, International, Seafood, Georgian",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/ca7c-Restaurant-Vaha-Lavka-interior-1.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://img02.restaurantguru.com/ca7c-Restaurant-Vaha-Lavka-interior-1.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "611"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/ca7c-Restaurant-Vaha-Lavka-interior-1.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://img02.restaurantguru.com/ca7c-Restaurant-Vaha-Lavka-interior-1.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "611"
+        }
+      }
+    },
+    {
+      "restaurant_id": "57753395",
+      "name": "Sapore Italiano",
+      "listing_rank": 24,
+      "url": "https://restaurantguru.com/Sapore-Italiano-Rostov-on-Don-3",
+      "card_text": "24. Sapore Italiano\n4.9\n5603 votes\n₽\n₽\n₽\n₽\n Open until 12AM\n3 more branches on this top list",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c079-Sapore-Italiano-Rostov-on-Don-dishes-11.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://img02.restaurantguru.com/c079-Sapore-Italiano-Rostov-on-Don-dishes-11.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "521"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c079-Sapore-Italiano-Rostov-on-Don-dishes-11.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://img02.restaurantguru.com/c079-Sapore-Italiano-Rostov-on-Don-dishes-11.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "521"
+        }
+      }
+    },
+    {
+      "restaurant_id": "104291258",
+      "name": "Starik Khinkalych",
+      "listing_rank": 25,
+      "url": "https://restaurantguru.com/Starik-Khinkalych-Rostov-on-Don-2",
+      "card_text": "25. Starik Khinkalych\n4.9\n1735 votes\n₽\n₽\n₽₽ Open until 11PM\n2 more branches on this top list",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c5d0-Starik-Khinkalych-Rostov-on-Don-interior-4.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://img02.restaurantguru.com/c5d0-Starik-Khinkalych-Rostov-on-Don-interior-4.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "697"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c5d0-Starik-Khinkalych-Rostov-on-Don-interior-4.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://img02.restaurantguru.com/c5d0-Starik-Khinkalych-Rostov-on-Don-interior-4.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "697"
+        }
+      }
+    },
+    {
+      "restaurant_id": "88492414",
+      "name": "Sushi-Market",
+      "listing_rank": 26,
+      "url": "https://restaurantguru.com/Sushi-Market-Rostov-on-Don-3",
+      "card_text": "26. Sushi-Market\n5\n704 votes\n₽\n₽₽₽ Open until 10PM\n5 more branches on this top list",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/cfbf-dessert-Sushi-Market.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "709"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/cfbf-dessert-Sushi-Market.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "709"
+        }
+      }
+    },
+    {
+      "restaurant_id": "39549082",
+      "name": "Kazachiy Kuren",
+      "listing_rank": 27,
+      "url": "https://restaurantguru.com/Kazachiy-Kuren-Rostov-on-Don",
+      "card_text": "27. Kazachiy Kuren\n4.9\n8396 votes\n₽\n₽\n₽₽ Closed until 12PM\n... n in Moscow, even there you would be a very good restaurant ",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/cfb2-Restaurant-Kazachiy-Kuren-burger.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "491"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/cfb2-Restaurant-Kazachiy-Kuren-burger.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "491"
+        }
+      }
+    },
+    {
+      "restaurant_id": "109489618",
+      "name": "Nakatilnya",
+      "listing_rank": 28,
+      "url": "https://restaurantguru.com/Nakatilnya-kultura-pitiya-Rostov-on-Don",
+      "card_text": "28. Nakatilnya\n4.9\n1268 votes\n₽\n₽\n₽₽ Closed until 6PM\nAmerican, European",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/cad8-Restaurant-Nakatilnya-exterior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "483"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/cad8-Restaurant-Nakatilnya-exterior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "483"
+        }
+      }
+    },
+    {
+      "restaurant_id": "109473606",
+      "name": "Syrovarnya",
+      "listing_rank": 29,
+      "url": "https://restaurantguru.com/Restoran-Syrovarnya-Rostov-on-Don",
+      "card_text": "29. Syrovarnya\n4.9\n3509 votes\n₽\n₽\n₽\n₽ Open until 12AM\nEuropean, Italian, Vegetarian\n... good family restaurant ",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c5e5-Restaurant-Syrovarnya-by-Novikov-pizza.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "671"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c5e5-Restaurant-Syrovarnya-by-Novikov-pizza.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "671"
+        }
+      }
+    },
+    {
+      "restaurant_id": "128250510",
+      "name": "Di Pasta park",
+      "listing_rank": 30,
+      "url": "https://restaurantguru.com/Di-Pasta-park-Rostov-on-Don",
+      "card_text": "30. Di Pasta park\n4.9\n373 votes\n₽\n₽\n₽₽ Open until 11PM",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/ce4f-Restaurant-Di-Pasta-park-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "484"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/ce4f-Restaurant-Di-Pasta-park-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "484"
+        }
+      }
+    },
+    {
+      "restaurant_id": "39522766",
+      "name": "Yalla",
+      "listing_rank": 31,
+      "url": "https://restaurantguru.com/Yalla-Rostov-on-Don",
+      "card_text": "31. Yalla\n4.9\n4529 votes\n₽\n₽\n₽₽ Open until 2AM\nEuropean, Japanese, Middle Eastern, Georgian, Uzbek, Vegetarian options\nOne of the very good restaurants for business dinners or gatherings ",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c6/Restaurant-Yalla-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "762"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c6/Restaurant-Yalla-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "762"
+        }
+      }
+    },
+    {
+      "restaurant_id": "109486322",
+      "name": "Tom Yum Originals",
+      "listing_rank": 32,
+      "url": "https://restaurantguru.com/Tyo-Rostov-on-Don",
+      "card_text": "32. Tom Yum Originals\n4.9\n2039 votes\n₽\n₽\n₽₽ Open until 12AM\nAsian, Thai, Vegetarian options",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/cee8-Restaurant-Tom-Yum-Originals-soup.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "500"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/cee8-Restaurant-Tom-Yum-Originals-soup.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "500"
+        }
+      }
+    },
+    {
+      "restaurant_id": "130959795",
+      "name": "Zumu",
+      "listing_rank": 33,
+      "url": "https://restaurantguru.com/Zumu-Rostov-on-Don",
+      "card_text": "New\n33. Zumu\n5\n255 votes\nClosed until 12PM",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c7a0-Restaurant-Zumu-design.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "483"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c7a0-Restaurant-Zumu-design.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "483"
+        }
+      }
+    },
+    {
+      "restaurant_id": "123717699",
+      "name": "Lali Khinkali",
+      "listing_rank": 34,
+      "url": "https://restaurantguru.com/Lali-Khinkali-Rostov-on-Don",
+      "card_text": "34. Lali Khinkali\n4.9\n656 votes\n₽\n₽\n₽\n₽ Open until 12AM\nRussian, Georgian",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c091-Lali-Khinkali-Rostov-on-Don-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "640"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c091-Lali-Khinkali-Rostov-on-Don-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "640"
+        }
+      }
+    },
+    {
+      "restaurant_id": "86806443",
+      "name": "Larisa Zharit",
+      "listing_rank": 35,
+      "url": "https://restaurantguru.com/Larisa-Zharit-Rostov-on-Don",
+      "card_text": "35. Larisa Zharit\n4.9\n2980 votes\n₽\n₽\n₽₽ Closed until 12PM",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c5ee-Larisa-Zharit-Rostov-on-Don-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "671"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c5ee-Larisa-Zharit-Rostov-on-Don-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "671"
+        }
+      }
+    },
+    {
+      "restaurant_id": "128256004",
+      "name": "Pro. Хинкали by Novikov",
+      "listing_rank": 36,
+      "url": "https://restaurantguru.com/Pro-Khinkali-by-Novikov-Rostov-on-Don",
+      "card_text": "36. Pro. Хинкали by Novikov\n4.9\n375 votes\n₽\n₽\n₽\n₽ Open until 12AM",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/ce48-Restaurant-Pro-Khinkali-by-Novikov-mussels.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "686"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/ce48-Restaurant-Pro-Khinkali-by-Novikov-mussels.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "686"
+        }
+      }
+    },
+    {
+      "restaurant_id": "125644202",
+      "name": "Puri Puri",
+      "listing_rank": 37,
+      "url": "https://restaurantguru.com/PuriPuri-Rostov-on-Don",
+      "card_text": "37. Puri Puri\n4.9\n1118 votes\n₽\n₽\n₽₽ Open until 12AM\nEuropean, Georgian",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/ce78-design-Puri-Puri-3.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "645"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/ce78-design-Puri-Puri-3.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "645"
+        }
+      }
+    },
+    {
+      "restaurant_id": "124435107",
+      "name": "Teho",
+      "listing_rank": 38,
+      "url": "https://restaurantguru.com/Teho-Rostov-on-Don",
+      "card_text": "38. Teho\n4.9\n688 votes\n₽\n₽₽₽ Closed until 12PM",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://1014042311.rsc.cdn77.org/img/site/default_restaurant_icon.svg",
+          "height": null,
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": null
+        },
+        "mobile_web": {
+          "declared_url": "https://1014042311.rsc.cdn77.org/img/site/default_restaurant_icon.svg",
+          "height": null,
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": null
+        }
+      }
+    },
+    {
+      "restaurant_id": "129425928",
+      "name": "Klevo by Novikov",
+      "listing_rank": 39,
+      "url": "https://restaurantguru.com/Klevo-Rostov-on-Don",
+      "card_text": "39. Klevo by Novikov\n4.9\n257 votes\nClosed until 12PM",
+      "baselines": {
+        "desktop_web": {
+          "declared_url": "https://img02.restaurantguru.com/c3ea-Restaurant-Klevo-by-Novikov-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:04.859Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "483"
+        },
+        "mobile_web": {
+          "declared_url": "https://img02.restaurantguru.com/c3ea-Restaurant-Klevo-by-Novikov-interior.jpg",
+          "height": "645",
+          "observed_at": "2026-10-30T08:46:05.381Z",
+          "rendered_url": "https://1014042311.rsc.cdn77.org/log.gif",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don/2#restaurant-list",
+          "srcset": null,
+          "viewport": {
+            "height": 773,
+            "width": 519
+          },
+          "width": "483"
+        }
+      }
+    },
+    {
+      "restaurant_id": "129431563",
+      "name": "Voobrajenie",
+      "url": "https://restaurantguru.com/Voobrazhenie-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/cabf-Restaurant-Voobrazhenie-interior.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      },
+      "gallery": [
+        {
+          "photo_id": "1401_21924304",
+          "url": "https://img05.restaurantguru.ru/rfb7-design-Voobrazhenie.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924305",
+          "url": "https://img05.restaurantguru.ru/r2bd-Voobrazhenie-interior-2026-04.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924306",
+          "url": "https://img05.restaurantguru.ru/r05b-Voobrazhenie-design-2026-04.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924319",
+          "url": "https://img05.restaurantguru.ru/r8be-interior-Voobrazhenie-2026-04.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924296",
+          "url": "https://img05.restaurantguru.ru/r41e-Voobrazhenie-food.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924313",
+          "url": "https://img05.restaurantguru.ru/rf3f-food-Voobrazhenie.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924318",
+          "url": "https://img05.restaurantguru.ru/r3e2-meals-Voobrazhenie.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924323",
+          "url": "https://img05.restaurantguru.ru/rd53-dishes-Voobrazhenie.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924293",
+          "url": "https://img05.restaurantguru.ru/r261-Voobrazhenie-interior.jpg",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924302",
+          "url": "https://img05.restaurantguru.ru/reea-interior-Voobrazhenie.jpg",
+          "width": 577,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924298",
+          "url": "https://img05.restaurantguru.ru/rbe1-Voobrazhenie-design.jpg",
+          "width": 1280,
+          "height": 577
+        },
+        {
+          "photo_id": "1401_21924303",
+          "url": "https://img05.restaurantguru.ru/rf81-Voobrazhenie-dishes.jpg",
+          "width": 1280,
+          "height": 960
+        },
+        {
+          "photo_id": "1401_21924310",
+          "url": "https://img05.restaurantguru.ru/r349-Voobrazhenie-chocolate-cake.jpg",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924297",
+          "url": "https://img05.restaurantguru.ru/rfc5-Voobrazhenie-meals.jpg",
+          "width": 701,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924316",
+          "url": "https://img05.restaurantguru.ru/rd26-Voobrazhenie-facade.jpg",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924326",
+          "url": "https://img05.restaurantguru.ru/re6d-design-Voobrazhenie-2026-04.jpg",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924322",
+          "url": "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924321",
+          "url": "https://img05.restaurantguru.ru/rb23-beverage-Voobrazhenie.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_21924320",
+          "url": "https://img05.restaurantguru.ru/rff3-Voobrazhenie-beverage.jpg",
+          "width": 960,
+          "height": 1280
+        },
+        {
+          "photo_id": "1401_16700727",
+          "url": "https://img05.restaurantguru.ru/rb62-Voobrazhenie-exterior.jpg",
+          "width": 1280,
+          "height": 750
+        }
+      ],
+      "gallery_source": {
+        "url": "https://restaurantguru.com/Voobrazhenie-Rostov-on-Don",
+        "visible_count_text": "Add a photo\n20 photos",
+        "collection_status": "embedded_page_gallery",
+        "observed_on": "2026-10-30"
+      }
+    },
+    {
+      "restaurant_id": "91344139",
+      "name": "Cena Kachestva",
+      "url": "https://restaurantguru.com/Tsekh-Etogo-Goroda-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c72c-Restaurant-Tseh-Etogo-Goroda-meat.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "129823852",
+      "name": "Thai Keen",
+      "url": "https://restaurantguru.com/Thai-Keen-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c9a5-Restaurant-Thai-Keen-sashimi.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "104270066",
+      "name": "Starik Khinkalych",
+      "url": "https://restaurantguru.com/Starik-Khinkalych-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/cbc2-Starik-Khinkalych-Rostov-on-Don-food-1.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "109486374",
+      "name": "Cena Kachestva",
+      "url": "https://restaurantguru.com/Tseh-Etogo-Goroda-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c8ec-design-Tseh-Etogo-Goroda.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "112529328",
+      "name": "Guru",
+      "url": "https://restaurantguru.com/Guru-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c1f5-Guru-interior-2.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "129796290",
+      "name": "Макаронка",
+      "url": "https://restaurantguru.com/Makaronka-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/ca0d-Restaurant-Makaronka-design.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "123712756",
+      "name": "Xinkali-Zapevali",
+      "url": "https://restaurantguru.com/Xinkali-Zapevali-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c229-Restaurant-Xinkali-Zapevali-beverage.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "114189450",
+      "name": "Алое Вдохновение",
+      "url": "https://restaurantguru.com/Aloye-Vdokhnoveniye-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/ce5a-Aloe-Vdokhnovenie-Rostov-on-Don-interior.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "91333541",
+      "name": "Gruzinskie kanikuly",
+      "url": "https://restaurantguru.com/Gruzinskiye-Kanikuly-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c6be-Gruzinskie-kanikuly-Rostov-on-Don-meals.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "130852920",
+      "name": "Sia",
+      "url": "https://restaurantguru.com/Sia-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img4.restaurantguru.com/h215/re31-Sia-meals-2026-05-1.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "126623444",
+      "name": "Хинкали-Запевали",
+      "url": "https://restaurantguru.com/Khinkali-Zapevali-Rostov-on-Don-2",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c962-Restaurant-Khinkali-Zapevali-beverage.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "86802504",
+      "name": "Frank by Basta",
+      "url": "https://restaurantguru.com/FRANK-by-BASTA-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/cba0-Restaurant-FRANK-by-BASTA-interior.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "112517943",
+      "name": "Kazak",
+      "url": "https://restaurantguru.com/Kazak-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/cb85-Kazak-Rostov-on-Don-interior.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "39566888",
+      "name": "Onegin Dacha",
+      "url": "https://restaurantguru.com/OneginDacha-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c8b6-interior-Onegin-Dacha.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "86800983",
+      "name": "Pad Thai",
+      "url": "https://restaurantguru.com/Pad-Thai-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c0e0-Pad-Thai-Rostov-on-Don-dining-table.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "124603930",
+      "name": "Дом Культуры",
+      "url": "https://restaurantguru.com/Dom-Kultury-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/cf92-Pub-and-bar-Dom-Kultury-beet-salad.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "128270046",
+      "name": "Puri Puri",
+      "url": "https://restaurantguru.com/Puri-Puri-Rostov-on-Don-5",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img.restaurantguru.com/h215/rec8-PuriPuri-seaweed-salad.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    },
+    {
+      "restaurant_id": "130852658",
+      "name": "Pro. Hinkali by Novikov",
+      "url": "https://restaurantguru.com/Pro-Hinkali-by-Novikov-Rostov-on-Don",
+      "listing_rank": null,
+      "baselines": {
+        "web_unspecified": {
+          "declared_url": "https://img02.restaurantguru.com/c982-Restaurant-Pro-Hinkali-by-Novikov-design.jpg",
+          "source_page": "https://restaurantguru.com/Rostov-on-Don",
+          "evidence": "declared_image_attribute"
+        }
+      }
+    }
+  ]
+}

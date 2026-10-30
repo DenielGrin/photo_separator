@@ -1,0 +1,695 @@
+{
+  "protocol_id": "0615c1b16c302af50e3d6625d7b4fdce724a9a2d4efa41fb29b858a0b7ac0719",
+  "model": "nvidia/nemotron-3.5-super-vl:free",
+  "restaurant_ids": [
+    "129431563"
+  ],
+  "status": "completed",
+  "usage": {
+    "prompt_tokens": 22703,
+    "completion_tokens": 4474,
+    "total_tokens": 27177,
+    "cost": 0
+  },
+  "created_at": "2026-10-30T09:21:04.445114+00:00",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "restaurants": [
+    {
+      "restaurant_id": "129431563",
+      "results": [
+        {
+          "url": "https://img05.restaurantguru.ru/rfb7-design-Voobrazhenie.jpg",
+          "sha256": "4244836934dc95f80fdbd0d1b0f131aa029f06ddb18170aab4f4062ff7f3fe18",
+          "metrics": {
+            "digest": "86d621bfd2befefd87b63ea168706af7607e78abe9d263f60885c22614ffa36e",
+            "width": 960,
+            "height": 1280,
+            "brightness": 26.65,
+            "edge_variance": 2046.26
+          },
+          "asset": "assets/86d621bfd2befefd87b63ea168706af7607e78abe9d263f60885c22614ffa36e.jpg",
+          "original_bytes": 188272,
+          "input_bytes": 250556,
+          "input_sha256": "82b16121b9d575b442b8144972d1c858bfb35886f71eefaff8031116f8bf37c5",
+          "photo_id": "R129431563-P001",
+          "role": "gallery",
+          "source_photo_id": "1401_21924304",
+          "source_metadata": {
+            "photo_id": "1401_21924304",
+            "url": "https://img05.restaurantguru.ru/rfb7-design-Voobrazhenie.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 0,
+          "assessment": {
+            "category": "interior",
+            "quality": 85.0,
+            "appeal": 85.0,
+            "relevance": 90.0,
+            "confidence": 0.9,
+            "people": "none",
+            "text_dominant": false,
+            "severe_defect": false,
+            "unsafe": false,
+            "reason": "Atmospheric interior with red ceiling decor and blue screens."
+          },
+          "decision": "keep",
+          "score": 86.25,
+          "reason_code": "cover_candidate"
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/r2bd-Voobrazhenie-interior-2026-04.jpg",
+          "sha256": "3f663a3a719cf783ec9c3fb973065aa7bf5714198c390d02d7febb8781e4a1ce",
+          "metrics": {
+            "digest": "d3455e8fe78e0217ba144c5b56d32b355d1560bcb88320200d9c7909b5978518",
+            "width": 960,
+            "height": 1280,
+            "brightness": 31.8,
+            "edge_variance": 1923.49
+          },
+          "asset": "assets/d3455e8fe78e0217ba144c5b56d32b355d1560bcb88320200d9c7909b5978518.jpg",
+          "original_bytes": 185820,
+          "input_bytes": 246272,
+          "input_sha256": "06e56f544ffc1571821678bc875cd385c6e852dd69709897aa59df191e084b4b",
+          "photo_id": "R129431563-P002",
+          "role": "gallery",
+          "source_photo_id": "1401_21924305",
+          "source_metadata": {
+            "photo_id": "1401_21924305",
+            "url": "https://img05.restaurantguru.ru/r2bd-Voobrazhenie-interior-2026-04.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 1,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Interior lounge scene with background patrons."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/r05b-Voobrazhenie-design-2026-04.jpg",
+          "sha256": "f3998afce28681c7151f8a36f11ad7f92781bc9f0a6b326776bfad00490fd367",
+          "metrics": {
+            "digest": "e00ae64b482c8cabf3b28ee63d98696f674c816cb6eb249bbb1d1fbc9e4e0e84",
+            "width": 960,
+            "height": 1280,
+            "brightness": 35.19,
+            "edge_variance": 2101.34
+          },
+          "asset": "assets/e00ae64b482c8cabf3b28ee63d98696f674c816cb6eb249bbb1d1fbc9e4e0e84.jpg",
+          "original_bytes": 231006,
+          "input_bytes": 295249,
+          "input_sha256": "5e210c8c91177edd224682acd456c021bdbf74c39e331c6d12e30809caae29d6",
+          "photo_id": "R129431563-P003",
+          "role": "gallery",
+          "source_photo_id": "1401_21924306",
+          "source_metadata": {
+            "photo_id": "1401_21924306",
+            "url": "https://img05.restaurantguru.ru/r05b-Voobrazhenie-design-2026-04.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 2,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Bar counter with fire effect and roses."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/r8be-interior-Voobrazhenie-2026-04.jpg",
+          "sha256": "7dab5af49366cae96373498040eeef5c748e07d6270a49c9de92884ad2dc7995",
+          "metrics": {
+            "digest": "60c1b47b9cecda3977980ef5477bca5047b0dae510156fa917d11c0e82aac183",
+            "width": 960,
+            "height": 1280,
+            "brightness": 88.46,
+            "edge_variance": 2603.24
+          },
+          "asset": "assets/60c1b47b9cecda3977980ef5477bca5047b0dae510156fa917d11c0e82aac183.jpg",
+          "original_bytes": 248885,
+          "input_bytes": 310866,
+          "input_sha256": "f9f4c32a92b792de141230193f057e9f1eb65e3b63e6646bdab2e33efdcc4f61",
+          "photo_id": "R129431563-P004",
+          "role": "gallery",
+          "source_photo_id": "1401_21924319",
+          "source_metadata": {
+            "photo_id": "1401_21924319",
+            "url": "https://img05.restaurantguru.ru/r8be-interior-Voobrazhenie-2026-04.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 3,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Ornate hookah set on rug."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/r41e-Voobrazhenie-food.jpg",
+          "sha256": "b50978d0954056e495140adbe5679f93edb79f8fb29f030ba91121c3e9cc12d4",
+          "metrics": {
+            "digest": "452e9751f4bd404cd969d03176a6438541bdf9555465650346148d974bbf16bc",
+            "width": 960,
+            "height": 1280,
+            "brightness": 35.68,
+            "edge_variance": 2278.69
+          },
+          "asset": "assets/452e9751f4bd404cd969d03176a6438541bdf9555465650346148d974bbf16bc.jpg",
+          "original_bytes": 151110,
+          "input_bytes": 201873,
+          "input_sha256": "b4dc55ab52a439cfede1c98be28459a90ff3f9cadcf28064c315bd7d3f2418e8",
+          "photo_id": "R129431563-P005",
+          "role": "gallery",
+          "source_photo_id": "1401_21924296",
+          "source_metadata": {
+            "photo_id": "1401_21924296",
+            "url": "https://img05.restaurantguru.ru/r41e-Voobrazhenie-food.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 4,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Boxes of sweets and fruits."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rf3f-food-Voobrazhenie.jpg",
+          "sha256": "caec4e2b458059e6dde0e50e5bfd5de1c5d0392f9caefeed46eb092bbb1acfe3",
+          "metrics": {
+            "digest": "b153cdb4adc31ce50031784e6cbf83706804b5e6c331ece0ea08e2a41d04548f",
+            "width": 960,
+            "height": 1280,
+            "brightness": 73.09,
+            "edge_variance": 1835.25
+          },
+          "asset": "assets/b153cdb4adc31ce50031784e6cbf83706804b5e6c331ece0ea08e2a41d04548f.jpg",
+          "original_bytes": 195136,
+          "input_bytes": 262041,
+          "input_sha256": "12cfccfce27f52cc92a083717920feabe11e47b0375aa1b73438d5cb6a971f5c",
+          "photo_id": "R129431563-P006",
+          "role": "gallery",
+          "source_photo_id": "1401_21924313",
+          "source_metadata": {
+            "photo_id": "1401_21924313",
+            "url": "https://img05.restaurantguru.ru/rf3f-food-Voobrazhenie.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 5,
+          "assessment": {
+            "category": "food",
+            "quality": 85.0,
+            "appeal": 90.0,
+            "relevance": 90.0,
+            "confidence": 0.9,
+            "people": "none",
+            "text_dominant": false,
+            "severe_defect": false,
+            "unsafe": false,
+            "reason": "Artfully plated appetizers on a round dish."
+          },
+          "decision": "keep",
+          "score": 88.0,
+          "reason_code": "cover_candidate"
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/r3e2-meals-Voobrazhenie.jpg",
+          "sha256": "b7bc556626b0daac06d7ce5fc5e7dae0e60f6d97ef1f1d7165e285a1b2284670",
+          "metrics": {
+            "digest": "667587be50827be380538bc5e0a8394b25a831baefd80f30de6725d68d91952c",
+            "width": 960,
+            "height": 1280,
+            "brightness": 52.54,
+            "edge_variance": 2811.03
+          },
+          "asset": "assets/667587be50827be380538bc5e0a8394b25a831baefd80f30de6725d68d91952c.jpg",
+          "original_bytes": 225743,
+          "input_bytes": 284648,
+          "input_sha256": "ef861dcb7e63c3988d338eb47e287bd0629e55a3207ad02a78b80106a5b05e2d",
+          "photo_id": "R129431563-P007",
+          "role": "gallery",
+          "source_photo_id": "1401_21924318",
+          "source_metadata": {
+            "photo_id": "1401_21924318",
+            "url": "https://img05.restaurantguru.ru/r3e2-meals-Voobrazhenie.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 6,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Table lamp and small bites."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rd53-dishes-Voobrazhenie.jpg",
+          "sha256": "821a03579974ebe63870cd4910a826344d438e7a46fa608635c17399b69d33a7",
+          "metrics": {
+            "digest": "67ec470e69ef63da339eecee3caef5db4491cc578215ffa9f0af8d129b9b6a96",
+            "width": 960,
+            "height": 1280,
+            "brightness": 47.73,
+            "edge_variance": 2489.46
+          },
+          "asset": "assets/67ec470e69ef63da339eecee3caef5db4491cc578215ffa9f0af8d129b9b6a96.jpg",
+          "original_bytes": 207049,
+          "input_bytes": 240579,
+          "input_sha256": "e4f24e17ba10bf4ddc411737b19a9ea61ea17a9fc206394f20fcf44749638625",
+          "photo_id": "R129431563-P008",
+          "role": "gallery",
+          "source_photo_id": "1401_21924323",
+          "source_metadata": {
+            "photo_id": "1401_21924323",
+            "url": "https://img05.restaurantguru.ru/rd53-dishes-Voobrazhenie.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 7,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Hookah pipe and statue in background."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/r261-Voobrazhenie-interior.jpg",
+          "sha256": "131a9d9b0092c9706a211c73e2e14570fa0e0c69aa8055746f06d8b1b00ba89a",
+          "metrics": {
+            "digest": "3171820c6ea44a059c5a9bf4b507f81b0b9b9e86cc71905e1d8d87404e43f5a7",
+            "width": 720,
+            "height": 1280,
+            "brightness": 60.62,
+            "edge_variance": 2298.28
+          },
+          "asset": "assets/3171820c6ea44a059c5a9bf4b507f81b0b9b9e86cc71905e1d8d87404e43f5a7.jpg",
+          "original_bytes": 166375,
+          "input_bytes": 212352,
+          "input_sha256": "72e72e8789715c3816b8c789b892157926ec172bdfdb2acad189e6c9a06c80f6",
+          "photo_id": "R129431563-P009",
+          "role": "gallery",
+          "source_photo_id": "1401_21924293",
+          "source_metadata": {
+            "photo_id": "1401_21924293",
+            "url": "https://img05.restaurantguru.ru/r261-Voobrazhenie-interior.jpg",
+            "width": 720,
+            "height": 1280
+          },
+          "index": 8,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Hookah set with hand in frame."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/reea-interior-Voobrazhenie.jpg",
+          "sha256": "ef55f11d2b65485bf88031e375457d0a33464a370362ff00fd0639d5f2b3b3c4",
+          "metrics": {
+            "digest": "51a9938b21aeb29c3e2cb6c291a682a8b2bd30a34f52dd59f59dfe8b5b08c0b0",
+            "width": 577,
+            "height": 1280,
+            "brightness": 74.98,
+            "edge_variance": 1463.39
+          },
+          "asset": "assets/51a9938b21aeb29c3e2cb6c291a682a8b2bd30a34f52dd59f59dfe8b5b08c0b0.jpg",
+          "original_bytes": 79885,
+          "input_bytes": 107323,
+          "input_sha256": "f5c45fd1be24d6d2b88cf43627efe3e3a1f6cd13ebe2652d51a5b3aa5c4f6988",
+          "photo_id": "R129431563-P010",
+          "role": "gallery",
+          "source_photo_id": "1401_21924302",
+          "source_metadata": {
+            "photo_id": "1401_21924302",
+            "url": "https://img05.restaurantguru.ru/reea-interior-Voobrazhenie.jpg",
+            "width": 577,
+            "height": 1280
+          },
+          "index": 9,
+          "assessment": null,
+          "decision": "reject",
+          "score": null,
+          "reason_code": "model_reject",
+          "model_reason": "Menu with text dominant."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rbe1-Voobrazhenie-design.jpg",
+          "sha256": "80106a1d57e59a288982ae656095faa000a4a42907b02ad3f77d2f5145601622",
+          "metrics": {
+            "digest": "6b4410f9ef603b0f88ff16368ad27c14d5dd1827828cfacc9eec08c7b177bec8",
+            "width": 1280,
+            "height": 577,
+            "brightness": 56.93,
+            "edge_variance": 3742.14
+          },
+          "asset": "assets/6b4410f9ef603b0f88ff16368ad27c14d5dd1827828cfacc9eec08c7b177bec8.jpg",
+          "original_bytes": 165842,
+          "input_bytes": 207529,
+          "input_sha256": "0c79cd949926a940c7639ba9c755d332adc50b71171d4fa763cd525f5dff49d8",
+          "photo_id": "R129431563-P011",
+          "role": "gallery",
+          "source_photo_id": "1401_21924298",
+          "source_metadata": {
+            "photo_id": "1401_21924298",
+            "url": "https://img05.restaurantguru.ru/rbe1-Voobrazhenie-design.jpg",
+            "width": 1280,
+            "height": 577
+          },
+          "index": 10,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Lit crown lanterns on table."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rf81-Voobrazhenie-dishes.jpg",
+          "sha256": "826a40725092168275783011dd42a0d7c3a5099e3af08820b971a247289ab2f3",
+          "metrics": {
+            "digest": "9ad25132576ef7810c298877fb007ad34b5f508d557e4545b2e393295a34d53b",
+            "width": 1280,
+            "height": 960,
+            "brightness": 49.17,
+            "edge_variance": 3103.18
+          },
+          "asset": "assets/9ad25132576ef7810c298877fb007ad34b5f508d557e4545b2e393295a34d53b.jpg",
+          "original_bytes": 305774,
+          "input_bytes": 375429,
+          "input_sha256": "2bf4b814ed2db8cc25008de12b80e3415628728d7700ac9c3fb1731b64bd1e9f",
+          "photo_id": "R129431563-P012",
+          "role": "gallery",
+          "source_photo_id": "1401_21924303",
+          "source_metadata": {
+            "photo_id": "1401_21924303",
+            "url": "https://img05.restaurantguru.ru/rf81-Voobrazhenie-dishes.jpg",
+            "width": 1280,
+            "height": 960
+          },
+          "index": 11,
+          "assessment": {
+            "category": "interior",
+            "quality": 90.0,
+            "appeal": 90.0,
+            "relevance": 85.0,
+            "confidence": 0.9,
+            "people": "none",
+            "text_dominant": false,
+            "severe_defect": false,
+            "unsafe": false,
+            "reason": "Stunning ceiling installation with hanging pink crystals."
+          },
+          "decision": "keep",
+          "score": 88.75,
+          "reason_code": "cover_candidate"
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/r349-Voobrazhenie-chocolate-cake.jpg",
+          "sha256": "079ec3af7f08f079eba4d4b8eb468274e0d70a8a9b26fe8c3e5b8f9ced8324db",
+          "metrics": {
+            "digest": "187e51a5a24ef46974a54645511a239807ad5ff496a52d2adf7071784c7de3aa",
+            "width": 720,
+            "height": 1280,
+            "brightness": 30.96,
+            "edge_variance": 1974.36
+          },
+          "asset": "assets/187e51a5a24ef46974a54645511a239807ad5ff496a52d2adf7071784c7de3aa.jpg",
+          "original_bytes": 178523,
+          "input_bytes": 225381,
+          "input_sha256": "f7f9fb302ce0c4d7a8aef4af4bc716378fffb2f873a36e8012e70b308cee5e07",
+          "photo_id": "R129431563-P013",
+          "role": "gallery",
+          "source_photo_id": "1401_21924310",
+          "source_metadata": {
+            "photo_id": "1401_21924310",
+            "url": "https://img05.restaurantguru.ru/r349-Voobrazhenie-chocolate-cake.jpg",
+            "width": 720,
+            "height": 1280
+          },
+          "index": 12,
+          "assessment": {
+            "category": "interior",
+            "quality": 80.0,
+            "appeal": 80.0,
+            "relevance": 90.0,
+            "confidence": 0.8,
+            "people": "background",
+            "text_dominant": false,
+            "severe_defect": false,
+            "unsafe": false,
+            "reason": "Wide interior view of bar area with seated guests."
+          },
+          "decision": "review",
+          "score": 82.5,
+          "reason_code": "uncertain_assessment"
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rfc5-Voobrazhenie-meals.jpg",
+          "sha256": "c125189b62e38629efdbe5ac26c6d05fdd8a949d9cdcba8baf14e07e9bbd1ed9",
+          "metrics": {
+            "digest": "df2b183d3f72ec94b68a63352508ad2d0c8049eea48437cd5eda5bbcdea0c0a8",
+            "width": 701,
+            "height": 1280,
+            "brightness": 28.93,
+            "edge_variance": 1918.61
+          },
+          "asset": "assets/df2b183d3f72ec94b68a63352508ad2d0c8049eea48437cd5eda5bbcdea0c0a8.jpg",
+          "original_bytes": 114785,
+          "input_bytes": 150282,
+          "input_sha256": "16e05c9548a48be4d541b8d0a7b554c4a131a9e1336feebe74bdb8a5bec60e8a",
+          "photo_id": "R129431563-P014",
+          "role": "gallery",
+          "source_photo_id": "1401_21924297",
+          "source_metadata": {
+            "photo_id": "1401_21924297",
+            "url": "https://img05.restaurantguru.ru/rfc5-Voobrazhenie-meals.jpg",
+            "width": 701,
+            "height": 1280
+          },
+          "index": 13,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Close up of drink in lantern."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rd26-Voobrazhenie-facade.jpg",
+          "sha256": "a5e0236e44fce1947c2f9af6e22e349bf39224e459d2550ea45ead58aab58241",
+          "metrics": {
+            "digest": "d067cc33712ef2e1cb44fc935fb108111e01c52ef8602348a68e9b158c7958b6",
+            "width": 720,
+            "height": 1280,
+            "brightness": 46.4,
+            "edge_variance": 2205.11
+          },
+          "asset": "assets/d067cc33712ef2e1cb44fc935fb108111e01c52ef8602348a68e9b158c7958b6.jpg",
+          "original_bytes": 116810,
+          "input_bytes": 156383,
+          "input_sha256": "89704cb6f4bc042205f4fbb01630bdc853c7d1d5462b7b12f9443136f4999518",
+          "photo_id": "R129431563-P015",
+          "role": "gallery",
+          "source_photo_id": "1401_21924316",
+          "source_metadata": {
+            "photo_id": "1401_21924316",
+            "url": "https://img05.restaurantguru.ru/rd26-Voobrazhenie-facade.jpg",
+            "width": 720,
+            "height": 1280
+          },
+          "index": 14,
+          "assessment": null,
+          "decision": "reject",
+          "score": null,
+          "reason_code": "model_reject",
+          "model_reason": "Selfie of woman in mirror."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/re6d-design-Voobrazhenie-2026-04.jpg",
+          "sha256": "76d9f3e0b3680a4262eddb62380555e22a2a72500be6b1a014c1fed9ece723d1",
+          "metrics": {
+            "digest": "5f36f49b448ee9e9d4699b2929ebb225990ac66d1dcc6562f1dab3531425295b",
+            "width": 720,
+            "height": 1280,
+            "brightness": 74.89,
+            "edge_variance": 2769.15
+          },
+          "asset": "assets/5f36f49b448ee9e9d4699b2929ebb225990ac66d1dcc6562f1dab3531425295b.jpg",
+          "original_bytes": 208538,
+          "input_bytes": 266630,
+          "input_sha256": "351651d0b3e9b798af80532469aef565140028d218fec3eeb6cdc90f9b864220",
+          "photo_id": "R129431563-P016",
+          "role": "gallery",
+          "source_photo_id": "1401_21924326",
+          "source_metadata": {
+            "photo_id": "1401_21924326",
+            "url": "https://img05.restaurantguru.ru/re6d-design-Voobrazhenie-2026-04.jpg",
+            "width": 720,
+            "height": 1280
+          },
+          "index": 15,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Hookah and tea glasses."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+          "sha256": "1685cb94794200c8dca001b5fa9b6ecf0c18c5aa67e62762bbdb068328b173d0",
+          "metrics": {
+            "digest": "70b77c441a1c838f6401c07f3016581031483a6339d554c68a05a14317e3afde",
+            "width": 960,
+            "height": 1280,
+            "brightness": 39.6,
+            "edge_variance": 1588.96
+          },
+          "asset": "assets/70b77c441a1c838f6401c07f3016581031483a6339d554c68a05a14317e3afde.jpg",
+          "original_bytes": 158140,
+          "input_bytes": 198908,
+          "input_sha256": "2bac5194f7e03b1ccf4f98c1a40dbf41201ac8813b41eac6f6c0afe932cd29cc",
+          "photo_id": "R129431563-P017",
+          "role": "gallery",
+          "source_photo_id": "1401_21924322",
+          "source_metadata": {
+            "photo_id": "1401_21924322",
+            "url": "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 16,
+          "assessment": {
+            "category": "drink",
+            "quality": 85.0,
+            "appeal": 85.0,
+            "relevance": 85.0,
+            "confidence": 0.9,
+            "people": "none",
+            "text_dominant": false,
+            "severe_defect": false,
+            "unsafe": false,
+            "reason": "Colorful cocktail served with vintage gramophone prop."
+          },
+          "decision": "keep",
+          "score": 85.0,
+          "reason_code": "cover_candidate"
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rb23-beverage-Voobrazhenie.jpg",
+          "sha256": "1a040e0e53a6b8cd5935f8f23fe1da253ddc00fd894917c98ba21ee988e96919",
+          "metrics": {
+            "digest": "e00efdb2f1fe36646e219e12dd7f20a5b82262e11689ee84c2a17a4bb71728be",
+            "width": 960,
+            "height": 1280,
+            "brightness": 38.11,
+            "edge_variance": 966.24
+          },
+          "asset": "assets/e00efdb2f1fe36646e219e12dd7f20a5b82262e11689ee84c2a17a4bb71728be.jpg",
+          "original_bytes": 146404,
+          "input_bytes": 186279,
+          "input_sha256": "5ea5084ac60b49a80c8ccec482485977f6c658be258d1642d8a720521b3ee6a4",
+          "photo_id": "R129431563-P018",
+          "role": "gallery",
+          "source_photo_id": "1401_21924321",
+          "source_metadata": {
+            "photo_id": "1401_21924321",
+            "url": "https://img05.restaurantguru.ru/rb23-beverage-Voobrazhenie.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 17,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Hand holding cocktail."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rff3-Voobrazhenie-beverage.jpg",
+          "sha256": "e524627c0eb7a84ac2864b27257aec12ae6d615f36d5090aab795fc93e787818",
+          "metrics": {
+            "digest": "5f5aab2b19b483cfd1ae73c295c3c64eb041c01cd7851bc678695c73ce1d3294",
+            "width": 960,
+            "height": 1280,
+            "brightness": 29.71,
+            "edge_variance": 1573.23
+          },
+          "asset": "assets/5f5aab2b19b483cfd1ae73c295c3c64eb041c01cd7851bc678695c73ce1d3294.jpg",
+          "original_bytes": 148704,
+          "input_bytes": 187566,
+          "input_sha256": "49c2f1de533dc47b074d0167f906a8e011720b02200dc3b0f3e39f5be054e195",
+          "photo_id": "R129431563-P019",
+          "role": "gallery",
+          "source_photo_id": "1401_21924320",
+          "source_metadata": {
+            "photo_id": "1401_21924320",
+            "url": "https://img05.restaurantguru.ru/rff3-Voobrazhenie-beverage.jpg",
+            "width": 960,
+            "height": 1280
+          },
+          "index": 18,
+          "assessment": null,
+          "decision": "not_selected",
+          "score": null,
+          "reason_code": "model_not_selected",
+          "model_reason": "Table with food bowl and hookah."
+        },
+        {
+          "url": "https://img05.restaurantguru.ru/rb62-Voobrazhenie-exterior.jpg",
+          "sha256": "52f90a39fa16ebd9b9629f80a7251b86c3520fba099a00cbf2f5624e512548f2",
+          "metrics": {
+            "digest": "c60942a70c014aa62bc8490fcf1dea83fdab9ec4fba62b81c020c3e86e418eff",
+            "width": 1280,
+            "height": 750,
+            "brightness": 128.07,
+            "edge_variance": 4044.87
+          },
+          "asset": "assets/c60942a70c014aa62bc8490fcf1dea83fdab9ec4fba62b81c020c3e86e418eff.jpg",
+          "original_bytes": 227584,
+          "input_bytes": 276446,
+          "input_sha256": "1e3ed0977aec3c0e6ed823177fad7c08ecaa59661ba810c8afdfd6bae2406bc6",
+          "photo_id": "R129431563-P020",
+          "role": "gallery",
+          "source_photo_id": "1401_16700727",
+          "source_metadata": {
+            "photo_id": "1401_16700727",
+            "url": "https://img05.restaurantguru.ru/rb62-Voobrazhenie-exterior.jpg",
+            "width": 1280,
+            "height": 750
+          },
+          "index": 19,
+          "assessment": {
+            "category": "exterior",
+            "quality": 80.0,
+            "appeal": 75.0,
+            "relevance": 90.0,
+            "confidence": 0.9,
+            "people": "none",
+            "text_dominant": false,
+            "severe_defect": false,
+            "unsafe": false,
+            "reason": "Exterior street view of the restaurant building."
+          },
+          "decision": "keep",
+          "score": 80.75,
+          "reason_code": "cover_candidate"
+        }
+      ],
+      "cover": [
+        "https://img05.restaurantguru.ru/rf81-Voobrazhenie-dishes.jpg",
+        "https://img05.restaurantguru.ru/rf3f-food-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/rfb7-design-Voobrazhenie.jpg",
+        "https://img05.restaurantguru.ru/rc79-Voobrazhenie-beverage-2026-04.jpg",
+        "https://img05.restaurantguru.ru/rb62-Voobrazhenie-exterior.jpg"
+      ],
+      "shortfall": 0,
+      "baseline_diagnostics": [],
+      "baseline_score_warning": "Current covers were not shown to the selector. Independent before/after review is still required."
+    }
+  ],
+  "latency_ms": 35063
+}

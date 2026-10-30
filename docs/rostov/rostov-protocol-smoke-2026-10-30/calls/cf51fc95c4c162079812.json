@@ -1,0 +1,13 @@
+{
+  "protocol_id": "90083cd140002983ffe32e2790d799e43d2068c08076ab117e165594b1145017",
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+  "restaurant_ids": [
+    "129431563"
+  ],
+  "status": "invalid_contract",
+  "usage": {},
+  "created_at": "2026-10-30T09:05:15.348004+00:00",
+  "http_status": 200,
+  "error": "Invalid or incomplete photo-to-restaurant assessment contract",
+  "latency_ms": 3732
+}

@@ -1,0 +1,37 @@
+{
+  "status": "finished_with_errors",
+  "protocol_id": "90083cd140002983ffe32e2790d799e43d2068c08076ab117e165594b1145017",
+  "calls": 3,
+  "completed_batches": 0,
+  "planned_batches": 3,
+  "failures": [
+    {
+      "model": "dots-studio/dots-3-note-preview:free",
+      "restaurant_ids": [
+        "129431563"
+      ],
+      "status": "invalid_contract"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "restaurant_ids": [
+        "129431563"
+      ],
+      "status": "invalid_contract"
+    },
+    {
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "restaurant_ids": [
+        "129431563"
+      ],
+      "status": "invalid_contract"
+    }
+  ],
+  "free_only": true,
+  "quota_before": {
+    "used": 0,
+    "limit": 50,
+    "remaining": 50
+  },
+  "effective_max_calls": 3
+}

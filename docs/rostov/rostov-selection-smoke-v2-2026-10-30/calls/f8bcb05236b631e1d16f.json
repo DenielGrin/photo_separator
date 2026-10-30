@@ -1,0 +1,19 @@
+{
+  "protocol_id": "0615c1b16c302af50e3d6625d7b4fdce724a9a2d4efa41fb29b858a0b7ac0719",
+  "model": "dots-studio/dots-3-note-preview:free",
+  "restaurant_ids": [
+    "129431563"
+  ],
+  "status": "incomplete_output",
+  "usage": {
+    "prompt_tokens": 25467,
+    "completion_tokens": 12000,
+    "total_tokens": 37467,
+    "cost": 0
+  },
+  "created_at": "2026-10-30T09:18:24.421802+00:00",
+  "http_status": 200,
+  "finish_reason": "length",
+  "error": "Provider did not confirm completed output",
+  "latency_ms": 148226
+}

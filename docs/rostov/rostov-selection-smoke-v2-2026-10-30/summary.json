@@ -1,0 +1,50 @@
+{
+  "target_restaurants": 50,
+  "collected_restaurants": 38,
+  "ready_restaurants": 1,
+  "common_completed_restaurants": 0,
+  "models": [
+    {
+      "model": "dots-studio/dots-3-note-preview:free",
+      "completed_restaurants": 0,
+      "selected_covers": 0,
+      "restaurants_at_least_three": 0,
+      "review_photos": 0,
+      "failed_calls": 1,
+      "reported_cost_usd": 0,
+      "cost_complete": true,
+      "quality_precision": null,
+      "improvement_rate": null,
+      "independent_review": "not_available"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "completed_restaurants": 0,
+      "selected_covers": 0,
+      "restaurants_at_least_three": 0,
+      "review_photos": 0,
+      "failed_calls": 1,
+      "reported_cost_usd": 0,
+      "cost_complete": false,
+      "quality_precision": null,
+      "improvement_rate": null,
+      "independent_review": "not_available"
+    },
+    {
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "completed_restaurants": 1,
+      "selected_covers": 5,
+      "restaurants_at_least_three": 1,
+      "review_photos": 1,
+      "failed_calls": 0,
+      "reported_cost_usd": 0,
+      "cost_complete": true,
+      "quality_precision": null,
+      "improvement_rate": null,
+      "independent_review": "not_available"
+    }
+  ],
+  "winner": null,
+  "winner_reason": "An independent before/after or photo-level review is required; model self-scores are not ground truth.",
+  "estimated_free_days_for_ready_subset_at_48_calls": 1
+}
